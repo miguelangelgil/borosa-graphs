@@ -1,7 +1,7 @@
 """
 Descargador de datos de Deuda/PIB del FMI DataMapper
 Ejecutar: python imf_debt_fetcher.py
-Genera: imf_debt_data.json
+Genera: data/imf_debt_data.json
 """
 
 import requests
@@ -11,6 +11,7 @@ from datetime import datetime
 # Configuración
 IMF_URL = "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP"
 OUTPUT_FILE = "data/imf_debt_data.json"
+CURRENT_YEAR = datetime.now().year
 
 # Mapeo de códigos ISO a nombres en español
 COUNTRY_NAMES = {
@@ -91,7 +92,13 @@ def fetch_imf_data():
         all_years.update(country_data.keys())
     
     years = sorted([y for y in all_years if y.isdigit()], reverse=True)
-    print(f"Años disponibles: {years[0]} - {years[-1]}")
+    
+    # Separar años reales de proyecciones
+    real_years = [y for y in years if int(y) <= CURRENT_YEAR]
+    projection_years = [y for y in years if int(y) > CURRENT_YEAR]
+    
+    print(f"Años con datos reales: {real_years[0]} - {real_years[-1]}")
+    print(f"Años con proyecciones: {projection_years[-1] if projection_years else 'N/A'} - {projection_years[0] if projection_years else 'N/A'}")
     
     # Procesar datos por año
     result = {
@@ -100,12 +107,16 @@ def fetch_imf_data():
             "indicator": "GGXWDG_NGDP",
             "description": "General Government Gross Debt (% of GDP)",
             "fetched_at": datetime.now().isoformat(),
-            "available_years": years[:20]
+            "available_years": years[:25],
+            "last_real_year": str(CURRENT_YEAR),
+            "projection_years": projection_years
         },
-        "data": {}
+        "data": {},
+        "timeseries": {}
     }
     
-    for year in years[:20]:  # Últimos 20 años
+    # Datos por año (para gráfico de barras)
+    for year in years[:25]:
         year_data = []
         for code, values in debt_data.items():
             if code not in COUNTRY_NAMES:
@@ -119,13 +130,39 @@ def fetch_imf_data():
                     "code": code,
                     "country": COUNTRY_NAMES[code],
                     "debt": debt,
-                    "region": REGIONS.get(code, "Otro")
+                    "region": REGIONS.get(code, "Otro"),
+                    "isProjection": int(year) > CURRENT_YEAR
                 })
             except (ValueError, TypeError):
                 continue
         
         result["data"][year] = sorted(year_data, key=lambda x: -x["debt"])
-        print(f"  {year}: {len(year_data)} países")
+        print(f"  {year}: {len(year_data)} países {'(proyección)' if int(year) > CURRENT_YEAR else ''}")
+    
+    # Series temporales por país (para gráfico de líneas)
+    for code, values in debt_data.items():
+        if code not in COUNTRY_NAMES:
+            continue
+        
+        series = []
+        for year in sorted(years[:25]):
+            value = values.get(year)
+            if value is not None:
+                try:
+                    series.append({
+                        "year": year,
+                        "debt": round(float(value), 1),
+                        "isProjection": int(year) > CURRENT_YEAR
+                    })
+                except (ValueError, TypeError):
+                    continue
+        
+        if series:
+            result["timeseries"][code] = {
+                "country": COUNTRY_NAMES[code],
+                "region": REGIONS.get(code, "Otro"),
+                "data": series
+            }
     
     return result
 
@@ -138,9 +175,10 @@ def main():
         
         print(f"\n✓ Datos guardados en: {OUTPUT_FILE}")
         print(f"✓ Total años: {len(data['data'])}")
+        print(f"✓ Total países con series temporales: {len(data['timeseries'])}")
         
-        # Mostrar top 10 del año más reciente
-        latest_year = data["metadata"]["available_years"][0]
+        # Mostrar top 10 del año más reciente real
+        latest_year = data["metadata"]["last_real_year"]
         print(f"\nTop 10 países con mayor deuda/PIB ({latest_year}):")
         for i, country in enumerate(data["data"][latest_year][:10], 1):
             print(f"  {i}. {country['country']}: {country['debt']}%")

@@ -9,6 +9,9 @@
   <style>
     body { background: #030712; }
     select { color-scheme: dark; }
+    .country-chip { cursor: pointer; transition: all 0.2s; }
+    .country-chip:hover { opacity: 0.8; }
+    .country-chip.selected { ring: 2px; }
   </style>
 </head>
 <body class="bg-gray-950 text-white p-4 min-h-screen">
@@ -16,7 +19,18 @@
   <h1 id="title" class="text-2xl font-bold mb-1">📊 Ratio Deuda Soberana / PIB</h1>
   <p id="subtitle" class="text-gray-400 text-sm mb-4">Cargando datos...</p>
   
-  <div class="flex gap-4 mb-4 flex-wrap">
+  <!-- Selector de vista -->
+  <div class="flex gap-2 mb-4">
+    <button id="btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
+      📊 Ranking por país
+    </button>
+    <button id="btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 text-gray-300 hover:bg-gray-600">
+      📈 Evolución temporal
+    </button>
+  </div>
+
+  <!-- Controles vista barras -->
+  <div id="barControls" class="flex gap-4 mb-4 flex-wrap">
     <div>
       <label class="text-sm text-gray-400 mr-2">Año:</label>
       <select id="yearSelect" class="bg-gray-800 border border-gray-700 rounded px-2 py-1 text-sm"></select>
@@ -34,10 +48,30 @@
     </div>
   </div>
 
+  <!-- Controles vista líneas -->
+  <div id="lineControls" class="hidden mb-4">
+    <div class="mb-2">
+      <label class="text-sm text-gray-400 mr-2">Selecciona países (click para añadir/quitar):</label>
+      <button id="btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
+    </div>
+    <div>
+      <label class="text-sm text-gray-400 mr-2">Filtrar por región:</label>
+      <select id="lineRegionFilter" class="bg-gray-800 border border-gray-700 rounded px-2 py-1 text-sm mb-2"></select>
+    </div>
+    <div id="countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 rounded border border-gray-800"></div>
+    <p class="text-xs text-gray-500 mt-2">💡 Las líneas discontinuas indican proyecciones del FMI</p>
+  </div>
+
   <div id="legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
 
-  <div id="chartContainer" style="height: 2500px;">
-    <canvas id="chart"></canvas>
+  <!-- Contenedor gráfico barras -->
+  <div id="barChartContainer" style="height: 2500px;">
+    <canvas id="barChart"></canvas>
+  </div>
+
+  <!-- Contenedor gráfico líneas -->
+  <div id="lineChartContainer" class="hidden" style="height: 600px;">
+    <canvas id="lineChart"></canvas>
   </div>
 
   <div class="mt-4 text-xs text-gray-500 space-y-1">
@@ -63,25 +97,41 @@
       "Oceanía": "#06b6d4"
     };
 
+    // Colores para países en gráfico de líneas
+    const lineColors = [
+      '#ef4444', '#f97316', '#f59e0b', '#eab308', '#84cc16',
+      '#22c55e', '#10b981', '#14b8a6', '#06b6d4', '#0ea5e9',
+      '#3b82f6', '#6366f1', '#8b5cf6', '#a855f7', '#d946ef',
+      '#ec4899', '#f43f5e', '#78716c', '#64748b', '#ffffff'
+    ];
+
     let imfData = null;
-    let chart = null;
+    let barChart = null;
+    let lineChart = null;
     let currentYear = "2025";
     let currentRegion = "all";
     let currentSort = "debt";
+    let currentView = "bar";
+    let selectedCountries = new Set(['USA', 'CHN', 'JPN', 'DEU', 'ESP', 'FRA', 'GBR', 'ITA']);
+    let lineRegionFilter = "all";
 
     // Renderizar leyenda
     function renderLegend() {
       const legend = document.getElementById('legend');
-      legend.innerHTML = Object.entries(regionColors).map(([region, color]) => 
-        `<span class="flex items-center gap-1">
-          <span class="w-3 h-3 rounded" style="background-color: ${color}"></span>
-          ${region}
-        </span>`
-      ).join('');
+      if (currentView === 'bar') {
+        legend.innerHTML = Object.entries(regionColors).map(([region, color]) => 
+          `<span class="flex items-center gap-1">
+            <span class="w-3 h-3 rounded" style="background-color: ${color}"></span>
+            ${region}
+          </span>`
+        ).join('');
+      } else {
+        legend.innerHTML = '';
+      }
     }
 
-    // Filtrar y ordenar datos
-    function getFilteredData() {
+    // Filtrar y ordenar datos para barras
+    function getFilteredBarData() {
       let data = imfData.data[currentYear] || [];
       
       if (currentRegion !== "all") {
@@ -97,17 +147,16 @@
       return data;
     }
 
-    // Actualizar gráfico
-    function updateChart() {
-      const data = getFilteredData();
+    // Actualizar gráfico de barras
+    function updateBarChart() {
+      const data = getFilteredBarData();
+      const isProjectionYear = imfData.metadata.projection_years?.includes(currentYear);
       
-      // Actualizar altura del contenedor
       const containerHeight = Math.max(400, data.length * 24 + 50);
-      document.getElementById('chartContainer').style.height = containerHeight + 'px';
+      document.getElementById('barChartContainer').style.height = containerHeight + 'px';
       
-      // Actualizar subtítulo
       const avgDebt = Math.round(data.reduce((sum, d) => sum + d.debt, 0) / data.length);
-      document.getElementById('title').textContent = `📊 Ratio Deuda Soberana / PIB (${currentYear})`;
+      document.getElementById('title').textContent = `📊 Ratio Deuda Soberana / PIB (${currentYear})${isProjectionYear ? ' - Proyección' : ''}`;
       document.getElementById('subtitle').textContent = 
         `Fuente: FMI DataMapper · ${data.length} países · Media: ${avgDebt}% · Actualizado: ${imfData.metadata?.fetched_at?.split('T')[0] || 'N/A'}`;
 
@@ -122,13 +171,12 @@
         }]
       };
 
-      if (chart) {
-        chart.data = chartData;
-        chart.options.plugins.annotation = getAnnotations();
-        chart.update('none');
+      if (barChart) {
+        barChart.data = chartData;
+        barChart.update('none');
       } else {
-        const ctx = document.getElementById('chart').getContext('2d');
-        chart = new Chart(ctx, {
+        const ctx = document.getElementById('barChart').getContext('2d');
+        barChart = new Chart(ctx, {
           type: 'bar',
           data: chartData,
           options: {
@@ -141,12 +189,10 @@
                 backgroundColor: '#111827',
                 borderColor: '#374151',
                 borderWidth: 1,
-                titleColor: '#fff',
-                bodyColor: '#9ca3af',
                 callbacks: {
                   label: (ctx) => {
                     const d = data[ctx.dataIndex];
-                    return [`Deuda/PIB: ${d.debt}%`, `Región: ${d.region}`];
+                    return [`Deuda/PIB: ${d.debt}%`, `Región: ${d.region}`, d.isProjection ? '(Proyección)' : ''];
                   }
                 }
               }
@@ -155,17 +201,11 @@
               x: {
                 beginAtZero: true,
                 grid: { color: '#1f2937' },
-                ticks: { 
-                  color: '#9ca3af',
-                  callback: v => v + '%'
-                }
+                ticks: { color: '#9ca3af', callback: v => v + '%' }
               },
               y: {
                 grid: { display: false },
-                ticks: { 
-                  color: '#e5e7eb',
-                  font: { size: 11 }
-                }
+                ticks: { color: '#e5e7eb', font: { size: 11 } }
               }
             }
           },
@@ -176,17 +216,16 @@
               const xAxis = chart.scales.x;
               const yAxis = chart.scales.y;
               
-              // Línea 60%
-              const x60 = xAxis.getPixelForValue(60);
               ctx.save();
-              ctx.strokeStyle = '#22c55e';
               ctx.setLineDash([5, 5]);
+              
+              const x60 = xAxis.getPixelForValue(60);
+              ctx.strokeStyle = '#22c55e';
               ctx.beginPath();
               ctx.moveTo(x60, yAxis.top);
               ctx.lineTo(x60, yAxis.bottom);
               ctx.stroke();
               
-              // Línea 100%
               const x100 = xAxis.getPixelForValue(100);
               ctx.strokeStyle = '#fbbf24';
               ctx.beginPath();
@@ -200,34 +239,276 @@
       }
     }
 
+    // Renderizar selector de países
+    function renderCountrySelector() {
+      const container = document.getElementById('countrySelector');
+      let countries = Object.entries(imfData.timeseries)
+        .map(([code, data]) => ({ code, ...data }))
+        .sort((a, b) => a.country.localeCompare(b.country));
+      
+      if (lineRegionFilter !== "all") {
+        countries = countries.filter(c => c.region === lineRegionFilter);
+      }
+      
+      container.innerHTML = countries.map(c => {
+        const isSelected = selectedCountries.has(c.code);
+        return `<span 
+          class="country-chip px-2 py-1 rounded text-xs ${isSelected ? 'bg-blue-600 text-white' : 'bg-gray-700 text-gray-300'}"
+          data-code="${c.code}"
+        >${c.country}</span>`;
+      }).join('');
+      
+      container.querySelectorAll('.country-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const code = chip.dataset.code;
+          if (selectedCountries.has(code)) {
+            selectedCountries.delete(code);
+          } else {
+            selectedCountries.add(code);
+          }
+          renderCountrySelector();
+          updateLineChart();
+        });
+      });
+    }
+
+    // Actualizar gráfico de líneas
+    function updateLineChart() {
+      const projectionYears = new Set(imfData.metadata.projection_years || []);
+      
+      document.getElementById('title').textContent = '📈 Evolución Deuda/PIB - Series Temporales';
+      document.getElementById('subtitle').textContent = 
+        `Fuente: FMI DataMapper · ${selectedCountries.size} países seleccionados · Actualizado: ${imfData.metadata?.fetched_at?.split('T')[0] || 'N/A'}`;
+
+      // Obtener todos los años
+      const allYears = [...new Set(
+        Object.values(imfData.timeseries)
+          .flatMap(c => c.data.map(d => d.year))
+      )].sort();
+
+      // Crear datasets
+      const datasets = [];
+      let colorIndex = 0;
+      
+      selectedCountries.forEach(code => {
+        const countryData = imfData.timeseries[code];
+        if (!countryData) return;
+        
+        const color = lineColors[colorIndex % lineColors.length];
+        colorIndex++;
+        
+        // Separar datos reales y proyecciones
+        const realData = [];
+        const projectionData = [];
+        
+        allYears.forEach(year => {
+          const point = countryData.data.find(d => d.year === year);
+          const value = point ? point.debt : null;
+          
+          if (projectionYears.has(year)) {
+            projectionData.push(value);
+            // Añadir el último punto real para conectar
+            if (realData.length > 0 && realData[realData.length - 1] !== null) {
+              projectionData[projectionData.length - 1] = projectionData[projectionData.length - 1] ?? realData[realData.length - 1];
+            }
+            realData.push(null);
+          } else {
+            realData.push(value);
+            projectionData.push(null);
+          }
+        });
+        
+        // Dataset línea real (sólida)
+        datasets.push({
+          label: countryData.country,
+          data: realData,
+          borderColor: color,
+          backgroundColor: color,
+          borderWidth: 2,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+          tension: 0.1,
+          spanGaps: true
+        });
+        
+        // Dataset proyección (discontinua)
+        datasets.push({
+          label: `${countryData.country} (proy.)`,
+          data: projectionData,
+          borderColor: color,
+          backgroundColor: color,
+          borderWidth: 2,
+          borderDash: [5, 5],
+          pointRadius: 2,
+          pointStyle: 'circle',
+          tension: 0.1,
+          spanGaps: true
+        });
+      });
+
+      const chartData = {
+        labels: allYears,
+        datasets: datasets
+      };
+
+      if (lineChart) {
+        lineChart.data = chartData;
+        lineChart.update('none');
+      } else {
+        const ctx = document.getElementById('lineChart').getContext('2d');
+        lineChart = new Chart(ctx, {
+          type: 'line',
+          data: chartData,
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: {
+              mode: 'index',
+              intersect: false
+            },
+            plugins: {
+              legend: {
+                display: true,
+                position: 'top',
+                labels: {
+                  color: '#e5e7eb',
+                  font: { size: 10 },
+                  filter: (item) => !item.text.includes('(proy.)')
+                }
+              },
+              tooltip: {
+                backgroundColor: '#111827',
+                borderColor: '#374151',
+                borderWidth: 1,
+                callbacks: {
+                  label: (ctx) => {
+                    if (ctx.raw === null) return null;
+                    const isProj = ctx.dataset.label.includes('(proy.)');
+                    const name = ctx.dataset.label.replace(' (proy.)', '');
+                    return `${name}: ${ctx.raw}%${isProj ? ' (proyección)' : ''}`;
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                grid: { color: '#1f2937' },
+                ticks: { color: '#9ca3af' }
+              },
+              y: {
+                beginAtZero: true,
+                grid: { color: '#1f2937' },
+                ticks: { color: '#9ca3af', callback: v => v + '%' }
+              }
+            }
+          },
+          plugins: [{
+            id: 'refLinesLine',
+            beforeDraw: (chart) => {
+              const ctx = chart.ctx;
+              const yAxis = chart.scales.y;
+              const xAxis = chart.scales.x;
+              
+              ctx.save();
+              ctx.setLineDash([5, 5]);
+              
+              const y60 = yAxis.getPixelForValue(60);
+              ctx.strokeStyle = '#22c55e';
+              ctx.beginPath();
+              ctx.moveTo(xAxis.left, y60);
+              ctx.lineTo(xAxis.right, y60);
+              ctx.stroke();
+              
+              const y100 = yAxis.getPixelForValue(100);
+              ctx.strokeStyle = '#fbbf24';
+              ctx.beginPath();
+              ctx.moveTo(xAxis.left, y100);
+              ctx.lineTo(xAxis.right, y100);
+              ctx.stroke();
+              ctx.restore();
+            }
+          }]
+        });
+      }
+    }
+
+    // Cambiar vista
+    function setView(view) {
+      currentView = view;
+      
+      document.getElementById('btnBarView').className = `px-4 py-2 rounded text-sm font-medium ${view === 'bar' ? 'bg-yellow-500 text-black' : 'bg-gray-700 text-gray-300 hover:bg-gray-600'}`;
+      document.getElementById('btnLineView').className = `px-4 py-2 rounded text-sm font-medium ${view === 'line' ? 'bg-yellow-500 text-black' : 'bg-gray-700 text-gray-300 hover:bg-gray-600'}`;
+      
+      document.getElementById('barControls').classList.toggle('hidden', view !== 'bar');
+      document.getElementById('lineControls').classList.toggle('hidden', view !== 'line');
+      document.getElementById('barChartContainer').classList.toggle('hidden', view !== 'bar');
+      document.getElementById('lineChartContainer').classList.toggle('hidden', view !== 'line');
+      
+      renderLegend();
+      
+      if (view === 'bar') {
+        updateBarChart();
+      } else {
+        renderCountrySelector();
+        updateLineChart();
+      }
+    }
+
     // Poblar selectores
     function populateSelectors() {
       const years = imfData.metadata?.available_years || [];
+      const lastRealYear = imfData.metadata?.last_real_year || years[0];
+      const projectionYears = new Set(imfData.metadata?.projection_years || []);
+      
       const yearSelect = document.getElementById('yearSelect');
-      yearSelect.innerHTML = years.map(y => `<option value="${y}">${y}</option>`).join('');
-      yearSelect.value = currentYear = years[0] || "2025";
+      yearSelect.innerHTML = years.map(y => 
+        `<option value="${y}">${y}${projectionYears.has(y) ? ' (proy.)' : ''}</option>`
+      ).join('');
+      
+      // Seleccionar el último año real por defecto
+      currentYear = lastRealYear;
+      yearSelect.value = currentYear;
 
       const regions = ["all", ...new Set(imfData.data[currentYear]?.map(d => d.region) || [])].sort();
       const regionSelect = document.getElementById('regionSelect');
       regionSelect.innerHTML = regions.map(r => 
         `<option value="${r}">${r === "all" ? "Todas" : r}</option>`
       ).join('');
+      
+      const lineRegionSelect = document.getElementById('lineRegionFilter');
+      lineRegionSelect.innerHTML = regions.map(r => 
+        `<option value="${r}">${r === "all" ? "Todas las regiones" : r}</option>`
+      ).join('');
     }
 
     // Event listeners
     document.getElementById('yearSelect').addEventListener('change', (e) => {
       currentYear = e.target.value;
-      updateChart();
+      updateBarChart();
     });
 
     document.getElementById('regionSelect').addEventListener('change', (e) => {
       currentRegion = e.target.value;
-      updateChart();
+      updateBarChart();
     });
 
     document.getElementById('sortSelect').addEventListener('change', (e) => {
       currentSort = e.target.value;
-      updateChart();
+      updateBarChart();
+    });
+
+    document.getElementById('btnBarView').addEventListener('click', () => setView('bar'));
+    document.getElementById('btnLineView').addEventListener('click', () => setView('line'));
+    
+    document.getElementById('btnClearCountries').addEventListener('click', () => {
+      selectedCountries.clear();
+      renderCountrySelector();
+      updateLineChart();
+    });
+    
+    document.getElementById('lineRegionFilter').addEventListener('change', (e) => {
+      lineRegionFilter = e.target.value;
+      renderCountrySelector();
     });
 
     // Cargar datos
@@ -240,7 +521,7 @@
         imfData = data;
         renderLegend();
         populateSelectors();
-        updateChart();
+        updateBarChart();
       })
       .catch(err => {
         document.getElementById('subtitle').innerHTML = 

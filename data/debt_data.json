@@ -815,6 +815,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 28814894300000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 28058350568000.0,
@@ -1570,6 +1577,13 @@
         "country": "European Union",
         "value": 27527082450000.0,
         "region": "Europe",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 27527082450000.0,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -2331,6 +2345,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 26306711600000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 23403626666000.0,
@@ -3089,6 +3110,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 25090029433000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 21125721342000.0,
@@ -3844,6 +3872,13 @@
         "country": "European Union",
         "value": 23177639375000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 23177639375000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -4616,6 +4651,13 @@
         "country": "European Union",
         "value": 21027932141000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 21027932141000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -5426,6 +5468,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 19884000227000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 14981687820000.0,
@@ -6230,6 +6279,13 @@
         "country": "European Union",
         "value": 18620385302000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 18620385302000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -7040,6 +7096,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 19857935097000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japan",
         "value": 12784318476000.0,
@@ -7844,6 +7907,13 @@
         "country": "European Union",
         "value": 17987620100000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 17987620100000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -8654,6 +8724,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15809038470000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japan",
         "value": 12098940180000.0,
@@ -9458,6 +9535,13 @@
         "country": "European Union",
         "value": 16429158466000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 16429158466000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -10268,6 +10352,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15560296010000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japan",
         "value": 11405025981000.0,
@@ -11072,6 +11163,13 @@
         "country": "European Union",
         "value": 15181146578000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15181146578000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -11882,6 +11980,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15258981668000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japan",
         "value": 10147777473000.0,
@@ -12686,6 +12791,13 @@
         "country": "European Union",
         "value": 17697870088000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 17697870088000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -13496,6 +13608,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 16972143360000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japan",
         "value": 11962292760000.0,
@@ -14300,6 +14419,13 @@
         "country": "European Union",
         "value": 15902042250000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15902042250000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {

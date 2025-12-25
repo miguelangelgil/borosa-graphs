@@ -57,6 +57,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 36469568000000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 26336991000000.0,
@@ -826,6 +833,13 @@
         "country": "European Union",
         "value": 35140115000000.0,
         "region": "Europe",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 35140115000000.0,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -1601,6 +1615,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 33858650000000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 23451376000000.0,
@@ -2373,6 +2394,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 32638600000000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 22016582000000.0,
@@ -3142,6 +3170,13 @@
         "country": "European Union",
         "value": 31480589000000.0,
         "region": "Europe",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 31480589000000.0,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -3921,6 +3956,13 @@
         "country": "European Union",
         "value": 29676875000000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 29676875000000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -4714,6 +4756,13 @@
         "country": "European Union",
         "value": 27203017000000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 27203017000000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -5524,6 +5573,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 25924381000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 18270351000000.0,
@@ -6328,6 +6384,13 @@
         "country": "European Union",
         "value": 24308597000000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 24308597000000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -7942,6 +8005,13 @@
         "country": "European Union",
         "value": 21161906000000.0,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 21161906000000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {

@@ -1,4 +1,4 @@
-name: Update IMF Data
+name: Update All Data
 
 on:
   schedule:
@@ -14,7 +14,7 @@ permissions:
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,21 +30,42 @@ jobs:
       - name: Create data directory
         run: mkdir -p data
 
-      - name: Fetch IMF data
-        run: python scripts/fetch_imf_data.py
+      - name: Fetch Debt/GDP data (IMF)
+        run: cd scripts && python fetch_imf_data.py
+        continue-on-error: true
+
+      - name: Fetch GDP data (IMF)
+        run: cd scripts && python fetch_gdp_data.py
+        continue-on-error: true
+
+      - name: Fetch Debt data (IMF)
+        run: cd scripts && python fetch_debt_data.py
+        continue-on-error: true
+
+      - name: Fetch M2 data (World Bank)
+        run: cd scripts && python fetch_m2_data.py
+        continue-on-error: true
+
+      - name: Fetch Exports data (World Bank)
+        run: cd scripts && python fetch_exports_data.py
+        continue-on-error: true
+
+      - name: Fetch Employment data (IMF)
+        run: cd scripts && python fetch_employment_data.py
+        continue-on-error: true
 
       - name: Commit and push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/imf_debt_data.json
-          git diff --staged --quiet || git commit -m "📊 Update IMF debt data - $(date +'%Y-%m-%d')"
+          git add data/*.json
+          git diff --staged --quiet || git commit -m "📊 Update all data - $(date +'%Y-%m-%d')"
           git push || echo "Nothing to push"
 
   deploy:
     needs: update-data
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

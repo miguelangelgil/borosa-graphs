@@ -3,7 +3,7 @@
     "source": "World Bank",
     "indicator": "NE.EXP.GNFS.CD - NE.IMP.GNFS.CD",
     "description": "Trade balance (Exports - Imports, USD)",
-    "fetched_at": "2025-12-25T12:38:57.882174",
+    "fetched_at": "2025-12-25T11:54:29.528610",
     "available_years": [
       "2024",
       "2023",
@@ -2063,15 +2063,6 @@
         "exports": 7815450273993.0,
         "imports": 7529762439234.0,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EMU",
-        "country": "Zona Euro",
-        "value": 285687834759.0,
-        "exports": 7815450273993.0,
-        "imports": 7529762439234.0,
-        "region": "Europa",
         "isProjection": false
       },
       {
@@ -16269,15 +16260,6 @@
         "isProjection": false
       },
       {
-        "code": "EMU",
-        "country": "Zona Euro",
-        "value": 173241021824.0,
-        "exports": 5634279842854.0,
-        "imports": 5461038821030.0,
-        "region": "Europa",
-        "isProjection": false
-      },
-      {
         "code": "RUS",
         "country": "Russia",
         "value": 153406799012.0,
@@ -16293,15 +16275,6 @@
         "exports": 6638905969712.0,
         "imports": 6487806038654.0,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "value": 151099931058.0,
-        "exports": 6638905969712.0,
-        "imports": 6487806038654.0,
-        "region": "Europa",
         "isProjection": false
       },
       {
@@ -17303,24 +17276,6 @@
         "exports": 5950212132109.0,
         "imports": 5759095226042.0,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EMU",
-        "country": "Zona Euro",
-        "value": 198028095246.0,
-        "exports": 5085279598576.0,
-        "imports": 4887251503330.0,
-        "region": "Europa",
-        "isProjection": false
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "value": 191116906067.0,
-        "exports": 5950212132109.0,
-        "imports": 5759095226042.0,
-        "region": "Europa",
         "isProjection": false
       },
       {
@@ -18331,15 +18286,6 @@
         "exports": 4296155874882.0,
         "imports": 4148829578156.0,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EMU",
-        "country": "Zona Euro",
-        "value": 147326296726.0,
-        "exports": 4296155874882.0,
-        "imports": 4148829578156.0,
-        "region": "Europa",
         "isProjection": false
       },
       {

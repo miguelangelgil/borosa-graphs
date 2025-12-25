@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "GGXWDG_NGDP",
     "description": "General Government Gross Debt (% of GDP)",
-    "fetched_at": "2025-12-25T12:38:24.672001",
+    "fetched_at": "2025-12-25T11:54:20.407900",
     "available_years": [
       "2030",
       "2029",
@@ -187,13 +187,6 @@
         "country": "European Union",
         "debt": 82.8,
         "region": "Europe",
-        "isProjection": true
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 82.8,
-        "region": "Europa",
         "isProjection": true
       },
       {
@@ -966,13 +959,6 @@
         "country": "European Union",
         "debt": 82.0,
         "region": "Europe",
-        "isProjection": true
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 82.0,
-        "region": "Europa",
         "isProjection": true
       },
       {
@@ -1752,13 +1738,6 @@
         "country": "European Union",
         "debt": 81.3,
         "region": "Europe",
-        "isProjection": true
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 81.3,
-        "region": "Europa",
         "isProjection": true
       },
       {
@@ -2545,13 +2524,6 @@
         "country": "European Union",
         "debt": 80.6,
         "region": "Europe",
-        "isProjection": true
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 80.6,
-        "region": "Europa",
         "isProjection": true
       },
       {
@@ -4899,13 +4871,6 @@
         "isProjection": false
       },
       {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 77.3,
-        "region": "Europa",
-        "isProjection": false
-      },
-      {
         "code": "ZAF",
         "country": "South Africa",
         "debt": 76.0,
@@ -5724,13 +5689,6 @@
         "country": "European Union",
         "debt": 76.7,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 76.7,
-        "region": "Europa",
         "isProjection": false
       },
       {
@@ -7317,13 +7275,6 @@
         "country": "European Union",
         "debt": 81.9,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 81.9,
-        "region": "Europa",
         "isProjection": false
       },
       {
@@ -9727,13 +9678,6 @@
         "isProjection": false
       },
       {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 74.2,
-        "region": "Europa",
-        "isProjection": false
-      },
-      {
         "code": "MNE",
         "country": "Montenegro",
         "debt": 72.9,
@@ -10517,13 +10461,6 @@
         "country": "European Union",
         "debt": 75.8,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 75.8,
-        "region": "Europa",
         "isProjection": false
       },
       {
@@ -11334,13 +11271,6 @@
         "isProjection": false
       },
       {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 78.7,
-        "region": "Europa",
-        "isProjection": false
-      },
-      {
         "code": "BHR",
         "country": "Bahrain",
         "debt": 77.4,
@@ -12145,13 +12075,6 @@
         "country": "European Union",
         "debt": 79.1,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 79.1,
-        "region": "Europa",
         "isProjection": false
       },
       {
@@ -13769,13 +13692,6 @@
         "isProjection": false
       },
       {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 76.8,
-        "region": "Europa",
-        "isProjection": false
-      },
-      {
         "code": "SVN",
         "country": "Slovenia",
         "debt": 70.8,
@@ -14552,13 +14468,6 @@
         "country": "European Union",
         "debt": 75.0,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 75.0,
-        "region": "Europa",
         "isProjection": false
       },
       {
@@ -16159,13 +16068,6 @@
         "country": "European Union",
         "debt": 71.7,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 71.7,
-        "region": "Europa",
         "isProjection": false
       },
       {
@@ -18636,13 +18538,6 @@
         "country": "European Union",
         "debt": 54.4,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EUQ",
-        "country": "Unión Europea",
-        "debt": 54.4,
-        "region": "Europa",
         "isProjection": false
       },
       {

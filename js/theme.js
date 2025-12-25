@@ -4,8 +4,11 @@ const themeIcon = document.getElementById('themeIcon');
 const html = document.documentElement;
 
 function setTheme(theme) {
-  html.classList.remove('light', 'dark');
-  html.classList.add(theme);
+  if (theme === 'dark') {
+    html.classList.add('dark');
+  } else {
+    html.classList.remove('dark');
+  }
   localStorage.setItem('theme', theme);
   themeIcon.textContent = theme === 'dark' ? '🌙' : '☀️';
 }

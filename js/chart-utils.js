@@ -29,10 +29,12 @@ function getThemeColors() {
 }
 
 function formatNumber(num, decimals = 1) {
-  if (num >= 1e12) return (num / 1e12).toFixed(decimals) + 'T';
-  if (num >= 1e9) return (num / 1e9).toFixed(decimals) + 'B';
-  if (num >= 1e6) return (num / 1e6).toFixed(decimals) + 'M';
-  if (num >= 1e3) return (num / 1e3).toFixed(decimals) + 'K';
+  const absNum = Math.abs(num);
+  const sign = num < 0 ? '-' : '';
+  if (absNum >= 1e12) return sign + (absNum / 1e12).toFixed(decimals) + 'T';
+  if (absNum >= 1e9) return sign + (absNum / 1e9).toFixed(decimals) + 'B';
+  if (absNum >= 1e6) return sign + (absNum / 1e6).toFixed(decimals) + 'M';
+  if (absNum >= 1e3) return sign + (absNum / 1e3).toFixed(decimals) + 'K';
   return num.toFixed(decimals);
 }
 

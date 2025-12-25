@@ -36,7 +36,9 @@ COUNTRY_NAMES = {
     "TUN": "Túnez", "NPL": "Nepal", "KHM": "Camboya", "MDA": "Moldavia",
     "GEO": "Georgia", "ARM": "Armenia", "AZE": "Azerbaiyán", "KAZ": "Kazajistán",
     "UZB": "Uzbekistán", "BLR": "Bielorrusia", "SRB": "Serbia", "ALB": "Albania",
-    "MKD": "Macedonia N.", "MNE": "Montenegro"
+    "MKD": "Macedonia N.", "MNE": "Montenegro",
+    # Agregados económicos
+    "EMU": "Zona Euro", "EUQ": "Unión Europea"
 }
 
 # Mapeo de regiones
@@ -63,7 +65,9 @@ REGIONS = {
     "SEN": "África", "CIV": "África", "CMR": "África", "AGO": "África", "DZA": "MENA",
     "TUN": "MENA", "NPL": "Asia", "KHM": "Asia", "MDA": "Europa", "GEO": "Europa",
     "ARM": "Europa", "AZE": "Europa", "KAZ": "Asia", "UZB": "Asia", "BLR": "Europa",
-    "SRB": "Europa", "ALB": "Europa", "MKD": "Europa", "MNE": "Europa"
+    "SRB": "Europa", "ALB": "Europa", "MKD": "Europa", "MNE": "Europa",
+    # Agregados económicos
+    "EMU": "Europa", "EUQ": "Europa"
 }
 
 # ISO3 to ISO2 mapping for World Bank API
@@ -90,5 +94,7 @@ ISO3_TO_ISO2 = {
     "SEN": "SN", "CIV": "CI", "CMR": "CM", "AGO": "AO", "DZA": "DZ",
     "TUN": "TN", "NPL": "NP", "KHM": "KH", "MDA": "MD", "GEO": "GE",
     "ARM": "AM", "AZE": "AZ", "KAZ": "KZ", "UZB": "UZ", "BLR": "BY",
-    "SRB": "RS", "ALB": "AL", "MKD": "MK", "MNE": "ME"
+    "SRB": "RS", "ALB": "AL", "MKD": "MK", "MNE": "ME",
+    # Agregados económicos (World Bank usa códigos diferentes)
+    "EMU": "XC", "EUQ": "EU"
 }

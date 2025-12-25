@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,27 +19,28 @@
     }
   </script>
   <style>
-    .dark body { background: #030712; }
-    .light body { background: #f5f5f0; }
-    select { color-scheme: dark; }
-    .light select { color-scheme: light; }
+    /* Light mode (default) */
+    html { background: #f5f5f0; }
+    html.dark { background: #030712; }
+    select { color-scheme: light; }
+    html.dark select { color-scheme: dark; }
     .sidebar-link { transition: all 0.2s; }
-    .sidebar-link:hover { background: rgba(255,255,255,0.1); }
-    .light .sidebar-link:hover { background: rgba(0,0,0,0.05); }
-    .sidebar-link.active { background: rgba(255,255,255,0.1); border-left: 3px solid #f59e0b; }
-    .light .sidebar-link.active { background: rgba(0,0,0,0.05); }
+    .sidebar-link:hover { background: rgba(0,0,0,0.05); }
+    html.dark .sidebar-link:hover { background: rgba(255,255,255,0.1); }
+    .sidebar-link.active { background: rgba(0,0,0,0.05); border-left: 3px solid #f59e0b; }
+    html.dark .sidebar-link.active { background: rgba(255,255,255,0.1); }
   </style>
 </head>
-<body class="min-h-screen flex">
+<body class="min-h-screen flex bg-warm-white dark:bg-gray-950">
 
   <!-- Sidebar -->
-  <aside class="w-64 bg-gray-900 dark:bg-gray-900 light:bg-gray-100 border-r border-gray-800 dark:border-gray-800 light:border-gray-300 flex flex-col min-h-screen fixed">
-    <div class="p-4 border-b border-gray-800 dark:border-gray-800 light:border-gray-300 flex items-center justify-between">
+  <aside class="w-64 bg-gray-100 dark:bg-gray-900 border-r border-gray-300 dark:border-gray-800 flex flex-col min-h-screen fixed">
+    <div class="p-4 border-b border-gray-300 dark:border-gray-800 flex items-center justify-between">
       <a href="#" data-page="home" class="flex items-center gap-2 text-xl font-bold text-yellow-500">
         🛍️ Borosa Graphs
       </a>
       <!-- Theme toggle -->
-      <button id="themeToggle" class="p-2 rounded-lg bg-gray-800 dark:bg-gray-800 light:bg-gray-200 text-gray-300 dark:text-gray-300 light:text-gray-600 hover:bg-gray-700 dark:hover:bg-gray-700 light:hover:bg-gray-300 transition-colors">
+      <button id="themeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
         <span id="themeIcon">🌙</span>
       </button>
     </div>
@@ -47,44 +48,44 @@
     <nav class="flex-1 py-4 overflow-y-auto">
       <p class="px-4 text-xs text-gray-500 uppercase tracking-wider mb-2">Métricas</p>
 
-      <a href="#" data-page="debt-gdp" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-white dark:hover:text-white light:hover:text-black">
+      <a href="#" data-page="debt-gdp" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white">
         <span>📊</span>
         <span>Deuda / PIB</span>
       </a>
 
-      <a href="#" data-page="gdp" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-white dark:hover:text-white light:hover:text-black">
+      <a href="#" data-page="gdp" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white">
         <span>💰</span>
         <span>PIB</span>
       </a>
 
-      <a href="#" data-page="debt" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-white dark:hover:text-white light:hover:text-black">
+      <a href="#" data-page="debt" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white">
         <span>💳</span>
         <span>Deuda</span>
       </a>
 
-      <a href="#" data-page="m2" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-white dark:hover:text-white light:hover:text-black">
+      <a href="#" data-page="m2" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white">
         <span>🏦</span>
         <span>M2</span>
       </a>
 
-      <a href="#" data-page="trade" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-white dark:hover:text-white light:hover:text-black">
+      <a href="#" data-page="trade" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white">
         <span>⚖️</span>
         <span>Balanza Comercial</span>
       </a>
 
-      <a href="#" data-page="employment" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-white dark:hover:text-white light:hover:text-black">
+      <a href="#" data-page="employment" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white">
         <span>👷</span>
         <span>Empleo</span>
       </a>
     </nav>
 
-    <div class="p-4 border-t border-gray-800 dark:border-gray-800 light:border-gray-300 text-xs text-gray-600">
+    <div class="p-4 border-t border-gray-300 dark:border-gray-800 text-xs text-gray-600">
       <p>Datos que no están en TradingView</p>
     </div>
   </aside>
 
   <!-- Main content -->
-  <main class="flex-1 ml-64 bg-gray-950 dark:bg-gray-950 light:bg-warm-white text-white dark:text-white light:text-gray-900 min-h-screen">
+  <main class="flex-1 ml-64 bg-warm-white dark:bg-gray-950 text-gray-900 dark:text-white min-h-screen">
 
     <!-- Home page -->
     <div id="page-home" class="page min-h-screen flex flex-col items-center justify-center p-8">
@@ -98,29 +99,29 @@
     <!-- Debt/GDP page -->
     <div id="page-debt-gdp" class="page hidden p-6">
       <h1 id="debtgdp-title" class="text-2xl font-bold mb-1">📊 Ratio Deuda Soberana / PIB</h1>
-      <p id="debtgdp-subtitle" class="text-gray-400 dark:text-gray-400 light:text-gray-600 text-sm mb-4">Cargando datos...</p>
+      <p id="debtgdp-subtitle" class="text-gray-600 dark:text-gray-400 text-sm mb-4">Cargando datos...</p>
 
       <div class="flex gap-2 mb-4">
         <button id="debtgdp-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
           📊 Ranking por país
         </button>
-        <button id="debtgdp-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:bg-gray-600 dark:hover:bg-gray-600 light:hover:bg-gray-400">
+        <button id="debtgdp-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-400 dark:hover:bg-gray-600">
           📈 Evolución temporal
         </button>
       </div>
 
       <div id="debtgdp-barControls" class="flex gap-4 mb-4 flex-wrap">
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Año:</label>
-          <select id="debtgdp-yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Año:</label>
+          <select id="debtgdp-yearSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Región:</label>
-          <select id="debtgdp-regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Región:</label>
+          <select id="debtgdp-regionSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Ordenar:</label>
-          <select id="debtgdp-sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Ordenar:</label>
+          <select id="debtgdp-sortSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white">
             <option value="value">Por valor</option>
             <option value="alpha">Alfabético</option>
           </select>
@@ -129,14 +130,14 @@
 
       <div id="debtgdp-lineControls" class="hidden mb-4">
         <div class="mb-2">
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Selecciona países (click para añadir/quitar):</label>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Selecciona países (click para añadir/quitar):</label>
           <button id="debtgdp-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Filtrar por región:</label>
-          <select id="debtgdp-lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Filtrar por región:</label>
+          <select id="debtgdp-lineRegionFilter" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm mb-2 text-gray-900 dark:text-white"></select>
         </div>
-        <div id="debtgdp-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
+        <div id="debtgdp-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-200 dark:bg-gray-900 rounded border border-gray-400 dark:border-gray-800"></div>
         <p class="text-xs text-gray-500 mt-2">💡 Las líneas discontinuas indican proyecciones del FMI</p>
       </div>
 
@@ -156,7 +157,7 @@
         <p>• Indicador: GGXWDG_NGDP (Deuda bruta gobierno general)</p>
       </div>
 
-      <footer class="mt-8 pt-4 border-t border-gray-800 dark:border-gray-800 light:border-gray-300 text-xs text-gray-600">
+      <footer class="mt-8 pt-4 border-t border-gray-300 dark:border-gray-800 text-xs text-gray-600">
         <p>Fuente: FMI DataMapper ·
           <a href="https://github.com/miguelangelgil/borosa-graphs" class="text-blue-500 hover:underline">Ver repositorio</a>
         </p>
@@ -166,29 +167,29 @@
     <!-- GDP page -->
     <div id="page-gdp" class="page hidden p-6">
       <h1 id="gdp-title" class="text-2xl font-bold mb-1">💰 PIB (Producto Interior Bruto)</h1>
-      <p id="gdp-subtitle" class="text-gray-400 dark:text-gray-400 light:text-gray-600 text-sm mb-4">Cargando datos...</p>
+      <p id="gdp-subtitle" class="text-gray-600 dark:text-gray-400 text-sm mb-4">Cargando datos...</p>
 
       <div class="flex gap-2 mb-4">
         <button id="gdp-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
           📊 Ranking por país
         </button>
-        <button id="gdp-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700">
+        <button id="gdp-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
           📈 Evolución temporal
         </button>
       </div>
 
       <div id="gdp-barControls" class="flex gap-4 mb-4 flex-wrap">
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Año:</label>
-          <select id="gdp-yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Año:</label>
+          <select id="gdp-yearSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Región:</label>
-          <select id="gdp-regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Región:</label>
+          <select id="gdp-regionSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Ordenar:</label>
-          <select id="gdp-sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Ordenar:</label>
+          <select id="gdp-sortSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white">
             <option value="value">Por valor</option>
             <option value="alpha">Alfabético</option>
           </select>
@@ -197,14 +198,14 @@
 
       <div id="gdp-lineControls" class="hidden mb-4">
         <div class="mb-2">
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Selecciona países:</label>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Selecciona países:</label>
           <button id="gdp-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Filtrar por región:</label>
-          <select id="gdp-lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Filtrar por región:</label>
+          <select id="gdp-lineRegionFilter" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm mb-2 text-gray-900 dark:text-white"></select>
         </div>
-        <div id="gdp-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
+        <div id="gdp-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-200 dark:bg-gray-900 rounded border border-gray-400 dark:border-gray-800"></div>
       </div>
 
       <div id="gdp-legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
@@ -221,7 +222,7 @@
         <p>• Indicador: NGDPD (PIB nominal en USD)</p>
       </div>
 
-      <footer class="mt-8 pt-4 border-t border-gray-800 dark:border-gray-800 light:border-gray-300 text-xs text-gray-600">
+      <footer class="mt-8 pt-4 border-t border-gray-300 dark:border-gray-800 text-xs text-gray-600">
         <p>Fuente: FMI DataMapper ·
           <a href="https://github.com/miguelangelgil/borosa-graphs" class="text-blue-500 hover:underline">Ver repositorio</a>
         </p>
@@ -231,29 +232,29 @@
     <!-- Debt page -->
     <div id="page-debt" class="page hidden p-6">
       <h1 id="debt-title" class="text-2xl font-bold mb-1">💳 Deuda Pública Total</h1>
-      <p id="debt-subtitle" class="text-gray-400 dark:text-gray-400 light:text-gray-600 text-sm mb-4">Cargando datos...</p>
+      <p id="debt-subtitle" class="text-gray-600 dark:text-gray-400 text-sm mb-4">Cargando datos...</p>
 
       <div class="flex gap-2 mb-4">
         <button id="debt-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
           📊 Ranking por país
         </button>
-        <button id="debt-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700">
+        <button id="debt-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
           📈 Evolución temporal
         </button>
       </div>
 
       <div id="debt-barControls" class="flex gap-4 mb-4 flex-wrap">
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Año:</label>
-          <select id="debt-yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Año:</label>
+          <select id="debt-yearSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Región:</label>
-          <select id="debt-regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Región:</label>
+          <select id="debt-regionSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Ordenar:</label>
-          <select id="debt-sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Ordenar:</label>
+          <select id="debt-sortSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white">
             <option value="value">Por valor</option>
             <option value="alpha">Alfabético</option>
           </select>
@@ -262,14 +263,14 @@
 
       <div id="debt-lineControls" class="hidden mb-4">
         <div class="mb-2">
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Selecciona países:</label>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Selecciona países:</label>
           <button id="debt-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Filtrar por región:</label>
-          <select id="debt-lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Filtrar por región:</label>
+          <select id="debt-lineRegionFilter" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm mb-2 text-gray-900 dark:text-white"></select>
         </div>
-        <div id="debt-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
+        <div id="debt-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-200 dark:bg-gray-900 rounded border border-gray-400 dark:border-gray-800"></div>
       </div>
 
       <div id="debt-legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
@@ -286,7 +287,7 @@
         <p>• Indicador: GGXWDG (Deuda bruta gobierno general en USD)</p>
       </div>
 
-      <footer class="mt-8 pt-4 border-t border-gray-800 dark:border-gray-800 light:border-gray-300 text-xs text-gray-600">
+      <footer class="mt-8 pt-4 border-t border-gray-300 dark:border-gray-800 text-xs text-gray-600">
         <p>Fuente: FMI DataMapper ·
           <a href="https://github.com/miguelangelgil/borosa-graphs" class="text-blue-500 hover:underline">Ver repositorio</a>
         </p>
@@ -296,29 +297,29 @@
     <!-- M2 page -->
     <div id="page-m2" class="page hidden p-6">
       <h1 id="m2-title" class="text-2xl font-bold mb-1">🏦 Oferta Monetaria M2</h1>
-      <p id="m2-subtitle" class="text-gray-400 dark:text-gray-400 light:text-gray-600 text-sm mb-4">Cargando datos...</p>
+      <p id="m2-subtitle" class="text-gray-600 dark:text-gray-400 text-sm mb-4">Cargando datos...</p>
 
       <div class="flex gap-2 mb-4">
         <button id="m2-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
           📊 Ranking por país
         </button>
-        <button id="m2-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700">
+        <button id="m2-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
           📈 Evolución temporal
         </button>
       </div>
 
       <div id="m2-barControls" class="flex gap-4 mb-4 flex-wrap">
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Año:</label>
-          <select id="m2-yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Año:</label>
+          <select id="m2-yearSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Región:</label>
-          <select id="m2-regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Región:</label>
+          <select id="m2-regionSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Ordenar:</label>
-          <select id="m2-sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Ordenar:</label>
+          <select id="m2-sortSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white">
             <option value="value">Por valor</option>
             <option value="alpha">Alfabético</option>
           </select>
@@ -327,14 +328,14 @@
 
       <div id="m2-lineControls" class="hidden mb-4">
         <div class="mb-2">
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Selecciona países:</label>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Selecciona países:</label>
           <button id="m2-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Filtrar por región:</label>
-          <select id="m2-lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Filtrar por región:</label>
+          <select id="m2-lineRegionFilter" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm mb-2 text-gray-900 dark:text-white"></select>
         </div>
-        <div id="m2-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
+        <div id="m2-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-200 dark:bg-gray-900 rounded border border-gray-400 dark:border-gray-800"></div>
       </div>
 
       <div id="m2-legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
@@ -351,7 +352,7 @@
         <p>• M2 incluye efectivo, depósitos a la vista y depósitos a plazo</p>
       </div>
 
-      <footer class="mt-8 pt-4 border-t border-gray-800 dark:border-gray-800 light:border-gray-300 text-xs text-gray-600">
+      <footer class="mt-8 pt-4 border-t border-gray-300 dark:border-gray-800 text-xs text-gray-600">
         <p>Fuente: Banco Mundial ·
           <a href="https://github.com/miguelangelgil/borosa-graphs" class="text-blue-500 hover:underline">Ver repositorio</a>
         </p>
@@ -361,29 +362,29 @@
     <!-- Trade Balance page -->
     <div id="page-trade" class="page hidden p-6">
       <h1 id="trade-title" class="text-2xl font-bold mb-1">⚖️ Balanza Comercial</h1>
-      <p id="trade-subtitle" class="text-gray-400 dark:text-gray-400 light:text-gray-600 text-sm mb-4">Cargando datos...</p>
+      <p id="trade-subtitle" class="text-gray-600 dark:text-gray-400 text-sm mb-4">Cargando datos...</p>
 
       <div class="flex gap-2 mb-4">
         <button id="trade-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
           📊 Ranking por país
         </button>
-        <button id="trade-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700">
+        <button id="trade-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
           📈 Evolución temporal
         </button>
       </div>
 
       <div id="trade-barControls" class="flex gap-4 mb-4 flex-wrap">
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Año:</label>
-          <select id="trade-yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Año:</label>
+          <select id="trade-yearSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Región:</label>
-          <select id="trade-regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Región:</label>
+          <select id="trade-regionSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Ordenar:</label>
-          <select id="trade-sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Ordenar:</label>
+          <select id="trade-sortSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white">
             <option value="value">Por valor</option>
             <option value="alpha">Alfabético</option>
           </select>
@@ -392,14 +393,14 @@
 
       <div id="trade-lineControls" class="hidden mb-4">
         <div class="mb-2">
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Selecciona países:</label>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Selecciona países:</label>
           <button id="trade-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Filtrar por región:</label>
-          <select id="trade-lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Filtrar por región:</label>
+          <select id="trade-lineRegionFilter" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm mb-2 text-gray-900 dark:text-white"></select>
         </div>
-        <div id="trade-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
+        <div id="trade-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-200 dark:bg-gray-900 rounded border border-gray-400 dark:border-gray-800"></div>
       </div>
 
       <div id="trade-legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
@@ -417,7 +418,7 @@
         <p>• Valores positivos = superávit, negativos = déficit</p>
       </div>
 
-      <footer class="mt-8 pt-4 border-t border-gray-800 dark:border-gray-800 light:border-gray-300 text-xs text-gray-600">
+      <footer class="mt-8 pt-4 border-t border-gray-300 dark:border-gray-800 text-xs text-gray-600">
         <p>Fuente: Banco Mundial ·
           <a href="https://github.com/miguelangelgil/borosa-graphs" class="text-blue-500 hover:underline">Ver repositorio</a>
         </p>
@@ -427,29 +428,29 @@
     <!-- Employment page -->
     <div id="page-employment" class="page hidden p-6">
       <h1 id="employment-title" class="text-2xl font-bold mb-1">👷 Datos de Empleo</h1>
-      <p id="employment-subtitle" class="text-gray-400 dark:text-gray-400 light:text-gray-600 text-sm mb-4">Cargando datos...</p>
+      <p id="employment-subtitle" class="text-gray-600 dark:text-gray-400 text-sm mb-4">Cargando datos...</p>
 
       <div class="flex gap-2 mb-4">
         <button id="employment-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
           📊 Ranking por país
         </button>
-        <button id="employment-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700">
+        <button id="employment-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
           📈 Evolución temporal
         </button>
       </div>
 
       <div id="employment-barControls" class="flex gap-4 mb-4 flex-wrap">
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Año:</label>
-          <select id="employment-yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Año:</label>
+          <select id="employment-yearSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Región:</label>
-          <select id="employment-regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Región:</label>
+          <select id="employment-regionSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Ordenar:</label>
-          <select id="employment-sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Ordenar:</label>
+          <select id="employment-sortSelect" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white">
             <option value="value">Por valor</option>
             <option value="alpha">Alfabético</option>
           </select>
@@ -458,14 +459,14 @@
 
       <div id="employment-lineControls" class="hidden mb-4">
         <div class="mb-2">
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Selecciona países:</label>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Selecciona países:</label>
           <button id="employment-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
         </div>
         <div>
-          <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Filtrar por región:</label>
-          <select id="employment-lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Filtrar por región:</label>
+          <select id="employment-lineRegionFilter" class="bg-gray-200 dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded px-2 py-1 text-sm mb-2 text-gray-900 dark:text-white"></select>
         </div>
-        <div id="employment-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
+        <div id="employment-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-200 dark:bg-gray-900 rounded border border-gray-400 dark:border-gray-800"></div>
       </div>
 
       <div id="employment-legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
@@ -482,7 +483,7 @@
         <p>• Tasa de desempleo como % de la fuerza laboral</p>
       </div>
 
-      <footer class="mt-8 pt-4 border-t border-gray-800 dark:border-gray-800 light:border-gray-300 text-xs text-gray-600">
+      <footer class="mt-8 pt-4 border-t border-gray-300 dark:border-gray-800 text-xs text-gray-600">
         <p>Fuente: FMI DataMapper ·
           <a href="https://github.com/miguelangelgil/borosa-graphs" class="text-blue-500 hover:underline">Ver repositorio</a>
         </p>

@@ -5,11 +5,13 @@ Indicador: NGDPD (GDP, current prices, USD billions)
 
 import requests
 import json
+import os
 from datetime import datetime
 from country_mappings import COUNTRY_NAMES, REGIONS, CURRENT_YEAR
 
 IMF_URL = "https://www.imf.org/external/datamapper/api/v1/NGDPD"
-OUTPUT_FILE = "data/gdp_data.json"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_FILE = os.path.join(SCRIPT_DIR, "..", "data", "gdp_data.json")
 
 
 def fetch_gdp_data():

@@ -5,11 +5,13 @@ Indicador: GGXWDG (General government gross debt, USD billions)
 
 import requests
 import json
+import os
 from datetime import datetime
 from country_mappings import COUNTRY_NAMES, REGIONS, CURRENT_YEAR
 
 IMF_URL = "https://www.imf.org/external/datamapper/api/v1/GGXWDG"
-OUTPUT_FILE = "data/debt_data.json"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_FILE = os.path.join(SCRIPT_DIR, "..", "data", "debt_data.json")
 
 
 def fetch_debt_data():

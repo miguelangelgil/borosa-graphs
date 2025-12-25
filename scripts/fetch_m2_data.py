@@ -6,13 +6,15 @@ Indicador: FM.LBL.BMNY.GD.ZS (Broad money, % of GDP)
 
 import requests
 import json
+import os
 from datetime import datetime
 from country_mappings import COUNTRY_NAMES, REGIONS, ISO3_TO_ISO2, CURRENT_YEAR
 
 # World Bank API
 WB_M2_URL = "https://api.worldbank.org/v2/country/all/indicator/FM.LBL.BMNY.GD.ZS?format=json&per_page=20000&date=2000:{year}"
 WB_GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json&per_page=20000&date=2000:{year}"
-OUTPUT_FILE = "data/m2_data.json"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_FILE = os.path.join(SCRIPT_DIR, "..", "data", "m2_data.json")
 
 # Reverse mapping ISO2 -> ISO3
 ISO2_TO_ISO3 = {v: k for k, v in ISO3_TO_ISO2.items()}

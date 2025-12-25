@@ -93,32 +93,28 @@
     <div id="page-home" class="page min-h-screen flex flex-col items-center justify-center p-8">
       <div class="text-center">
         <div class="mb-8">
-          <!-- Money bags with rubber duck logo -->
+          <!-- Bar chart with rubber duck logo -->
           <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Left money bag -->
-            <path d="M30 140 C30 100, 20 90, 35 70 C40 63, 55 63, 60 70 C75 90, 65 100, 65 140 C65 155, 30 155, 30 140Z" fill="#4ade80" stroke="#166534" stroke-width="3"/>
-            <path d="M38 65 L42 50 L53 50 L57 65" fill="#4ade80" stroke="#166534" stroke-width="2"/>
-            <text x="47" y="115" text-anchor="middle" fill="#166534" font-size="24" font-weight="bold">$</text>
+            <!-- Chart bars -->
+            <rect x="20" y="100" width="28" height="60" rx="4" fill="#3b82f6"/>
+            <rect x="56" y="60" width="28" height="100" rx="4" fill="#10b981"/>
+            <rect x="92" y="30" width="28" height="130" rx="4" fill="#f59e0b"/>
+            <rect x="128" y="75" width="28" height="85" rx="4" fill="#8b5cf6"/>
 
-            <!-- Right money bag -->
-            <path d="M115 140 C115 100, 105 90, 120 70 C125 63, 140 63, 145 70 C160 90, 150 100, 150 140 C150 155, 115 155, 115 140Z" fill="#4ade80" stroke="#166534" stroke-width="3"/>
-            <path d="M123 65 L127 50 L138 50 L142 65" fill="#4ade80" stroke="#166534" stroke-width="2"/>
-            <text x="132" y="115" text-anchor="middle" fill="#166534" font-size="24" font-weight="bold">$</text>
+            <!-- Chart baseline -->
+            <line x1="10" y1="160" x2="170" y2="160" stroke="#6b7280" stroke-width="3" stroke-linecap="round"/>
 
-            <!-- Center money bag (larger, in front) -->
-            <path d="M60 150 C60 105, 48 92, 68 68 C75 58, 105 58, 112 68 C132 92, 120 105, 120 150 C120 168, 60 168, 60 150Z" fill="#facc15" stroke="#a16207" stroke-width="3"/>
-            <path d="M72 62 L78 42 L102 42 L108 62" fill="#facc15" stroke="#a16207" stroke-width="2"/>
-            <text x="90" y="125" text-anchor="middle" fill="#a16207" font-size="30" font-weight="bold">$</text>
-
-            <!-- Rubber duck peeking out of center bag -->
-            <ellipse cx="105" cy="58" rx="18" ry="15" fill="#fde047"/>
-            <ellipse cx="105" cy="48" rx="12" ry="11" fill="#fde047"/>
+            <!-- Rubber duck peeking from behind the tallest bar -->
+            <!-- Duck body -->
+            <ellipse cx="135" cy="28" rx="22" ry="18" fill="#fde047"/>
+            <!-- Duck head -->
+            <ellipse cx="148" cy="15" rx="14" ry="13" fill="#fde047"/>
             <!-- Duck beak -->
-            <path d="M116 48 L125 50 L116 53Z" fill="#f97316"/>
+            <path d="M160 15 L172 18 L160 22Z" fill="#f97316"/>
             <!-- Duck eye -->
-            <circle cx="111" cy="45" r="2.5" fill="#1f2937"/>
+            <circle cx="154" cy="12" r="3" fill="#1f2937"/>
             <!-- Duck wing hint -->
-            <path d="M95 62 Q100 58, 98 54" stroke="#eab308" stroke-width="2" fill="none"/>
+            <path d="M125 32 Q132 26, 128 20" stroke="#eab308" stroke-width="2.5" fill="none"/>
           </svg>
         </div>
         <h1 class="text-5xl font-bold mb-4">borosa graphs</h1>

@@ -46,8 +46,8 @@ jobs:
         run: cd scripts && python fetch_m2_data.py
         continue-on-error: true
 
-      - name: Fetch Exports data (World Bank)
-        run: cd scripts && python fetch_exports_data.py
+      - name: Fetch Trade Balance data (World Bank)
+        run: cd scripts && python fetch_trade_data.py
         continue-on-error: true
 
       - name: Fetch Employment data (IMF)

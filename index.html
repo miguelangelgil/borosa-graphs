@@ -67,9 +67,9 @@
         <span>M2</span>
       </a>
 
-      <a href="#" data-page="exports" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-white dark:hover:text-white light:hover:text-black">
-        <span>🚢</span>
-        <span>Exportaciones</span>
+      <a href="#" data-page="trade" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-white dark:hover:text-white light:hover:text-black">
+        <span>⚖️</span>
+        <span>Balanza Comercial</span>
       </a>
 
       <a href="#" data-page="employment" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-white dark:hover:text-white light:hover:text-black">
@@ -101,53 +101,53 @@
       <p id="debtgdp-subtitle" class="text-gray-400 dark:text-gray-400 light:text-gray-600 text-sm mb-4">Cargando datos...</p>
 
       <div class="flex gap-2 mb-4">
-        <button id="btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
+        <button id="debtgdp-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
           📊 Ranking por país
         </button>
-        <button id="btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:bg-gray-600 dark:hover:bg-gray-600 light:hover:bg-gray-400">
+        <button id="debtgdp-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700 hover:bg-gray-600 dark:hover:bg-gray-600 light:hover:bg-gray-400">
           📈 Evolución temporal
         </button>
       </div>
 
-      <div id="barControls" class="flex gap-4 mb-4 flex-wrap">
+      <div id="debtgdp-barControls" class="flex gap-4 mb-4 flex-wrap">
         <div>
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Año:</label>
-          <select id="yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <select id="debtgdp-yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
         </div>
         <div>
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Región:</label>
-          <select id="regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <select id="debtgdp-regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
         </div>
         <div>
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Ordenar:</label>
-          <select id="sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
+          <select id="debtgdp-sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
             <option value="value">Por valor</option>
             <option value="alpha">Alfabético</option>
           </select>
         </div>
       </div>
 
-      <div id="lineControls" class="hidden mb-4">
+      <div id="debtgdp-lineControls" class="hidden mb-4">
         <div class="mb-2">
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Selecciona países (click para añadir/quitar):</label>
-          <button id="btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
+          <button id="debtgdp-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
         </div>
         <div>
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Filtrar por región:</label>
-          <select id="lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
+          <select id="debtgdp-lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
         </div>
-        <div id="countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
+        <div id="debtgdp-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
         <p class="text-xs text-gray-500 mt-2">💡 Las líneas discontinuas indican proyecciones del FMI</p>
       </div>
 
       <div id="debtgdp-legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
 
-      <div id="barChartContainer" style="height: 2500px;">
-        <canvas id="barChart"></canvas>
+      <div id="debtgdp-barChartContainer" style="height: 2500px;">
+        <canvas id="debtgdp-barChart"></canvas>
       </div>
 
-      <div id="lineChartContainer" class="hidden" style="height: 600px;">
-        <canvas id="lineChart"></canvas>
+      <div id="debtgdp-lineChartContainer" class="hidden" style="height: 600px;">
+        <canvas id="debtgdp-lineChart"></canvas>
       </div>
 
       <div class="mt-4 text-xs text-gray-500 space-y-1">
@@ -358,62 +358,63 @@
       </footer>
     </div>
 
-    <!-- Exports page -->
-    <div id="page-exports" class="page hidden p-6">
-      <h1 id="exports-title" class="text-2xl font-bold mb-1">🚢 Volumen de Exportaciones</h1>
-      <p id="exports-subtitle" class="text-gray-400 dark:text-gray-400 light:text-gray-600 text-sm mb-4">Cargando datos...</p>
+    <!-- Trade Balance page -->
+    <div id="page-trade" class="page hidden p-6">
+      <h1 id="trade-title" class="text-2xl font-bold mb-1">⚖️ Balanza Comercial</h1>
+      <p id="trade-subtitle" class="text-gray-400 dark:text-gray-400 light:text-gray-600 text-sm mb-4">Cargando datos...</p>
 
       <div class="flex gap-2 mb-4">
-        <button id="exports-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
+        <button id="trade-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
           📊 Ranking por país
         </button>
-        <button id="exports-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700">
+        <button id="trade-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-gray-700 dark:bg-gray-700 light:bg-gray-300 text-gray-300 dark:text-gray-300 light:text-gray-700">
           📈 Evolución temporal
         </button>
       </div>
 
-      <div id="exports-barControls" class="flex gap-4 mb-4 flex-wrap">
+      <div id="trade-barControls" class="flex gap-4 mb-4 flex-wrap">
         <div>
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Año:</label>
-          <select id="exports-yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <select id="trade-yearSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
         </div>
         <div>
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Región:</label>
-          <select id="exports-regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
+          <select id="trade-regionSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900"></select>
         </div>
         <div>
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Ordenar:</label>
-          <select id="exports-sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
+          <select id="trade-sortSelect" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm text-white dark:text-white light:text-gray-900">
             <option value="value">Por valor</option>
             <option value="alpha">Alfabético</option>
           </select>
         </div>
       </div>
 
-      <div id="exports-lineControls" class="hidden mb-4">
+      <div id="trade-lineControls" class="hidden mb-4">
         <div class="mb-2">
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Selecciona países:</label>
-          <button id="exports-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
+          <button id="trade-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Limpiar todo</button>
         </div>
         <div>
           <label class="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mr-2">Filtrar por región:</label>
-          <select id="exports-lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
+          <select id="trade-lineRegionFilter" class="bg-gray-800 dark:bg-gray-800 light:bg-gray-200 border border-gray-700 dark:border-gray-700 light:border-gray-400 rounded px-2 py-1 text-sm mb-2 text-white dark:text-white light:text-gray-900"></select>
         </div>
-        <div id="exports-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
+        <div id="trade-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-gray-900 dark:bg-gray-900 light:bg-gray-200 rounded border border-gray-800 dark:border-gray-800 light:border-gray-400"></div>
       </div>
 
-      <div id="exports-legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
+      <div id="trade-legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
 
-      <div id="exports-barChartContainer" style="height: 2500px;">
-        <canvas id="exports-barChart"></canvas>
+      <div id="trade-barChartContainer" style="height: 2500px;">
+        <canvas id="trade-barChart"></canvas>
       </div>
 
-      <div id="exports-lineChartContainer" class="hidden" style="height: 600px;">
-        <canvas id="exports-lineChart"></canvas>
+      <div id="trade-lineChartContainer" class="hidden" style="height: 600px;">
+        <canvas id="trade-lineChart"></canvas>
       </div>
 
       <div class="mt-4 text-xs text-gray-500 space-y-1">
-        <p>• Exportaciones de bienes y servicios en USD</p>
+        <p>• Balanza comercial = Exportaciones - Importaciones (USD)</p>
+        <p>• Valores positivos = superávit, negativos = déficit</p>
       </div>
 
       <footer class="mt-8 pt-4 border-t border-gray-800 dark:border-gray-800 light:border-gray-300 text-xs text-gray-600">
@@ -498,7 +499,7 @@
   <script src="js/gdp.js"></script>
   <script src="js/debt.js"></script>
   <script src="js/m2.js"></script>
-  <script src="js/exports.js"></script>
+  <script src="js/trade.js"></script>
   <script src="js/employment.js"></script>
 </body>
 </html>

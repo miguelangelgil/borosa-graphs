@@ -3,7 +3,7 @@
     "source": "World Bank",
     "indicator": "NE.EXP.GNFS.CD - NE.IMP.GNFS.CD",
     "description": "Trade balance (Exports - Imports, USD)",
-    "fetched_at": "2025-12-25T11:02:03.913697",
+    "fetched_at": "2025-12-25T11:15:52.508340",
     "available_years": [
       "2024",
       "2023",
@@ -36,6 +36,24 @@
   },
   "data": {
     "2024": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 829855791045.0,
+        "exports": 9821037472659.0,
+        "imports": 8991181681614.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 722076730397.0,
+        "exports": 8105847354423.0,
+        "imports": 7383770624026.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "CHN",
         "country": "China",
@@ -1001,6 +1019,24 @@
       }
     ],
     "2023": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 680566979513.0,
+        "exports": 9657456788388.0,
+        "imports": 8976889808875.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 568597967152.0,
+        "exports": 7978037743949.0,
+        "imports": 7409439776797.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "CHN",
         "country": "China",
@@ -2003,11 +2039,29 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 317507406282.0,
+        "exports": 9413905146401.0,
+        "imports": 9096397740119.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "RUS",
         "country": "Rusia",
         "value": 290068143739.0,
         "exports": 635241831701.0,
         "imports": 345173687962.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 285687834759.0,
+        "exports": 7815450273993.0,
+        "imports": 7529762439234.0,
         "region": "Europa",
         "isProjection": false
       },
@@ -2994,6 +3048,24 @@
       }
     ],
     "2021": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 665869008612.0,
+        "exports": 8698132212490.0,
+        "imports": 8032263203877.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 598627204119.0,
+        "exports": 7245619478851.0,
+        "imports": 6646992274731.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "CHN",
         "country": "China",
@@ -3996,6 +4068,24 @@
     ],
     "2020": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 561630015678.0,
+        "exports": 7107614522358.0,
+        "imports": 6545984506680.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 475025363088.0,
+        "exports": 5926775269617.0,
+        "imports": 5451749906529.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 355147112386.0,
@@ -4996,6 +5086,24 @@
       }
     ],
     "2019": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 548104686077.0,
+        "exports": 7684155677488.0,
+        "imports": 7136050991411.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 474082193376.0,
+        "exports": 6443247547681.0,
+        "imports": 5969165354305.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "DEU",
         "country": "Alemania",
@@ -5998,6 +6106,24 @@
     ],
     "2018": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 603003590185.0,
+        "exports": 7769970730709.0,
+        "imports": 7166967140524.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 549412568112.0,
+        "exports": 6534860650693.0,
+        "imports": 5985448082581.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "DEU",
         "country": "Alemania",
         "value": 237995400452.0,
@@ -6998,6 +7124,24 @@
       }
     ],
     "2017": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 630682997628.0,
+        "exports": 7063724441818.0,
+        "imports": 6433041444190.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 561378009530.0,
+        "exports": 5948409013130.0,
+        "imports": 5387031003600.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "DEU",
         "country": "Alemania",
@@ -8000,6 +8144,24 @@
     ],
     "2016": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 615997532451.0,
+        "exports": 6421420485289.0,
+        "imports": 5805422952838.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 544249876574.0,
+        "exports": 5418277022825.0,
+        "imports": 4874027146251.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "DEU",
         "country": "Alemania",
         "value": 256950954099.0,
@@ -9000,6 +9162,24 @@
       }
     ],
     "2015": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 597372637793.0,
+        "exports": 6317505464573.0,
+        "imports": 5720132826780.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 531721967467.0,
+        "exports": 5336668857261.0,
+        "imports": 4804946889794.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "CHN",
         "country": "China",
@@ -10002,6 +10182,24 @@
     ],
     "2014": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 596025438995.0,
+        "exports": 7079338379856.0,
+        "imports": 6483312940862.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 533359123052.0,
+        "exports": 5970133785689.0,
+        "imports": 5436774662637.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "DEU",
         "country": "Alemania",
         "value": 259262242062.0,
@@ -10993,6 +11191,24 @@
       }
     ],
     "2013": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 545337203747.0,
+        "exports": 6819692386006.0,
+        "imports": 6274355182259.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 477113930692.0,
+        "exports": 5754364835930.0,
+        "imports": 5277250905239.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "CHN",
         "country": "China",
@@ -11986,6 +12202,24 @@
     ],
     "2012": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 425963650296.0,
+        "exports": 6482969415734.0,
+        "imports": 6057005765438.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 380296748060.0,
+        "exports": 5471885914680.0,
+        "imports": 5091589166619.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 231864021797.0,
@@ -12977,6 +13211,24 @@
       }
     ],
     "2011": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 276255208732.0,
+        "exports": 6739700437523.0,
+        "imports": 6463445228791.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 236237336849.0,
+        "exports": 5684489748884.0,
+        "imports": 5448252412035.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "DEU",
         "country": "Alemania",
@@ -13970,12 +14222,30 @@
     ],
     "2010": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 238771684993.0,
+        "exports": 5811088627172.0,
+        "imports": 5572316942179.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 222400893687.0,
         "exports": 1654823329664.0,
         "imports": 1432422435977.0,
         "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 205981840890.0,
+        "exports": 4912741865113.0,
+        "imports": 4706760024223.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -14952,6 +15222,24 @@
       }
     ],
     "2009": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 255752331206.0,
+        "exports": 5306450632467.0,
+        "imports": 5050698301261.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 226552940700.0,
+        "exports": 4517368199828.0,
+        "imports": 4290815259128.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "CHN",
         "country": "China",
@@ -15963,11 +16251,29 @@
         "isProjection": false
       },
       {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 173241021824.0,
+        "exports": 5634279842854.0,
+        "imports": 5461038821030.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "RUS",
         "country": "Rusia",
         "value": 153406799012.0,
         "exports": 520004224863.0,
         "imports": 366597425851.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 151099931058.0,
+        "exports": 6638905969712.0,
+        "imports": 6487806038654.0,
         "region": "Europa",
         "isProjection": false
       },
@@ -16955,6 +17261,24 @@
         "isProjection": false
       },
       {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 198028095246.0,
+        "exports": 5085279598576.0,
+        "imports": 4887251503330.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 191116906067.0,
+        "exports": 5950212132109.0,
+        "imports": 5759095226042.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "RUS",
         "country": "Rusia",
         "value": 112060410827.0,
@@ -17938,11 +18262,29 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 160944233294.0,
+        "exports": 5004241503700.0,
+        "imports": 4843297270406.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "DEU",
         "country": "Alemania",
         "value": 157789848554.0,
         "exports": 1187129764084.0,
         "imports": 1029339915529.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 147326296726.0,
+        "exports": 4296155874882.0,
+        "imports": 4148829578156.0,
         "region": "Europa",
         "isProjection": false
       },
@@ -18920,6 +19262,24 @@
       }
     ],
     "2005": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 195512063298.0,
+        "exports": 4438469208995.0,
+        "imports": 4242957145698.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 174415883372.0,
+        "exports": 3836959630142.0,
+        "imports": 3662543746770.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "DEU",
         "country": "Alemania",
@@ -19913,6 +20273,24 @@
     ],
     "2004": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 243854994795.0,
+        "exports": 4089931228505.0,
+        "imports": 3846076233709.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 224889752503.0,
+        "exports": 3567608772488.0,
+        "imports": 3342719019985.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "DEU",
         "country": "Alemania",
         "value": 141587181187.0,
@@ -20904,6 +21282,24 @@
       }
     ],
     "2003": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 195297361959.0,
+        "exports": 3398261234985.0,
+        "imports": 3202963873026.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 180251225315.0,
+        "exports": 2979209118284.0,
+        "imports": 2798957892969.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "DEU",
         "country": "Alemania",
@@ -21897,6 +22293,24 @@
     ],
     "2002": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 194363969378.0,
+        "exports": 2830143751370.0,
+        "imports": 2635779781991.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 181668727791.0,
+        "exports": 2488438203666.0,
+        "imports": 2306769475875.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "DEU",
         "country": "Alemania",
         "value": 85110145458.0,
@@ -22888,6 +23302,24 @@
       }
     ],
     "2001": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 115035940807.0,
+        "exports": 2633983048962.0,
+        "imports": 2518947108155.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 103834305916.0,
+        "exports": 2321115363182.0,
+        "imports": 2217281057266.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "CAN",
         "country": "Canadá",
@@ -23881,6 +24313,24 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 65095705797.0,
+        "exports": 2594322928039.0,
+        "imports": 2529227222242.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EMU",
+        "country": "Zona Euro",
+        "value": 57660617249.0,
+        "exports": 2286038627253.0,
+        "imports": 2228378010004.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "RUS",
         "country": "Rusia",
         "value": 52012086740.0,
@@ -24846,6 +25296,368 @@
     ]
   },
   "timeseries": {
+    "EMU": {
+      "country": "Zona Euro",
+      "region": "Europa",
+      "data": [
+        {
+          "year": "2000",
+          "value": 57660617249.0,
+          "exports": 2286038627253.0,
+          "imports": 2228378010004.0,
+          "isProjection": false
+        },
+        {
+          "year": "2001",
+          "value": 103834305916.0,
+          "exports": 2321115363182.0,
+          "imports": 2217281057266.0,
+          "isProjection": false
+        },
+        {
+          "year": "2002",
+          "value": 181668727791.0,
+          "exports": 2488438203666.0,
+          "imports": 2306769475875.0,
+          "isProjection": false
+        },
+        {
+          "year": "2003",
+          "value": 180251225315.0,
+          "exports": 2979209118284.0,
+          "imports": 2798957892969.0,
+          "isProjection": false
+        },
+        {
+          "year": "2004",
+          "value": 224889752503.0,
+          "exports": 3567608772488.0,
+          "imports": 3342719019985.0,
+          "isProjection": false
+        },
+        {
+          "year": "2005",
+          "value": 174415883372.0,
+          "exports": 3836959630142.0,
+          "imports": 3662543746770.0,
+          "isProjection": false
+        },
+        {
+          "year": "2006",
+          "value": 147326296726.0,
+          "exports": 4296155874882.0,
+          "imports": 4148829578156.0,
+          "isProjection": false
+        },
+        {
+          "year": "2007",
+          "value": 198028095246.0,
+          "exports": 5085279598576.0,
+          "imports": 4887251503330.0,
+          "isProjection": false
+        },
+        {
+          "year": "2008",
+          "value": 173241021824.0,
+          "exports": 5634279842854.0,
+          "imports": 5461038821030.0,
+          "isProjection": false
+        },
+        {
+          "year": "2009",
+          "value": 226552940700.0,
+          "exports": 4517368199828.0,
+          "imports": 4290815259128.0,
+          "isProjection": false
+        },
+        {
+          "year": "2010",
+          "value": 205981840890.0,
+          "exports": 4912741865113.0,
+          "imports": 4706760024223.0,
+          "isProjection": false
+        },
+        {
+          "year": "2011",
+          "value": 236237336849.0,
+          "exports": 5684489748884.0,
+          "imports": 5448252412035.0,
+          "isProjection": false
+        },
+        {
+          "year": "2012",
+          "value": 380296748060.0,
+          "exports": 5471885914680.0,
+          "imports": 5091589166619.0,
+          "isProjection": false
+        },
+        {
+          "year": "2013",
+          "value": 477113930692.0,
+          "exports": 5754364835930.0,
+          "imports": 5277250905239.0,
+          "isProjection": false
+        },
+        {
+          "year": "2014",
+          "value": 533359123052.0,
+          "exports": 5970133785689.0,
+          "imports": 5436774662637.0,
+          "isProjection": false
+        },
+        {
+          "year": "2015",
+          "value": 531721967467.0,
+          "exports": 5336668857261.0,
+          "imports": 4804946889794.0,
+          "isProjection": false
+        },
+        {
+          "year": "2016",
+          "value": 544249876574.0,
+          "exports": 5418277022825.0,
+          "imports": 4874027146251.0,
+          "isProjection": false
+        },
+        {
+          "year": "2017",
+          "value": 561378009530.0,
+          "exports": 5948409013130.0,
+          "imports": 5387031003600.0,
+          "isProjection": false
+        },
+        {
+          "year": "2018",
+          "value": 549412568112.0,
+          "exports": 6534860650693.0,
+          "imports": 5985448082581.0,
+          "isProjection": false
+        },
+        {
+          "year": "2019",
+          "value": 474082193376.0,
+          "exports": 6443247547681.0,
+          "imports": 5969165354305.0,
+          "isProjection": false
+        },
+        {
+          "year": "2020",
+          "value": 475025363088.0,
+          "exports": 5926775269617.0,
+          "imports": 5451749906529.0,
+          "isProjection": false
+        },
+        {
+          "year": "2021",
+          "value": 598627204119.0,
+          "exports": 7245619478851.0,
+          "imports": 6646992274731.0,
+          "isProjection": false
+        },
+        {
+          "year": "2022",
+          "value": 285687834759.0,
+          "exports": 7815450273993.0,
+          "imports": 7529762439234.0,
+          "isProjection": false
+        },
+        {
+          "year": "2023",
+          "value": 568597967152.0,
+          "exports": 7978037743949.0,
+          "imports": 7409439776797.0,
+          "isProjection": false
+        },
+        {
+          "year": "2024",
+          "value": 722076730397.0,
+          "exports": 8105847354423.0,
+          "imports": 7383770624026.0,
+          "isProjection": false
+        }
+      ]
+    },
+    "EUQ": {
+      "country": "Unión Europea",
+      "region": "Europa",
+      "data": [
+        {
+          "year": "2000",
+          "value": 65095705797.0,
+          "exports": 2594322928039.0,
+          "imports": 2529227222242.0,
+          "isProjection": false
+        },
+        {
+          "year": "2001",
+          "value": 115035940807.0,
+          "exports": 2633983048962.0,
+          "imports": 2518947108155.0,
+          "isProjection": false
+        },
+        {
+          "year": "2002",
+          "value": 194363969378.0,
+          "exports": 2830143751370.0,
+          "imports": 2635779781991.0,
+          "isProjection": false
+        },
+        {
+          "year": "2003",
+          "value": 195297361959.0,
+          "exports": 3398261234985.0,
+          "imports": 3202963873026.0,
+          "isProjection": false
+        },
+        {
+          "year": "2004",
+          "value": 243854994795.0,
+          "exports": 4089931228505.0,
+          "imports": 3846076233709.0,
+          "isProjection": false
+        },
+        {
+          "year": "2005",
+          "value": 195512063298.0,
+          "exports": 4438469208995.0,
+          "imports": 4242957145698.0,
+          "isProjection": false
+        },
+        {
+          "year": "2006",
+          "value": 160944233294.0,
+          "exports": 5004241503700.0,
+          "imports": 4843297270406.0,
+          "isProjection": false
+        },
+        {
+          "year": "2007",
+          "value": 191116906067.0,
+          "exports": 5950212132109.0,
+          "imports": 5759095226042.0,
+          "isProjection": false
+        },
+        {
+          "year": "2008",
+          "value": 151099931058.0,
+          "exports": 6638905969712.0,
+          "imports": 6487806038654.0,
+          "isProjection": false
+        },
+        {
+          "year": "2009",
+          "value": 255752331206.0,
+          "exports": 5306450632467.0,
+          "imports": 5050698301261.0,
+          "isProjection": false
+        },
+        {
+          "year": "2010",
+          "value": 238771684993.0,
+          "exports": 5811088627172.0,
+          "imports": 5572316942179.0,
+          "isProjection": false
+        },
+        {
+          "year": "2011",
+          "value": 276255208732.0,
+          "exports": 6739700437523.0,
+          "imports": 6463445228791.0,
+          "isProjection": false
+        },
+        {
+          "year": "2012",
+          "value": 425963650296.0,
+          "exports": 6482969415734.0,
+          "imports": 6057005765438.0,
+          "isProjection": false
+        },
+        {
+          "year": "2013",
+          "value": 545337203747.0,
+          "exports": 6819692386006.0,
+          "imports": 6274355182259.0,
+          "isProjection": false
+        },
+        {
+          "year": "2014",
+          "value": 596025438995.0,
+          "exports": 7079338379856.0,
+          "imports": 6483312940862.0,
+          "isProjection": false
+        },
+        {
+          "year": "2015",
+          "value": 597372637793.0,
+          "exports": 6317505464573.0,
+          "imports": 5720132826780.0,
+          "isProjection": false
+        },
+        {
+          "year": "2016",
+          "value": 615997532451.0,
+          "exports": 6421420485289.0,
+          "imports": 5805422952838.0,
+          "isProjection": false
+        },
+        {
+          "year": "2017",
+          "value": 630682997628.0,
+          "exports": 7063724441818.0,
+          "imports": 6433041444190.0,
+          "isProjection": false
+        },
+        {
+          "year": "2018",
+          "value": 603003590185.0,
+          "exports": 7769970730709.0,
+          "imports": 7166967140524.0,
+          "isProjection": false
+        },
+        {
+          "year": "2019",
+          "value": 548104686077.0,
+          "exports": 7684155677488.0,
+          "imports": 7136050991411.0,
+          "isProjection": false
+        },
+        {
+          "year": "2020",
+          "value": 561630015678.0,
+          "exports": 7107614522358.0,
+          "imports": 6545984506680.0,
+          "isProjection": false
+        },
+        {
+          "year": "2021",
+          "value": 665869008612.0,
+          "exports": 8698132212490.0,
+          "imports": 8032263203877.0,
+          "isProjection": false
+        },
+        {
+          "year": "2022",
+          "value": 317507406282.0,
+          "exports": 9413905146401.0,
+          "imports": 9096397740119.0,
+          "isProjection": false
+        },
+        {
+          "year": "2023",
+          "value": 680566979513.0,
+          "exports": 9657456788388.0,
+          "imports": 8976889808875.0,
+          "isProjection": false
+        },
+        {
+          "year": "2024",
+          "value": 829855791045.0,
+          "exports": 9821037472659.0,
+          "imports": 8991181681614.0,
+          "isProjection": false
+        }
+      ]
+    },
     "ALB": {
       "country": "Albania",
       "region": "Europa",

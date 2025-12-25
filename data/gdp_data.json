@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "NGDPD",
     "description": "GDP, current prices (USD billions)",
-    "fetched_at": "2025-12-25T11:01:58.177617",
+    "fetched_at": "2025-12-25T11:15:45.781201",
     "available_years": [
       "2030",
       "2029",
@@ -47,6 +47,13 @@
         "country": "EE.UU.",
         "value": 36814251000000.0,
         "region": "América",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 36469568000000.0,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -815,6 +822,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 35140115000000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 24852392000000.0,
@@ -1577,6 +1591,13 @@
         "country": "EE.UU.",
         "value": 34258401000000.0,
         "region": "América",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 33858650000000.0,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -2345,6 +2366,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 32638600000000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 22016582000000.0,
@@ -3107,6 +3135,13 @@
         "country": "EE.UU.",
         "value": 31821293000000.0,
         "region": "América",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 31480589000000.0,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -3879,6 +3914,13 @@
         "country": "EE.UU.",
         "value": 30615743000000.0,
         "region": "América",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 29676875000000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -4665,6 +4707,13 @@
         "country": "EE.UU.",
         "value": 29298025000000.0,
         "region": "América",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 27203017000000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -5468,6 +5517,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 25924381000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 18270351000000.0,
@@ -6268,6 +6324,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 24308597000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 18307816000000.0,
@@ -7060,6 +7123,13 @@
       }
     ],
     "2021": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 24246563000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -7868,6 +7938,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 21161906000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 15103357000000.0,
@@ -8660,6 +8737,13 @@
       }
     ],
     "2019": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 21865890000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -9461,6 +9545,13 @@
     ],
     "2018": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 22141723000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 20656525000000.0,
@@ -10260,6 +10351,13 @@
       }
     ],
     "2017": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 20528095000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -11061,6 +11159,13 @@
     ],
     "2016": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 19289894000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 18804900000000.0,
@@ -11860,6 +11965,13 @@
       }
     ],
     "2015": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 19290748000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -12661,6 +12773,13 @@
     ],
     "2014": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 22459226000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 17608125000000.0,
@@ -13460,6 +13579,13 @@
       }
     ],
     "2013": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 22099145000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -14261,6 +14387,13 @@
     ],
     "2012": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 21202723000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 16253950000000.0,
@@ -15060,6 +15193,13 @@
       }
     ],
     "2011": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 22159077000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -15861,6 +16001,13 @@
     ],
     "2010": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 20113715000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 15048975000000.0,
@@ -16660,6 +16807,13 @@
       }
     ],
     "2009": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 19790264000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -17461,6 +17615,13 @@
     ],
     "2008": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 22513775000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 14769850000000.0,
@@ -18261,6 +18422,13 @@
     ],
     "2007": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 20472006000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 14474250000000.0,
@@ -19060,6 +19228,13 @@
       }
     ],
     "2006": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 17559727000000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -34661,6 +34836,137 @@
         {
           "year": "2030",
           "value": 50428000000.0,
+          "isProjection": true
+        }
+      ]
+    },
+    "EUQ": {
+      "country": "Unión Europea",
+      "region": "Europa",
+      "data": [
+        {
+          "year": "2006",
+          "value": 17559727000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2007",
+          "value": 20472006000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2008",
+          "value": 22513775000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2009",
+          "value": 19790264000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2010",
+          "value": 20113715000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2011",
+          "value": 22159077000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2012",
+          "value": 21202723000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2013",
+          "value": 22099145000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2014",
+          "value": 22459226000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2015",
+          "value": 19290748000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2016",
+          "value": 19289894000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2017",
+          "value": 20528095000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2018",
+          "value": 22141723000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2019",
+          "value": 21865890000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2020",
+          "value": 21161906000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2021",
+          "value": 24246563000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2022",
+          "value": 24308597000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2023",
+          "value": 25924381000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2024",
+          "value": 27203017000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 29676875000000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2026",
+          "value": 31480589000000.0,
+          "isProjection": true
+        },
+        {
+          "year": "2027",
+          "value": 32638600000000.0,
+          "isProjection": true
+        },
+        {
+          "year": "2028",
+          "value": 33858650000000.0,
+          "isProjection": true
+        },
+        {
+          "year": "2029",
+          "value": 35140115000000.0,
+          "isProjection": true
+        },
+        {
+          "year": "2030",
+          "value": 36469568000000.0,
           "isProjection": true
         }
       ]

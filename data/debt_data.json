@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "NGDPD * GGXWDG_NGDP / 100",
     "description": "General government gross debt (USD billions, calculated)",
-    "fetched_at": "2025-12-25T11:02:01.087476",
+    "fetched_at": "2025-12-25T11:15:51.190149",
     "available_years": [
       "2030",
       "2029",
@@ -54,6 +54,13 @@
         "country": "China",
         "value": 30577246551000.0,
         "region": "Asia",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 30196802304000.0,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -798,6 +805,13 @@
         "country": "EE.UU.",
         "value": 49754877231000.0,
         "region": "América",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 28814894300000.0,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -1552,6 +1566,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 27527082450000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 25726159472000.0,
@@ -2300,6 +2321,13 @@
         "country": "EE.UU.",
         "value": 43817510806000.0,
         "region": "América",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 26306711600000.0,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -3054,6 +3082,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 25090029433000.0,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 21125721342000.0,
@@ -3802,6 +3837,13 @@
         "country": "EE.UU.",
         "value": 38269678750000.0,
         "region": "América",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 23177639375000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -4567,6 +4609,13 @@
         "country": "EE.UU.",
         "value": 35831484575000.0,
         "region": "América",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 21027932141000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -5370,6 +5419,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 19884000227000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "value": 14981687820000.0,
@@ -6167,6 +6223,13 @@
         "country": "EE.UU.",
         "value": 31031028600000.0,
         "region": "América",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 18620385302000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -6970,6 +7033,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 19857935097000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japón",
         "value": 12784318476000.0,
@@ -7767,6 +7837,13 @@
         "country": "EE.UU.",
         "value": 28322239375000.0,
         "region": "América",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 17987620100000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -8570,6 +8647,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15809038470000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japón",
         "value": 12098940180000.0,
@@ -9367,6 +9451,13 @@
         "country": "EE.UU.",
         "value": 22226420900000.0,
         "region": "América",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 16429158466000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -10170,6 +10261,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15560296010000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japón",
         "value": 11405025981000.0,
@@ -10967,6 +11065,13 @@
         "country": "EE.UU.",
         "value": 20196462600000.0,
         "region": "América",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15181146578000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -11770,6 +11875,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15258981668000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japón",
         "value": 10147777473000.0,
@@ -12567,6 +12679,13 @@
         "country": "EE.UU.",
         "value": 18470923125000.0,
         "region": "América",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 17697870088000.0,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -13370,6 +13489,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 16972143360000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japón",
         "value": 11962292760000.0,
@@ -14170,6 +14296,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 15902042250000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "JPN",
         "country": "Japón",
         "value": 14181810482000.0,
@@ -14962,6 +15095,13 @@
       }
     ],
     "2011": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 16087489902000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -15763,6 +15903,13 @@
     ],
     "2010": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 14421533655000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 14386820100000.0,
@@ -16562,6 +16709,13 @@
       }
     ],
     "2009": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 13437589256000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -17363,6 +17517,13 @@
     ],
     "2008": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 12945420625000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 10900149300000.0,
@@ -18163,6 +18324,13 @@
     ],
     "2007": [
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 11136771264000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "USA",
         "country": "EE.UU.",
         "value": 9393788250000.0,
@@ -18962,6 +19130,13 @@
       }
     ],
     "2006": [
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "value": 9973924936000.0,
+        "region": "Europa",
+        "isProjection": false
+      },
       {
         "code": "USA",
         "country": "EE.UU.",
@@ -34493,6 +34668,137 @@
         {
           "year": "2030",
           "value": 8068248000.0,
+          "isProjection": true
+        }
+      ]
+    },
+    "EUQ": {
+      "country": "Unión Europea",
+      "region": "Europa",
+      "data": [
+        {
+          "year": "2006",
+          "value": 9973924936000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2007",
+          "value": 11136771264000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2008",
+          "value": 12945420625000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2009",
+          "value": 13437589256000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2010",
+          "value": 14421533655000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2011",
+          "value": 16087489902000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2012",
+          "value": 15902042250000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2013",
+          "value": 16972143360000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2014",
+          "value": 17697870088000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2015",
+          "value": 15258981668000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2016",
+          "value": 15181146578000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2017",
+          "value": 15560296010000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2018",
+          "value": 16429158466000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2019",
+          "value": 15809038470000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2020",
+          "value": 17987620100000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2021",
+          "value": 19857935097000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2022",
+          "value": 18620385302000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2023",
+          "value": 19884000227000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2024",
+          "value": 21027932141000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 23177639375000.0,
+          "isProjection": false
+        },
+        {
+          "year": "2026",
+          "value": 25090029433000.0,
+          "isProjection": true
+        },
+        {
+          "year": "2027",
+          "value": 26306711600000.0,
+          "isProjection": true
+        },
+        {
+          "year": "2028",
+          "value": 27527082450000.0,
+          "isProjection": true
+        },
+        {
+          "year": "2029",
+          "value": 28814894300000.0,
+          "isProjection": true
+        },
+        {
+          "year": "2030",
+          "value": 30196802304000.0,
           "isProjection": true
         }
       ]

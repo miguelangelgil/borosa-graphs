@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "GGXWDG_NGDP",
     "description": "General Government Gross Debt (% of GDP)",
-    "fetched_at": "2025-12-25T11:01:54.552386",
+    "fetched_at": "2025-12-25T11:15:41.904130",
     "available_years": [
       "2030",
       "2029",
@@ -179,6 +179,13 @@
         "code": "AUT",
         "country": "Austria",
         "debt": 84.3,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 82.8,
         "region": "Europa",
         "isProjection": true
       },
@@ -944,6 +951,13 @@
         "code": "AUT",
         "country": "Austria",
         "debt": 83.9,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 82.0,
         "region": "Europa",
         "isProjection": true
       },
@@ -1716,6 +1730,13 @@
         "code": "PRT",
         "country": "Portugal",
         "debt": 81.5,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 81.3,
         "region": "Europa",
         "isProjection": true
       },
@@ -2499,6 +2520,13 @@
         "isProjection": true
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 80.6,
+        "region": "Europa",
+        "isProjection": true
+      },
+      {
         "code": "IND",
         "country": "India",
         "debt": 80.0,
@@ -3254,6 +3282,13 @@
         "country": "India",
         "debt": 80.8,
         "region": "Asia",
+        "isProjection": true
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 79.7,
+        "region": "Europa",
         "isProjection": true
       },
       {
@@ -4026,6 +4061,13 @@
         "country": "Argentina",
         "debt": 78.8,
         "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 78.1,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -4818,6 +4860,13 @@
         "code": "AUT",
         "country": "Austria",
         "debt": 80.8,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 77.3,
         "region": "Europa",
         "isProjection": false
       },
@@ -5636,6 +5685,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 76.7,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CYP",
         "country": "Chipre",
         "debt": 73.6,
@@ -6429,6 +6485,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 76.6,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "CHN",
         "country": "China",
         "debt": 75.5,
@@ -7204,6 +7267,13 @@
         "code": "AUT",
         "country": "Austria",
         "debt": 82.4,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 81.9,
         "region": "Europa",
         "isProjection": false
       },
@@ -8015,6 +8085,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 85.0,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "AUT",
         "country": "Austria",
         "debt": 83.2,
@@ -8815,6 +8892,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 72.3,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "AUT",
         "country": "Austria",
         "debt": 71.0,
@@ -9583,6 +9667,13 @@
         "code": "AUT",
         "country": "Austria",
         "debt": 74.6,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 74.2,
         "region": "Europa",
         "isProjection": false
       },
@@ -10362,6 +10453,13 @@
         "code": "HRV",
         "country": "Croacia",
         "debt": 76.2,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 75.8,
         "region": "Europa",
         "isProjection": false
       },
@@ -11166,6 +11264,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 78.7,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "BHR",
         "country": "Bahréin",
         "debt": 77.4,
@@ -11966,6 +12071,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 79.1,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "LKA",
         "country": "Sri Lanka",
         "debt": 76.3,
@@ -12749,6 +12861,13 @@
         "country": "Egipto",
         "debt": 80.9,
         "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 78.8,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -13566,6 +13685,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 76.8,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "SVN",
         "country": "Eslovenia",
         "debt": 70.8,
@@ -14334,6 +14460,13 @@
         "code": "HUN",
         "country": "Hungría",
         "debt": 78.4,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 75.0,
         "region": "Europa",
         "isProjection": false
       },
@@ -15131,6 +15264,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 72.6,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "ESP",
         "country": "España",
         "debt": 69.5,
@@ -15921,6 +16061,13 @@
         "country": "Sudán",
         "debt": 74.6,
         "region": "África",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 71.7,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -16745,6 +16892,13 @@
         "isProjection": false
       },
       {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 67.9,
+        "region": "Europa",
+        "isProjection": false
+      },
+      {
         "code": "MLT",
         "country": "Malta",
         "debt": 66.0,
@@ -17549,6 +17703,13 @@
         "country": "Brasil",
         "debt": 61.4,
         "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 57.5,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -18370,6 +18531,13 @@
         "country": "Etiopía",
         "debt": 55.7,
         "region": "África",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 54.4,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -19205,6 +19373,13 @@
         "country": "Filipinas",
         "debt": 57.2,
         "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "EUQ",
+        "country": "Unión Europea",
+        "debt": 56.8,
+        "region": "Europa",
         "isProjection": false
       },
       {
@@ -34554,6 +34729,137 @@
           "year": "2024",
           "debt": 114.9,
           "isProjection": false
+        }
+      ]
+    },
+    "EUQ": {
+      "country": "Unión Europea",
+      "region": "Europa",
+      "data": [
+        {
+          "year": "2006",
+          "debt": 56.8,
+          "isProjection": false
+        },
+        {
+          "year": "2007",
+          "debt": 54.4,
+          "isProjection": false
+        },
+        {
+          "year": "2008",
+          "debt": 57.5,
+          "isProjection": false
+        },
+        {
+          "year": "2009",
+          "debt": 67.9,
+          "isProjection": false
+        },
+        {
+          "year": "2010",
+          "debt": 71.7,
+          "isProjection": false
+        },
+        {
+          "year": "2011",
+          "debt": 72.6,
+          "isProjection": false
+        },
+        {
+          "year": "2012",
+          "debt": 75.0,
+          "isProjection": false
+        },
+        {
+          "year": "2013",
+          "debt": 76.8,
+          "isProjection": false
+        },
+        {
+          "year": "2014",
+          "debt": 78.8,
+          "isProjection": false
+        },
+        {
+          "year": "2015",
+          "debt": 79.1,
+          "isProjection": false
+        },
+        {
+          "year": "2016",
+          "debt": 78.7,
+          "isProjection": false
+        },
+        {
+          "year": "2017",
+          "debt": 75.8,
+          "isProjection": false
+        },
+        {
+          "year": "2018",
+          "debt": 74.2,
+          "isProjection": false
+        },
+        {
+          "year": "2019",
+          "debt": 72.3,
+          "isProjection": false
+        },
+        {
+          "year": "2020",
+          "debt": 85.0,
+          "isProjection": false
+        },
+        {
+          "year": "2021",
+          "debt": 81.9,
+          "isProjection": false
+        },
+        {
+          "year": "2022",
+          "debt": 76.6,
+          "isProjection": false
+        },
+        {
+          "year": "2023",
+          "debt": 76.7,
+          "isProjection": false
+        },
+        {
+          "year": "2024",
+          "debt": 77.3,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "debt": 78.1,
+          "isProjection": false
+        },
+        {
+          "year": "2026",
+          "debt": 79.7,
+          "isProjection": true
+        },
+        {
+          "year": "2027",
+          "debt": 80.6,
+          "isProjection": true
+        },
+        {
+          "year": "2028",
+          "debt": 81.3,
+          "isProjection": true
+        },
+        {
+          "year": "2029",
+          "debt": 82.0,
+          "isProjection": true
+        },
+        {
+          "year": "2030",
+          "debt": 82.8,
+          "isProjection": true
         }
       ]
     }

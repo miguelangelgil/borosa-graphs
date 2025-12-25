@@ -1,6 +1,6 @@
 """
-Descargador de datos de Deuda Pública del FMI DataMapper
-Calcula deuda absoluta desde PIB (NGDPD) y ratio deuda/PIB (GGXWDG_NGDP)
+IMF DataMapper Public Debt Data Fetcher
+Calculates absolute debt from GDP (NGDPD) and debt/GDP ratio (GGXWDG_NGDP)
 """
 
 import requests
@@ -16,24 +16,24 @@ OUTPUT_FILE = os.path.join(SCRIPT_DIR, "..", "data", "debt_data.json")
 
 
 def fetch_debt_data():
-    print("Descargando datos de Deuda Pública del FMI...")
+    print("Downloading Public Debt data from IMF...")
 
     # Fetch GDP data
-    print(f"Obteniendo PIB...")
+    print(f"Fetching GDP...")
     gdp_response = requests.get(IMF_GDP_URL, timeout=30)
     gdp_response.raise_for_status()
     gdp_json = gdp_response.json()
     gdp_data = gdp_json.get("values", {}).get("NGDPD", {})
 
     # Fetch Debt/GDP ratio
-    print(f"Obteniendo ratio Deuda/PIB...")
+    print(f"Fetching Debt/GDP ratio...")
     ratio_response = requests.get(IMF_DEBT_RATIO_URL, timeout=30)
     ratio_response.raise_for_status()
     ratio_json = ratio_response.json()
     ratio_data = ratio_json.get("values", {}).get("GGXWDG_NGDP", {})
 
     if not gdp_data or not ratio_data:
-        raise ValueError("No se encontraron datos en la respuesta")
+        raise ValueError("No data found in response")
 
     # Get all years
     all_years = set()
@@ -45,8 +45,8 @@ def fetch_debt_data():
     real_years = [y for y in years if int(y) <= CURRENT_YEAR]
     projection_years = [y for y in years if int(y) > CURRENT_YEAR]
 
-    print(f"Años con datos reales: {real_years[-1] if real_years else 'N/A'} - {real_years[0] if real_years else 'N/A'}")
-    print(f"Años con proyecciones: {projection_years[-1] if projection_years else 'N/A'} - {projection_years[0] if projection_years else 'N/A'}")
+    print(f"Years with real data: {real_years[-1] if real_years else 'N/A'} - {real_years[0] if real_years else 'N/A'}")
+    print(f"Years with projections: {projection_years[-1] if projection_years else 'N/A'} - {projection_years[0] if projection_years else 'N/A'}")
 
     result = {
         "metadata": {
@@ -77,14 +77,14 @@ def fetch_debt_data():
                     "code": code,
                     "country": COUNTRY_NAMES[code],
                     "value": debt_value,
-                    "region": REGIONS.get(code, "Otro"),
+                    "region": REGIONS.get(code, "Other"),
                     "isProjection": int(year) > CURRENT_YEAR
                 })
             except (ValueError, TypeError):
                 continue
 
         result["data"][year] = sorted(year_data, key=lambda x: -x["value"])
-        print(f"  {year}: {len(year_data)} países {'(proyección)' if int(year) > CURRENT_YEAR else ''}")
+        print(f"  {year}: {len(year_data)} countries {'(projection)' if int(year) > CURRENT_YEAR else ''}")
 
     # Build timeseries
     for code in COUNTRY_NAMES:
@@ -107,7 +107,7 @@ def fetch_debt_data():
         if series:
             result["timeseries"][code] = {
                 "country": COUNTRY_NAMES[code],
-                "region": REGIONS.get(code, "Otro"),
+                "region": REGIONS.get(code, "Other"),
                 "data": series
             }
 
@@ -121,18 +121,18 @@ def main():
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-        print(f"\n✓ Datos guardados en: {OUTPUT_FILE}")
-        print(f"✓ Total años: {len(data['data'])}")
-        print(f"✓ Total países: {len(data['timeseries'])}")
+        print(f"\nData saved to: {OUTPUT_FILE}")
+        print(f"Total years: {len(data['data'])}")
+        print(f"Total countries: {len(data['timeseries'])}")
 
         latest_year = data["metadata"]["last_real_year"]
         if latest_year in data["data"]:
-            print(f"\nTop 10 países por Deuda Pública ({latest_year}):")
+            print(f"\nTop 10 countries by Public Debt ({latest_year}):")
             for i, country in enumerate(data["data"][latest_year][:10], 1):
                 print(f"  {i}. {country['country']}: ${country['value']/1e12:.2f}T")
 
     except requests.RequestException as e:
-        print(f"Error de conexión: {e}")
+        print(f"Connection error: {e}")
     except Exception as e:
         print(f"Error: {e}")
 

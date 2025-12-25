@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Language Policy
+
+**All code, comments, UI text, commit messages, and documentation must be written in English**, regardless of the language used in user requests. This ensures the project remains accessible to a global audience.
+
 ## Project Overview
 
 Static web visualization dashboard for financial metrics not available on TradingView. Hosted on GitHub Pages with weekly automated data updates via GitHub Actions.
@@ -16,19 +20,19 @@ Static web visualization dashboard for financial metrics not available on Tradin
 - **js/{metric}.js**: Individual metric modules (debt-gdp, gdp, debt, m2, exports, employment)
 
 ### Data Pipeline
-- **scripts/country_mappings.py**: Shared country name translations (Spanish) and region mappings
+- **scripts/country_mappings.py**: Shared country name mappings (English) and region classifications
 - **scripts/fetch_*.py**: Individual data fetchers for each metric
 - **data/*.json**: Generated JSON files with standardized structure
 
 ### Data Sources
 | Metric | Source | Indicator |
 |--------|--------|-----------|
-| Deuda/PIB | IMF DataMapper | GGXWDG_NGDP |
-| PIB | IMF DataMapper | NGDPD |
-| Deuda | IMF DataMapper | GGXWDG |
+| Debt/GDP | IMF DataMapper | GGXWDG_NGDP |
+| GDP | IMF DataMapper | NGDPD |
+| Public Debt | IMF DataMapper | GGXWDG |
 | M2 | World Bank | FM.LBL.BMNY.GD.ZS + NY.GDP.MKTP.CD |
-| Exportaciones | World Bank | NE.EXP.GNFS.CD |
-| Empleo | IMF DataMapper | LUR |
+| Trade Balance | World Bank | NE.EXP.GNFS.CD - NE.IMP.GNFS.CD |
+| Unemployment | IMF DataMapper | LUR |
 
 ## Commands
 

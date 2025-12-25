@@ -1,6 +1,6 @@
 """
-Descargador de datos de Balanza Comercial del Banco Mundial
-Indicadores: NE.EXP.GNFS.CD (Exports) y NE.IMP.GNFS.CD (Imports)
+World Bank Trade Balance Data Fetcher
+Indicators: NE.EXP.GNFS.CD (Exports) and NE.IMP.GNFS.CD (Imports)
 """
 
 import requests
@@ -30,27 +30,27 @@ def fetch_with_retry(url, description):
             response.raise_for_status()
             return response.json()
         except requests.RequestException as e:
-            print(f"  Intento {attempt + 1}/{MAX_RETRIES} fallido para {description}: {e}")
+            print(f"  Attempt {attempt + 1}/{MAX_RETRIES} failed for {description}: {e}")
             if attempt < MAX_RETRIES - 1:
-                print(f"  Reintentando en {RETRY_DELAY} segundos...")
+                print(f"  Retrying in {RETRY_DELAY} seconds...")
                 time.sleep(RETRY_DELAY)
             else:
                 raise
 
 
 def fetch_trade_data():
-    print("Descargando datos de Balanza Comercial del Banco Mundial...")
+    print("Downloading Trade Balance data from World Bank...")
 
     # Fetch exports
-    print(f"Obteniendo Exportaciones...")
-    exports_json = fetch_with_retry(WB_EXPORTS_URL.format(year=CURRENT_YEAR), "Exportaciones")
+    print(f"Fetching Exports...")
+    exports_json = fetch_with_retry(WB_EXPORTS_URL.format(year=CURRENT_YEAR), "Exports")
 
     # Fetch imports
-    print(f"Obteniendo Importaciones...")
-    imports_json = fetch_with_retry(WB_IMPORTS_URL.format(year=CURRENT_YEAR), "Importaciones")
+    print(f"Fetching Imports...")
+    imports_json = fetch_with_retry(WB_IMPORTS_URL.format(year=CURRENT_YEAR), "Imports")
 
     if len(exports_json) < 2 or len(imports_json) < 2:
-        raise ValueError("No se encontraron datos")
+        raise ValueError("No data found")
 
     # Parse exports data
     exports_data = {}
@@ -80,7 +80,7 @@ def fetch_trade_data():
         all_years.update(country_data.keys())
     years = sorted([y for y in all_years if y.isdigit()], reverse=True)[:25]
 
-    print(f"Años disponibles: {years[-1] if years else 'N/A'} - {years[0] if years else 'N/A'}")
+    print(f"Available years: {years[-1] if years else 'N/A'} - {years[0] if years else 'N/A'}")
 
     result = {
         "metadata": {
@@ -117,14 +117,14 @@ def fetch_trade_data():
                     "value": balance,
                     "exports": round(exports, 0),
                     "imports": round(imports, 0),
-                    "region": REGIONS.get(iso3_code, "Otro"),
+                    "region": REGIONS.get(iso3_code, "Other"),
                     "isProjection": False
                 })
             except (ValueError, TypeError):
                 continue
 
         result["data"][year] = sorted(year_data, key=lambda x: -x["value"])
-        print(f"  {year}: {len(year_data)} países")
+        print(f"  {year}: {len(year_data)} countries")
 
     # Build timeseries
     for iso2_code in exports_data:
@@ -153,7 +153,7 @@ def fetch_trade_data():
         if series:
             result["timeseries"][iso3_code] = {
                 "country": COUNTRY_NAMES[iso3_code],
-                "region": REGIONS.get(iso3_code, "Otro"),
+                "region": REGIONS.get(iso3_code, "Other"),
                 "data": series
             }
 
@@ -167,23 +167,23 @@ def main():
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-        print(f"\n✓ Datos guardados en: {OUTPUT_FILE}")
-        print(f"✓ Total años: {len(data['data'])}")
-        print(f"✓ Total países: {len(data['timeseries'])}")
+        print(f"\nData saved to: {OUTPUT_FILE}")
+        print(f"Total years: {len(data['data'])}")
+        print(f"Total countries: {len(data['timeseries'])}")
 
         latest_year = data["metadata"]["last_real_year"]
         if latest_year in data["data"]:
-            print(f"\nTop 10 superávit comercial ({latest_year}):")
+            print(f"\nTop 10 trade surplus ({latest_year}):")
             for i, country in enumerate(data["data"][latest_year][:10], 1):
                 print(f"  {i}. {country['country']}: ${country['value']/1e9:.1f}B")
 
-            print(f"\nTop 10 déficit comercial ({latest_year}):")
+            print(f"\nTop 10 trade deficit ({latest_year}):")
             deficit = sorted(data["data"][latest_year], key=lambda x: x["value"])[:10]
             for i, country in enumerate(deficit, 1):
                 print(f"  {i}. {country['country']}: ${country['value']/1e9:.1f}B")
 
     except requests.RequestException as e:
-        print(f"Error de conexión: {e}")
+        print(f"Connection error: {e}")
     except Exception as e:
         print(f"Error: {e}")
         import traceback

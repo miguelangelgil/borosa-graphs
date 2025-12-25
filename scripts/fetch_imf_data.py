@@ -1,7 +1,7 @@
 """
-Descargador de datos de Deuda/PIB del FMI DataMapper
-Ejecutar: python fetch_imf_data.py
-Genera: data/imf_debt_data.json
+IMF DataMapper Debt/GDP Data Fetcher
+Run: python fetch_imf_data.py
+Generates: data/imf_debt_data.json
 """
 
 import requests
@@ -16,7 +16,7 @@ OUTPUT_FILE = os.path.join(SCRIPT_DIR, "..", "data", "imf_debt_data.json")
 
 
 def fetch_imf_data():
-    print(f"Descargando datos del FMI...")
+    print(f"Downloading data from IMF...")
     print(f"URL: {IMF_URL}\n")
 
     response = requests.get(IMF_URL, timeout=30)
@@ -26,23 +26,23 @@ def fetch_imf_data():
     debt_data = data.get("values", {}).get("GGXWDG_NGDP", {})
 
     if not debt_data:
-        raise ValueError("No se encontraron datos en la respuesta")
+        raise ValueError("No data found in response")
 
-    # Obtener años disponibles
+    # Get available years
     all_years = set()
     for country_data in debt_data.values():
         all_years.update(country_data.keys())
 
     years = sorted([y for y in all_years if y.isdigit()], reverse=True)
 
-    # Separar años reales de proyecciones
+    # Separate real years from projections
     real_years = [y for y in years if int(y) <= CURRENT_YEAR]
     projection_years = [y for y in years if int(y) > CURRENT_YEAR]
 
-    print(f"Años con datos reales: {real_years[0]} - {real_years[-1]}")
-    print(f"Años con proyecciones: {projection_years[-1] if projection_years else 'N/A'} - {projection_years[0] if projection_years else 'N/A'}")
+    print(f"Years with real data: {real_years[0]} - {real_years[-1]}")
+    print(f"Years with projections: {projection_years[-1] if projection_years else 'N/A'} - {projection_years[0] if projection_years else 'N/A'}")
 
-    # Procesar datos por año
+    # Process data by year
     result = {
         "metadata": {
             "source": "IMF DataMapper",
@@ -57,7 +57,7 @@ def fetch_imf_data():
         "timeseries": {}
     }
 
-    # Datos por año (para gráfico de barras)
+    # Data by year (for bar chart)
     for year in years[:25]:
         year_data = []
         for code, values in debt_data.items():
@@ -72,16 +72,16 @@ def fetch_imf_data():
                     "code": code,
                     "country": COUNTRY_NAMES[code],
                     "debt": debt,
-                    "region": REGIONS.get(code, "Otro"),
+                    "region": REGIONS.get(code, "Other"),
                     "isProjection": int(year) > CURRENT_YEAR
                 })
             except (ValueError, TypeError):
                 continue
 
         result["data"][year] = sorted(year_data, key=lambda x: -x["debt"])
-        print(f"  {year}: {len(year_data)} países {'(proyección)' if int(year) > CURRENT_YEAR else ''}")
+        print(f"  {year}: {len(year_data)} countries {'(projection)' if int(year) > CURRENT_YEAR else ''}")
 
-    # Series temporales por país (para gráfico de líneas)
+    # Time series by country (for line chart)
     for code, values in debt_data.items():
         if code not in COUNTRY_NAMES:
             continue
@@ -102,7 +102,7 @@ def fetch_imf_data():
         if series:
             result["timeseries"][code] = {
                 "country": COUNTRY_NAMES[code],
-                "region": REGIONS.get(code, "Otro"),
+                "region": REGIONS.get(code, "Other"),
                 "data": series
             }
 
@@ -116,18 +116,18 @@ def main():
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-        print(f"\n✓ Datos guardados en: {OUTPUT_FILE}")
-        print(f"✓ Total años: {len(data['data'])}")
-        print(f"✓ Total países con series temporales: {len(data['timeseries'])}")
+        print(f"\nData saved to: {OUTPUT_FILE}")
+        print(f"Total years: {len(data['data'])}")
+        print(f"Total countries with time series: {len(data['timeseries'])}")
 
-        # Mostrar top 10 del año más reciente real
+        # Show top 10 of most recent real year
         latest_year = data["metadata"]["last_real_year"]
-        print(f"\nTop 10 países con mayor deuda/PIB ({latest_year}):")
+        print(f"\nTop 10 countries by Debt/GDP ({latest_year}):")
         for i, country in enumerate(data["data"][latest_year][:10], 1):
             print(f"  {i}. {country['country']}: {country['debt']}%")
 
     except requests.RequestException as e:
-        print(f"Error de conexión: {e}")
+        print(f"Connection error: {e}")
     except Exception as e:
         print(f"Error: {e}")
 

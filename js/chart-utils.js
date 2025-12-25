@@ -2,12 +2,12 @@
 
 const regionColors = {
   "Asia": "#f59e0b",
-  "Europa": "#3b82f6",
-  "América": "#10b981",
+  "Europe": "#3b82f6",
+  "Americas": "#10b981",
   "Latam": "#8b5cf6",
   "MENA": "#ef4444",
-  "África": "#6b7280",
-  "Oceanía": "#06b6d4"
+  "Africa": "#6b7280",
+  "Oceania": "#06b6d4"
 };
 
 const lineColors = [
@@ -20,11 +20,11 @@ const lineColors = [
 function getThemeColors() {
   const isDark = document.documentElement.classList.contains('dark');
   return {
-    gridColor: isDark ? '#1f2937' : '#d1d5db',
-    tickColor: isDark ? '#9ca3af' : '#4b5563',
-    labelColor: isDark ? '#e5e7eb' : '#1f2937',
-    tooltipBg: isDark ? '#111827' : '#ffffff',
-    tooltipBorder: isDark ? '#374151' : '#e5e7eb'
+    gridColor: isDark ? '#1f2937' : '#9ca3af',
+    tickColor: isDark ? '#9ca3af' : '#374151',
+    labelColor: isDark ? '#e5e7eb' : '#111827',
+    tooltipBg: isDark ? '#111827' : '#f5f5f0',
+    tooltipBorder: isDark ? '#374151' : '#9ca3af'
   };
 }
 
@@ -200,8 +200,11 @@ function createChartModule(config) {
 
     container.innerHTML = countries.map(c => {
       const isSelected = selectedCountries.has(c.code);
+      const unselectedClasses = isDark
+        ? 'bg-gray-700 text-gray-200 hover:bg-gray-600'
+        : 'bg-stone-400 text-gray-900 hover:bg-stone-500';
       return `<span
-        class="country-chip px-2 py-1 rounded text-xs cursor-pointer transition-all hover:opacity-80 ${isSelected ? 'bg-blue-600 text-white' : (isDark ? 'bg-gray-700 text-gray-300' : 'bg-gray-300 text-gray-700')}"
+        class="country-chip px-2 py-1 rounded text-xs cursor-pointer transition-all font-medium ${isSelected ? 'bg-blue-600 text-white hover:bg-blue-700' : unselectedClasses}"
         data-code="${c.code}"
       >${c.country}</span>`;
     }).join('');
@@ -381,8 +384,11 @@ function createChartModule(config) {
     const btnBar = document.getElementById(`${prefix}-btnBarView`);
     const btnLine = document.getElementById(`${prefix}-btnLineView`);
 
-    btnBar.className = `px-4 py-2 rounded text-sm font-medium ${view === 'bar' ? 'bg-yellow-500 text-black' : (isDark ? 'bg-gray-700 text-gray-300' : 'bg-gray-300 text-gray-700')}`;
-    btnLine.className = `px-4 py-2 rounded text-sm font-medium ${view === 'line' ? 'bg-yellow-500 text-black' : (isDark ? 'bg-gray-700 text-gray-300' : 'bg-gray-300 text-gray-700')}`;
+    const inactiveClasses = isDark
+      ? 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+      : 'bg-stone-400 text-gray-900 hover:bg-stone-500';
+    btnBar.className = `px-4 py-2 rounded text-sm font-medium ${view === 'bar' ? 'bg-yellow-500 text-black' : inactiveClasses}`;
+    btnLine.className = `px-4 py-2 rounded text-sm font-medium ${view === 'line' ? 'bg-yellow-500 text-black' : inactiveClasses}`;
 
     document.getElementById(`${prefix}-barControls`).classList.toggle('hidden', view !== 'bar');
     document.getElementById(`${prefix}-lineControls`).classList.toggle('hidden', view !== 'line');

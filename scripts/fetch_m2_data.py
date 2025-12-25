@@ -1,7 +1,7 @@
 """
-Descargador de datos de Oferta Monetaria M2 del Banco Mundial
-Indicador: FM.LBL.BMNY.GD.ZS (Broad money, % of GDP)
-           y NY.GDP.MKTP.CD (GDP current USD) para calcular M2 en USD
+World Bank M2 Money Supply Data Fetcher
+Indicator: FM.LBL.BMNY.GD.ZS (Broad money, % of GDP)
+           and NY.GDP.MKTP.CD (GDP current USD) to calculate M2 in USD
 """
 
 import requests
@@ -32,27 +32,27 @@ def fetch_with_retry(url, description):
             response.raise_for_status()
             return response.json()
         except requests.RequestException as e:
-            print(f"  Intento {attempt + 1}/{MAX_RETRIES} fallido para {description}: {e}")
+            print(f"  Attempt {attempt + 1}/{MAX_RETRIES} failed for {description}: {e}")
             if attempt < MAX_RETRIES - 1:
-                print(f"  Reintentando en {RETRY_DELAY} segundos...")
+                print(f"  Retrying in {RETRY_DELAY} seconds...")
                 time.sleep(RETRY_DELAY)
             else:
                 raise
 
 
 def fetch_m2_data():
-    print("Descargando datos de M2 del Banco Mundial...")
+    print("Downloading M2 data from World Bank...")
 
     # Fetch M2 as % of GDP
-    print(f"Obteniendo M2 (% del PIB)...")
+    print(f"Fetching M2 (% of GDP)...")
     m2_json = fetch_with_retry(WB_M2_URL.format(year=CURRENT_YEAR), "M2")
 
     # Fetch GDP in current USD
-    print(f"Obteniendo PIB (USD)...")
-    gdp_json = fetch_with_retry(WB_GDP_URL.format(year=CURRENT_YEAR), "PIB")
+    print(f"Fetching GDP (USD)...")
+    gdp_json = fetch_with_retry(WB_GDP_URL.format(year=CURRENT_YEAR), "GDP")
 
     if len(m2_json) < 2 or len(gdp_json) < 2:
-        raise ValueError("No se encontraron datos")
+        raise ValueError("No data found")
 
     # Parse M2 % data
     m2_pct_data = {}
@@ -82,7 +82,7 @@ def fetch_m2_data():
         all_years.update(country_data.keys())
     years = sorted([y for y in all_years if y.isdigit()], reverse=True)[:25]
 
-    print(f"Años disponibles: {years[-1] if years else 'N/A'} - {years[0] if years else 'N/A'}")
+    print(f"Available years: {years[-1] if years else 'N/A'} - {years[0] if years else 'N/A'}")
 
     result = {
         "metadata": {
@@ -124,7 +124,7 @@ def fetch_m2_data():
                 continue
 
         result["data"][year] = sorted(year_data, key=lambda x: -x["value"])
-        print(f"  {year}: {len(year_data)} países")
+        print(f"  {year}: {len(year_data)} countries")
 
     # Build timeseries
     for iso2_code in m2_pct_data:
@@ -155,6 +155,29 @@ def fetch_m2_data():
                 "data": series
             }
 
+    # Build World M2 timeseries (sum of all countries)
+    world_series = []
+    for year in sorted(years):
+        year_total = 0
+        country_count = 0
+        for year_entry in result["data"].get(year, []):
+            year_total += year_entry["value"]
+            country_count += 1
+        if country_count > 0:
+            world_series.append({
+                "year": year,
+                "value": round(year_total, 0),
+                "isProjection": False
+            })
+
+    if world_series:
+        result["timeseries"]["WLD"] = {
+            "country": "World",
+            "region": "Global",
+            "data": world_series
+        }
+        print(f"  World M2 calculated: {len(world_series)} years")
+
     return result
 
 
@@ -165,18 +188,18 @@ def main():
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-        print(f"\n✓ Datos guardados en: {OUTPUT_FILE}")
-        print(f"✓ Total años: {len(data['data'])}")
-        print(f"✓ Total países: {len(data['timeseries'])}")
+        print(f"\nData saved to: {OUTPUT_FILE}")
+        print(f"Total years: {len(data['data'])}")
+        print(f"Total countries: {len(data['timeseries'])}")
 
         latest_year = data["metadata"]["last_real_year"]
         if latest_year in data["data"]:
-            print(f"\nTop 10 países por M2 ({latest_year}):")
+            print(f"\nTop 10 countries by M2 ({latest_year}):")
             for i, country in enumerate(data["data"][latest_year][:10], 1):
                 print(f"  {i}. {country['country']}: ${country['value']/1e12:.2f}T")
 
     except requests.RequestException as e:
-        print(f"Error de conexión: {e}")
+        print(f"Connection error: {e}")
     except Exception as e:
         print(f"Error: {e}")
         import traceback

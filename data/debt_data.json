@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "NGDPD * GGXWDG_NGDP / 100",
     "description": "General government gross debt (USD billions, calculated)",
-    "fetched_at": "2025-12-25T12:02:11.674723",
+    "fetched_at": "2025-12-25T12:07:39.251457",
     "available_years": [
       "2030",
       "2029",

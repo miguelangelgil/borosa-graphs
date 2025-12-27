@@ -4,10 +4,11 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8">
       <div className="text-center">
-        <div className="flex items-center justify-center gap-4 mb-6">
-          <Link to="/" className="flex items-center gap-2 text-4xl font-bold text-yellow-500">
+        <div className="flex flex-col items-center justify-center mb-6">
+          <span className="text-9xl mb-4">🛍️</span>
+          <span className="text-4xl font-bold text-amber-700 dark:text-yellow-500">
             Borosa Graphs
-          </Link>
+          </span>
         </div>
         <p className="text-gray-500 text-lg mb-6">Up-to-date financial data with weekly automated updates</p>
         <div className="flex flex-wrap justify-center gap-3 text-sm">

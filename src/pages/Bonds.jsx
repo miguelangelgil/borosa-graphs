@@ -142,19 +142,17 @@ export default function Bonds() {
       }
     };
 
+    // Always destroy and recreate to ensure animation plays
     if (barChartInstance.current) {
-      barChartInstance.current.data = chartData;
-      barChartInstance.current.options.scales.x.grid.color = colors.gridColor;
-      barChartInstance.current.options.scales.x.ticks.color = colors.tickColor;
-      barChartInstance.current.options.scales.y.ticks.color = colors.labelColor;
-      barChartInstance.current.update('none');
-    } else {
-      barChartInstance.current = new Chart(barChartRef.current, {
-        type: 'bar',
-        data: chartData,
-        options
-      });
+      barChartInstance.current.destroy();
+      barChartInstance.current = null;
     }
+
+    barChartInstance.current = new Chart(barChartRef.current, {
+      type: 'bar',
+      data: chartData,
+      options
+    });
   }, [view, barData, isDark]);
 
   // Line chart effect - shows yield curve (durations)
@@ -248,20 +246,17 @@ export default function Bonds() {
       }
     };
 
+    // Always destroy and recreate to ensure animation plays
     if (lineChartInstance.current) {
-      lineChartInstance.current.data = chartData;
-      lineChartInstance.current.options.scales.x.grid.color = colors.gridColor;
-      lineChartInstance.current.options.scales.x.ticks.color = colors.tickColor;
-      lineChartInstance.current.options.scales.y.grid.color = colors.gridColor;
-      lineChartInstance.current.options.scales.y.ticks.color = colors.tickColor;
-      lineChartInstance.current.update('none');
-    } else {
-      lineChartInstance.current = new Chart(lineChartRef.current, {
-        type: 'line',
-        data: chartData,
-        options
-      });
+      lineChartInstance.current.destroy();
+      lineChartInstance.current = null;
     }
+
+    lineChartInstance.current = new Chart(lineChartRef.current, {
+      type: 'line',
+      data: chartData,
+      options
+    });
   }, [view, selectedCountries, data, isDark]);
 
   // Cleanup on unmount

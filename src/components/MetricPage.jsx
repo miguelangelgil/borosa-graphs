@@ -193,27 +193,18 @@ export default function MetricPage({
       }
     }] : [];
 
+    // Always destroy and recreate to ensure animation plays
     if (barChartInstance.current) {
-      barChartInstance.current.data = chartData;
-      barChartInstance.current.options.scales.x.grid.color = colors.gridColor;
-      barChartInstance.current.options.scales.x.ticks.color = colors.tickColor;
-      barChartInstance.current.options.scales.y.ticks.color = colors.labelColor;
-      barChartInstance.current.update('none');
-    } else {
-      barChartInstance.current = new Chart(barChartRef.current, {
-        type: 'bar',
-        data: chartData,
-        options,
-        plugins
-      });
+      barChartInstance.current.destroy();
+      barChartInstance.current = null;
     }
 
-    return () => {
-      if (barChartInstance.current && view !== 'bar') {
-        barChartInstance.current.destroy();
-        barChartInstance.current = null;
-      }
-    };
+    barChartInstance.current = new Chart(barChartRef.current, {
+      type: 'bar',
+      data: chartData,
+      options,
+      plugins
+    });
   }, [view, barData, isDark, valueKey, valueLabel, valueUnit, formatFn, refLines, currentYear, data]);
 
   // Line chart effect
@@ -356,28 +347,18 @@ export default function MetricPage({
       }
     }] : [];
 
+    // Always destroy and recreate to ensure animation plays
     if (lineChartInstance.current) {
-      lineChartInstance.current.data = chartData;
-      lineChartInstance.current.options.scales.x.grid.color = colors.gridColor;
-      lineChartInstance.current.options.scales.x.ticks.color = colors.tickColor;
-      lineChartInstance.current.options.scales.y.grid.color = colors.gridColor;
-      lineChartInstance.current.options.scales.y.ticks.color = colors.tickColor;
-      lineChartInstance.current.update('none');
-    } else {
-      lineChartInstance.current = new Chart(lineChartRef.current, {
-        type: 'line',
-        data: chartData,
-        options,
-        plugins
-      });
+      lineChartInstance.current.destroy();
+      lineChartInstance.current = null;
     }
 
-    return () => {
-      if (lineChartInstance.current && view !== 'line') {
-        lineChartInstance.current.destroy();
-        lineChartInstance.current = null;
-      }
-    };
+    lineChartInstance.current = new Chart(lineChartRef.current, {
+      type: 'line',
+      data: chartData,
+      options,
+      plugins
+    });
   }, [view, selectedCountries, data, isDark, valueKey, valueUnit, formatFn, refLines]);
 
   // Cleanup on unmount

@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "NGDPD",
     "description": "GDP, current prices (USD billions)",
-    "fetched_at": "2025-12-25T12:07:36.232290",
+    "fetched_at": "2025-12-26T14:19:44.384067",
     "available_years": [
       "2030",
       "2029",

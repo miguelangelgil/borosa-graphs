@@ -309,10 +309,10 @@ export default function Bonds() {
   return (
     <div className="p-6">
       <div className="flex items-center gap-3 mb-1">
-        <InfoTooltip text={view === 'bar' ? infoBar : infoLine} />
         <h1 className="text-2xl font-bold">
           {view === 'bar' ? `📈 Government Bond Yields - ${currentDuration}` : '📈 Bond Yields by Duration'}
         </h1>
+        <InfoTooltip text={view === 'bar' ? infoBar : infoLine} />
       </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
         {view === 'bar'

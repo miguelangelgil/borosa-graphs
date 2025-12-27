@@ -400,10 +400,10 @@ export default function MetricPage({
   return (
     <div className="p-6">
       <div className="flex items-center gap-3 mb-1">
-        {currentInfo && <InfoTooltip text={currentInfo} />}
         <h1 className="text-2xl font-bold">
           {view === 'bar' ? `${titleBar} (${currentYear})${isProjectionYear ? ' - Projection' : ''}` : titleLine}
         </h1>
+        {currentInfo && <InfoTooltip text={currentInfo} />}
       </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
         {view === 'bar'

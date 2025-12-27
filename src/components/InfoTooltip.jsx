@@ -17,8 +17,8 @@ export default function InfoTooltip({ text }) {
         i
       </button>
       {isVisible && (
-        <div className="absolute left-8 top-1/2 -translate-y-1/2 z-20 w-64 p-3 text-sm bg-[#fffef9] dark:bg-gray-800 border border-[#c4bfb3] dark:border-gray-700 rounded-lg shadow-lg text-gray-700 dark:text-gray-300">
-          <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 w-2 h-2 bg-[#fffef9] dark:bg-gray-800 border-l border-b border-[#c4bfb3] dark:border-gray-700 rotate-45"></div>
+        <div className="absolute left-1/2 -translate-x-1/2 top-10 z-20 w-64 p-3 text-sm bg-[#fffef9] dark:bg-gray-800 border border-[#c4bfb3] dark:border-gray-700 rounded-lg shadow-lg text-gray-700 dark:text-gray-300">
+          <div className="absolute left-1/2 -translate-x-1/2 -top-1 w-2 h-2 bg-[#fffef9] dark:bg-gray-800 border-l border-t border-[#c4bfb3] dark:border-gray-700 rotate-45"></div>
           {text}
         </div>
       )}

@@ -9,8 +9,10 @@ const corporateBondsModule = (function() {
   let barChart = null;
   let lineChart = null;
   let currentCategory = "all";
+  let currentRegion = "all";
   let currentView = "bar";
-  let selectedSeries = new Set(['IG_US', 'HY_US', 'IG_AAA', 'HY_CCC']);
+  let selectedSeries = new Set(['US_IG', 'US_HY', 'EU_HY', 'EM_TOTAL', 'ASIA_EM', 'LATAM_EM']);
+  let lineRegionFilter = "all";
 
   const categoryColors = {
     "Investment Grade": "#22c55e",  // Green
@@ -18,10 +20,20 @@ const corporateBondsModule = (function() {
     "Spreads": "#f59e0b"            // Amber
   };
 
+  const regionColors = {
+    "North America": "#3b82f6",     // Blue
+    "Europe": "#8b5cf6",            // Purple
+    "Asia": "#f59e0b",              // Amber
+    "Latin America": "#10b981",     // Emerald
+    "Emerging Markets": "#ec4899",  // Pink
+    "EMEA": "#06b6d4"               // Cyan
+  };
+
   const lineColors = [
-    '#22c55e', '#16a34a', '#15803d',  // Greens for IG
-    '#ef4444', '#dc2626', '#b91c1c', '#991b1b',  // Reds for HY
-    '#f59e0b', '#d97706'  // Ambers for spreads
+    '#3b82f6', '#8b5cf6', '#f59e0b', '#10b981', '#ec4899', '#06b6d4',
+    '#22c55e', '#16a34a', '#15803d',
+    '#ef4444', '#dc2626', '#b91c1c', '#991b1b',
+    '#f59e0b', '#d97706'
   ];
 
   function getThemeColors() {
@@ -42,10 +54,11 @@ const corporateBondsModule = (function() {
   function renderLegend() {
     const legend = document.getElementById(`${prefix}-legend`);
     if (currentView === 'bar') {
-      legend.innerHTML = Object.entries(categoryColors).map(([category, color]) =>
+      // Show region colors legend
+      legend.innerHTML = Object.entries(regionColors).map(([region, color]) =>
         `<span class="flex items-center gap-1">
           <span class="w-3 h-3 rounded" style="background-color: ${color}"></span>
-          ${category}
+          ${region}
         </span>`
       ).join('');
     } else {
@@ -59,6 +72,10 @@ const corporateBondsModule = (function() {
     for (const [category, bonds] of Object.entries(data.current)) {
       if (currentCategory === "all" || currentCategory === category) {
         for (const bond of bonds) {
+          // Filter by region
+          if (currentRegion !== "all" && bond.region !== currentRegion) {
+            continue;
+          }
           items.push({
             ...bond,
             category: category
@@ -88,7 +105,7 @@ const corporateBondsModule = (function() {
       datasets: [{
         label: 'Yield',
         data: items.map(d => d.value),
-        backgroundColor: items.map(d => categoryColors[d.category] || '#888'),
+        backgroundColor: items.map(d => regionColors[d.region] || '#888'),
         borderRadius: 4,
         barThickness: 28
       }]
@@ -120,7 +137,7 @@ const corporateBondsModule = (function() {
               callbacks: {
                 label: (ctx) => {
                   const d = items[ctx.dataIndex];
-                  return [`Yield: ${formatNumber(d.value)}%`, `Category: ${d.category}`, d.description];
+                  return [`Yield: ${formatNumber(d.value)}%`, `Region: ${d.region}`, `Category: ${d.category}`, d.description];
                 }
               }
             }
@@ -143,29 +160,37 @@ const corporateBondsModule = (function() {
 
   function renderSeriesSelector() {
     const container = document.getElementById(`${prefix}-seriesSelector`);
-    const allSeries = Object.entries(data.timeseries)
+    let allSeries = Object.entries(data.timeseries)
       .map(([code, info]) => ({ code, ...info }))
       .sort((a, b) => {
-        // Sort by category first, then by name
+        // Sort by region first, then by category, then by name
+        if (a.region !== b.region) {
+          return a.region.localeCompare(b.region);
+        }
         if (a.category !== b.category) {
           return a.category.localeCompare(b.category);
         }
         return a.name.localeCompare(b.name);
       });
 
+    // Filter by region if selected
+    if (lineRegionFilter !== "all") {
+      allSeries = allSeries.filter(s => s.region === lineRegionFilter);
+    }
+
     const isDark = document.documentElement.classList.contains('dark');
 
     container.innerHTML = allSeries.map(s => {
       const isSelected = selectedSeries.has(s.code);
-      const categoryColor = categoryColors[s.category];
+      const regionColor = regionColors[s.region] || '#888';
       const unselectedClasses = isDark
         ? 'bg-gray-700 text-gray-200 hover:bg-gray-600'
         : 'bg-stone-400 text-gray-900 hover:bg-stone-500';
       return `<span
         class="country-chip px-2 py-1 rounded text-xs cursor-pointer transition-all font-medium ${isSelected ? 'text-white hover:opacity-80' : unselectedClasses}"
-        style="${isSelected ? `background-color: ${categoryColor}` : ''}"
+        style="${isSelected ? `background-color: ${regionColor}` : ''}"
         data-code="${s.code}"
-        title="${s.description}"
+        title="${s.region} · ${s.category} · ${s.description}"
       >${s.name}</span>`;
     }).join('');
 
@@ -215,7 +240,7 @@ const corporateBondsModule = (function() {
       const series = data.timeseries[code];
       if (!series) return;
 
-      const color = categoryColors[series.category] || lineColors[colorIndex % lineColors.length];
+      const color = regionColors[series.region] || lineColors[colorIndex % lineColors.length];
       colorIndex++;
 
       // Create data array aligned with dates
@@ -225,7 +250,7 @@ const corporateBondsModule = (function() {
       const yieldData = sortedDates.map(date => dateMap[date] || null);
 
       datasets.push({
-        label: series.name,
+        label: `${series.name} (${series.region})`,
         data: yieldData,
         borderColor: color,
         backgroundColor: color,
@@ -346,16 +371,32 @@ const corporateBondsModule = (function() {
 
   function populateSelectors() {
     const categories = ["all", ...data.metadata.categories];
+    const regions = ["all", ...(data.metadata.regions || [])];
 
     const categorySelect = document.getElementById(`${prefix}-categorySelect`);
     categorySelect.innerHTML = categories.map(c =>
       `<option value="${c}">${c === "all" ? "All Categories" : c}</option>`
+    ).join('');
+
+    const regionSelect = document.getElementById(`${prefix}-regionSelect`);
+    regionSelect.innerHTML = regions.map(r =>
+      `<option value="${r}">${r === "all" ? "All Regions" : r}</option>`
+    ).join('');
+
+    const lineRegionSelect = document.getElementById(`${prefix}-lineRegionFilter`);
+    lineRegionSelect.innerHTML = regions.map(r =>
+      `<option value="${r}">${r === "all" ? "All Regions" : r}</option>`
     ).join('');
   }
 
   function setupEventListeners() {
     document.getElementById(`${prefix}-categorySelect`).addEventListener('change', (e) => {
       currentCategory = e.target.value;
+      updateBarChart();
+    });
+
+    document.getElementById(`${prefix}-regionSelect`).addEventListener('change', (e) => {
+      currentRegion = e.target.value;
       updateBarChart();
     });
 
@@ -366,6 +407,11 @@ const corporateBondsModule = (function() {
       selectedSeries.clear();
       renderSeriesSelector();
       updateLineChart();
+    });
+
+    document.getElementById(`${prefix}-lineRegionFilter`).addEventListener('change', (e) => {
+      lineRegionFilter = e.target.value;
+      renderSeriesSelector();
     });
   }
 

@@ -12,64 +12,148 @@ from country_mappings import CURRENT_YEAR
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_FILE = os.path.join(SCRIPT_DIR, "..", "data", "corporate_bonds_data.json")
 
-# FRED series for corporate bonds
+# FRED series for corporate bonds by region
 FRED_SERIES = {
+    # === NORTH AMERICA (US) ===
     # Investment Grade
-    "IG_US": {
+    "US_IG": {
         "series_id": "BAMLC0A0CMEY",
         "name": "US Investment Grade",
         "category": "Investment Grade",
+        "region": "North America",
         "description": "ICE BofA US Corporate Index Effective Yield"
     },
-    "IG_AAA": {
+    "US_IG_AAA": {
         "series_id": "AAA",
-        "name": "AAA Rated",
+        "name": "US AAA Rated",
         "category": "Investment Grade",
+        "region": "North America",
         "description": "Moody's Seasoned Aaa Corporate Bond Yield"
     },
-    "IG_BAA": {
+    "US_IG_BAA": {
         "series_id": "BAA",
-        "name": "BAA Rated",
+        "name": "US BAA Rated",
         "category": "Investment Grade",
+        "region": "North America",
         "description": "Moody's Seasoned Baa Corporate Bond Yield"
     },
     # High Yield
-    "HY_US": {
+    "US_HY": {
         "series_id": "BAMLH0A0HYM2EY",
         "name": "US High Yield",
         "category": "High Yield",
+        "region": "North America",
         "description": "ICE BofA US High Yield Index Effective Yield"
     },
-    "HY_BB": {
+    "US_HY_BB": {
         "series_id": "BAMLH0A1HYBBEY",
-        "name": "BB Rated",
+        "name": "US BB Rated",
         "category": "High Yield",
+        "region": "North America",
         "description": "ICE BofA BB US High Yield Index Effective Yield"
     },
-    "HY_B": {
+    "US_HY_B": {
         "series_id": "BAMLH0A2HYBEY",
-        "name": "B Rated",
+        "name": "US B Rated",
         "category": "High Yield",
+        "region": "North America",
         "description": "ICE BofA Single-B US High Yield Index Effective Yield"
     },
-    "HY_CCC": {
+    "US_HY_CCC": {
         "series_id": "BAMLH0A3HYCEY",
-        "name": "CCC & Below",
+        "name": "US CCC & Below",
         "category": "High Yield",
+        "region": "North America",
         "description": "ICE BofA CCC & Lower US High Yield Index Effective Yield"
     },
-    # Spreads
-    "SPREAD_IG": {
+
+    # === EUROPE ===
+    "EU_HY": {
+        "series_id": "BAMLHE00EHYIEY",
+        "name": "Euro High Yield",
+        "category": "High Yield",
+        "region": "Europe",
+        "description": "ICE BofA Euro High Yield Index Effective Yield"
+    },
+    "EU_IG": {
+        "series_id": "BAMLC0A4CBBBEY",
+        "name": "Euro Investment Grade",
+        "category": "Investment Grade",
+        "region": "Europe",
+        "description": "ICE BofA BBB US Corporate Index Effective Yield (proxy)"
+    },
+
+    # === EMERGING MARKETS (Global) ===
+    "EM_TOTAL": {
+        "series_id": "BAMLEMCBPIEY",
+        "name": "Emerging Markets Total",
+        "category": "Investment Grade",
+        "region": "Emerging Markets",
+        "description": "ICE BofA Emerging Markets Corporate Plus Index Effective Yield"
+    },
+    "EM_HY": {
+        "series_id": "BAMLEMHBHYCRPIEY",
+        "name": "Emerging Markets HY",
+        "category": "High Yield",
+        "region": "Emerging Markets",
+        "description": "ICE BofA High Yield Emerging Markets Corporate Plus Index Effective Yield"
+    },
+
+    # === ASIA ===
+    "ASIA_EM": {
+        "series_id": "BAMLEMRACRPIASIAEY",
+        "name": "Asia EM Corporate",
+        "category": "Investment Grade",
+        "region": "Asia",
+        "description": "ICE BofA Asia Emerging Markets Corporate Plus Index Effective Yield"
+    },
+
+    # === EMEA (Europe, Middle East, Africa) ===
+    "EMEA_EM": {
+        "series_id": "BAMLEMRECRPIEMEAEY",
+        "name": "EMEA EM Corporate",
+        "category": "Investment Grade",
+        "region": "EMEA",
+        "description": "ICE BofA EMEA Emerging Markets Corporate Plus Index Effective Yield"
+    },
+
+    # === LATIN AMERICA ===
+    "LATAM_EM": {
+        "series_id": "BAMLEMRLCRPILAEY",
+        "name": "Latin America EM Corporate",
+        "category": "Investment Grade",
+        "region": "Latin America",
+        "description": "ICE BofA Latin America Emerging Markets Corporate Plus Index Effective Yield"
+    },
+
+    # === SPREADS (for comparison) ===
+    "US_SPREAD_IG": {
         "series_id": "BAMLC0A0CM",
-        "name": "IG Spread",
+        "name": "US IG Spread",
         "category": "Spreads",
+        "region": "North America",
         "description": "ICE BofA US Corporate Index Option-Adjusted Spread"
     },
-    "SPREAD_HY": {
+    "US_SPREAD_HY": {
         "series_id": "BAMLH0A0HYM2",
-        "name": "HY Spread",
+        "name": "US HY Spread",
         "category": "Spreads",
+        "region": "North America",
         "description": "ICE BofA US High Yield Index Option-Adjusted Spread"
+    },
+    "EU_SPREAD_HY": {
+        "series_id": "BAMLHE00EHYIOAS",
+        "name": "Euro HY Spread",
+        "category": "Spreads",
+        "region": "Europe",
+        "description": "ICE BofA Euro High Yield Index Option-Adjusted Spread"
+    },
+    "EM_SPREAD": {
+        "series_id": "BAMLEMCBPIOAS",
+        "name": "EM Corporate Spread",
+        "category": "Spreads",
+        "region": "Emerging Markets",
+        "description": "ICE BofA Emerging Markets Corporate Plus Index Option-Adjusted Spread"
     }
 }
 
@@ -111,13 +195,18 @@ def fetch_fred_series(series_id):
 def fetch_corporate_bonds_data():
     print("Downloading Corporate Bond Yields data from FRED...")
 
+    # Collect all unique regions
+    regions = list(set(info["region"] for info in FRED_SERIES.values()))
+    regions.sort()
+
     result = {
         "metadata": {
             "source": "FRED (Federal Reserve Economic Data)",
             "indicator": "ICE BofA Corporate Bond Indices",
-            "description": "US Corporate Bond Yields - Investment Grade and High Yield",
+            "description": "Corporate Bond Yields by Region - Investment Grade and High Yield",
             "fetched_at": datetime.now().isoformat(),
-            "categories": ["Investment Grade", "High Yield", "Spreads"]
+            "categories": ["Investment Grade", "High Yield", "Spreads"],
+            "regions": regions
         },
         "current": {
             "Investment Grade": [],
@@ -142,6 +231,7 @@ def fetch_corporate_bonds_data():
                 "name": info["name"],
                 "value": latest["value"],
                 "date": latest["date"],
+                "region": info["region"],
                 "description": info["description"]
             })
 
@@ -160,6 +250,7 @@ def fetch_corporate_bonds_data():
             result["timeseries"][code] = {
                 "name": info["name"],
                 "category": info["category"],
+                "region": info["region"],
                 "description": info["description"],
                 "data": timeseries_data[-300:]  # Last 300 months (25 years)
             }

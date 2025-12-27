@@ -608,6 +608,10 @@
 
       <div id="corpbonds-barControls" class="flex gap-4 mb-4 flex-wrap">
         <div>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Region:</label>
+          <select id="corpbonds-regionSelect" class="bg-stone-300 dark:bg-gray-800 border border-stone-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
+        </div>
+        <div>
           <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Category:</label>
           <select id="corpbonds-categorySelect" class="bg-stone-300 dark:bg-gray-800 border border-stone-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
@@ -617,6 +621,10 @@
         <div class="mb-2">
           <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Select series to compare:</label>
           <button id="corpbonds-btnClearSeries" class="text-xs text-red-400 hover:text-red-300 ml-2">Clear all</button>
+        </div>
+        <div class="mb-2">
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Filter by region:</label>
+          <select id="corpbonds-lineRegionFilter" class="bg-stone-300 dark:bg-gray-800 border border-stone-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
         </div>
         <div id="corpbonds-seriesSelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-stone-300 dark:bg-gray-900 rounded border border-stone-400 dark:border-gray-800"></div>
         <p class="text-xs text-gray-500 mt-2">25 years of monthly data from ICE BofA indices</p>

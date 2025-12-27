@@ -18,7 +18,7 @@ export default function Layout() {
   return (
     <div className="min-h-screen flex bg-[#f5f0e8] dark:bg-gray-950">
       {/* Sidebar */}
-      <aside className="w-64 bg-[#e8e2d6] dark:bg-gray-900 border-r border-[#c4bfb3] dark:border-gray-800 flex flex-col min-h-screen fixed">
+      <aside className="w-64 bg-[#e8e2d6] dark:bg-gray-900 border-r border-[#c4bfb3] dark:border-gray-800 flex flex-col h-screen fixed top-0 left-0 z-10">
         <div className="p-4 border-b border-[#c4bfb3] dark:border-gray-800 flex items-center justify-between">
           <NavLink to="/" className="flex items-center gap-2 text-xl font-bold text-amber-700 dark:text-yellow-500">
             Borosa Graphs

@@ -20,6 +20,7 @@ const corporateBondsModule = (function() {
     "Spreads": "#f59e0b"            // Amber
   };
 
+  // Base colors by region (used for legend and line charts)
   const regionColors = {
     "North America": "#3b82f6",     // Blue
     "Europe": "#8b5cf6",            // Purple
@@ -28,6 +29,49 @@ const corporateBondsModule = (function() {
     "Emerging Markets": "#ec4899",  // Pink
     "EMEA": "#06b6d4"               // Cyan
   };
+
+  // Color shades by region and category
+  // Investment Grade = lighter, High Yield = darker, Spreads = medium/muted
+  const regionCategoryColors = {
+    "North America": {
+      "Investment Grade": "#60a5fa",  // Blue-400 (lighter)
+      "High Yield": "#1d4ed8",        // Blue-700 (darker)
+      "Spreads": "#3b82f6"            // Blue-500 (medium)
+    },
+    "Europe": {
+      "Investment Grade": "#a78bfa",  // Purple-400 (lighter)
+      "High Yield": "#6d28d9",        // Purple-700 (darker)
+      "Spreads": "#8b5cf6"            // Purple-500 (medium)
+    },
+    "Asia": {
+      "Investment Grade": "#fbbf24",  // Amber-400 (lighter)
+      "High Yield": "#b45309",        // Amber-700 (darker)
+      "Spreads": "#f59e0b"            // Amber-500 (medium)
+    },
+    "Latin America": {
+      "Investment Grade": "#34d399",  // Emerald-400 (lighter)
+      "High Yield": "#047857",        // Emerald-700 (darker)
+      "Spreads": "#10b981"            // Emerald-500 (medium)
+    },
+    "Emerging Markets": {
+      "Investment Grade": "#f472b6",  // Pink-400 (lighter)
+      "High Yield": "#be185d",        // Pink-700 (darker)
+      "Spreads": "#ec4899"            // Pink-500 (medium)
+    },
+    "EMEA": {
+      "Investment Grade": "#22d3ee",  // Cyan-400 (lighter)
+      "High Yield": "#0e7490",        // Cyan-700 (darker)
+      "Spreads": "#06b6d4"            // Cyan-500 (medium)
+    }
+  };
+
+  // Get color based on region and category
+  function getColor(region, category) {
+    if (regionCategoryColors[region] && regionCategoryColors[region][category]) {
+      return regionCategoryColors[region][category];
+    }
+    return regionColors[region] || '#888';
+  }
 
   const lineColors = [
     '#3b82f6', '#8b5cf6', '#f59e0b', '#10b981', '#ec4899', '#06b6d4',
@@ -54,13 +98,21 @@ const corporateBondsModule = (function() {
   function renderLegend() {
     const legend = document.getElementById(`${prefix}-legend`);
     if (currentView === 'bar') {
-      // Show region colors legend
-      legend.innerHTML = Object.entries(regionColors).map(([region, color]) =>
-        `<span class="flex items-center gap-1">
-          <span class="w-3 h-3 rounded" style="background-color: ${color}"></span>
+      // Show region colors with category shades
+      let html = '';
+      for (const [region, baseColor] of Object.entries(regionColors)) {
+        const igColor = regionCategoryColors[region]["Investment Grade"];
+        const hyColor = regionCategoryColors[region]["High Yield"];
+        html += `<span class="flex items-center gap-1 mr-3">
+          <span class="w-3 h-3 rounded" style="background: linear-gradient(to right, ${igColor}, ${hyColor})"></span>
           ${region}
-        </span>`
-      ).join('');
+        </span>`;
+      }
+      // Add category explanation
+      html += `<span class="text-gray-500 ml-2">|</span>`;
+      html += `<span class="flex items-center gap-1 ml-2 text-gray-500">Lighter = IG</span>`;
+      html += `<span class="flex items-center gap-1 text-gray-500">Darker = HY</span>`;
+      legend.innerHTML = html;
     } else {
       legend.innerHTML = '';
     }
@@ -70,6 +122,10 @@ const corporateBondsModule = (function() {
     let items = [];
 
     for (const [category, bonds] of Object.entries(data.current)) {
+      // When "all" is selected, exclude Spreads (they use different units - basis points vs yield %)
+      if (currentCategory === "all" && category === "Spreads") {
+        continue;
+      }
       if (currentCategory === "all" || currentCategory === category) {
         for (const bond of bonds) {
           // Filter by region
@@ -96,16 +152,21 @@ const corporateBondsModule = (function() {
 
     const avg = items.length > 0 ? items.reduce((sum, d) => sum + d.value, 0) / items.length : 0;
 
-    document.getElementById(`${prefix}-title`).textContent = '🏢 Corporate Bond Yields';
+    // Spreads use basis points (percentage points), yields use %
+    const isSpreads = currentCategory === "Spreads";
+    const unit = isSpreads ? " bps" : "%";
+    const titleSuffix = isSpreads ? " - Spreads (vs Treasury)" : "";
+
+    document.getElementById(`${prefix}-title`).textContent = `🏢 Corporate Bond Yields${titleSuffix}`;
     document.getElementById(`${prefix}-subtitle`).textContent =
-      `${items.length} indices · Average: ${formatNumber(avg)}% · Updated: ${data.metadata?.fetched_at?.split('T')[0] || 'N/A'}`;
+      `${items.length} indices · Average: ${formatNumber(avg)}${unit} · Updated: ${data.metadata?.fetched_at?.split('T')[0] || 'N/A'}`;
 
     const chartData = {
       labels: items.map(d => d.name),
       datasets: [{
         label: 'Yield',
         data: items.map(d => d.value),
-        backgroundColor: items.map(d => regionColors[d.region] || '#888'),
+        backgroundColor: items.map(d => getColor(d.region, d.category)),
         borderRadius: 4,
         barThickness: 28
       }]
@@ -115,6 +176,7 @@ const corporateBondsModule = (function() {
       barChart.data = chartData;
       barChart.options.scales.x.grid.color = colors.gridColor;
       barChart.options.scales.x.ticks.color = colors.tickColor;
+      barChart.options.scales.x.ticks.callback = v => formatNumber(v) + unit;
       barChart.options.scales.y.ticks.color = colors.labelColor;
       barChart.update('none');
     } else {
@@ -137,7 +199,9 @@ const corporateBondsModule = (function() {
               callbacks: {
                 label: (ctx) => {
                   const d = items[ctx.dataIndex];
-                  return [`Yield: ${formatNumber(d.value)}%`, `Region: ${d.region}`, `Category: ${d.category}`, d.description];
+                  const valueLabel = d.category === "Spreads" ? "Spread" : "Yield";
+                  const valueUnit = d.category === "Spreads" ? " bps" : "%";
+                  return [`${valueLabel}: ${formatNumber(d.value)}${valueUnit}`, `Region: ${d.region}`, `Category: ${d.category}`, d.description];
                 }
               }
             }
@@ -146,7 +210,7 @@ const corporateBondsModule = (function() {
             x: {
               beginAtZero: true,
               grid: { color: colors.gridColor },
-              ticks: { color: colors.tickColor, callback: v => formatNumber(v) + '%' }
+              ticks: { color: colors.tickColor, callback: v => formatNumber(v) + unit }
             },
             y: {
               grid: { display: false },
@@ -182,13 +246,13 @@ const corporateBondsModule = (function() {
 
     container.innerHTML = allSeries.map(s => {
       const isSelected = selectedSeries.has(s.code);
-      const regionColor = regionColors[s.region] || '#888';
+      const seriesColor = getColor(s.region, s.category);
       const unselectedClasses = isDark
         ? 'bg-gray-700 text-gray-200 hover:bg-gray-600'
         : 'bg-stone-400 text-gray-900 hover:bg-stone-500';
       return `<span
         class="country-chip px-2 py-1 rounded text-xs cursor-pointer transition-all font-medium ${isSelected ? 'text-white hover:opacity-80' : unselectedClasses}"
-        style="${isSelected ? `background-color: ${regionColor}` : ''}"
+        style="${isSelected ? `background-color: ${seriesColor}` : ''}"
         data-code="${s.code}"
         title="${s.region} · ${s.category} · ${s.description}"
       >${s.name}</span>`;
@@ -240,7 +304,7 @@ const corporateBondsModule = (function() {
       const series = data.timeseries[code];
       if (!series) return;
 
-      const color = regionColors[series.region] || lineColors[colorIndex % lineColors.length];
+      const color = getColor(series.region, series.category);
       colorIndex++;
 
       // Create data array aligned with dates

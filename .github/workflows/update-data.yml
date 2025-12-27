@@ -1,4 +1,4 @@
-name: Update All Data
+name: Update Data
 
 on:
   schedule:
@@ -8,8 +8,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   update-data:
@@ -69,28 +67,3 @@ jobs:
           git add data/*.json
           git diff --staged --quiet || git commit -m "📊 Update all data - $(date +'%Y-%m-%d')"
           git push || echo "Nothing to push"
-
-  deploy:
-    needs: update-data
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Pull latest changes
-        run: git pull origin main
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

@@ -9,6 +9,8 @@ export default function Employment() {
       valueUnit="%"
       titleBar="👷 Unemployment Rate"
       titleLine="📈 Unemployment Evolution - Time Series"
+      infoBar="Shows the unemployment rate (percentage of labor force) for each country in the selected year."
+      infoLine="Shows how unemployment rates have evolved over time for selected countries. Dashed lines indicate IMF projections."
     />
   );
 }

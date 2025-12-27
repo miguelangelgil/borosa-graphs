@@ -4,6 +4,7 @@ import { useTheme } from '../hooks/useTheme';
 import { useChartData } from '../hooks/useChartData';
 import { getThemeColors } from '../utils/chartUtils';
 import { ViewToggle, Select, LineControls } from '../components/ChartControls';
+import InfoTooltip from '../components/InfoTooltip';
 
 Chart.register(...registerables);
 
@@ -387,11 +388,17 @@ export default function CorporateBonds() {
     ? 'bg-gray-700 text-gray-200 hover:bg-gray-600'
     : 'bg-[#d9d3c7] text-gray-700 hover:bg-[#cec8bc]';
 
+  const infoBar = "Shows current corporate bond yields by region and category. Investment Grade (IG) bonds are lower risk, High Yield (HY) bonds offer higher returns with more risk.";
+  const infoLine = "Shows how corporate bond yields have evolved over time for selected indices across different regions and credit categories.";
+
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-1">
-        {view === 'bar' ? `🏢 Corporate Bond Yields${titleSuffix}` : '📈 Corporate Bond Yields - Historical'}
-      </h1>
+      <div className="flex items-center gap-3 mb-1">
+        <InfoTooltip text={view === 'bar' ? infoBar : infoLine} />
+        <h1 className="text-2xl font-bold">
+          {view === 'bar' ? `🏢 Corporate Bond Yields${titleSuffix}` : '📈 Corporate Bond Yields - Historical'}
+        </h1>
+      </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
         {view === 'bar'
           ? `${barData.length} indices · Average: ${formatNumber(avg)}${unit} · Updated: ${data?.metadata?.fetched_at?.split('T')[0] || 'N/A'}`

@@ -15,6 +15,7 @@ import {
   CountrySelector,
   Legend
 } from './ChartControls';
+import InfoTooltip from './InfoTooltip';
 
 Chart.register(...registerables);
 
@@ -25,6 +26,8 @@ export default function MetricPage({
   valueUnit,
   titleBar,
   titleLine,
+  infoBar = '',
+  infoLine = '',
   refLines = [],
   formatFn = formatNumber
 }) {
@@ -411,11 +414,16 @@ export default function MetricPage({
   const isProjectionYear = data?.metadata?.projection_years?.includes(currentYear);
   const avg = barData.length > 0 ? barData.reduce((sum, d) => sum + d[valueKey], 0) / barData.length : 0;
 
+  const currentInfo = view === 'bar' ? infoBar : infoLine;
+
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-1">
-        {view === 'bar' ? `${titleBar} (${currentYear})${isProjectionYear ? ' - Projection' : ''}` : titleLine}
-      </h1>
+      <div className="flex items-center gap-3 mb-1">
+        {currentInfo && <InfoTooltip text={currentInfo} />}
+        <h1 className="text-2xl font-bold">
+          {view === 'bar' ? `${titleBar} (${currentYear})${isProjectionYear ? ' - Projection' : ''}` : titleLine}
+        </h1>
+      </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
         {view === 'bar'
           ? `${barData.length} countries · Average: ${formatFn(avg)}${valueUnit} · Updated: ${data?.metadata?.fetched_at?.split('T')[0] || 'N/A'}`

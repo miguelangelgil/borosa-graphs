@@ -4,6 +4,7 @@ import { useTheme } from '../hooks/useTheme';
 import { useChartData } from '../hooks/useChartData';
 import { regionColors, lineColors, getThemeColors } from '../utils/chartUtils';
 import { ViewToggle, Select, LineControls, CountrySelector, Legend } from '../components/ChartControls';
+import InfoTooltip from '../components/InfoTooltip';
 
 Chart.register(...registerables);
 
@@ -307,11 +308,17 @@ export default function Bonds() {
     { value: 'name', label: 'Alphabetical' }
   ];
 
+  const infoBar = `Shows current government bond yields for the selected duration (${currentDuration}). Higher yields indicate higher borrowing costs or perceived risk.`;
+  const infoLine = "Shows the yield curve for selected countries - how yields vary across different bond durations (from short-term to long-term).";
+
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-1">
-        {view === 'bar' ? `📈 Government Bond Yields - ${currentDuration}` : '📈 Bond Yields by Duration'}
-      </h1>
+      <div className="flex items-center gap-3 mb-1">
+        <InfoTooltip text={view === 'bar' ? infoBar : infoLine} />
+        <h1 className="text-2xl font-bold">
+          {view === 'bar' ? `📈 Government Bond Yields - ${currentDuration}` : '📈 Bond Yields by Duration'}
+        </h1>
+      </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
         {view === 'bar'
           ? `${barData.length} countries · Average: ${formatNumber(avg)}% · Updated: ${data?.metadata?.fetched_at?.split('T')[0] || 'N/A'}`

@@ -9,6 +9,8 @@ export default function Debt() {
       valueUnit="$"
       titleBar="💳 Public Debt"
       titleLine="📈 Public Debt Evolution - Time Series"
+      infoBar="Shows the total government debt (in US dollars) for each country in the selected year."
+      infoLine="Shows how public debt has evolved over time for selected countries. Dashed lines indicate IMF projections."
     />
   );
 }

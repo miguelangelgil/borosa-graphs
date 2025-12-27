@@ -9,6 +9,8 @@ export default function Gdp() {
       valueUnit="$"
       titleBar="💰 Gross Domestic Product (GDP)"
       titleLine="📈 GDP Evolution - Time Series"
+      infoBar="Shows the nominal GDP (in US dollars) for each country in the selected year. GDP measures the total value of goods and services produced."
+      infoLine="Shows how GDP has evolved over time for selected countries. Dashed lines indicate IMF projections."
     />
   );
 }

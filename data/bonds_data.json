@@ -3,7 +3,7 @@
     "source": "Investing.com via investpy",
     "indicator": "Government Bond Yields",
     "description": "Government bond yields by maturity",
-    "fetched_at": "2025-12-27T12:12:44.270344",
+    "fetched_at": "2025-12-27T12:46:02.147813",
     "available_durations": [
       "1Y",
       "2Y",
@@ -56,7 +56,7 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 6.885,
+        "value": 6.814,
         "region": "Asia",
         "isProjection": false
       },
@@ -77,7 +77,7 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 5.574,
+        "value": 5.582,
         "region": "Asia",
         "isProjection": false
       },
@@ -345,7 +345,7 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 6.915,
+        "value": 6.886,
         "region": "Asia",
         "isProjection": false
       },
@@ -359,7 +359,7 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 5.821,
+        "value": 5.811,
         "region": "Asia",
         "isProjection": false
       },
@@ -676,7 +676,7 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 6.971,
+        "value": 6.98,
         "region": "Asia",
         "isProjection": false
       },
@@ -697,7 +697,7 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 6.076,
+        "value": 6.03,
         "region": "Asia",
         "isProjection": false
       },
@@ -1042,7 +1042,7 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 6.982,
+        "value": 7.007,
         "region": "Asia",
         "isProjection": false
       },
@@ -1082,17 +1082,17 @@
         "isProjection": false
       },
       {
-        "code": "IND",
-        "country": "India",
-        "value": 6.344,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
         "code": "PER",
         "country": "Peru",
         "value": 6.338,
         "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "IND",
+        "country": "India",
+        "value": 6.332,
+        "region": "Asia",
         "isProjection": false
       },
       {
@@ -1639,7 +1639,7 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 6.573,
+        "value": 6.58,
         "region": "Asia",
         "isProjection": false
       },
@@ -2485,7 +2485,7 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 7.303,
+        "value": 7.298,
         "region": "Asia",
         "isProjection": false
       },
@@ -2926,13 +2926,13 @@
       "country": "India",
       "region": "Asia",
       "yields": {
-        "1Y": 6.885,
-        "2Y": 6.915,
-        "3Y": 6.971,
-        "5Y": 6.982,
-        "7Y": 6.573,
+        "1Y": 6.814,
+        "2Y": 6.886,
+        "3Y": 6.98,
+        "5Y": 7.007,
+        "7Y": 6.58,
         "10Y": 6.56,
-        "30Y": 7.303
+        "30Y": 7.298
       }
     },
     "IDN": {

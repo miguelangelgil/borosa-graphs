@@ -2,9 +2,9 @@ name: Update All Data
 
 on:
   schedule:
-    # Cada domingo a las 00:00 UTC
+    # Every Sunday at 00:00 UTC
     - cron: '0 0 * * 0'
-  workflow_dispatch: # Permite ejecución manual
+  workflow_dispatch: # Allows manual execution
 
 permissions:
   contents: write
@@ -25,7 +25,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests investpy
 
       - name: Create data directory
         run: mkdir -p data
@@ -52,6 +52,14 @@ jobs:
 
       - name: Fetch Employment data (IMF)
         run: cd scripts && python fetch_employment_data.py
+        continue-on-error: true
+
+      - name: Fetch Bond Yields data (Investing.com)
+        run: cd scripts && python fetch_bonds_data.py
+        continue-on-error: true
+
+      - name: Fetch Corporate Bonds data (FRED)
+        run: cd scripts && python fetch_corporate_bonds_data.py
         continue-on-error: true
 
       - name: Commit and push

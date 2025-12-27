@@ -13,6 +13,7 @@ A static web dashboard for visualizing financial metrics that aren't available o
 - **M2 Money Supply** - Broad money supply including World total
 - **Trade Balance** - Exports minus imports
 - **Unemployment** - Unemployment rate by country
+- **Bond Yields** - Government bond yields with duration selector (1Y to 30Y)
 
 Each metric includes:
 - Interactive bar chart rankings by country
@@ -27,6 +28,7 @@ Each metric includes:
 |--------|--------|------------------|
 | Debt/GDP, GDP, Public Debt, Unemployment | [IMF DataMapper](https://www.imf.org/external/datamapper) | Weekly |
 | M2 Money Supply, Trade Balance | [World Bank API](https://data.worldbank.org/) | Weekly |
+| Bond Yields | [Investing.com](https://www.investing.com/rates-bonds/) | Weekly |
 
 ## Live Demo
 
@@ -46,7 +48,7 @@ git clone https://github.com/miguelangelgil/borosa-graphs.git
 cd borosa-graphs
 
 # Install Python dependencies
-pip install requests
+pip install requests investpy
 
 # Fetch fresh data
 cd scripts
@@ -56,6 +58,7 @@ python fetch_debt_data.py     # Public debt
 python fetch_m2_data.py       # M2 money supply
 python fetch_trade_data.py    # Trade balance
 python fetch_employment_data.py  # Unemployment
+python fetch_bonds_data.py    # Bond yields
 
 # Start local server
 cd ..
@@ -127,7 +130,7 @@ All JSON data files follow this structure:
 ## Technologies
 
 - **Frontend**: Vanilla JavaScript, [Tailwind CSS](https://tailwindcss.com/), [Chart.js](https://www.chartjs.org/)
-- **Data Pipeline**: Python with `requests` library
+- **Data Pipeline**: Python with `requests` and `investpy` libraries
 - **Hosting**: GitHub Pages
 - **CI/CD**: GitHub Actions
 
@@ -144,4 +147,4 @@ MIT License - feel free to use this project for any purpose.
 
 ---
 
-*Data provided by IMF and World Bank. This project is not affiliated with TradingView.*
+*Data provided by IMF, World Bank, and Investing.com.*

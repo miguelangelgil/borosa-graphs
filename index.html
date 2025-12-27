@@ -20,7 +20,7 @@
   </script>
   <style>
     /* Light mode (default) - warm beige background */
-    html { background: #c9c4b8; }
+    html { background: #ebd9b0; }
     html.dark { background: #030712; }
     select { color-scheme: light; }
     html.dark select { color-scheme: dark; }
@@ -79,6 +79,11 @@
         <span>👷</span>
         <span>Employment</span>
       </a>
+
+      <a href="#" data-page="bonds" class="sidebar-link flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white">
+        <span>📈</span>
+        <span>Bond Yields</span>
+      </a>
     </nav>
 
     <div class="p-4 border-t border-stone-400 dark:border-gray-800 text-xs text-gray-600 dark:text-gray-400">
@@ -86,6 +91,7 @@
       <div class="flex flex-col gap-1">
         <a href="https://www.imf.org/external/datamapper" target="_blank" class="hover:text-gray-800 dark:hover:text-gray-200">IMF DataMapper</a>
         <a href="https://data.worldbank.org/" target="_blank" class="hover:text-gray-800 dark:hover:text-gray-200">World Bank</a>
+        <a href="https://www.investing.com/rates-bonds/" target="_blank" class="hover:text-gray-800 dark:hover:text-gray-200">Investing.com</a>
       </div>
     </div>
   </aside>
@@ -108,6 +114,9 @@
           </a>
           <a href="https://data.worldbank.org/" target="_blank" class="px-3 py-1.5 bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-full hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
             World Bank
+          </a>
+          <a href="https://www.investing.com/rates-bonds/" target="_blank" class="px-3 py-1.5 bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-full hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
+            Investing.com
           </a>
         </div>
       </div>
@@ -507,6 +516,73 @@
       </footer>
     </div>
 
+    <!-- Bond Yields page -->
+    <div id="page-bonds" class="page hidden p-6">
+      <h1 id="bonds-title" class="text-2xl font-bold mb-1">📈 Government Bond Yields</h1>
+      <p id="bonds-subtitle" class="text-gray-600 dark:text-gray-400 text-sm mb-4">Loading data...</p>
+
+      <div class="flex gap-2 mb-4">
+        <button id="bonds-btnBarView" class="px-4 py-2 rounded text-sm font-medium bg-yellow-500 text-black">
+          📊 Country Ranking
+        </button>
+        <button id="bonds-btnLineView" class="px-4 py-2 rounded text-sm font-medium bg-stone-400 dark:bg-gray-700 text-gray-900 dark:text-gray-300 hover:bg-stone-500 dark:hover:bg-gray-600">
+          📈 Yield Curve
+        </button>
+      </div>
+
+      <div id="bonds-barControls" class="flex gap-4 mb-4 flex-wrap">
+        <div>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Duration:</label>
+          <select id="bonds-durationSelect" class="bg-stone-300 dark:bg-gray-800 border border-stone-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
+        </div>
+        <div>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Region:</label>
+          <select id="bonds-regionSelect" class="bg-stone-300 dark:bg-gray-800 border border-stone-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white"></select>
+        </div>
+        <div>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Sort:</label>
+          <select id="bonds-sortSelect" class="bg-stone-300 dark:bg-gray-800 border border-stone-400 dark:border-gray-700 rounded px-2 py-1 text-sm text-gray-900 dark:text-white">
+            <option value="value">By value</option>
+            <option value="alpha">Alphabetical</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="bonds-lineControls" class="hidden mb-4">
+        <div class="mb-2">
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Select countries to compare yield curves:</label>
+          <button id="bonds-btnClearCountries" class="text-xs text-red-400 hover:text-red-300 ml-2">Clear all</button>
+        </div>
+        <div>
+          <label class="text-sm text-gray-600 dark:text-gray-400 mr-2">Filter by region:</label>
+          <select id="bonds-lineRegionFilter" class="bg-stone-300 dark:bg-gray-800 border border-stone-400 dark:border-gray-700 rounded px-2 py-1 text-sm mb-2 text-gray-900 dark:text-white"></select>
+        </div>
+        <div id="bonds-countrySelector" class="flex flex-wrap gap-1 max-h-32 overflow-y-auto p-2 bg-stone-300 dark:bg-gray-900 rounded border border-stone-400 dark:border-gray-800"></div>
+        <p class="text-xs text-gray-500 mt-2">Compare yield curves across different bond durations</p>
+      </div>
+
+      <div id="bonds-legend" class="flex gap-3 mb-4 flex-wrap text-xs"></div>
+
+      <div id="bonds-barChartContainer" style="height: 1500px;">
+        <canvas id="bonds-barChart"></canvas>
+      </div>
+
+      <div id="bonds-lineChartContainer" class="hidden" style="height: 600px;">
+        <canvas id="bonds-lineChart"></canvas>
+      </div>
+
+      <div class="mt-4 text-xs text-gray-500 space-y-1">
+        <p>Government bond yields by maturity (1Y to 30Y)</p>
+        <p>An inverted yield curve (short-term rates higher than long-term) may signal recession</p>
+      </div>
+
+      <footer class="mt-8 pt-4 border-t border-gray-300 dark:border-gray-800 text-xs text-gray-600">
+        <p>Source: Investing.com ·
+          <a href="https://github.com/miguelangelgil/borosa-graphs" class="text-blue-500 hover:underline">View repository</a>
+        </p>
+      </footer>
+    </div>
+
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
@@ -519,5 +595,6 @@
   <script src="js/m2.js"></script>
   <script src="js/trade.js"></script>
   <script src="js/employment.js"></script>
+  <script src="js/bonds.js"></script>
 </body>
 </html>

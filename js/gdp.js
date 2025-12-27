@@ -3,10 +3,10 @@ const gdpModule = createChartModule({
   prefix: 'gdp',
   dataFile: './data/gdp_data.json',
   valueKey: 'value',
-  valueLabel: 'PIB',
+  valueLabel: 'GDP',
   valueUnit: ' USD',
-  titleBar: '💰 PIB (Producto Interior Bruto)',
-  titleLine: '📈 Evolución del PIB - Series Temporales',
+  titleBar: '💰 GDP (Gross Domestic Product)',
+  titleLine: '📈 GDP Evolution - Time Series',
   refLines: []
 });
 

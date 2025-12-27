@@ -5,8 +5,8 @@ const m2Module = createChartModule({
   valueKey: 'value',
   valueLabel: 'M2',
   valueUnit: ' USD',
-  titleBar: '🏦 Oferta Monetaria M2',
-  titleLine: '📈 Evolución de M2 - Series Temporales',
+  titleBar: '🏦 M2 Money Supply',
+  titleLine: '📈 M2 Evolution - Time Series',
   refLines: []
 });
 

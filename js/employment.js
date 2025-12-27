@@ -3,10 +3,10 @@ const employmentModule = createChartModule({
   prefix: 'employment',
   dataFile: './data/employment_data.json',
   valueKey: 'value',
-  valueLabel: 'Desempleo',
+  valueLabel: 'Unemployment',
   valueUnit: '%',
-  titleBar: '👷 Tasa de Desempleo',
-  titleLine: '📈 Evolución del Desempleo - Series Temporales',
+  titleBar: '👷 Unemployment Rate',
+  titleLine: '📈 Unemployment Evolution - Time Series',
   refLines: []
 });
 

@@ -33,19 +33,21 @@ Static web visualization dashboard for financial metrics not available on Tradin
 | M2 | World Bank | FM.LBL.BMNY.GD.ZS + NY.GDP.MKTP.CD |
 | Trade Balance | World Bank | NE.EXP.GNFS.CD - NE.IMP.GNFS.CD |
 | Unemployment | IMF DataMapper | LUR |
+| Bond Yields | Investing.com | Government bonds (1Y-30Y) |
 
 ## Commands
 
 ### Fetch All Data Locally
 ```bash
 cd scripts
-pip install requests
+pip install requests investpy
 python fetch_imf_data.py      # Debt/GDP ratio
 python fetch_gdp_data.py      # GDP
 python fetch_debt_data.py     # Public debt
 python fetch_m2_data.py       # M2 money supply
-python fetch_exports_data.py  # Exports
+python fetch_trade_data.py    # Trade balance
 python fetch_employment_data.py  # Unemployment
+python fetch_bonds_data.py    # Bond yields
 ```
 
 ### Local Development

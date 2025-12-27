@@ -12,15 +12,17 @@
   background: transparent;
 }
 
+/* Light mode scrollbar */
 ::-webkit-scrollbar-thumb {
-  background: #374151;
+  background: #c4bfb3;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4b5563;
+  background: #a39e92;
 }
 
+/* Dark mode scrollbar */
 .dark ::-webkit-scrollbar-thumb {
   background: #4b5563;
 }
@@ -31,11 +33,21 @@
 
 /* Sidebar link active state */
 .sidebar-link.active {
-  background-color: #fbbf24;
-  color: #000;
+  background-color: #d97706 !important;
+  color: #fff !important;
 }
 
 .dark .sidebar-link.active {
-  background-color: #fbbf24;
-  color: #000;
+  background-color: #fbbf24 !important;
+  color: #000 !important;
+}
+
+/* Better focus states */
+select:focus, button:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+
+.dark select:focus, .dark button:focus-visible {
+  outline-color: #fbbf24;
 }

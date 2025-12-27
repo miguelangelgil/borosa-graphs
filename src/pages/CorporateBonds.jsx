@@ -385,7 +385,7 @@ export default function CorporateBonds() {
 
   const unselectedClasses = isDark
     ? 'bg-gray-700 text-gray-200 hover:bg-gray-600'
-    : 'bg-stone-400 text-gray-900 hover:bg-stone-500';
+    : 'bg-[#d9d3c7] text-gray-700 hover:bg-[#cec8bc]';
 
   return (
     <div className="p-6">
@@ -439,7 +439,7 @@ export default function CorporateBonds() {
           />
 
           {/* Series selector */}
-          <div className="flex flex-wrap gap-2 mb-4 max-h-32 overflow-y-auto p-2 bg-gray-100 dark:bg-gray-800 rounded">
+          <div className="flex flex-wrap gap-2 mb-4 max-h-32 overflow-y-auto p-2 bg-[#e8e2d6] dark:bg-gray-800 rounded">
             {allSeries.map(s => {
               const isSelected = selectedSeries.has(s.code);
               const seriesColor = getColor(s.region, s.category);

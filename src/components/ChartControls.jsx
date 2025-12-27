@@ -3,10 +3,12 @@ import { useTheme } from '../hooks/useTheme';
 export function ViewToggle({ view, setView }) {
   const { isDark } = useTheme();
 
-  const activeClass = 'bg-yellow-500 text-black';
+  const activeClass = isDark
+    ? 'bg-yellow-500 text-black'
+    : 'bg-amber-600 text-white';
   const inactiveClass = isDark
     ? 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-    : 'bg-stone-400 text-gray-900 hover:bg-stone-500';
+    : 'bg-[#d9d3c7] text-gray-700 hover:bg-[#cec8bc]';
 
   return (
     <div className="flex gap-2 mb-4">
@@ -81,7 +83,7 @@ export function LineControls({ regions, lineRegionFilter, setLineRegionFilter, o
       <Select label="Filter by region" value={lineRegionFilter} onChange={setLineRegionFilter} options={regionOptions} />
       <button
         onClick={onClearSelection}
-        className={`px-3 py-1 rounded text-sm ${isDark ? 'bg-gray-700 text-gray-300 hover:bg-gray-600' : 'bg-stone-400 text-gray-900 hover:bg-stone-500'}`}
+        className={`px-3 py-1 rounded text-sm ${isDark ? 'bg-gray-700 text-gray-300 hover:bg-gray-600' : 'bg-[#d9d3c7] text-gray-700 hover:bg-[#cec8bc]'}`}
       >
         Clear selection
       </button>
@@ -94,18 +96,20 @@ export function CountrySelector({ countries, selectedCountries, toggleCountry })
 
   const unselectedClasses = isDark
     ? 'bg-gray-700 text-gray-200 hover:bg-gray-600'
-    : 'bg-stone-400 text-gray-900 hover:bg-stone-500';
+    : 'bg-[#d9d3c7] text-gray-700 hover:bg-[#cec8bc]';
+
+  const selectedClasses = isDark
+    ? 'bg-blue-600 text-white hover:bg-blue-700'
+    : 'bg-amber-600 text-white hover:bg-amber-700';
 
   return (
-    <div className="flex flex-wrap gap-2 mb-4 max-h-32 overflow-y-auto p-2 bg-gray-100 dark:bg-gray-800 rounded">
+    <div className="flex flex-wrap gap-2 mb-4 max-h-32 overflow-y-auto p-2 bg-[#e8e2d6] dark:bg-gray-800 rounded">
       {countries.map(c => (
         <span
           key={c.code}
           onClick={() => toggleCountry(c.code)}
           className={`px-2 py-1 rounded text-xs cursor-pointer transition-all font-medium ${
-            selectedCountries.has(c.code)
-              ? 'bg-blue-600 text-white hover:bg-blue-700'
-              : unselectedClasses
+            selectedCountries.has(c.code) ? selectedClasses : unselectedClasses
           }`}
         >
           {c.country}

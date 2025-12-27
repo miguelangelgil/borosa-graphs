@@ -19,11 +19,11 @@ export const lineColors = [
 
 export function getThemeColors(isDark) {
   return {
-    gridColor: isDark ? '#1f2937' : '#9ca3af',
-    tickColor: isDark ? '#9ca3af' : '#374151',
-    labelColor: isDark ? '#e5e7eb' : '#111827',
-    tooltipBg: isDark ? '#111827' : '#f5f5f0',
-    tooltipBorder: isDark ? '#374151' : '#9ca3af'
+    gridColor: isDark ? '#1f2937' : '#d1ccc0',
+    tickColor: isDark ? '#9ca3af' : '#4b5563',
+    labelColor: isDark ? '#e5e7eb' : '#1f2937',
+    tooltipBg: isDark ? '#111827' : '#fffef9',
+    tooltipBorder: isDark ? '#374151' : '#c4bfb3'
   };
 }
 

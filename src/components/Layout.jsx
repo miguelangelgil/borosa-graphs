@@ -19,16 +19,19 @@ export default function Layout() {
     <div className="min-h-screen flex bg-[#f5f0e8] dark:bg-gray-950">
       {/* Sidebar */}
       <aside className="w-64 bg-[#e8e2d6] dark:bg-gray-900 border-r border-[#c4bfb3] dark:border-gray-800 flex flex-col h-screen fixed top-0 left-0 z-10">
-        <div className="p-4 border-b border-[#c4bfb3] dark:border-gray-800 flex items-center justify-between">
-          <NavLink to="/" className="flex items-center gap-2 text-xl font-bold text-amber-700 dark:text-yellow-500">
-            Borosa Graphs
-          </NavLink>
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-lg bg-white/60 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-700 transition-colors"
-          >
-            {isDark ? '🌙' : '☀️'}
-          </button>
+        <div className="p-4 border-b border-[#c4bfb3] dark:border-gray-800">
+          <div className="flex items-center justify-between">
+            <NavLink to="/" className="flex flex-col items-center text-amber-700 dark:text-yellow-500">
+              <span className="text-3xl mb-1">🛍️</span>
+              <span className="text-xl font-bold">Borosa Graphs</span>
+            </NavLink>
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg bg-white/60 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-700 transition-colors"
+            >
+              {isDark ? '🌙' : '☀️'}
+            </button>
+          </div>
         </div>
 
         <nav className="flex-1 py-4 overflow-y-auto">

@@ -3,7 +3,7 @@
     "source": "Investing.com via investpy",
     "indicator": "Government Bond Yields",
     "description": "Government bond yields by maturity",
-    "fetched_at": "2025-12-27T12:24:26.697960",
+    "fetched_at": "2025-12-27T11:48:59.589157",
     "available_durations": [
       "1Y",
       "2Y",
@@ -273,7 +273,7 @@
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 0.909,
+        "value": 0.906,
         "region": "Asia",
         "isProjection": false
       },
@@ -595,16 +595,16 @@
         "isProjection": false
       },
       {
-        "code": "THA",
-        "country": "Thailand",
-        "value": 1.153,
+        "code": "JPN",
+        "country": "Japan",
+        "value": 1.156,
         "region": "Asia",
         "isProjection": false
       },
       {
-        "code": "JPN",
-        "country": "Japan",
-        "value": 1.148,
+        "code": "THA",
+        "country": "Thailand",
+        "value": 1.153,
         "region": "Asia",
         "isProjection": false
       },
@@ -914,7 +914,7 @@
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 1.317,
+        "value": 1.312,
         "region": "Asia",
         "isProjection": false
       },
@@ -1378,7 +1378,7 @@
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 3.056,
+        "value": 3.038,
         "region": "Asia",
         "isProjection": false
       },
@@ -1560,7 +1560,7 @@
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 1.512,
+        "value": 1.523,
         "region": "Asia",
         "isProjection": false
       },
@@ -1793,7 +1793,7 @@
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 1.84,
+        "value": 1.833,
         "region": "Asia",
         "isProjection": false
       },
@@ -2152,7 +2152,7 @@
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 2.047,
+        "value": 2.04,
         "region": "Asia",
         "isProjection": false
       },
@@ -2411,17 +2411,17 @@
         "isProjection": false
       },
       {
-        "code": "JPN",
-        "country": "Japan",
-        "value": 2.974,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
         "code": "DNK",
         "country": "Denmark",
         "value": 2.97,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "JPN",
+        "country": "Japan",
+        "value": 2.966,
+        "region": "Asia",
         "isProjection": false
       },
       {
@@ -2660,7 +2660,7 @@
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 3.398,
+        "value": 3.39,
         "region": "Asia",
         "isProjection": false
       },
@@ -2992,14 +2992,14 @@
       "country": "Japan",
       "region": "Asia",
       "yields": {
-        "1Y": 0.909,
-        "2Y": 1.148,
-        "3Y": 1.317,
-        "5Y": 3.056,
-        "7Y": 1.84,
-        "10Y": 2.047,
-        "20Y": 2.974,
-        "30Y": 3.398
+        "1Y": 0.906,
+        "2Y": 1.156,
+        "3Y": 1.312,
+        "5Y": 3.038,
+        "7Y": 1.833,
+        "10Y": 2.04,
+        "20Y": 2.966,
+        "30Y": 3.39
       }
     },
     "JOR": {

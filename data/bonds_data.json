@@ -3,7 +3,7 @@
     "source": "Investing.com via investpy",
     "indicator": "Government Bond Yields",
     "description": "Government bond yields by maturity",
-    "fetched_at": "2025-12-27T12:46:02.147813",
+    "fetched_at": "2025-12-28T02:22:14.922763",
     "available_durations": [
       "1Y",
       "2Y",
@@ -98,7 +98,7 @@
       {
         "code": "CHL",
         "country": "Chile",
-        "value": 4.395,
+        "value": 4.425,
         "region": "Latam",
         "isProjection": false
       },
@@ -196,7 +196,7 @@
       {
         "code": "IRL",
         "country": "Ireland",
-        "value": 2.184,
+        "value": 2.179,
         "region": "Europe",
         "isProjection": false
       },
@@ -224,7 +224,7 @@
       {
         "code": "ESP",
         "country": "Spain",
-        "value": 2.108,
+        "value": 2.114,
         "region": "Europe",
         "isProjection": false
       },
@@ -289,7 +289,7 @@
       {
         "code": "TUR",
         "country": "Turkey",
-        "value": 37.56,
+        "value": 34.53,
         "region": "Europe",
         "isProjection": false
       },
@@ -471,7 +471,7 @@
       {
         "code": "MAR",
         "country": "Morocco",
-        "value": 2.513,
+        "value": 2.512,
         "region": "MENA",
         "isProjection": false
       },
@@ -620,7 +620,7 @@
       {
         "code": "TUR",
         "country": "Turkey",
-        "value": 34.46,
+        "value": 31.85,
         "region": "Europe",
         "isProjection": false
       },
@@ -662,7 +662,7 @@
       {
         "code": "PAK",
         "country": "Pakistan",
-        "value": 10.477,
+        "value": 10.48,
         "region": "Asia",
         "isProjection": false
       },
@@ -937,7 +937,7 @@
       {
         "code": "TUR",
         "country": "Turkey",
-        "value": 33.635,
+        "value": 31.15,
         "region": "Europe",
         "isProjection": false
       },
@@ -1007,7 +1007,7 @@
       {
         "code": "PAK",
         "country": "Pakistan",
-        "value": 10.785,
+        "value": 10.783,
         "region": "Asia",
         "isProjection": false
       },
@@ -1110,17 +1110,17 @@
         "isProjection": false
       },
       {
+        "code": "CHL",
+        "country": "Chile",
+        "value": 5.2,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
         "code": "GBR",
         "country": "United Kingdom",
         "value": 5.197,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "CHL",
-        "country": "Chile",
-        "value": 5.185,
-        "region": "Latam",
         "isProjection": false
       },
       {
@@ -1823,7 +1823,7 @@
       {
         "code": "TUR",
         "country": "Turkey",
-        "value": 29.695,
+        "value": 27.73,
         "region": "Europe",
         "isProjection": false
       },
@@ -1872,7 +1872,7 @@
       {
         "code": "PAK",
         "country": "Pakistan",
-        "value": 11.448,
+        "value": 11.449,
         "region": "Asia",
         "isProjection": false
       },
@@ -1928,7 +1928,7 @@
       {
         "code": "CHL",
         "country": "Chile",
-        "value": 5.4,
+        "value": 5.405,
         "region": "Latam",
         "isProjection": false
       },
@@ -2252,7 +2252,7 @@
       {
         "code": "CHL",
         "country": "Chile",
-        "value": 5.52,
+        "value": 5.525,
         "region": "Latam",
         "isProjection": false
       },
@@ -2772,11 +2772,11 @@
       "country": "Chile",
       "region": "Latam",
       "yields": {
-        "1Y": 4.395,
+        "1Y": 4.425,
         "2Y": 4.78,
-        "5Y": 5.185,
-        "10Y": 5.4,
-        "20Y": 5.52,
+        "5Y": 5.2,
+        "10Y": 5.405,
+        "20Y": 5.525,
         "30Y": 5.66
       }
     },
@@ -2951,7 +2951,7 @@
       "country": "Ireland",
       "region": "Europe",
       "yields": {
-        "1Y": 2.184,
+        "1Y": 2.179,
         "2Y": 2.094,
         "3Y": 2.214,
         "5Y": 3.705,
@@ -3070,7 +3070,7 @@
       "country": "Morocco",
       "region": "MENA",
       "yields": {
-        "2Y": 2.513,
+        "2Y": 2.512,
         "5Y": 3.358,
         "10Y": 3.016
       }
@@ -3116,9 +3116,9 @@
       "country": "Pakistan",
       "region": "Asia",
       "yields": {
-        "3Y": 10.477,
-        "5Y": 10.785,
-        "10Y": 11.448,
+        "3Y": 10.48,
+        "5Y": 10.783,
+        "10Y": 11.449,
         "20Y": 11.795
       }
     },
@@ -3253,7 +3253,7 @@
       "country": "Spain",
       "region": "Europe",
       "yields": {
-        "1Y": 2.108,
+        "1Y": 2.114,
         "2Y": 2.179,
         "3Y": 2.307,
         "5Y": 4.002,
@@ -3316,10 +3316,10 @@
       "country": "Turkey",
       "region": "Europe",
       "yields": {
-        "2Y": 37.56,
-        "3Y": 34.46,
-        "5Y": 33.635,
-        "10Y": 29.695
+        "2Y": 34.53,
+        "3Y": 31.85,
+        "5Y": 31.15,
+        "10Y": 27.73
       }
     },
     "GBR": {

@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "source": "OECD CLI / S&P Global PMI (mock data)",
+    "indicator": "PMI Manufacturing",
+    "description": "Purchasing Managers Index for manufacturing sector. Values below 50 indicate contraction, above 50 indicate expansion.",
+    "unit": "index",
+    "fetched_at": "2025-12-28T13:23:37.304044",
+    "warning_threshold": 50,
+    "total_countries": 20,
+    "contracting_count": 14
+  },
+  "data": [
+    {
+      "code": "IND",
+      "country": "India",
+      "region": "Asia",
+      "value": 55.3,
+      "status": "expansion",
+      "distance_from_50": 5.3
+    },
+    {
+      "code": "IDN",
+      "country": "Indonesia",
+      "region": "Asia",
+      "value": 53.2,
+      "status": "expansion",
+      "distance_from_50": 3.2
+    },
+    {
+      "code": "TUR",
+      "country": "Turkey",
+      "region": "Europe",
+      "value": 52.3,
+      "status": "expansion",
+      "distance_from_50": 2.3
+    },
+    {
+      "code": "CHN",
+      "country": "China",
+      "region": "Asia",
+      "value": 51.4,
+      "status": "expansion",
+      "distance_from_50": 1.4
+    },
+    {
+      "code": "RUS",
+      "country": "Russia",
+      "region": "Europe",
+      "value": 51.2,
+      "status": "expansion",
+      "distance_from_50": 1.2
+    },
+    {
+      "code": "MEX",
+      "country": "Mexico",
+      "region": "Latam",
+      "value": 50.8,
+      "status": "expansion",
+      "distance_from_50": 0.8
+    },
+    {
+      "code": "KOR",
+      "country": "South Korea",
+      "region": "Asia",
+      "value": 49.8,
+      "status": "contraction",
+      "distance_from_50": -0.2
+    },
+    {
+      "code": "POL",
+      "country": "Poland",
+      "region": "Europe",
+      "value": 49.7,
+      "status": "contraction",
+      "distance_from_50": -0.3
+    },
+    {
+      "code": "ZAF",
+      "country": "South Africa",
+      "region": "Africa",
+      "value": 49.5,
+      "status": "contraction",
+      "distance_from_50": -0.5
+    },
+    {
+      "code": "CAN",
+      "country": "Canada",
+      "region": "Americas",
+      "value": 49.2,
+      "status": "contraction",
+      "distance_from_50": -0.8
+    },
+    {
+      "code": "NLD",
+      "country": "Netherlands",
+      "region": "Europe",
+      "value": 48.9,
+      "status": "contraction",
+      "distance_from_50": -1.1
+    },
+    {
+      "code": "AUS",
+      "country": "Australia",
+      "region": "Oceania",
+      "value": 48.7,
+      "status": "contraction",
+      "distance_from_50": -1.3
+    },
+    {
+      "code": "USA",
+      "country": "United States",
+      "region": "Americas",
+      "value": 48.5,
+      "status": "contraction",
+      "distance_from_50": -1.5
+    },
+    {
+      "code": "JPN",
+      "country": "Japan",
+      "region": "Asia",
+      "value": 48.1,
+      "status": "contraction",
+      "distance_from_50": -1.9
+    },
+    {
+      "code": "ESP",
+      "country": "Spain",
+      "region": "Europe",
+      "value": 47.5,
+      "status": "contraction",
+      "distance_from_50": -2.5
+    },
+    {
+      "code": "BRA",
+      "country": "Brazil",
+      "region": "Latam",
+      "value": 47.3,
+      "status": "contraction",
+      "distance_from_50": -2.7
+    },
+    {
+      "code": "GBR",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "value": 46.8,
+      "status": "contraction",
+      "distance_from_50": -3.2
+    },
+    {
+      "code": "ITA",
+      "country": "Italy",
+      "region": "Europe",
+      "value": 46.1,
+      "status": "contraction",
+      "distance_from_50": -3.9
+    },
+    {
+      "code": "DEU",
+      "country": "Germany",
+      "region": "Europe",
+      "value": 45.2,
+      "status": "contraction",
+      "distance_from_50": -4.8
+    },
+    {
+      "code": "FRA",
+      "country": "France",
+      "region": "Europe",
+      "value": 44.6,
+      "status": "contraction",
+      "distance_from_50": -5.4
+    }
+  ],
+  "timeseries": {
+    "USA": {
+      "country": "United States",
+      "region": "Americas",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 48.5,
+          "status": "contraction"
+        }
+      ]
+    },
+    "CAN": {
+      "country": "Canada",
+      "region": "Americas",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 49.2,
+          "status": "contraction"
+        }
+      ]
+    },
+    "MEX": {
+      "country": "Mexico",
+      "region": "Latam",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 50.8,
+          "status": "expansion"
+        }
+      ]
+    },
+    "BRA": {
+      "country": "Brazil",
+      "region": "Latam",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 47.3,
+          "status": "contraction"
+        }
+      ]
+    },
+    "GBR": {
+      "country": "United Kingdom",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 46.8,
+          "status": "contraction"
+        }
+      ]
+    },
+    "DEU": {
+      "country": "Germany",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 45.2,
+          "status": "contraction"
+        }
+      ]
+    },
+    "FRA": {
+      "country": "France",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 44.6,
+          "status": "contraction"
+        }
+      ]
+    },
+    "ITA": {
+      "country": "Italy",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 46.1,
+          "status": "contraction"
+        }
+      ]
+    },
+    "ESP": {
+      "country": "Spain",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 47.5,
+          "status": "contraction"
+        }
+      ]
+    },
+    "NLD": {
+      "country": "Netherlands",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 48.9,
+          "status": "contraction"
+        }
+      ]
+    },
+    "POL": {
+      "country": "Poland",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 49.7,
+          "status": "contraction"
+        }
+      ]
+    },
+    "TUR": {
+      "country": "Turkey",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 52.3,
+          "status": "expansion"
+        }
+      ]
+    },
+    "RUS": {
+      "country": "Russia",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 51.2,
+          "status": "expansion"
+        }
+      ]
+    },
+    "CHN": {
+      "country": "China",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 51.4,
+          "status": "expansion"
+        }
+      ]
+    },
+    "JPN": {
+      "country": "Japan",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 48.1,
+          "status": "contraction"
+        }
+      ]
+    },
+    "KOR": {
+      "country": "South Korea",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 49.8,
+          "status": "contraction"
+        }
+      ]
+    },
+    "IND": {
+      "country": "India",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 55.3,
+          "status": "expansion"
+        }
+      ]
+    },
+    "IDN": {
+      "country": "Indonesia",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 53.2,
+          "status": "expansion"
+        }
+      ]
+    },
+    "AUS": {
+      "country": "Australia",
+      "region": "Oceania",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 48.7,
+          "status": "contraction"
+        }
+      ]
+    },
+    "ZAF": {
+      "country": "South Africa",
+      "region": "Africa",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "value": 49.5,
+          "status": "contraction"
+        }
+      ]
+    }
+  }
+}

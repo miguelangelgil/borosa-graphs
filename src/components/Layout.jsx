@@ -10,6 +10,7 @@ const navItems = [
   { path: '/employment', icon: '👷', label: 'Employment' },
   { path: '/bonds', icon: '📈', label: 'Bond Yields' },
   { path: '/corporate-bonds', icon: '🏢', label: 'Corporate Bonds' },
+  { path: '/recession-indicators', icon: '🚨', label: 'Recession Indicators' },
 ];
 
 export default function Layout() {

@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "source": "Calculated from corporate_bonds_data.json and bonds_data.json",
+    "indicator": "Credit Spreads",
+    "description": "Difference between corporate and government bond yields. Widening spreads indicate increased credit risk and potential recession.",
+    "unit": "basis points (bps)",
+    "fetched_at": "2025-12-28T13:24:38.233601",
+    "warning_threshold": 500,
+    "total_series": 12,
+    "high_risk_count": 1,
+    "average_spread": 145.4
+  },
+  "data": [
+    {
+      "code": "US_HY_CCC",
+      "name": "US CCC & Below",
+      "region": "North America",
+      "category": "High Yield",
+      "spread": 825.6,
+      "corp_yield": 12.39,
+      "gov_yield": 4.134,
+      "risk_level": "high"
+    },
+    {
+      "code": "US_HY_B",
+      "name": "US B Rated",
+      "region": "North America",
+      "category": "High Yield",
+      "spread": 247.6,
+      "corp_yield": 6.61,
+      "gov_yield": 4.134,
+      "risk_level": "low"
+    },
+    {
+      "code": "US_HY",
+      "name": "US High Yield",
+      "region": "North America",
+      "category": "High Yield",
+      "spread": 239.6,
+      "corp_yield": 6.53,
+      "gov_yield": 4.134,
+      "risk_level": "low"
+    },
+    {
+      "code": "EU_HY",
+      "name": "Euro High Yield",
+      "region": "Europe",
+      "category": "High Yield",
+      "spread": 219.8,
+      "corp_yield": 5.06,
+      "gov_yield": 2.862,
+      "risk_level": "low"
+    },
+    {
+      "code": "EU_IG",
+      "name": "Euro Investment Grade",
+      "region": "Europe",
+      "category": "Investment Grade",
+      "spread": 214.8,
+      "corp_yield": 5.01,
+      "gov_yield": 2.862,
+      "risk_level": "low"
+    },
+    {
+      "code": "US_IG_BAA",
+      "name": "US BAA Rated",
+      "region": "North America",
+      "category": "Investment Grade",
+      "spread": 172.6,
+      "corp_yield": 5.86,
+      "gov_yield": 4.134,
+      "risk_level": "low"
+    },
+    {
+      "code": "US_HY_BB",
+      "name": "US BB Rated",
+      "region": "North America",
+      "category": "High Yield",
+      "spread": 129.6,
+      "corp_yield": 5.43,
+      "gov_yield": 4.134,
+      "risk_level": "low"
+    },
+    {
+      "code": "US_IG_AAA",
+      "name": "US AAA Rated",
+      "region": "North America",
+      "category": "Investment Grade",
+      "spread": 112.6,
+      "corp_yield": 5.26,
+      "gov_yield": 4.134,
+      "risk_level": "low"
+    },
+    {
+      "code": "US_IG",
+      "name": "US Investment Grade",
+      "region": "North America",
+      "category": "Investment Grade",
+      "spread": 67.6,
+      "corp_yield": 4.81,
+      "gov_yield": 4.134,
+      "risk_level": "low"
+    },
+    {
+      "code": "EU_SPREAD_HY",
+      "name": "Euro HY Spread",
+      "region": "Europe",
+      "category": "Spreads",
+      "spread": -21.2,
+      "corp_yield": 2.65,
+      "gov_yield": 2.862,
+      "risk_level": "low"
+    },
+    {
+      "code": "US_SPREAD_HY",
+      "name": "US HY Spread",
+      "region": "North America",
+      "category": "Spreads",
+      "spread": -129.4,
+      "corp_yield": 2.84,
+      "gov_yield": 4.134,
+      "risk_level": "low"
+    },
+    {
+      "code": "US_SPREAD_IG",
+      "name": "US IG Spread",
+      "region": "North America",
+      "category": "Spreads",
+      "spread": -334.4,
+      "corp_yield": 0.79,
+      "gov_yield": 4.134,
+      "risk_level": "low"
+    }
+  ],
+  "timeseries": {
+    "US_IG_BAA": {
+      "name": "US BAA Rated",
+      "region": "North America",
+      "category": "Investment Grade",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": 172.6,
+          "corp_yield": 5.86,
+          "gov_yield": 4.134
+        }
+      ]
+    },
+    "US_IG_AAA": {
+      "name": "US AAA Rated",
+      "region": "North America",
+      "category": "Investment Grade",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": 112.6,
+          "corp_yield": 5.26,
+          "gov_yield": 4.134
+        }
+      ]
+    },
+    "EU_IG": {
+      "name": "Euro Investment Grade",
+      "region": "Europe",
+      "category": "Investment Grade",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": 214.8,
+          "corp_yield": 5.01,
+          "gov_yield": 2.862
+        }
+      ]
+    },
+    "US_IG": {
+      "name": "US Investment Grade",
+      "region": "North America",
+      "category": "Investment Grade",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": 67.6,
+          "corp_yield": 4.81,
+          "gov_yield": 4.134
+        }
+      ]
+    },
+    "US_HY_CCC": {
+      "name": "US CCC & Below",
+      "region": "North America",
+      "category": "High Yield",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": 825.6,
+          "corp_yield": 12.39,
+          "gov_yield": 4.134
+        }
+      ]
+    },
+    "US_HY_B": {
+      "name": "US B Rated",
+      "region": "North America",
+      "category": "High Yield",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": 247.6,
+          "corp_yield": 6.61,
+          "gov_yield": 4.134
+        }
+      ]
+    },
+    "US_HY": {
+      "name": "US High Yield",
+      "region": "North America",
+      "category": "High Yield",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": 239.6,
+          "corp_yield": 6.53,
+          "gov_yield": 4.134
+        }
+      ]
+    },
+    "US_HY_BB": {
+      "name": "US BB Rated",
+      "region": "North America",
+      "category": "High Yield",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": 129.6,
+          "corp_yield": 5.43,
+          "gov_yield": 4.134
+        }
+      ]
+    },
+    "EU_HY": {
+      "name": "Euro High Yield",
+      "region": "Europe",
+      "category": "High Yield",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": 219.8,
+          "corp_yield": 5.06,
+          "gov_yield": 2.862
+        }
+      ]
+    },
+    "US_SPREAD_HY": {
+      "name": "US HY Spread",
+      "region": "North America",
+      "category": "Spreads",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": -129.4,
+          "corp_yield": 2.84,
+          "gov_yield": 4.134
+        }
+      ]
+    },
+    "EU_SPREAD_HY": {
+      "name": "Euro HY Spread",
+      "region": "Europe",
+      "category": "Spreads",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": -21.2,
+          "corp_yield": 2.65,
+          "gov_yield": 2.862
+        }
+      ]
+    },
+    "US_SPREAD_IG": {
+      "name": "US IG Spread",
+      "region": "North America",
+      "category": "Spreads",
+      "data": [
+        {
+          "date": "2025-12-28",
+          "spread": -334.4,
+          "corp_yield": 0.79,
+          "gov_yield": 4.134
+        }
+      ]
+    }
+  }
+}

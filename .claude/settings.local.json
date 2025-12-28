@@ -7,7 +7,18 @@
       "Bash(npm install)",
       "Bash(npm run build:*)",
       "Bash(node -e:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(npm run dev:*)",
+      "Bash(done)",
+      "Bash(for file in yield_curve_data.json pmi_data.json credit_spreads_data.json consumer_confidence_data.json unemployment_claims_data.json big_mac_index_data.json)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(npm install:*)",
+      "Bash(if [ -f \"data/$file\" ])",
+      "Bash(then head -30 \"data/$file\")",
+      "Bash(else echo \"File not found\")",
+      "Bash(fi)",
+      "Bash(grep:*)"
     ]
   }
 }

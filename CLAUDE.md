@@ -34,6 +34,12 @@ Static web visualization dashboard for financial metrics not available on Tradin
 | Trade Balance | World Bank | NE.EXP.GNFS.CD - NE.IMP.GNFS.CD |
 | Unemployment | IMF DataMapper | LUR |
 | Bond Yields | Investing.com | Government bonds (1Y-30Y) |
+| Yield Curve | Calculated | 10Y-2Y spread from bonds |
+| PMI Manufacturing | OECD/S&P (mock) | Manufacturing PMI index |
+| Credit Spreads | Calculated | Corporate vs government bond spreads |
+| Consumer Confidence | OECD/Conference Board (mock) | Consumer confidence index |
+| Unemployment Claims | OECD/National agencies (mock) | Initial jobless claims |
+| Big Mac Index | The Economist GitHub | Purchasing power parity indicator |
 
 ## Commands
 
@@ -48,6 +54,13 @@ python fetch_m2_data.py       # M2 money supply
 python fetch_trade_data.py    # Trade balance
 python fetch_employment_data.py  # Unemployment
 python fetch_bonds_data.py    # Bond yields
+python fetch_corporate_bonds_data.py  # Corporate bonds
+python fetch_yield_curve.py   # Yield curve spread (requires bonds data)
+python fetch_pmi_data.py       # PMI Manufacturing
+python fetch_credit_spreads.py  # Credit spreads (requires bonds & corporate bonds)
+python fetch_consumer_confidence.py  # Consumer confidence
+python fetch_unemployment_claims.py  # Unemployment claims
+python fetch_big_mac_index.py  # Big Mac Index
 ```
 
 ### Local Development

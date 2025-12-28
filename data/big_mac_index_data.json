@@ -1,0 +1,475 @@
+{
+  "metadata": {
+    "source": "The Economist Big Mac Index (CC BY 4.0)",
+    "indicator": "Big Mac Affordability Index",
+    "description": "Measures purchasing power parity using Big Mac prices. High stress indicates reduced affordability and purchasing power erosion during economic downturns.",
+    "unit": "USD price & valuation %",
+    "fetched_at": "2025-12-28T15:25:35.767450",
+    "warning_threshold": "Affordability stress >50%",
+    "total_countries": 46,
+    "high_risk_count": 8,
+    "average_stress": 27.9
+  },
+  "data": [
+    {
+      "code": "RUS",
+      "country": "Russia",
+      "region": "Europe",
+      "price_usd": 1.74,
+      "valuation_pct": -65.4,
+      "affordability_stress": 65.4,
+      "status": "very cheap",
+      "risk_level": "high"
+    },
+    {
+      "code": "TWN",
+      "country": "Taiwan",
+      "region": "Asia",
+      "price_usd": 2.38,
+      "valuation_pct": -58.8,
+      "affordability_stress": 58.8,
+      "status": "very cheap",
+      "risk_level": "high"
+    },
+    {
+      "code": "IDN",
+      "country": "Indonesia",
+      "region": "Asia",
+      "price_usd": 2.54,
+      "valuation_pct": -56.2,
+      "affordability_stress": 56.2,
+      "status": "very cheap",
+      "risk_level": "high"
+    },
+    {
+      "code": "IND",
+      "country": "India",
+      "region": "Asia",
+      "price_usd": 2.62,
+      "valuation_pct": -54.8,
+      "affordability_stress": 54.8,
+      "status": "very cheap",
+      "risk_level": "high"
+    },
+    {
+      "code": "EGY",
+      "country": "Egypt",
+      "region": "Middle East",
+      "price_usd": 2.69,
+      "valuation_pct": -53.6,
+      "affordability_stress": 53.6,
+      "status": "very cheap",
+      "risk_level": "high"
+    },
+    {
+      "code": "ZAF",
+      "country": "South Africa",
+      "region": "Africa",
+      "price_usd": 2.78,
+      "valuation_pct": -52.0,
+      "affordability_stress": 52.0,
+      "status": "very cheap",
+      "risk_level": "high"
+    },
+    {
+      "code": "UKR",
+      "country": "Ukraine",
+      "region": "Europe",
+      "price_usd": 2.86,
+      "valuation_pct": -50.7,
+      "affordability_stress": 50.7,
+      "status": "very cheap",
+      "risk_level": "high"
+    },
+    {
+      "code": "PHL",
+      "country": "Philippines",
+      "region": "Asia",
+      "price_usd": 2.89,
+      "valuation_pct": -50.0,
+      "affordability_stress": 50.0,
+      "status": "very cheap",
+      "risk_level": "high"
+    },
+    {
+      "code": "MYS",
+      "country": "Malaysia",
+      "region": "Asia",
+      "price_usd": 3.0,
+      "valuation_pct": -48.1,
+      "affordability_stress": 48.1,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "VNM",
+      "country": "Vietnam",
+      "region": "Asia",
+      "price_usd": 3.03,
+      "valuation_pct": -47.7,
+      "affordability_stress": 47.7,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "HKG",
+      "country": "Hong Kong",
+      "region": "Asia",
+      "price_usd": 3.08,
+      "valuation_pct": -46.8,
+      "affordability_stress": 46.8,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "JPN",
+      "country": "Japan",
+      "region": "Asia",
+      "price_usd": 3.11,
+      "valuation_pct": -46.3,
+      "affordability_stress": 46.3,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "ROU",
+      "country": "Romania",
+      "region": "Europe",
+      "price_usd": 3.43,
+      "valuation_pct": -40.8,
+      "affordability_stress": 40.8,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "CHN",
+      "country": "China",
+      "region": "Asia",
+      "price_usd": 3.52,
+      "valuation_pct": -39.2,
+      "affordability_stress": 39.2,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "JOR",
+      "country": "Jordan",
+      "region": "Middle East",
+      "price_usd": 3.53,
+      "valuation_pct": -39.1,
+      "affordability_stress": 39.1,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "CHE",
+      "country": "Switzerland",
+      "region": "Europe",
+      "price_usd": 7.99,
+      "valuation_pct": 38.0,
+      "affordability_stress": 38.0,
+      "status": "expensive",
+      "risk_level": "medium"
+    },
+    {
+      "code": "HUN",
+      "country": "Hungary",
+      "region": "Europe",
+      "price_usd": 3.65,
+      "valuation_pct": -37.0,
+      "affordability_stress": 37.0,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "PAK",
+      "country": "Pakistan",
+      "region": "Asia",
+      "price_usd": 3.77,
+      "valuation_pct": -35.0,
+      "affordability_stress": 35.0,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "KOR",
+      "country": "South Korea",
+      "region": "Asia",
+      "price_usd": 3.84,
+      "valuation_pct": -33.6,
+      "affordability_stress": 33.6,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "THA",
+      "country": "Thailand",
+      "region": "Asia",
+      "price_usd": 4.01,
+      "valuation_pct": -30.8,
+      "affordability_stress": 30.8,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "BRA",
+      "country": "Brazil",
+      "region": "Latam",
+      "price_usd": 4.03,
+      "valuation_pct": -30.5,
+      "affordability_stress": 30.5,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "QAT",
+      "country": "Qatar",
+      "region": "Middle East",
+      "price_usd": 4.12,
+      "valuation_pct": -28.8,
+      "affordability_stress": 28.8,
+      "status": "cheap",
+      "risk_level": "medium"
+    },
+    {
+      "code": "VEN",
+      "country": "Venezuela",
+      "region": "Latam",
+      "price_usd": 4.45,
+      "valuation_pct": -23.1,
+      "affordability_stress": 23.1,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "PER",
+      "country": "Peru",
+      "region": "Latam",
+      "price_usd": 4.53,
+      "valuation_pct": -21.8,
+      "affordability_stress": 21.8,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "CHL",
+      "country": "Chile",
+      "region": "Latam",
+      "price_usd": 4.55,
+      "valuation_pct": -21.5,
+      "affordability_stress": 21.5,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "CZE",
+      "country": "Czech Republic",
+      "region": "Europe",
+      "price_usd": 4.56,
+      "valuation_pct": -21.2,
+      "affordability_stress": 21.2,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "MEX",
+      "country": "Mexico",
+      "region": "Americas",
+      "price_usd": 4.6,
+      "valuation_pct": -20.5,
+      "affordability_stress": 20.5,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "ARG",
+      "country": "Argentina",
+      "region": "Latam",
+      "price_usd": 6.95,
+      "valuation_pct": 20.1,
+      "affordability_stress": 20.1,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "URY",
+      "country": "Uruguay",
+      "region": "Latam",
+      "price_usd": 6.91,
+      "valuation_pct": 19.3,
+      "affordability_stress": 19.3,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "ISR",
+      "country": "Israel",
+      "region": "Middle East",
+      "price_usd": 4.71,
+      "valuation_pct": -18.6,
+      "affordability_stress": 18.6,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "NZL",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "price_usd": 4.77,
+      "valuation_pct": -17.5,
+      "affordability_stress": 17.5,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "AUS",
+      "country": "Australia",
+      "region": "Oceania",
+      "price_usd": 4.87,
+      "valuation_pct": -15.9,
+      "affordability_stress": 15.9,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "ARE",
+      "country": "UAE",
+      "region": "Middle East",
+      "price_usd": 4.9,
+      "valuation_pct": -15.4,
+      "affordability_stress": 15.4,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "NOR",
+      "country": "Norway",
+      "region": "Europe",
+      "price_usd": 6.67,
+      "valuation_pct": 15.3,
+      "affordability_stress": 15.3,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "SAU",
+      "country": "Saudi Arabia",
+      "region": "Middle East",
+      "price_usd": 5.07,
+      "valuation_pct": -12.5,
+      "affordability_stress": 12.5,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "SGP",
+      "country": "Singapore",
+      "region": "Asia",
+      "price_usd": 5.17,
+      "valuation_pct": -10.7,
+      "affordability_stress": 10.7,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "COL",
+      "country": "Colombia",
+      "region": "Latam",
+      "price_usd": 5.17,
+      "valuation_pct": -10.6,
+      "affordability_stress": 10.6,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "POL",
+      "country": "Poland",
+      "region": "Europe",
+      "price_usd": 5.21,
+      "valuation_pct": -10.0,
+      "affordability_stress": 10.0,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "TUR",
+      "country": "Turkey",
+      "region": "Europe",
+      "price_usd": 5.32,
+      "valuation_pct": -8.2,
+      "affordability_stress": 8.2,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "CAN",
+      "country": "Canada",
+      "region": "Americas",
+      "price_usd": 5.43,
+      "valuation_pct": -6.2,
+      "affordability_stress": 6.2,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "DNK",
+      "country": "Denmark",
+      "region": "Europe",
+      "price_usd": 5.49,
+      "valuation_pct": -5.2,
+      "affordability_stress": 5.2,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "SWE",
+      "country": "Sweden",
+      "region": "Europe",
+      "price_usd": 5.67,
+      "valuation_pct": -2.1,
+      "affordability_stress": 2.1,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "CRI",
+      "country": "Costa Rica",
+      "region": "Latam",
+      "price_usd": 5.9,
+      "valuation_pct": 1.9,
+      "affordability_stress": 1.9,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "GBR",
+      "country": "Britain",
+      "region": "Europe",
+      "price_usd": 5.73,
+      "valuation_pct": -1.1,
+      "affordability_stress": 1.1,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "USA",
+      "country": "United States",
+      "region": "Americas",
+      "price_usd": 5.79,
+      "valuation_pct": 0.0,
+      "affordability_stress": 0.0,
+      "status": "fair value",
+      "risk_level": "low"
+    },
+    {
+      "code": "LKA",
+      "country": "Sri Lanka",
+      "region": "Asia",
+      "price_usd": 5.69,
+      "valuation_pct": -0.0,
+      "affordability_stress": 0.0,
+      "status": "fair value",
+      "risk_level": "low"
+    }
+  ]
+}

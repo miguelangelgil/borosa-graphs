@@ -10,6 +10,7 @@ import Trade from './pages/Trade';
 import Employment from './pages/Employment';
 import Bonds from './pages/Bonds';
 import CorporateBonds from './pages/CorporateBonds';
+import RecessionIndicators from './pages/RecessionIndicators';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="employment" element={<Employment />} />
           <Route path="bonds" element={<Bonds />} />
           <Route path="corporate-bonds" element={<CorporateBonds />} />
+          <Route path="recession-indicators" element={<RecessionIndicators />} />
         </Route>
       </Routes>
     </ThemeProvider>

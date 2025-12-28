@@ -60,6 +60,30 @@ jobs:
         run: cd scripts && python fetch_corporate_bonds_data.py
         continue-on-error: true
 
+      - name: Calculate Yield Curve data
+        run: cd scripts && python fetch_yield_curve.py
+        continue-on-error: true
+
+      - name: Fetch PMI Manufacturing data
+        run: cd scripts && python fetch_pmi_data.py
+        continue-on-error: true
+
+      - name: Calculate Credit Spreads data
+        run: cd scripts && python fetch_credit_spreads.py
+        continue-on-error: true
+
+      - name: Fetch Unemployment Claims data
+        run: cd scripts && python fetch_unemployment_claims.py
+        continue-on-error: true
+
+      - name: Fetch Consumer Confidence data
+        run: cd scripts && python fetch_consumer_confidence.py
+        continue-on-error: true
+
+      - name: Fetch Big Mac Index data
+        run: cd scripts && python fetch_big_mac_index.py
+        continue-on-error: true
+
       - name: Commit and push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

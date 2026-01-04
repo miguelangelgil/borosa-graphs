@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "NGDPD",
     "description": "GDP, current prices (USD billions)",
-    "fetched_at": "2025-12-28T02:22:03.220969",
+    "fetched_at": "2026-01-04T02:23:58.200205",
     "available_years": [
       "2030",
       "2029",
@@ -31,13 +31,12 @@
       "2007",
       "2006"
     ],
-    "last_real_year": "2025",
+    "last_real_year": "2026",
     "projection_years": [
       "2030",
       "2029",
       "2028",
-      "2027",
-      "2026"
+      "2027"
     ]
   },
   "data": {
@@ -3135,777 +3134,777 @@
         "country": "USA",
         "value": 31821293000000.0,
         "region": "Americas",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "EUQ",
         "country": "European Union",
         "value": 31480589000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
         "value": 20650754000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "DEU",
         "country": "Germany",
         "value": 5328184000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
         "value": 4505629000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "JPN",
         "country": "Japan",
         "value": 4463634000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GBR",
         "country": "United Kingdom",
         "value": 4225639000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "FRA",
         "country": "France",
         "value": 3558562000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ITA",
         "country": "Italy",
         "value": 2701544000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "RUS",
         "country": "Russia",
         "value": 2509421000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CAN",
         "country": "Canada",
         "value": 2420837000000.0,
         "region": "Americas",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BRA",
         "country": "Brazil",
         "value": 2292690000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ESP",
         "country": "Spain",
         "value": 2041830000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MEX",
         "country": "Mexico",
         "value": 2030999000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "AUS",
         "country": "Australia",
         "value": 1948227000000.0,
         "region": "Oceania",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KOR",
         "country": "South Korea",
         "value": 1936617000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "TUR",
         "country": "Turkey",
         "value": 1576110000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IDN",
         "country": "Indonesia",
         "value": 1550236000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NLD",
         "country": "Netherlands",
         "value": 1413076000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SAU",
         "country": "Saudi Arabia",
         "value": 1316250000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "POL",
         "country": "Poland",
         "value": 1109962000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
         "value": 1074588000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "TWN",
         "country": "Taiwan",
         "value": 971448000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BEL",
         "country": "Belgium",
         "value": 761174000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IRL",
         "country": "Ireland",
         "value": 750112000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SWE",
         "country": "Sweden",
         "value": 711503000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ARG",
         "country": "Argentina",
         "value": 667922000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ISR",
         "country": "Israel",
         "value": 666407000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SGP",
         "country": "Singapore",
         "value": 606225000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "AUT",
         "country": "Austria",
         "value": 604198000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ARE",
         "country": "UAE",
         "value": 601163000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "THA",
         "country": "Thailand",
         "value": 561509000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NOR",
         "country": "Norway",
         "value": 547693000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PHL",
         "country": "Philippines",
         "value": 533922000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BGD",
         "country": "Bangladesh",
         "value": 519288000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "VNM",
         "country": "Vietnam",
         "value": 511059000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MYS",
         "country": "Malaysia",
         "value": 505364000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "DNK",
         "country": "Denmark",
         "value": 500051000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "COL",
         "country": "Colombia",
         "value": 462251000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ROU",
         "country": "Romania",
         "value": 444807000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ZAF",
         "country": "South Africa",
         "value": 443643000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CZE",
         "country": "Czechia",
         "value": 417134000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "EGY",
         "country": "Egypt",
         "value": 399508000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IRN",
         "country": "Iran",
         "value": 375644000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PRT",
         "country": "Portugal",
         "value": 364527000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CHL",
         "country": "Chile",
         "value": 363299000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "FIN",
         "country": "Finland",
         "value": 335534000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NGA",
         "country": "Nigeria",
         "value": 334341000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PER",
         "country": "Peru",
         "value": 326608000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KAZ",
         "country": "Kazakhstan",
         "value": 319770000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GRC",
         "country": "Greece",
         "value": 304838000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "DZA",
         "country": "Algeria",
         "value": 284984000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NZL",
         "country": "New Zealand",
         "value": 280553000000.0,
         "region": "Oceania",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IRQ",
         "country": "Iraq",
         "value": 273912000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "HUN",
         "country": "Hungary",
         "value": 269916000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "QAT",
         "country": "Qatar",
         "value": 239142000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "UKR",
         "country": "Ukraine",
         "value": 224259000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MAR",
         "country": "Morocco",
         "value": 196121000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SVK",
         "country": "Slovakia",
         "value": 167730000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KWT",
         "country": "Kuwait",
         "value": 162895000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "UZB",
         "country": "Uzbekistan",
         "value": 159199000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KEN",
         "country": "Kenya",
         "value": 140871000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "DOM",
         "country": "Dominican Rep.",
         "value": 138340000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ECU",
         "country": "Ecuador",
         "value": 134711000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GTM",
         "country": "Guatemala",
         "value": 129466000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ETH",
         "country": "Ethiopia",
         "value": 125744000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GHA",
         "country": "Ghana",
         "value": 113494000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "HRV",
         "country": "Croatia",
         "value": 113132000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SRB",
         "country": "Serbia",
         "value": 112108000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CIV",
         "country": "Ivory Coast",
         "value": 111446000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "AGO",
         "country": "Angola",
         "value": 109855000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CRI",
         "country": "Costa Rica",
         "value": 109135000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "OMN",
         "country": "Oman",
         "value": 108913000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "LUX",
         "country": "Luxembourg",
         "value": 107758000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "LTU",
         "country": "Lithuania",
         "value": 104651000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PAN",
         "country": "Panama",
         "value": 95905000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "TZA",
         "country": "Tanzania",
         "value": 95349000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "URY",
         "country": "Uruguay",
         "value": 90640000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BLR",
         "country": "Belarus",
         "value": 90556000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SVN",
         "country": "Slovenia",
         "value": 85738000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "AZE",
         "country": "Azerbaijan",
         "value": 80024000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "VEN",
         "country": "Venezuela",
         "value": 79916000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "UGA",
         "country": "Uganda",
         "value": 72456000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CMR",
         "country": "Cameroon",
         "value": 67517000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "TUN",
         "country": "Tunisia",
         "value": 60434000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "JOR",
         "country": "Jordan",
         "value": 59288000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "LVA",
         "country": "Latvia",
         "value": 52248000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PRY",
         "country": "Paraguay",
         "value": 51669000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KHM",
         "country": "Cambodia",
         "value": 51506000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "EST",
         "country": "Estonia",
         "value": 51036000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BHR",
         "country": "Bahrain",
         "value": 49194000000.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NPL",
         "country": "Nepal",
         "value": 49112000000.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ISL",
         "country": "Iceland",
         "value": 43404000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CYP",
         "country": "Cyprus",
         "value": 43158000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "HND",
         "country": "Honduras",
         "value": 40821000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GEO",
         "country": "Georgia",
         "value": 40177000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SEN",
         "country": "Senegal",
         "value": 39986000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SDN",
         "country": "Sudan",
         "value": 39474000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SLV",
         "country": "El Salvador",
         "value": 37981000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ZMB",
         "country": "Zambia",
         "value": 33945000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ALB",
         "country": "Albania",
         "value": 32411000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MLT",
         "country": "Malta",
         "value": 30437000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ARM",
         "country": "Armenia",
         "value": 29082000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MOZ",
         "country": "Mozambique",
         "value": 26512000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "JAM",
         "country": "Jamaica",
         "value": 24132000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NIC",
         "country": "Nicaragua",
         "value": 21860000000.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MDA",
         "country": "Moldova",
         "value": 21024000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MKD",
         "country": "North Macedonia",
         "value": 20751000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BWA",
         "country": "Botswana",
         "value": 20708000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MUS",
         "country": "Mauritius",
         "value": 16756000000.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MNE",
         "country": "Montenegro",
         "value": 10229000000.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       }
     ],
     "2025": [
@@ -20143,7 +20142,7 @@
         {
           "year": "2026",
           "value": 39474000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20274,7 +20273,7 @@
         {
           "year": "2026",
           "value": 32411000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20405,7 +20404,7 @@
         {
           "year": "2026",
           "value": 284984000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20536,7 +20535,7 @@
         {
           "year": "2026",
           "value": 109855000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20667,7 +20666,7 @@
         {
           "year": "2026",
           "value": 667922000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20798,7 +20797,7 @@
         {
           "year": "2026",
           "value": 29082000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20929,7 +20928,7 @@
         {
           "year": "2026",
           "value": 1948227000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21060,7 +21059,7 @@
         {
           "year": "2026",
           "value": 604198000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21191,7 +21190,7 @@
         {
           "year": "2026",
           "value": 80024000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21322,7 +21321,7 @@
         {
           "year": "2026",
           "value": 49194000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21453,7 +21452,7 @@
         {
           "year": "2026",
           "value": 519288000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21584,7 +21583,7 @@
         {
           "year": "2026",
           "value": 90556000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21715,7 +21714,7 @@
         {
           "year": "2026",
           "value": 761174000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21952,7 +21951,7 @@
         {
           "year": "2026",
           "value": 20708000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22083,7 +22082,7 @@
         {
           "year": "2026",
           "value": 2292690000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22214,7 +22213,7 @@
         {
           "year": "2026",
           "value": 51506000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22345,7 +22344,7 @@
         {
           "year": "2026",
           "value": 67517000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22476,7 +22475,7 @@
         {
           "year": "2026",
           "value": 2420837000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22607,7 +22606,7 @@
         {
           "year": "2026",
           "value": 363299000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22738,7 +22737,7 @@
         {
           "year": "2026",
           "value": 20650754000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22869,7 +22868,7 @@
         {
           "year": "2026",
           "value": 462251000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23000,7 +22999,7 @@
         {
           "year": "2026",
           "value": 109135000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23131,7 +23130,7 @@
         {
           "year": "2026",
           "value": 111446000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23262,7 +23261,7 @@
         {
           "year": "2026",
           "value": 113132000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23393,7 +23392,7 @@
         {
           "year": "2026",
           "value": 43158000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23524,7 +23523,7 @@
         {
           "year": "2026",
           "value": 417134000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23655,7 +23654,7 @@
         {
           "year": "2026",
           "value": 500051000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23786,7 +23785,7 @@
         {
           "year": "2026",
           "value": 138340000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23917,7 +23916,7 @@
         {
           "year": "2026",
           "value": 134711000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24048,7 +24047,7 @@
         {
           "year": "2026",
           "value": 399508000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24179,7 +24178,7 @@
         {
           "year": "2026",
           "value": 37981000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24310,7 +24309,7 @@
         {
           "year": "2026",
           "value": 51036000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24441,7 +24440,7 @@
         {
           "year": "2026",
           "value": 125744000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24572,7 +24571,7 @@
         {
           "year": "2026",
           "value": 335534000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24703,7 +24702,7 @@
         {
           "year": "2026",
           "value": 3558562000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24834,7 +24833,7 @@
         {
           "year": "2026",
           "value": 40177000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24965,7 +24964,7 @@
         {
           "year": "2026",
           "value": 5328184000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25096,7 +25095,7 @@
         {
           "year": "2026",
           "value": 113494000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25227,7 +25226,7 @@
         {
           "year": "2026",
           "value": 304838000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25358,7 +25357,7 @@
         {
           "year": "2026",
           "value": 129466000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25489,7 +25488,7 @@
         {
           "year": "2026",
           "value": 40821000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25620,7 +25619,7 @@
         {
           "year": "2026",
           "value": 269916000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25751,7 +25750,7 @@
         {
           "year": "2026",
           "value": 43404000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25882,7 +25881,7 @@
         {
           "year": "2026",
           "value": 4505629000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26013,7 +26012,7 @@
         {
           "year": "2026",
           "value": 1550236000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26144,7 +26143,7 @@
         {
           "year": "2026",
           "value": 375644000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26275,7 +26274,7 @@
         {
           "year": "2026",
           "value": 273912000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26406,7 +26405,7 @@
         {
           "year": "2026",
           "value": 750112000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26537,7 +26536,7 @@
         {
           "year": "2026",
           "value": 666407000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26668,7 +26667,7 @@
         {
           "year": "2026",
           "value": 2701544000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26799,7 +26798,7 @@
         {
           "year": "2026",
           "value": 24132000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26930,7 +26929,7 @@
         {
           "year": "2026",
           "value": 4463634000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27061,7 +27060,7 @@
         {
           "year": "2026",
           "value": 59288000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27192,7 +27191,7 @@
         {
           "year": "2026",
           "value": 319770000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27323,7 +27322,7 @@
         {
           "year": "2026",
           "value": 140871000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27454,7 +27453,7 @@
         {
           "year": "2026",
           "value": 1936617000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27585,7 +27584,7 @@
         {
           "year": "2026",
           "value": 162895000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27716,7 +27715,7 @@
         {
           "year": "2026",
           "value": 52248000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27948,7 +27947,7 @@
         {
           "year": "2026",
           "value": 104651000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28079,7 +28078,7 @@
         {
           "year": "2026",
           "value": 107758000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28210,7 +28209,7 @@
         {
           "year": "2026",
           "value": 505364000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28341,7 +28340,7 @@
         {
           "year": "2026",
           "value": 30437000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28472,7 +28471,7 @@
         {
           "year": "2026",
           "value": 16756000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28603,7 +28602,7 @@
         {
           "year": "2026",
           "value": 2030999000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28734,7 +28733,7 @@
         {
           "year": "2026",
           "value": 21024000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28865,7 +28864,7 @@
         {
           "year": "2026",
           "value": 10229000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28996,7 +28995,7 @@
         {
           "year": "2026",
           "value": 196121000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29127,7 +29126,7 @@
         {
           "year": "2026",
           "value": 26512000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29258,7 +29257,7 @@
         {
           "year": "2026",
           "value": 49112000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29389,7 +29388,7 @@
         {
           "year": "2026",
           "value": 1413076000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29520,7 +29519,7 @@
         {
           "year": "2026",
           "value": 280553000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29651,7 +29650,7 @@
         {
           "year": "2026",
           "value": 21860000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29782,7 +29781,7 @@
         {
           "year": "2026",
           "value": 334341000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29913,7 +29912,7 @@
         {
           "year": "2026",
           "value": 20751000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30044,7 +30043,7 @@
         {
           "year": "2026",
           "value": 547693000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30175,7 +30174,7 @@
         {
           "year": "2026",
           "value": 108913000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30412,7 +30411,7 @@
         {
           "year": "2026",
           "value": 95905000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30543,7 +30542,7 @@
         {
           "year": "2026",
           "value": 51669000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30674,7 +30673,7 @@
         {
           "year": "2026",
           "value": 326608000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30805,7 +30804,7 @@
         {
           "year": "2026",
           "value": 533922000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30936,7 +30935,7 @@
         {
           "year": "2026",
           "value": 1109962000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31067,7 +31066,7 @@
         {
           "year": "2026",
           "value": 364527000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31198,7 +31197,7 @@
         {
           "year": "2026",
           "value": 239142000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31329,7 +31328,7 @@
         {
           "year": "2026",
           "value": 444807000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31460,7 +31459,7 @@
         {
           "year": "2026",
           "value": 2509421000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31591,7 +31590,7 @@
         {
           "year": "2026",
           "value": 1316250000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31722,7 +31721,7 @@
         {
           "year": "2026",
           "value": 39986000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31853,7 +31852,7 @@
         {
           "year": "2026",
           "value": 112108000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31984,7 +31983,7 @@
         {
           "year": "2026",
           "value": 606225000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32115,7 +32114,7 @@
         {
           "year": "2026",
           "value": 167730000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32246,7 +32245,7 @@
         {
           "year": "2026",
           "value": 85738000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32377,7 +32376,7 @@
         {
           "year": "2026",
           "value": 443643000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32508,7 +32507,7 @@
         {
           "year": "2026",
           "value": 2041830000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32740,7 +32739,7 @@
         {
           "year": "2026",
           "value": 711503000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32871,7 +32870,7 @@
         {
           "year": "2026",
           "value": 1074588000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33002,7 +33001,7 @@
         {
           "year": "2026",
           "value": 971448000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33133,7 +33132,7 @@
         {
           "year": "2026",
           "value": 95349000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33264,7 +33263,7 @@
         {
           "year": "2026",
           "value": 561509000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33395,7 +33394,7 @@
         {
           "year": "2026",
           "value": 60434000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33526,7 +33525,7 @@
         {
           "year": "2026",
           "value": 1576110000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33657,7 +33656,7 @@
         {
           "year": "2026",
           "value": 72456000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33788,7 +33787,7 @@
         {
           "year": "2026",
           "value": 224259000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33919,7 +33918,7 @@
         {
           "year": "2026",
           "value": 601163000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34050,7 +34049,7 @@
         {
           "year": "2026",
           "value": 4225639000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34181,7 +34180,7 @@
         {
           "year": "2026",
           "value": 31821293000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34312,7 +34311,7 @@
         {
           "year": "2026",
           "value": 90640000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34443,7 +34442,7 @@
         {
           "year": "2026",
           "value": 159199000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34574,7 +34573,7 @@
         {
           "year": "2026",
           "value": 79916000000.0,
-          "isProjection": true
+          "isProjection": false
         }
       ]
     },
@@ -34685,7 +34684,7 @@
         {
           "year": "2026",
           "value": 511059000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34816,7 +34815,7 @@
         {
           "year": "2026",
           "value": 33945000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34947,7 +34946,7 @@
         {
           "year": "2026",
           "value": 31480589000000.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",

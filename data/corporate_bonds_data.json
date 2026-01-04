@@ -3,7 +3,7 @@
     "source": "FRED (Federal Reserve Economic Data)",
     "indicator": "ICE BofA Corporate Bond Indices",
     "description": "Corporate Bond Yields by Region - Investment Grade and High Yield",
-    "fetched_at": "2025-12-28T02:22:46.742530",
+    "fetched_at": "2026-01-04T02:24:35.741209",
     "categories": [
       "Investment Grade",
       "High Yield",
@@ -23,8 +23,8 @@
       {
         "code": "LATAM_EM",
         "name": "Latin America EM Corporate",
-        "value": 6.57,
-        "date": "2025-12-24",
+        "value": 6.62,
+        "date": "2025-12-31",
         "region": "Latin America",
         "description": "ICE BofA Latin America Emerging Markets Corporate Plus Index Effective Yield"
       },
@@ -39,8 +39,8 @@
       {
         "code": "EM_TOTAL",
         "name": "Emerging Markets Total",
-        "value": 5.3,
-        "date": "2025-12-24",
+        "value": 5.32,
+        "date": "2025-12-31",
         "region": "Emerging Markets",
         "description": "ICE BofA Emerging Markets Corporate Plus Index Effective Yield"
       },
@@ -55,24 +55,24 @@
       {
         "code": "EU_IG",
         "name": "Euro Investment Grade",
-        "value": 5.01,
-        "date": "2025-12-24",
+        "value": 5.04,
+        "date": "2025-12-31",
         "region": "Europe",
         "description": "ICE BofA BBB US Corporate Index Effective Yield (proxy)"
       },
       {
         "code": "EMEA_EM",
         "name": "EMEA EM Corporate",
-        "value": 5.01,
-        "date": "2025-12-24",
+        "value": 5.03,
+        "date": "2025-12-31",
         "region": "EMEA",
         "description": "ICE BofA EMEA Emerging Markets Corporate Plus Index Effective Yield"
       },
       {
         "code": "US_IG",
         "name": "US Investment Grade",
-        "value": 4.81,
-        "date": "2025-12-24",
+        "value": 4.84,
+        "date": "2025-12-31",
         "region": "North America",
         "description": "ICE BofA US Corporate Index Effective Yield"
       },
@@ -80,7 +80,7 @@
         "code": "ASIA_EM",
         "name": "Asia EM Corporate",
         "value": 4.63,
-        "date": "2025-12-24",
+        "date": "2025-12-31",
         "region": "Asia",
         "description": "ICE BofA Asia Emerging Markets Corporate Plus Index Effective Yield"
       }
@@ -89,24 +89,24 @@
       {
         "code": "US_HY_CCC",
         "name": "US CCC & Below",
-        "value": 12.39,
-        "date": "2025-12-24",
+        "value": 12.49,
+        "date": "2025-12-31",
         "region": "North America",
         "description": "ICE BofA CCC & Lower US High Yield Index Effective Yield"
       },
       {
         "code": "EM_HY",
         "name": "Emerging Markets HY",
-        "value": 7.04,
-        "date": "2025-12-24",
+        "value": 7.13,
+        "date": "2025-12-31",
         "region": "Emerging Markets",
         "description": "ICE BofA High Yield Emerging Markets Corporate Plus Index Effective Yield"
       },
       {
         "code": "US_HY_B",
         "name": "US B Rated",
-        "value": 6.61,
-        "date": "2025-12-24",
+        "value": 6.71,
+        "date": "2025-12-31",
         "region": "North America",
         "description": "ICE BofA Single-B US High Yield Index Effective Yield"
       },
@@ -114,23 +114,23 @@
         "code": "US_HY",
         "name": "US High Yield",
         "value": 6.53,
-        "date": "2025-12-24",
+        "date": "2025-12-31",
         "region": "North America",
         "description": "ICE BofA US High Yield Index Effective Yield"
       },
       {
         "code": "US_HY_BB",
         "name": "US BB Rated",
-        "value": 5.43,
-        "date": "2025-12-24",
+        "value": 5.44,
+        "date": "2025-12-31",
         "region": "North America",
         "description": "ICE BofA BB US High Yield Index Effective Yield"
       },
       {
         "code": "EU_HY",
         "name": "Euro High Yield",
-        "value": 5.06,
-        "date": "2025-12-24",
+        "value": 5.09,
+        "date": "2025-12-31",
         "region": "Europe",
         "description": "ICE BofA Euro High Yield Index Effective Yield"
       }
@@ -139,24 +139,24 @@
       {
         "code": "US_SPREAD_HY",
         "name": "US HY Spread",
-        "value": 2.84,
-        "date": "2025-12-24",
+        "value": 2.81,
+        "date": "2025-12-31",
         "region": "North America",
         "description": "ICE BofA US High Yield Index Option-Adjusted Spread"
       },
       {
         "code": "EU_SPREAD_HY",
         "name": "Euro HY Spread",
-        "value": 2.65,
-        "date": "2025-12-24",
+        "value": 2.7,
+        "date": "2025-12-31",
         "region": "Europe",
         "description": "ICE BofA Euro High Yield Index Option-Adjusted Spread"
       },
       {
         "code": "EM_SPREAD",
         "name": "EM Corporate Spread",
-        "value": 1.55,
-        "date": "2025-12-24",
+        "value": 1.56,
+        "date": "2025-12-31",
         "region": "Emerging Markets",
         "description": "ICE BofA Emerging Markets Corporate Plus Index Option-Adjusted Spread"
       },
@@ -164,7 +164,7 @@
         "code": "US_SPREAD_IG",
         "name": "US IG Spread",
         "value": 0.79,
-        "date": "2025-12-24",
+        "date": "2025-12-31",
         "region": "North America",
         "description": "ICE BofA US Corporate Index Option-Adjusted Spread"
       }
@@ -1374,8 +1374,8 @@
           "value": 4.78
         },
         {
-          "date": "2025-12-24",
-          "value": 4.81
+          "date": "2025-12-31",
+          "value": 4.84
         }
       ]
     },
@@ -1385,10 +1385,6 @@
       "region": "North America",
       "description": "Moody's Seasoned Aaa Corporate Bond Yield",
       "data": [
-        {
-          "date": "2000-12-01",
-          "value": 7.21
-        },
         {
           "date": "2001-01-01",
           "value": 7.15
@@ -2593,10 +2589,6 @@
       "region": "North America",
       "description": "Moody's Seasoned Baa Corporate Bond Yield",
       "data": [
-        {
-          "date": "2000-12-01",
-          "value": 8.02
-        },
         {
           "date": "2001-01-01",
           "value": 7.93
@@ -4998,7 +4990,7 @@
           "value": 6.56
         },
         {
-          "date": "2025-12-24",
+          "date": "2025-12-31",
           "value": 6.53
         }
       ]
@@ -6206,8 +6198,8 @@
           "value": 5.42
         },
         {
-          "date": "2025-12-24",
-          "value": 5.43
+          "date": "2025-12-31",
+          "value": 5.44
         }
       ]
     },
@@ -7414,8 +7406,8 @@
           "value": 6.67
         },
         {
-          "date": "2025-12-24",
-          "value": 6.61
+          "date": "2025-12-31",
+          "value": 6.71
         }
       ]
     },
@@ -8622,8 +8614,8 @@
           "value": 12.53
         },
         {
-          "date": "2025-12-24",
-          "value": 12.39
+          "date": "2025-12-31",
+          "value": 12.49
         }
       ]
     },
@@ -9830,8 +9822,8 @@
           "value": 5.11
         },
         {
-          "date": "2025-12-24",
-          "value": 5.06
+          "date": "2025-12-31",
+          "value": 5.09
         }
       ]
     },
@@ -11038,8 +11030,8 @@
           "value": 4.98
         },
         {
-          "date": "2025-12-24",
-          "value": 5.01
+          "date": "2025-12-31",
+          "value": 5.04
         }
       ]
     },
@@ -12246,8 +12238,8 @@
           "value": 5.3
         },
         {
-          "date": "2025-12-24",
-          "value": 5.3
+          "date": "2025-12-31",
+          "value": 5.32
         }
       ]
     },
@@ -13454,8 +13446,8 @@
           "value": 7.19
         },
         {
-          "date": "2025-12-24",
-          "value": 7.04
+          "date": "2025-12-31",
+          "value": 7.13
         }
       ]
     },
@@ -14662,7 +14654,7 @@
           "value": 4.59
         },
         {
-          "date": "2025-12-24",
+          "date": "2025-12-31",
           "value": 4.63
         }
       ]
@@ -15870,8 +15862,8 @@
           "value": 5.01
         },
         {
-          "date": "2025-12-24",
-          "value": 5.01
+          "date": "2025-12-31",
+          "value": 5.03
         }
       ]
     },
@@ -17078,8 +17070,8 @@
           "value": 6.65
         },
         {
-          "date": "2025-12-24",
-          "value": 6.57
+          "date": "2025-12-31",
+          "value": 6.62
         }
       ]
     },
@@ -18286,7 +18278,7 @@
           "value": 0.82
         },
         {
-          "date": "2025-12-24",
+          "date": "2025-12-31",
           "value": 0.79
         }
       ]
@@ -19494,8 +19486,8 @@
           "value": 2.92
         },
         {
-          "date": "2025-12-24",
-          "value": 2.84
+          "date": "2025-12-31",
+          "value": 2.81
         }
       ]
     },
@@ -20702,8 +20694,8 @@
           "value": 2.87
         },
         {
-          "date": "2025-12-24",
-          "value": 2.65
+          "date": "2025-12-31",
+          "value": 2.7
         }
       ]
     },
@@ -21910,8 +21902,8 @@
           "value": 1.63
         },
         {
-          "date": "2025-12-24",
-          "value": 1.55
+          "date": "2025-12-31",
+          "value": 1.56
         }
       ]
     }

@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "GGXWDG_NGDP",
     "description": "General Government Gross Debt (% of GDP)",
-    "fetched_at": "2025-12-28T02:21:59.239246",
+    "fetched_at": "2026-01-04T02:23:53.095560",
     "available_years": [
       "2030",
       "2029",
@@ -31,13 +31,12 @@
       "2007",
       "2006"
     ],
-    "last_real_year": "2025",
+    "last_real_year": "2026",
     "projection_years": [
       "2030",
       "2029",
       "2028",
-      "2027",
-      "2026"
+      "2027"
     ]
   },
   "data": {
@@ -3107,763 +3106,763 @@
         "country": "Japan",
         "debt": 226.8,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SGP",
         "country": "Singapore",
         "debt": 176.3,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SDN",
         "country": "Sudan",
         "debt": 172.4,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BHR",
         "country": "Bahrain",
         "debt": 146.4,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GRC",
         "country": "Greece",
         "debt": 141.9,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ITA",
         "country": "Italy",
         "debt": 138.3,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "USA",
         "country": "USA",
         "debt": 128.7,
         "region": "Americas",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SEN",
         "country": "Senegal",
         "debt": 124.3,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "FRA",
         "country": "France",
         "debt": 119.6,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CAN",
         "country": "Canada",
         "debt": 113.0,
         "region": "Americas",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BEL",
         "country": "Belgium",
         "debt": 110.6,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "UKR",
         "country": "Ukraine",
         "debt": 110.4,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GBR",
         "country": "United Kingdom",
         "debt": 104.8,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
         "debt": 102.3,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MOZ",
         "country": "Mozambique",
         "debt": 99.9,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ESP",
         "country": "Spain",
         "debt": 98.7,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BRA",
         "country": "Brazil",
         "debt": 95.0,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "FIN",
         "country": "Finland",
         "debt": 89.1,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "JOR",
         "country": "Jordan",
         "debt": 87.5,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MUS",
         "country": "Mauritius",
         "debt": 87.4,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SLV",
         "country": "El Salvador",
         "debt": 86.9,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PRT",
         "country": "Portugal",
         "debt": 86.9,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "EGY",
         "country": "Egypt",
         "debt": 85.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "AUT",
         "country": "Austria",
         "debt": 83.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "TUN",
         "country": "Tunisia",
         "debt": 82.6,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
         "debt": 80.8,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "EUQ",
         "country": "European Union",
         "debt": 79.7,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ZAF",
         "country": "South Africa",
         "debt": 79.5,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "HUN",
         "country": "Hungary",
         "debt": 75.5,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ARG",
         "country": "Argentina",
         "debt": 73.6,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PAK",
         "country": "Pakistan",
         "debt": 71.3,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MYS",
         "country": "Malaysia",
         "debt": 70.5,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ISR",
         "country": "Israel",
         "debt": 70.4,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KEN",
         "country": "Kenya",
         "debt": 70.1,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "URY",
         "country": "Uruguay",
         "debt": 68.3,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "THA",
         "country": "Thailand",
         "debt": 66.7,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MAR",
         "country": "Morocco",
         "debt": 66.6,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SVN",
         "country": "Slovenia",
         "debt": 66.4,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "DEU",
         "country": "Germany",
         "debt": 66.0,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "POL",
         "country": "Poland",
         "debt": 65.8,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "AGO",
         "country": "Angola",
         "debt": 63.2,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SVK",
         "country": "Slovakia",
         "debt": 63.2,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ROU",
         "country": "Romania",
         "debt": 62.5,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "DZA",
         "country": "Algeria",
         "debt": 62.2,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "COL",
         "country": "Colombia",
         "debt": 61.9,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MNE",
         "country": "Montenegro",
         "debt": 61.6,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PAN",
         "country": "Panama",
         "debt": 60.3,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MEX",
         "country": "Mexico",
         "debt": 59.9,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CRI",
         "country": "Costa Rica",
         "debt": 59.5,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "DOM",
         "country": "Dominican Rep.",
         "debt": 58.9,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PHL",
         "country": "Philippines",
         "debt": 58.8,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IRQ",
         "country": "Iraq",
         "debt": 58.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "HRV",
         "country": "Croatia",
         "debt": 57.4,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "JAM",
         "country": "Jamaica",
         "debt": 57.4,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KOR",
         "country": "South Korea",
         "debt": 56.7,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GHA",
         "country": "Ghana",
         "debt": 56.1,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NZL",
         "country": "New Zealand",
         "debt": 56.1,
         "region": "Oceania",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ARM",
         "country": "Armenia",
         "debt": 54.1,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CIV",
         "country": "Ivory Coast",
         "debt": 54.1,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MKD",
         "country": "North Macedonia",
         "debt": 53.9,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CYP",
         "country": "Cyprus",
         "debt": 53.7,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "UGA",
         "country": "Uganda",
         "debt": 53.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ALB",
         "country": "Albania",
         "debt": 52.7,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "AUS",
         "country": "Australia",
         "debt": 50.7,
         "region": "Oceania",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NPL",
         "country": "Nepal",
         "debt": 49.9,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "TZA",
         "country": "Tanzania",
         "debt": 48.3,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "LVA",
         "country": "Latvia",
         "debt": 47.4,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MLT",
         "country": "Malta",
         "debt": 47.3,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "LTU",
         "country": "Lithuania",
         "debt": 45.9,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CZE",
         "country": "Czechia",
         "debt": 45.7,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NLD",
         "country": "Netherlands",
         "debt": 45.2,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ISL",
         "country": "Iceland",
         "debt": 44.9,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BWA",
         "country": "Botswana",
         "debt": 44.8,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SRB",
         "country": "Serbia",
         "debt": 44.2,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "HND",
         "country": "Honduras",
         "debt": 44.1,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CHL",
         "country": "Chile",
         "debt": 43.7,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NOR",
         "country": "Norway",
         "debt": 42.5,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ETH",
         "country": "Ethiopia",
         "debt": 41.1,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IDN",
         "country": "Indonesia",
         "debt": 41.1,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PRY",
         "country": "Paraguay",
         "debt": 40.6,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BGD",
         "country": "Bangladesh",
         "debt": 40.2,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NIC",
         "country": "Nicaragua",
         "debt": 40.1,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "MDA",
         "country": "Moldova",
         "debt": 39.2,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "QAT",
         "country": "Qatar",
         "debt": 38.8,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "BLR",
         "country": "Belarus",
         "debt": 36.7,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IRN",
         "country": "Iran",
         "debt": 36.4,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CMR",
         "country": "Cameroon",
         "debt": 36.3,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
         "debt": 36.1,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SWE",
         "country": "Sweden",
         "debt": 35.6,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "NGA",
         "country": "Nigeria",
         "debt": 35.0,
         "region": "Africa",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "PER",
         "country": "Peru",
         "debt": 33.6,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GEO",
         "country": "Georgia",
         "debt": 33.4,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "OMN",
         "country": "Oman",
         "debt": 33.0,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "ARE",
         "country": "UAE",
         "debt": 31.9,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "SAU",
         "country": "Saudi Arabia",
         "debt": 31.8,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "VNM",
         "country": "Vietnam",
         "debt": 31.8,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "IRL",
         "country": "Ireland",
         "debt": 31.5,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "UZB",
         "country": "Uzbekistan",
         "debt": 31.0,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KHM",
         "country": "Cambodia",
         "debt": 29.3,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "DNK",
         "country": "Denmark",
         "debt": 29.1,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "LUX",
         "country": "Luxembourg",
         "debt": 28.1,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "GTM",
         "country": "Guatemala",
         "debt": 27.8,
         "region": "Latam",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "EST",
         "country": "Estonia",
         "debt": 27.5,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KAZ",
         "country": "Kazakhstan",
         "debt": 26.4,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "TUR",
         "country": "Turkey",
         "debt": 25.1,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "RUS",
         "country": "Russia",
         "debt": 24.8,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "AZE",
         "country": "Azerbaijan",
         "debt": 23.5,
         "region": "Europe",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "TWN",
         "country": "Taiwan",
         "debt": 20.9,
         "region": "Asia",
-        "isProjection": true
+        "isProjection": false
       },
       {
         "code": "KWT",
         "country": "Kuwait",
         "debt": 10.7,
         "region": "MENA",
-        "isProjection": true
+        "isProjection": false
       }
     ],
     "2025": [
@@ -20080,7 +20079,7 @@
         {
           "year": "2026",
           "debt": 172.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20211,7 +20210,7 @@
         {
           "year": "2026",
           "debt": 52.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20342,7 +20341,7 @@
         {
           "year": "2026",
           "debt": 62.2,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20473,7 +20472,7 @@
         {
           "year": "2026",
           "debt": 63.2,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20604,7 +20603,7 @@
         {
           "year": "2026",
           "debt": 73.6,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20735,7 +20734,7 @@
         {
           "year": "2026",
           "debt": 54.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20866,7 +20865,7 @@
         {
           "year": "2026",
           "debt": 50.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -20997,7 +20996,7 @@
         {
           "year": "2026",
           "debt": 83.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21128,7 +21127,7 @@
         {
           "year": "2026",
           "debt": 23.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21259,7 +21258,7 @@
         {
           "year": "2026",
           "debt": 146.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21390,7 +21389,7 @@
         {
           "year": "2026",
           "debt": 40.2,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21521,7 +21520,7 @@
         {
           "year": "2026",
           "debt": 36.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21652,7 +21651,7 @@
         {
           "year": "2026",
           "debt": 110.6,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -21889,7 +21888,7 @@
         {
           "year": "2026",
           "debt": 44.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22020,7 +22019,7 @@
         {
           "year": "2026",
           "debt": 95.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22151,7 +22150,7 @@
         {
           "year": "2026",
           "debt": 29.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22282,7 +22281,7 @@
         {
           "year": "2026",
           "debt": 36.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22413,7 +22412,7 @@
         {
           "year": "2026",
           "debt": 113.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22544,7 +22543,7 @@
         {
           "year": "2026",
           "debt": 43.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22675,7 +22674,7 @@
         {
           "year": "2026",
           "debt": 102.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22806,7 +22805,7 @@
         {
           "year": "2026",
           "debt": 61.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -22937,7 +22936,7 @@
         {
           "year": "2026",
           "debt": 59.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23068,7 +23067,7 @@
         {
           "year": "2026",
           "debt": 54.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23199,7 +23198,7 @@
         {
           "year": "2026",
           "debt": 57.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23330,7 +23329,7 @@
         {
           "year": "2026",
           "debt": 53.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23461,7 +23460,7 @@
         {
           "year": "2026",
           "debt": 45.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23592,7 +23591,7 @@
         {
           "year": "2026",
           "debt": 29.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23723,7 +23722,7 @@
         {
           "year": "2026",
           "debt": 58.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -23955,7 +23954,7 @@
         {
           "year": "2026",
           "debt": 85.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24086,7 +24085,7 @@
         {
           "year": "2026",
           "debt": 86.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24217,7 +24216,7 @@
         {
           "year": "2026",
           "debt": 27.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24348,7 +24347,7 @@
         {
           "year": "2026",
           "debt": 41.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24479,7 +24478,7 @@
         {
           "year": "2026",
           "debt": 89.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24610,7 +24609,7 @@
         {
           "year": "2026",
           "debt": 119.6,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24741,7 +24740,7 @@
         {
           "year": "2026",
           "debt": 33.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -24872,7 +24871,7 @@
         {
           "year": "2026",
           "debt": 66.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25003,7 +25002,7 @@
         {
           "year": "2026",
           "debt": 56.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25134,7 +25133,7 @@
         {
           "year": "2026",
           "debt": 141.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25265,7 +25264,7 @@
         {
           "year": "2026",
           "debt": 27.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25396,7 +25395,7 @@
         {
           "year": "2026",
           "debt": 44.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25527,7 +25526,7 @@
         {
           "year": "2026",
           "debt": 75.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25658,7 +25657,7 @@
         {
           "year": "2026",
           "debt": 44.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25789,7 +25788,7 @@
         {
           "year": "2026",
           "debt": 80.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -25920,7 +25919,7 @@
         {
           "year": "2026",
           "debt": 41.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26051,7 +26050,7 @@
         {
           "year": "2026",
           "debt": 36.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26182,7 +26181,7 @@
         {
           "year": "2026",
           "debt": 58.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26313,7 +26312,7 @@
         {
           "year": "2026",
           "debt": 31.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26444,7 +26443,7 @@
         {
           "year": "2026",
           "debt": 70.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26575,7 +26574,7 @@
         {
           "year": "2026",
           "debt": 138.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26706,7 +26705,7 @@
         {
           "year": "2026",
           "debt": 57.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26837,7 +26836,7 @@
         {
           "year": "2026",
           "debt": 226.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -26968,7 +26967,7 @@
         {
           "year": "2026",
           "debt": 87.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27099,7 +27098,7 @@
         {
           "year": "2026",
           "debt": 26.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27230,7 +27229,7 @@
         {
           "year": "2026",
           "debt": 70.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27361,7 +27360,7 @@
         {
           "year": "2026",
           "debt": 56.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27492,7 +27491,7 @@
         {
           "year": "2026",
           "debt": 10.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27623,7 +27622,7 @@
         {
           "year": "2026",
           "debt": 47.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27855,7 +27854,7 @@
         {
           "year": "2026",
           "debt": 45.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -27986,7 +27985,7 @@
         {
           "year": "2026",
           "debt": 28.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28117,7 +28116,7 @@
         {
           "year": "2026",
           "debt": 70.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28248,7 +28247,7 @@
         {
           "year": "2026",
           "debt": 47.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28379,7 +28378,7 @@
         {
           "year": "2026",
           "debt": 87.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28510,7 +28509,7 @@
         {
           "year": "2026",
           "debt": 59.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28641,7 +28640,7 @@
         {
           "year": "2026",
           "debt": 39.2,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28772,7 +28771,7 @@
         {
           "year": "2026",
           "debt": 61.6,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -28903,7 +28902,7 @@
         {
           "year": "2026",
           "debt": 66.6,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29034,7 +29033,7 @@
         {
           "year": "2026",
           "debt": 99.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29165,7 +29164,7 @@
         {
           "year": "2026",
           "debt": 49.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29296,7 +29295,7 @@
         {
           "year": "2026",
           "debt": 45.2,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29427,7 +29426,7 @@
         {
           "year": "2026",
           "debt": 56.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29558,7 +29557,7 @@
         {
           "year": "2026",
           "debt": 40.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29689,7 +29688,7 @@
         {
           "year": "2026",
           "debt": 35.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29820,7 +29819,7 @@
         {
           "year": "2026",
           "debt": 53.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -29951,7 +29950,7 @@
         {
           "year": "2026",
           "debt": 42.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30082,7 +30081,7 @@
         {
           "year": "2026",
           "debt": 33.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30213,7 +30212,7 @@
         {
           "year": "2026",
           "debt": 71.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30344,7 +30343,7 @@
         {
           "year": "2026",
           "debt": 60.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30475,7 +30474,7 @@
         {
           "year": "2026",
           "debt": 40.6,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30606,7 +30605,7 @@
         {
           "year": "2026",
           "debt": 33.6,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30737,7 +30736,7 @@
         {
           "year": "2026",
           "debt": 58.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30868,7 +30867,7 @@
         {
           "year": "2026",
           "debt": 65.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -30999,7 +30998,7 @@
         {
           "year": "2026",
           "debt": 86.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31130,7 +31129,7 @@
         {
           "year": "2026",
           "debt": 38.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31261,7 +31260,7 @@
         {
           "year": "2026",
           "debt": 62.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31392,7 +31391,7 @@
         {
           "year": "2026",
           "debt": 24.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31523,7 +31522,7 @@
         {
           "year": "2026",
           "debt": 31.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31654,7 +31653,7 @@
         {
           "year": "2026",
           "debt": 124.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31785,7 +31784,7 @@
         {
           "year": "2026",
           "debt": 44.2,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -31916,7 +31915,7 @@
         {
           "year": "2026",
           "debt": 176.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32047,7 +32046,7 @@
         {
           "year": "2026",
           "debt": 63.2,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32178,7 +32177,7 @@
         {
           "year": "2026",
           "debt": 66.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32309,7 +32308,7 @@
         {
           "year": "2026",
           "debt": 79.5,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32440,7 +32439,7 @@
         {
           "year": "2026",
           "debt": 98.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32672,7 +32671,7 @@
         {
           "year": "2026",
           "debt": 35.6,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32803,7 +32802,7 @@
         {
           "year": "2026",
           "debt": 36.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -32934,7 +32933,7 @@
         {
           "year": "2026",
           "debt": 20.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33065,7 +33064,7 @@
         {
           "year": "2026",
           "debt": 48.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33196,7 +33195,7 @@
         {
           "year": "2026",
           "debt": 66.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33327,7 +33326,7 @@
         {
           "year": "2026",
           "debt": 82.6,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33458,7 +33457,7 @@
         {
           "year": "2026",
           "debt": 25.1,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33589,7 +33588,7 @@
         {
           "year": "2026",
           "debt": 53.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33720,7 +33719,7 @@
         {
           "year": "2026",
           "debt": 110.4,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33851,7 +33850,7 @@
         {
           "year": "2026",
           "debt": 31.9,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -33982,7 +33981,7 @@
         {
           "year": "2026",
           "debt": 104.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34113,7 +34112,7 @@
         {
           "year": "2026",
           "debt": 128.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34244,7 +34243,7 @@
         {
           "year": "2026",
           "debt": 68.3,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34375,7 +34374,7 @@
         {
           "year": "2026",
           "debt": 31.0,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34607,7 +34606,7 @@
         {
           "year": "2026",
           "debt": 31.8,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",
@@ -34839,7 +34838,7 @@
         {
           "year": "2026",
           "debt": 79.7,
-          "isProjection": true
+          "isProjection": false
         },
         {
           "year": "2027",

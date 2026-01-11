@@ -4,11 +4,11 @@
     "indicator": "Credit Spreads",
     "description": "Difference between corporate and government bond yields. Widening spreads indicate increased credit risk and potential recession.",
     "unit": "basis points (bps)",
-    "fetched_at": "2026-01-04T02:25:02.785363",
+    "fetched_at": "2026-01-11T02:24:33.078864",
     "warning_threshold": 500,
     "total_series": 12,
     "high_risk_count": 1,
-    "average_spread": 143.02
+    "average_spread": 142.28
   },
   "data": [
     {
@@ -16,9 +16,9 @@
       "name": "US CCC & Below",
       "region": "North America",
       "category": "High Yield",
-      "spread": 830.1,
-      "corp_yield": 12.49,
-      "gov_yield": 4.189,
+      "spread": 816.9,
+      "corp_yield": 12.34,
+      "gov_yield": 4.171,
       "risk_level": "high"
     },
     {
@@ -26,9 +26,9 @@
       "name": "US B Rated",
       "region": "North America",
       "category": "High Yield",
-      "spread": 252.1,
-      "corp_yield": 6.71,
-      "gov_yield": 4.189,
+      "spread": 248.9,
+      "corp_yield": 6.66,
+      "gov_yield": 4.171,
       "risk_level": "low"
     },
     {
@@ -36,19 +36,9 @@
       "name": "US High Yield",
       "region": "North America",
       "category": "High Yield",
-      "spread": 234.1,
-      "corp_yield": 6.53,
-      "gov_yield": 4.189,
-      "risk_level": "low"
-    },
-    {
-      "code": "EU_HY",
-      "name": "Euro High Yield",
-      "region": "Europe",
-      "category": "High Yield",
-      "spread": 219.1,
-      "corp_yield": 5.09,
-      "gov_yield": 2.899,
+      "spread": 231.9,
+      "corp_yield": 6.49,
+      "gov_yield": 4.171,
       "risk_level": "low"
     },
     {
@@ -56,9 +46,19 @@
       "name": "Euro Investment Grade",
       "region": "Europe",
       "category": "Investment Grade",
-      "spread": 214.1,
+      "spread": 221.4,
       "corp_yield": 5.04,
-      "gov_yield": 2.899,
+      "gov_yield": 2.826,
+      "risk_level": "low"
+    },
+    {
+      "code": "EU_HY",
+      "name": "Euro High Yield",
+      "region": "Europe",
+      "category": "High Yield",
+      "spread": 212.4,
+      "corp_yield": 4.95,
+      "gov_yield": 2.826,
       "risk_level": "low"
     },
     {
@@ -66,9 +66,9 @@
       "name": "US BAA Rated",
       "region": "North America",
       "category": "Investment Grade",
-      "spread": 167.1,
-      "corp_yield": 5.86,
-      "gov_yield": 4.189,
+      "spread": 172.9,
+      "corp_yield": 5.9,
+      "gov_yield": 4.171,
       "risk_level": "low"
     },
     {
@@ -76,9 +76,9 @@
       "name": "US BB Rated",
       "region": "North America",
       "category": "High Yield",
-      "spread": 125.1,
-      "corp_yield": 5.44,
-      "gov_yield": 4.189,
+      "spread": 125.9,
+      "corp_yield": 5.43,
+      "gov_yield": 4.171,
       "risk_level": "low"
     },
     {
@@ -86,9 +86,9 @@
       "name": "US AAA Rated",
       "region": "North America",
       "category": "Investment Grade",
-      "spread": 107.1,
-      "corp_yield": 5.26,
-      "gov_yield": 4.189,
+      "spread": 113.9,
+      "corp_yield": 5.31,
+      "gov_yield": 4.171,
       "risk_level": "low"
     },
     {
@@ -96,9 +96,9 @@
       "name": "US Investment Grade",
       "region": "North America",
       "category": "Investment Grade",
-      "spread": 65.1,
+      "spread": 66.9,
       "corp_yield": 4.84,
-      "gov_yield": 4.189,
+      "gov_yield": 4.171,
       "risk_level": "low"
     },
     {
@@ -106,9 +106,9 @@
       "name": "Euro HY Spread",
       "region": "Europe",
       "category": "Spreads",
-      "spread": -19.9,
-      "corp_yield": 2.7,
-      "gov_yield": 2.899,
+      "spread": -24.6,
+      "corp_yield": 2.58,
+      "gov_yield": 2.826,
       "risk_level": "low"
     },
     {
@@ -116,9 +116,9 @@
       "name": "US HY Spread",
       "region": "North America",
       "category": "Spreads",
-      "spread": -137.9,
-      "corp_yield": 2.81,
-      "gov_yield": 4.189,
+      "spread": -141.1,
+      "corp_yield": 2.76,
+      "gov_yield": 4.171,
       "risk_level": "low"
     },
     {
@@ -126,9 +126,9 @@
       "name": "US IG Spread",
       "region": "North America",
       "category": "Spreads",
-      "spread": -339.9,
+      "spread": -338.1,
       "corp_yield": 0.79,
-      "gov_yield": 4.189,
+      "gov_yield": 4.171,
       "risk_level": "low"
     }
   ],
@@ -139,10 +139,10 @@
       "category": "Investment Grade",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": 167.1,
-          "corp_yield": 5.86,
-          "gov_yield": 4.189
+          "date": "2026-01-11",
+          "spread": 172.9,
+          "corp_yield": 5.9,
+          "gov_yield": 4.171
         }
       ]
     },
@@ -152,10 +152,10 @@
       "category": "Investment Grade",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": 107.1,
-          "corp_yield": 5.26,
-          "gov_yield": 4.189
+          "date": "2026-01-11",
+          "spread": 113.9,
+          "corp_yield": 5.31,
+          "gov_yield": 4.171
         }
       ]
     },
@@ -165,10 +165,10 @@
       "category": "Investment Grade",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": 214.1,
+          "date": "2026-01-11",
+          "spread": 221.4,
           "corp_yield": 5.04,
-          "gov_yield": 2.899
+          "gov_yield": 2.826
         }
       ]
     },
@@ -178,10 +178,10 @@
       "category": "Investment Grade",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": 65.1,
+          "date": "2026-01-11",
+          "spread": 66.9,
           "corp_yield": 4.84,
-          "gov_yield": 4.189
+          "gov_yield": 4.171
         }
       ]
     },
@@ -191,10 +191,10 @@
       "category": "High Yield",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": 830.1,
-          "corp_yield": 12.49,
-          "gov_yield": 4.189
+          "date": "2026-01-11",
+          "spread": 816.9,
+          "corp_yield": 12.34,
+          "gov_yield": 4.171
         }
       ]
     },
@@ -204,10 +204,10 @@
       "category": "High Yield",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": 252.1,
-          "corp_yield": 6.71,
-          "gov_yield": 4.189
+          "date": "2026-01-11",
+          "spread": 248.9,
+          "corp_yield": 6.66,
+          "gov_yield": 4.171
         }
       ]
     },
@@ -217,10 +217,10 @@
       "category": "High Yield",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": 234.1,
-          "corp_yield": 6.53,
-          "gov_yield": 4.189
+          "date": "2026-01-11",
+          "spread": 231.9,
+          "corp_yield": 6.49,
+          "gov_yield": 4.171
         }
       ]
     },
@@ -230,10 +230,10 @@
       "category": "High Yield",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": 125.1,
-          "corp_yield": 5.44,
-          "gov_yield": 4.189
+          "date": "2026-01-11",
+          "spread": 125.9,
+          "corp_yield": 5.43,
+          "gov_yield": 4.171
         }
       ]
     },
@@ -243,10 +243,10 @@
       "category": "High Yield",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": 219.1,
-          "corp_yield": 5.09,
-          "gov_yield": 2.899
+          "date": "2026-01-11",
+          "spread": 212.4,
+          "corp_yield": 4.95,
+          "gov_yield": 2.826
         }
       ]
     },
@@ -256,10 +256,10 @@
       "category": "Spreads",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": -137.9,
-          "corp_yield": 2.81,
-          "gov_yield": 4.189
+          "date": "2026-01-11",
+          "spread": -141.1,
+          "corp_yield": 2.76,
+          "gov_yield": 4.171
         }
       ]
     },
@@ -269,10 +269,10 @@
       "category": "Spreads",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": -19.9,
-          "corp_yield": 2.7,
-          "gov_yield": 2.899
+          "date": "2026-01-11",
+          "spread": -24.6,
+          "corp_yield": 2.58,
+          "gov_yield": 2.826
         }
       ]
     },
@@ -282,10 +282,10 @@
       "category": "Spreads",
       "data": [
         {
-          "date": "2026-01-04",
-          "spread": -339.9,
+          "date": "2026-01-11",
+          "spread": -338.1,
           "corp_yield": 0.79,
-          "gov_yield": 4.189
+          "gov_yield": 4.171
         }
       ]
     }

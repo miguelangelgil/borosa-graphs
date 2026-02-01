@@ -11,6 +11,7 @@ import Employment from './pages/Employment';
 import Bonds from './pages/Bonds';
 import CorporateBonds from './pages/CorporateBonds';
 import RecessionIndicators from './pages/RecessionIndicators';
+import GoldHeatmap from './pages/GoldHeatmap';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="bonds" element={<Bonds />} />
           <Route path="corporate-bonds" element={<CorporateBonds />} />
           <Route path="recession-indicators" element={<RecessionIndicators />} />
+          <Route path="gold-heatmap" element={<GoldHeatmap />} />
         </Route>
       </Routes>
     </ThemeProvider>

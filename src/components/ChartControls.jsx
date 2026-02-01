@@ -1,6 +1,6 @@
 import { useTheme } from '../hooks/useTheme';
 
-export function ViewToggle({ view, setView }) {
+export function ViewToggle({ view, setView, options }) {
   const { isDark } = useTheme();
 
   const activeClass = isDark
@@ -10,20 +10,25 @@ export function ViewToggle({ view, setView }) {
     ? 'bg-gray-700 text-gray-300 hover:bg-gray-600'
     : 'bg-[#d9d3c7] text-gray-700 hover:bg-[#cec8bc]';
 
+  // Default options if not provided
+  const defaultOptions = [
+    { value: 'bar', label: '📊 Country Ranking' },
+    { value: 'line', label: '📈 Time Evolution' }
+  ];
+
+  const viewOptions = options || defaultOptions;
+
   return (
     <div className="flex gap-2 mb-4">
-      <button
-        onClick={() => setView('bar')}
-        className={`px-4 py-2 rounded text-sm font-medium ${view === 'bar' ? activeClass : inactiveClass}`}
-      >
-        📊 Country Ranking
-      </button>
-      <button
-        onClick={() => setView('line')}
-        className={`px-4 py-2 rounded text-sm font-medium ${view === 'line' ? activeClass : inactiveClass}`}
-      >
-        📈 Time Evolution
-      </button>
+      {viewOptions.map(option => (
+        <button
+          key={option.value}
+          onClick={() => setView(option.value)}
+          className={`px-4 py-2 rounded text-sm font-medium ${view === option.value ? activeClass : inactiveClass}`}
+        >
+          {option.label}
+        </button>
+      ))}
     </div>
   );
 }

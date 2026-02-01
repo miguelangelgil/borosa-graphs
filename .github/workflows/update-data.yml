@@ -23,7 +23,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests investpy
+        run: pip install requests investpy yfinance
 
       - name: Create data directory
         run: mkdir -p data
@@ -82,6 +82,10 @@ jobs:
 
       - name: Fetch Big Mac Index data
         run: cd scripts && python fetch_big_mac_index.py
+        continue-on-error: true
+
+      - name: Fetch Gold Heat Map data
+        run: cd scripts && python fetch_gold_heatmap_data.py
         continue-on-error: true
 
       - name: Commit and push

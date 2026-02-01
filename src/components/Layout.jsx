@@ -11,6 +11,7 @@ const navItems = [
   { path: '/bonds', icon: '📈', label: 'Bond Yields' },
   { path: '/corporate-bonds', icon: '🏢', label: 'Corporate Bonds' },
   { path: '/recession-indicators', icon: '🚨', label: 'Recession Indicators' },
+  { path: '/gold-heatmap', icon: '🔥', label: 'Gold Heat Maps' },
 ];
 
 export default function Layout() {

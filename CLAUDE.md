@@ -40,13 +40,14 @@ Static web visualization dashboard for financial metrics not available on Tradin
 | Consumer Confidence | OECD/Conference Board (mock) | Consumer confidence index |
 | Unemployment Claims | OECD/National agencies (mock) | Initial jobless claims |
 | Big Mac Index | The Economist GitHub | Purchasing power parity indicator |
+| Gold Heat Maps | Yahoo Finance + Synthetic | Gold futures prices & options positioning |
 
 ## Commands
 
 ### Fetch All Data Locally
 ```bash
 cd scripts
-pip install requests investpy
+pip install requests investpy yfinance
 python fetch_imf_data.py      # Debt/GDP ratio
 python fetch_gdp_data.py      # GDP
 python fetch_debt_data.py     # Public debt
@@ -61,6 +62,7 @@ python fetch_credit_spreads.py  # Credit spreads (requires bonds & corporate bon
 python fetch_consumer_confidence.py  # Consumer confidence
 python fetch_unemployment_claims.py  # Unemployment claims
 python fetch_big_mac_index.py  # Big Mac Index
+python fetch_gold_heatmap_data.py  # Gold futures & options heat maps
 ```
 
 ### Local Development

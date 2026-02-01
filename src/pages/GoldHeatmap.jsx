@@ -18,12 +18,24 @@ function formatVolume(num) {
   return num.toString();
 }
 
+const INSTRUMENTS = [
+  { id: 'gold', name: 'Gold', dataFile: './data/gold_heatmap_data.json', historyFile: './data/gold_heatmap_history.json', icon: '🥇', available: true },
+  { id: 'silver', name: 'Silver', dataFile: './data/silver_heatmap_data.json', historyFile: './data/silver_heatmap_history.json', icon: '🥈', available: true },
+  { id: 'copper', name: 'Copper', dataFile: './data/copper_heatmap_data.json', historyFile: './data/copper_heatmap_history.json', icon: '🟤', available: true, lowLiquidity: true },
+  { id: 'sp500', name: 'S&P 500', dataFile: './data/sp500_heatmap_data.json', historyFile: './data/sp500_heatmap_history.json', icon: '📈', available: true },
+  { id: 'nasdaq', name: 'Nasdaq', dataFile: './data/nasdaq_heatmap_data.json', historyFile: './data/nasdaq_heatmap_history.json', icon: '💻', available: true },
+  { id: 'nikkei', name: 'Nikkei', dataFile: './data/nikkei_heatmap_data.json', historyFile: './data/nikkei_heatmap_history.json', icon: '🗾', available: true },
+  { id: 'dax', name: 'DAX', dataFile: './data/dax_heatmap_data.json', historyFile: './data/dax_heatmap_history.json', icon: '🇩🇪', available: true, lowLiquidity: true }
+];
+
 export default function GoldHeatmap() {
   const { isDark } = useTheme();
-  const { data, loading, error } = useChartData('./data/gold_heatmap_data.json');
-  const { data: historyData } = useChartData('./data/gold_heatmap_history.json');
-
+  const [instrument, setInstrument] = useState('gold');
   const [view, setView] = useState('price'); // 'price', 'heatmap', 'temporal', 'cot', or 'history'
+
+  const currentInstrument = INSTRUMENTS.find(i => i.id === instrument);
+  const { data, loading, error } = useChartData(currentInstrument.dataFile);
+  const { data: historyData } = useChartData(currentInstrument.historyFile);
 
   const priceChartRef = useRef(null);
   const heatmapChartRef = useRef(null);
@@ -150,11 +162,11 @@ export default function GoldHeatmap() {
 
     const colors = getThemeColors(isDark);
     const levels = data.price_levels;
-    // Use GLD ETF price for options (not gold futures price)
-    const gldPrice = data.metadata?.gld_etf_price || data.metadata?.current_price / 10 || 0;
+    // Get scale factor from metadata (10 for gold, 1 for most others)
+    const scaleFactor = data.metadata?.scale_factor || 1;
 
     const chartData = {
-      labels: levels.map(d => `$${(d.strike * 10).toFixed(0)}`),
+      labels: levels.map(d => `$${(d.strike * scaleFactor).toFixed(0)}`),
       datasets: [
         {
           label: 'Call Volume',
@@ -196,22 +208,29 @@ export default function GoldHeatmap() {
           titleColor: colors.labelColor,
           bodyColor: colors.tickColor,
           callbacks: {
-            title: (ctx) => `Strike: ${ctx[0].label} (GLD $${levels[ctx[0].dataIndex].strike})`,
+            title: (ctx) => {
+              const level = levels[ctx[0].dataIndex];
+              const etfSymbol = data.metadata?.source?.match(/\(([A-Z]+) options\)/)?.[1] || 'ETF';
+              return `Strike: ${ctx[0].label} (${etfSymbol} $${level.strike})`;
+            },
             label: (ctx) => {
               const level = levels[ctx.dataIndex];
+              const scaledStrike = (level.strike * scaleFactor).toFixed(0);
               return [
                 `${ctx.dataset.label}: ${formatVolume(ctx.raw)}`,
                 `Total: ${formatVolume(level.total_volume)}`,
                 `Net: ${level.net_volume > 0 ? '+' : ''}${formatVolume(level.net_volume)}`,
-                `Gold equivalent: $${(level.strike * 10).toFixed(0)}/oz`
-              ];
+                scaleFactor > 1 ? `Scaled equivalent: $${scaledStrike}` : ''
+              ].filter(Boolean);
             },
             afterBody: (ctx) => {
               const level = levels[ctx[0].dataIndex];
-              const goldEquivalent = level.strike * 10;
-              const goldFuturesPrice = data.metadata?.gold_futures_price || 0;
-              if (Math.abs(goldEquivalent - goldFuturesPrice) < 200) {
-                return `\n💰 Near current gold price`;
+              const scaledStrike = level.strike * scaleFactor;
+              const futuresPrice = data.metadata?.futures_price || data.metadata?.current_price || 0;
+              const diff = Math.abs(scaledStrike - futuresPrice);
+              const threshold = futuresPrice * 0.05; // Within 5%
+              if (diff < threshold) {
+                return `\n💰 Near current price`;
               }
               return '';
             }
@@ -256,12 +275,13 @@ export default function GoldHeatmap() {
         const xAxis = chart.scales.x;
         const yAxis = chart.scales.y;
 
-        // Find closest strike to gold futures price (strikes are multiplied by 10)
-        const goldFuturesPrice = data.metadata?.gold_futures_price || 0;
+        // Find closest strike to futures price (strikes are scaled)
+        const futuresPrice = data.metadata?.futures_price || data.metadata?.current_price || 0;
+        const instrumentName = data.metadata?.instrument || 'Price';
         let closestIndex = 0;
-        let minDiff = Math.abs((levels[0].strike * 10) - goldFuturesPrice);
+        let minDiff = Math.abs((levels[0].strike * scaleFactor) - futuresPrice);
         levels.forEach((level, i) => {
-          const diff = Math.abs((level.strike * 10) - goldFuturesPrice);
+          const diff = Math.abs((level.strike * scaleFactor) - futuresPrice);
           if (diff < minDiff) {
             minDiff = diff;
             closestIndex = i;
@@ -284,7 +304,7 @@ export default function GoldHeatmap() {
         ctx.fillStyle = '#f59e0b';
         ctx.font = 'bold 11px sans-serif';
         ctx.textAlign = 'center';
-        ctx.fillText(`Gold $${goldFuturesPrice.toFixed(0)}`, x, yAxis.top - 5);
+        ctx.fillText(`${instrumentName} $${futuresPrice.toFixed(0)}`, x, yAxis.top - 5);
       }
     }];
 
@@ -321,9 +341,10 @@ export default function GoldHeatmap() {
 
     const colors = getThemeColors(isDark);
     const heatmapData = data.heatmap_data;
-    // Use GLD ETF price for options (not gold futures price)
-    const gldPrice = data.metadata?.gld_etf_price || data.metadata?.current_price / 10 || 0;
-    const goldFuturesPrice = data.metadata?.gold_futures_price || data.metadata?.current_price || 0;
+    // Get scale factor and prices from metadata
+    const scaleFactor = data.metadata?.scale_factor || 1;
+    const futuresPrice = data.metadata?.futures_price || data.metadata?.current_price || 0;
+    const instrumentName = data.metadata?.instrument || currentInstrument.name;
 
     // Get unique options expiration dates (future dates)
     const optionDates = [...new Set(heatmapData.map(d => d.date))].filter(d => d).sort();
@@ -369,11 +390,42 @@ export default function GoldHeatmap() {
 
       return {
         x: dateIndex,
-        y: maxVolumeStrike.strike * 10, // Multiply by 10 to match gold price scale
+        y: maxVolumeStrike.strike * scaleFactor,
         originalStrike: maxVolumeStrike.strike,
         date: optDate,
         volume: maxVolumeStrike.call_volume + maxVolumeStrike.put_volume,
         netPosition: maxVolumeStrike.net_volume
+      };
+    }).filter(p => p !== null);
+
+    // Calculate volume-weighted average price (VWAP) trajectory
+    const vwapTrajectory = optionDates.map(optDate => {
+      const dateIndex = dates.indexOf(optDate);
+      if (dateIndex === -1) return null;
+
+      // Get all options data for this expiration date
+      const dayData = heatmapData.filter(item => item.date === optDate);
+
+      if (dayData.length === 0) return null;
+
+      // Calculate volume-weighted average strike
+      let totalWeightedStrike = 0;
+      let totalVolume = 0;
+
+      dayData.forEach(item => {
+        const volume = item.call_volume + item.put_volume;
+        totalWeightedStrike += item.strike * volume;
+        totalVolume += volume;
+      });
+
+      const vwapStrike = totalVolume > 0 ? totalWeightedStrike / totalVolume : 0;
+
+      return {
+        x: dateIndex,
+        y: vwapStrike * scaleFactor,
+        originalStrike: vwapStrike,
+        date: optDate,
+        totalVolume: totalVolume
       };
     }).filter(p => p !== null);
 
@@ -390,9 +442,9 @@ export default function GoldHeatmap() {
       if (item.call_volume > 0) {
         callBubbles.push({
           x: dateIndex,
-          y: strike * 10, // Multiply by 10 to match gold price scale
+          y: strike * scaleFactor,
           originalStrike: strike,
-          r: Math.sqrt(item.call_volume) / 10, // Scale radius (adjusted for better visibility)
+          r: Math.sqrt(item.call_volume) / 10,
           volume: item.call_volume,
           date: item.date
         });
@@ -401,9 +453,9 @@ export default function GoldHeatmap() {
       if (item.put_volume > 0) {
         putBubbles.push({
           x: dateIndex,
-          y: strike * 10, // Multiply by 10 to match gold price scale
+          y: strike * scaleFactor,
           originalStrike: strike,
-          r: Math.sqrt(item.put_volume) / 10, // Scale radius (adjusted for better visibility)
+          r: Math.sqrt(item.put_volume) / 10,
           volume: item.put_volume,
           date: item.date
         });
@@ -419,7 +471,7 @@ export default function GoldHeatmap() {
           backgroundColor: 'rgba(34, 197, 94, 0.4)',
           borderColor: 'rgb(34, 197, 94)',
           borderWidth: 1,
-          order: 3,
+          order: 4,
           yAxisID: 'y'
         },
         {
@@ -429,11 +481,11 @@ export default function GoldHeatmap() {
           backgroundColor: 'rgba(239, 68, 68, 0.4)',
           borderColor: 'rgb(239, 68, 68)',
           borderWidth: 1,
-          order: 3,
+          order: 4,
           yAxisID: 'y'
         },
         {
-          label: 'Expected Trajectory',
+          label: 'Max Volume Target',
           type: 'line',
           data: expectedTrajectory,
           borderColor: '#8b5cf6',
@@ -443,6 +495,23 @@ export default function GoldHeatmap() {
           pointRadius: 4,
           pointHoverRadius: 6,
           pointBackgroundColor: '#8b5cf6',
+          pointBorderColor: '#fff',
+          pointBorderWidth: 2,
+          tension: 0.3,
+          order: 3,
+          yAxisID: 'y'
+        },
+        {
+          label: 'Volume-Weighted Avg',
+          type: 'line',
+          data: vwapTrajectory,
+          borderColor: '#06b6d4',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          borderDash: [5, 5],
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          pointBackgroundColor: '#06b6d4',
           pointBorderColor: '#fff',
           pointBorderWidth: 2,
           tension: 0.3,
@@ -493,43 +562,64 @@ export default function GoldHeatmap() {
               const dateIndex = Math.floor(point.x);
               const date = dates[dateIndex] || '';
 
-              // If it's the gold price line (dataset 3)
-              if (ctx[0].datasetIndex === 3) {
+              // If it's the futures price line (dataset 4)
+              if (ctx[0].datasetIndex === 4) {
                 return date;
               }
 
-              // If it's the expected trajectory (dataset 2)
+              // If it's the max volume trajectory (dataset 2)
               if (ctx[0].datasetIndex === 2) {
-                return `${point.date} - Expected Target (GLD $${point.originalStrike})`;
+                const etfSymbol = data.metadata?.source?.match(/\(([A-Z]+) options\)/)?.[1] || 'ETF';
+                return `${point.date} - Max Volume Target (${etfSymbol} $${point.originalStrike})`;
+              }
+
+              // If it's the VWAP trajectory (dataset 3)
+              if (ctx[0].datasetIndex === 3) {
+                const etfSymbol = data.metadata?.source?.match(/\(([A-Z]+) options\)/)?.[1] || 'ETF';
+                return `${point.date} - Volume-Weighted Avg (${etfSymbol} $${point.originalStrike.toFixed(2)})`;
               }
 
               // For options bubbles (datasets 0 and 1)
-              return `${point.date || date} - Gold equiv: $${point.y.toFixed(0)} (GLD $${point.originalStrike})`;
+              const etfSymbol = data.metadata?.source?.match(/\(([A-Z]+) options\)/)?.[1] || 'ETF';
+              const scaleText = scaleFactor > 1 ? ` - Scaled: $${point.y.toFixed(0)}` : '';
+              return `${point.date || date}${scaleText} (${etfSymbol} $${point.originalStrike})`;
             },
             label: (ctx) => {
               const point = ctx.raw;
 
-              // If it's the gold price line (dataset 3)
-              if (ctx.datasetIndex === 3) {
-                return `Gold Futures Price: ${formatPrice(point.y)}`;
+              // If it's the futures price line (dataset 4)
+              if (ctx.datasetIndex === 4) {
+                return `${instrumentName} Futures: ${formatPrice(point.y)}`;
               }
 
-              // If it's the expected trajectory (dataset 2)
+              // If it's the max volume trajectory (dataset 2)
               if (ctx.datasetIndex === 2) {
+                const etfSymbol = data.metadata?.source?.match(/\(([A-Z]+) options\)/)?.[1] || 'ETF';
                 return [
-                  `Most Probable: ${formatPrice(point.y)} (GLD $${point.originalStrike})`,
+                  `Max Volume Strike: ${formatPrice(point.y)}${scaleFactor > 1 ? ` (${etfSymbol} $${point.originalStrike})` : ''}`,
                   `Total Volume: ${formatVolume(point.volume)}`,
                   `Net: ${point.netPosition > 0 ? 'Bullish ↗️' : 'Bearish ↘️'} (${point.netPosition > 0 ? '+' : ''}${formatVolume(point.netPosition)})`
                 ];
               }
 
+              // If it's the VWAP trajectory (dataset 3)
+              if (ctx.datasetIndex === 3) {
+                const etfSymbol = data.metadata?.source?.match(/\(([A-Z]+) options\)/)?.[1] || 'ETF';
+                return [
+                  `Volume-Weighted Avg: ${formatPrice(point.y)}${scaleFactor > 1 ? ` (${etfSymbol} $${point.originalStrike.toFixed(2)})` : ''}`,
+                  `Total Volume: ${formatVolume(point.totalVolume)}`,
+                  point.y > futuresPrice ? '↗️ Above current price' : '↘️ Below current price'
+                ];
+              }
+
               // For options bubbles (datasets 0=Calls, 1=Puts)
               const type = ctx.datasetIndex === 0 ? 'Calls' : 'Puts';
+              const etfSymbol = data.metadata?.source?.match(/\(([A-Z]+) options\)/)?.[1] || 'ETF';
               return [
                 `${type}: ${formatVolume(point.volume)} contracts`,
-                `Gold scale: ${formatPrice(point.y)}`,
-                `GLD strike: $${point.originalStrike.toFixed(2)}`,
-                point.y > goldFuturesPrice ? '↗️ Above current gold price' : '↘️ Below current gold price'
+                scaleFactor > 1 ? `Scaled price: ${formatPrice(point.y)}` : `Price: ${formatPrice(point.y)}`,
+                `${etfSymbol} strike: $${point.originalStrike.toFixed(2)}`,
+                point.y > futuresPrice ? '↗️ Above current price' : '↘️ Below current price'
               ];
             }
           }
@@ -563,7 +653,7 @@ export default function GoldHeatmap() {
         y: {
           title: {
             display: true,
-            text: 'Gold Price (USD/oz) - Options strikes scaled x10',
+            text: `${instrumentName} Price ${scaleFactor > 1 ? `(strikes scaled x${scaleFactor})` : ''}`,
             color: colors.labelColor
           },
           grid: { color: colors.gridColor },
@@ -594,12 +684,12 @@ export default function GoldHeatmap() {
 
         ctx.save();
 
-        // Draw top call strikes (bullish targets) - scaled x10
+        // Draw top call strikes (bullish targets)
         topCallStrikes.forEach((strike, index) => {
-          const y = yAxis.getPixelForValue(strike.strike * 10); // Scale x10
-          const alpha = 0.7 - (index * 0.2); // Fade out lower ranks
+          const y = yAxis.getPixelForValue(strike.strike * scaleFactor);
+          const alpha = 0.7 - (index * 0.2);
 
-          ctx.strokeStyle = `rgba(34, 197, 94, ${alpha})`; // Green
+          ctx.strokeStyle = `rgba(34, 197, 94, ${alpha})`;
           ctx.lineWidth = 2;
           ctx.setLineDash([8, 4]);
           ctx.beginPath();
@@ -611,15 +701,15 @@ export default function GoldHeatmap() {
           ctx.fillStyle = `rgba(34, 197, 94, ${alpha})`;
           ctx.font = 'bold 10px sans-serif';
           ctx.textAlign = 'right';
-          ctx.fillText(`↗ $${(strike.strike * 10).toFixed(0)} (${formatVolume(strike.total_call_volume)})`, xAxis.right - 5, y - 3);
+          ctx.fillText(`↗ $${(strike.strike * scaleFactor).toFixed(0)} (${formatVolume(strike.total_call_volume)})`, xAxis.right - 5, y - 3);
         });
 
-        // Draw top put strikes (bearish targets) - scaled x10
+        // Draw top put strikes (bearish targets)
         topPutStrikes.forEach((strike, index) => {
-          const y = yAxis.getPixelForValue(strike.strike * 10); // Scale x10
-          const alpha = 0.7 - (index * 0.2); // Fade out lower ranks
+          const y = yAxis.getPixelForValue(strike.strike * scaleFactor);
+          const alpha = 0.7 - (index * 0.2);
 
-          ctx.strokeStyle = `rgba(239, 68, 68, ${alpha})`; // Red
+          ctx.strokeStyle = `rgba(239, 68, 68, ${alpha})`;
           ctx.lineWidth = 2;
           ctx.setLineDash([8, 4]);
           ctx.beginPath();
@@ -631,11 +721,11 @@ export default function GoldHeatmap() {
           ctx.fillStyle = `rgba(239, 68, 68, ${alpha})`;
           ctx.font = 'bold 10px sans-serif';
           ctx.textAlign = 'right';
-          ctx.fillText(`↘ $${(strike.strike * 10).toFixed(0)} (${formatVolume(strike.total_put_volume)})`, xAxis.right - 5, y + 10);
+          ctx.fillText(`↘ $${(strike.strike * scaleFactor).toFixed(0)} (${formatVolume(strike.total_put_volume)})`, xAxis.right - 5, y + 10);
         });
 
-        // Draw gold futures current price line (on top)
-        const y = yAxis.getPixelForValue(goldFuturesPrice);
+        // Draw futures current price line (on top)
+        const y = yAxis.getPixelForValue(futuresPrice);
         ctx.strokeStyle = '#f59e0b';
         ctx.lineWidth = 3;
         ctx.setLineDash([5, 5]);
@@ -644,11 +734,11 @@ export default function GoldHeatmap() {
         ctx.lineTo(xAxis.right, y);
         ctx.stroke();
 
-        // Gold current price label
+        // Current price label
         ctx.fillStyle = '#f59e0b';
         ctx.font = 'bold 12px sans-serif';
         ctx.textAlign = 'left';
-        ctx.fillText(`Gold Current: $${goldFuturesPrice.toFixed(0)}/oz`, xAxis.left + 5, y - 5);
+        ctx.fillText(`${instrumentName} Current: $${futuresPrice.toFixed(0)}`, xAxis.left + 5, y - 5);
 
         ctx.restore();
       }
@@ -860,14 +950,18 @@ export default function GoldHeatmap() {
       return;
     }
 
+    // Get scale factor and instrument name
+    const scaleFactor = data?.metadata?.scale_factor || 1;
+    const instrumentName = data?.metadata?.instrument || currentInstrument.name;
+
     // Prepare chart data
     const chartData = {
       labels: snapshots.map(s => s.date),
       datasets: [
         {
-          label: 'Actual Gold Price',
+          label: `Actual ${instrumentName} Price`,
           type: 'line',
-          data: snapshots.map(s => s.gold_futures_price),
+          data: snapshots.map(s => s.futures_price || s.gold_futures_price),
           borderColor: '#f59e0b',
           backgroundColor: 'rgba(245, 158, 11, 0.1)',
           borderWidth: 3,
@@ -881,9 +975,9 @@ export default function GoldHeatmap() {
           order: 1
         },
         {
-          label: 'Top Call Strike (x10)',
+          label: `Top Call Strike${scaleFactor > 1 ? ` (x${scaleFactor})` : ''}`,
           type: 'line',
-          data: snapshots.map(s => s.top_strikes?.calls?.[0]?.strike * 10 || null),
+          data: snapshots.map(s => s.top_strikes?.calls?.[0]?.strike * scaleFactor || null),
           borderColor: 'rgba(34, 197, 94, 0.8)',
           backgroundColor: 'transparent',
           borderWidth: 2,
@@ -896,9 +990,9 @@ export default function GoldHeatmap() {
           order: 2
         },
         {
-          label: 'Top Put Strike (x10)',
+          label: `Top Put Strike${scaleFactor > 1 ? ` (x${scaleFactor})` : ''}`,
           type: 'line',
-          data: snapshots.map(s => s.top_strikes?.puts?.[0]?.strike * 10 || null),
+          data: snapshots.map(s => s.top_strikes?.puts?.[0]?.strike * scaleFactor || null),
           borderColor: 'rgba(239, 68, 68, 0.8)',
           backgroundColor: 'transparent',
           borderWidth: 2,
@@ -942,32 +1036,37 @@ export default function GoldHeatmap() {
             },
             label: (ctx) => {
               const snapshot = snapshots[ctx.dataIndex];
+              const futuresPrice = snapshot.futures_price || snapshot.gold_futures_price;
+              const etfPrice = snapshot.etf_price || snapshot.gld_etf_price;
+              const etfSymbol = data?.metadata?.source?.match(/\(([A-Z]+) options\)/)?.[1] || 'ETF';
 
               if (ctx.datasetIndex === 0) {
-                // Actual gold price
+                // Actual price
                 return [
-                  `Gold Futures: ${formatPrice(snapshot.gold_futures_price)}`,
-                  `GLD ETF: ${formatPrice(snapshot.gld_etf_price)}`,
+                  `${instrumentName} Futures: ${formatPrice(futuresPrice)}`,
+                  `${etfSymbol}: ${formatPrice(etfPrice)}`,
                 ];
               } else if (ctx.datasetIndex === 1) {
                 // Top call strike
                 const topCall = snapshot.top_strikes?.calls?.[0];
                 if (!topCall) return 'No call data';
+                const scaledStrike = (topCall.strike * scaleFactor).toFixed(0);
                 return [
-                  `Top Call Strike: $${(topCall.strike * 10).toFixed(0)} (GLD $${topCall.strike})`,
+                  `Top Call Strike: $${scaledStrike}${scaleFactor > 1 ? ` (${etfSymbol} $${topCall.strike})` : ''}`,
                   `Volume: ${formatVolume(topCall.total_call_volume)}`,
                   `Open Interest: ${formatVolume(topCall.total_call_oi)}`,
-                  topCall.strike * 10 > snapshot.gold_futures_price ? '↗️ Bullish bet' : '↘️ Below current price'
+                  topCall.strike * scaleFactor > futuresPrice ? '↗️ Bullish bet' : '↘️ Below current price'
                 ];
               } else if (ctx.datasetIndex === 2) {
                 // Top put strike
                 const topPut = snapshot.top_strikes?.puts?.[0];
                 if (!topPut) return 'No put data';
+                const scaledStrike = (topPut.strike * scaleFactor).toFixed(0);
                 return [
-                  `Top Put Strike: $${(topPut.strike * 10).toFixed(0)} (GLD $${topPut.strike})`,
+                  `Top Put Strike: $${scaledStrike}${scaleFactor > 1 ? ` (${etfSymbol} $${topPut.strike})` : ''}`,
                   `Volume: ${formatVolume(topPut.total_put_volume)}`,
                   `Open Interest: ${formatVolume(topPut.total_put_oi)}`,
-                  topPut.strike * 10 < snapshot.gold_futures_price ? '↘️ Bearish bet' : '↗️ Above current price'
+                  topPut.strike * scaleFactor < futuresPrice ? '↘️ Bearish bet' : '↗️ Above current price'
                 ];
               }
             },
@@ -997,7 +1096,7 @@ export default function GoldHeatmap() {
         y: {
           title: {
             display: true,
-            text: 'Price (USD/oz) - Strikes scaled x10',
+            text: `Price${scaleFactor > 1 ? ` - Strikes scaled x${scaleFactor}` : ''}`,
             color: colors.labelColor
           },
           grid: { color: colors.gridColor },
@@ -1063,11 +1162,12 @@ export default function GoldHeatmap() {
   const infoHistory = "Weekly historical snapshots showing if gold price movements match options predictions. Orange line = actual gold futures price. Green dashed line = top call strike (bullish prediction). Red dashed line = top put strike (bearish prediction). Strikes are scaled x10 to match gold price. This view helps evaluate if options traders correctly predicted price movements over time.";
 
   const getTitle = () => {
-    if (view === 'price') return '🔥 Gold Futures Price';
-    if (view === 'heatmap') return '🔥 Options Volume by Strike';
-    if (view === 'temporal') return '🔥 Options Timeline Heat Map';
-    if (view === 'history') return '🔥 Predictions vs Reality';
-    return '🔥 COT Positioning Report';
+    const instrumentName = data?.metadata?.instrument || currentInstrument.name;
+    if (view === 'price') return `🔥 ${instrumentName} Futures Price`;
+    if (view === 'heatmap') return `🔥 ${instrumentName} Options Volume by Strike`;
+    if (view === 'temporal') return `🔥 ${instrumentName} Options Timeline`;
+    if (view === 'history') return `🔥 ${instrumentName} Predictions vs Reality`;
+    return `🔥 ${instrumentName} COT Positioning`;
   };
 
   const getInfo = () => {
@@ -1090,6 +1190,32 @@ export default function GoldHeatmap() {
           : `Current: ${formatPrice(currentPrice)} · ${data?.price_levels?.length || 0} strike prices · Updated: ${lastUpdate}`
         }
       </p>
+
+      {/* Instrument Selector */}
+      <div className="mb-4">
+        <label className="text-sm font-medium text-gray-700 dark:text-gray-300 mr-3">
+          Instrument:
+        </label>
+        <div className="inline-flex gap-2 flex-wrap">
+          {INSTRUMENTS.filter(inst => inst.available).map(inst => (
+            <button
+              key={inst.id}
+              onClick={() => setInstrument(inst.id)}
+              className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-colors relative ${
+                instrument === inst.id
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+              }`}
+              title={inst.lowLiquidity ? `${inst.name} - Low options liquidity` : inst.name}
+            >
+              {inst.icon} {inst.name}
+              {inst.lowLiquidity && (
+                <span className="ml-1 text-xs opacity-60">⚠️</span>
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
 
       <ViewToggle
         view={view}

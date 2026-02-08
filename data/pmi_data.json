@@ -4,7 +4,7 @@
     "indicator": "PMI Manufacturing",
     "description": "Purchasing Managers Index for manufacturing sector. Values below 50 indicate contraction, above 50 indicate expansion.",
     "unit": "index",
-    "fetched_at": "2026-02-08T03:16:07.219316",
+    "fetched_at": "2026-02-08T19:20:28.245512",
     "warning_threshold": 50,
     "total_countries": 20,
     "contracting_count": 14

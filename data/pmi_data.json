@@ -4,7 +4,7 @@
     "indicator": "PMI Manufacturing",
     "description": "Purchasing Managers Index for manufacturing sector. Values below 50 indicate contraction, above 50 indicate expansion.",
     "unit": "index",
-    "fetched_at": "2026-02-08T19:20:28.245512",
+    "fetched_at": "2026-02-15T02:51:47.161776",
     "warning_threshold": 50,
     "total_countries": 20,
     "contracting_count": 14
@@ -177,7 +177,7 @@
       "region": "Americas",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 48.5,
           "status": "contraction"
         }
@@ -188,7 +188,7 @@
       "region": "Americas",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 49.2,
           "status": "contraction"
         }
@@ -199,7 +199,7 @@
       "region": "Latam",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 50.8,
           "status": "expansion"
         }
@@ -210,7 +210,7 @@
       "region": "Latam",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 47.3,
           "status": "contraction"
         }
@@ -221,7 +221,7 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 46.8,
           "status": "contraction"
         }
@@ -232,7 +232,7 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 45.2,
           "status": "contraction"
         }
@@ -243,7 +243,7 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 44.6,
           "status": "contraction"
         }
@@ -254,7 +254,7 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 46.1,
           "status": "contraction"
         }
@@ -265,7 +265,7 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 47.5,
           "status": "contraction"
         }
@@ -276,7 +276,7 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 48.9,
           "status": "contraction"
         }
@@ -287,7 +287,7 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 49.7,
           "status": "contraction"
         }
@@ -298,7 +298,7 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 52.3,
           "status": "expansion"
         }
@@ -309,7 +309,7 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 51.2,
           "status": "expansion"
         }
@@ -320,7 +320,7 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 51.4,
           "status": "expansion"
         }
@@ -331,7 +331,7 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 48.1,
           "status": "contraction"
         }
@@ -342,7 +342,7 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 49.8,
           "status": "contraction"
         }
@@ -353,7 +353,7 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 55.3,
           "status": "expansion"
         }
@@ -364,7 +364,7 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 53.2,
           "status": "expansion"
         }
@@ -375,7 +375,7 @@
       "region": "Oceania",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 48.7,
           "status": "contraction"
         }
@@ -386,7 +386,7 @@
       "region": "Africa",
       "data": [
         {
-          "date": "2026-02-08",
+          "date": "2026-02-15",
           "value": 49.5,
           "status": "contraction"
         }

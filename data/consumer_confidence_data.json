@@ -4,48 +4,13 @@
     "indicator": "Consumer Confidence Index",
     "description": "Consumer confidence below 100 indicates pessimism about the economy. Declining confidence typically precedes reduced consumer spending.",
     "unit": "index (baseline 100)",
-    "fetched_at": "2026-02-08T19:20:54.933152",
+    "fetched_at": "2026-02-15T02:55:09.600895",
     "baseline": 100,
-    "total_countries": 15,
-    "negative_sentiment_count": 15,
-    "average_confidence": 21.0
+    "total_countries": 6,
+    "negative_sentiment_count": 6,
+    "average_confidence": 35.9
   },
   "data": [
-    {
-      "code": "ITA",
-      "country": "Italy",
-      "region": "Europe",
-      "value": -16.4,
-      "sentiment": "negative"
-    },
-    {
-      "code": "FRA",
-      "country": "France",
-      "region": "Europe",
-      "value": -16.2,
-      "sentiment": "negative"
-    },
-    {
-      "code": "ESP",
-      "country": "Spain",
-      "region": "Europe",
-      "value": -12.2,
-      "sentiment": "negative"
-    },
-    {
-      "code": "DEU",
-      "country": "Germany",
-      "region": "Europe",
-      "value": -12.0,
-      "sentiment": "negative"
-    },
-    {
-      "code": "GBR",
-      "country": "United Kingdom",
-      "region": "Europe",
-      "value": -11.0,
-      "sentiment": "negative"
-    },
     {
       "code": "NLD",
       "country": "Netherlands",
@@ -54,24 +19,10 @@
       "sentiment": "negative"
     },
     {
-      "code": "AUS",
-      "country": "Australia",
-      "region": "Oceania",
-      "value": -5.0,
-      "sentiment": "negative"
-    },
-    {
       "code": "SWE",
       "country": "Sweden",
       "region": "Europe",
       "value": -3.9,
-      "sentiment": "negative"
-    },
-    {
-      "code": "POL",
-      "country": "Poland",
-      "region": "Europe",
-      "value": -1.4,
       "sentiment": "negative"
     },
     {
@@ -96,24 +47,10 @@
       "sentiment": "negative"
     },
     {
-      "code": "TUR",
-      "country": "Turkey",
-      "region": "Europe",
-      "value": 83.5,
-      "sentiment": "negative"
-    },
-    {
       "code": "BRA",
       "country": "Brazil",
       "region": "Latam",
       "value": 90.2,
-      "sentiment": "negative"
-    },
-    {
-      "code": "CHN",
-      "country": "China",
-      "region": "Asia",
-      "value": 90.3,
       "sentiment": "negative"
     }
   ]

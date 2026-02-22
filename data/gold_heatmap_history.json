@@ -965,6 +965,144 @@
         "non_reportable_short": 15190,
         "open_interest": 404391
       }
+    },
+    {
+      "date": "2026-02-22",
+      "timestamp": "2026-02-22T02:43:36.791993",
+      "futures_price": 5059.3,
+      "etf_price": 468.62,
+      "options_summary": {
+        "total_call_volume": 279547,
+        "total_put_volume": 236235,
+        "total_call_oi": 2631229,
+        "total_put_oi": 1267408
+      },
+      "top_strikes": {
+        "calls": [
+          {
+            "strike": 475.0,
+            "total_call_volume": 7787,
+            "total_put_volume": 1229,
+            "total_call_oi": 260358,
+            "total_put_oi": 12964,
+            "total_volume": 9016,
+            "total_open_interest": 273322,
+            "net_volume": 6558,
+            "net_open_interest": 247394
+          },
+          {
+            "strike": 510.0,
+            "total_call_volume": 35934,
+            "total_put_volume": 17,
+            "total_call_oi": 169932,
+            "total_put_oi": 455,
+            "total_volume": 35951,
+            "total_open_interest": 170387,
+            "net_volume": 35917,
+            "net_open_interest": 169477
+          },
+          {
+            "strike": 490.0,
+            "total_call_volume": 41602,
+            "total_put_volume": 43,
+            "total_call_oi": 163295,
+            "total_put_oi": 4345,
+            "total_volume": 41645,
+            "total_open_interest": 167640,
+            "net_volume": 41559,
+            "net_open_interest": 158950
+          },
+          {
+            "strike": 495.0,
+            "total_call_volume": 2413,
+            "total_put_volume": 67,
+            "total_call_oi": 135104,
+            "total_put_oi": 2394,
+            "total_volume": 2480,
+            "total_open_interest": 137498,
+            "net_volume": 2346,
+            "net_open_interest": 132710
+          },
+          {
+            "strike": 485.0,
+            "total_call_volume": 5741,
+            "total_put_volume": 144,
+            "total_call_oi": 127411,
+            "total_put_oi": 1899,
+            "total_volume": 5885,
+            "total_open_interest": 129310,
+            "net_volume": 5597,
+            "net_open_interest": 125512
+          }
+        ],
+        "puts": [
+          {
+            "strike": 400.0,
+            "total_call_volume": 326,
+            "total_put_volume": 12049,
+            "total_call_oi": 41208,
+            "total_put_oi": 96629,
+            "total_volume": 12375,
+            "total_open_interest": 137837,
+            "net_volume": -11723,
+            "net_open_interest": -55421
+          },
+          {
+            "strike": 380.0,
+            "total_call_volume": 29,
+            "total_put_volume": 2546,
+            "total_call_oi": 46355,
+            "total_put_oi": 72047,
+            "total_volume": 2575,
+            "total_open_interest": 118402,
+            "net_volume": -2517,
+            "net_open_interest": -25692
+          },
+          {
+            "strike": 310.0,
+            "total_call_volume": 83,
+            "total_put_volume": 3872,
+            "total_call_oi": 3517,
+            "total_put_oi": 60699,
+            "total_volume": 3955,
+            "total_open_interest": 64216,
+            "net_volume": -3789,
+            "net_open_interest": -57182
+          },
+          {
+            "strike": 420.0,
+            "total_call_volume": 521,
+            "total_put_volume": 2921,
+            "total_call_oi": 62832,
+            "total_put_oi": 57268,
+            "total_volume": 3442,
+            "total_open_interest": 120100,
+            "net_volume": -2400,
+            "net_open_interest": 5564
+          },
+          {
+            "strike": 390.0,
+            "total_call_volume": 101,
+            "total_put_volume": 1766,
+            "total_call_oi": 14426,
+            "total_put_oi": 47521,
+            "total_volume": 1867,
+            "total_open_interest": 61947,
+            "net_volume": -1665,
+            "net_open_interest": -33095
+          }
+        ]
+      },
+      "cot_latest": {
+        "date": "2026-02-17T00:00:00.000",
+        "commercial_long": 88237,
+        "commercial_short": 285019,
+        "non_commercial_long": 213432,
+        "non_commercial_short": 53517,
+        "non_reportable_long": 51821,
+        "non_reportable_short": 14954,
+        "open_interest": 407078
+      }
     }
   ]
 }

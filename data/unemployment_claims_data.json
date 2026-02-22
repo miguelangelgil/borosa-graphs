@@ -5,110 +5,110 @@
     "description": "Weekly initial jobless claims. Rising claims signal labor market weakness. Sharp increases often precede recessions.",
     "unit": "weekly claims",
     "per_capita_unit": "claims per million population",
-    "fetched_at": "2026-02-15T02:51:47.263862",
+    "fetched_at": "2026-02-22T02:43:28.373286",
     "warning_threshold": "Increases >20% from baseline",
     "total_countries": 20,
-    "high_risk_count": 4,
-    "average_per_million": 399.1
+    "high_risk_count": 2,
+    "average_per_million": 395.2
   },
   "data": [
     {
       "code": "USA",
       "country": "United States",
       "region": "Americas",
-      "claims": 235284,
-      "claims_per_million": 711.0,
-      "change_from_baseline": 6.9,
-      "trend": "increasing",
-      "risk_level": "low"
-    },
-    {
-      "code": "TUR",
-      "country": "Turkey",
-      "region": "Europe",
-      "claims": 53564,
-      "claims_per_million": 630.0,
-      "change_from_baseline": 19.0,
+      "claims": 260324,
+      "claims_per_million": 786.0,
+      "change_from_baseline": 18.3,
       "trend": "rising",
       "risk_level": "medium"
-    },
-    {
-      "code": "NLD",
-      "country": "Netherlands",
-      "region": "Europe",
-      "claims": 10263,
-      "claims_per_million": 604.0,
-      "change_from_baseline": 28.3,
-      "trend": "rising sharply",
-      "risk_level": "high"
     },
     {
       "code": "NZL",
       "country": "New Zealand",
       "region": "Oceania",
-      "claims": 2922,
-      "claims_per_million": 584.0,
-      "change_from_baseline": -2.6,
-      "trend": "stable",
-      "risk_level": "low"
+      "claims": 3587,
+      "claims_per_million": 717.0,
+      "change_from_baseline": 19.6,
+      "trend": "rising",
+      "risk_level": "medium"
+    },
+    {
+      "code": "ESP",
+      "country": "Spain",
+      "region": "Europe",
+      "claims": 27240,
+      "claims_per_million": 580.0,
+      "change_from_baseline": 29.7,
+      "trend": "rising sharply",
+      "risk_level": "high"
     },
     {
       "code": "AUS",
       "country": "Australia",
       "region": "Oceania",
-      "claims": 14979,
-      "claims_per_million": 576.0,
-      "change_from_baseline": 24.8,
+      "claims": 14892,
+      "claims_per_million": 573.0,
+      "change_from_baseline": 24.1,
       "trend": "rising sharply",
       "risk_level": "high"
+    },
+    {
+      "code": "TUR",
+      "country": "Turkey",
+      "region": "Europe",
+      "claims": 48091,
+      "claims_per_million": 566.0,
+      "change_from_baseline": 6.9,
+      "trend": "increasing",
+      "risk_level": "low"
     },
     {
       "code": "SWE",
       "country": "Sweden",
       "region": "Europe",
-      "claims": 5721,
-      "claims_per_million": 572.0,
-      "change_from_baseline": -4.6,
+      "claims": 5454,
+      "claims_per_million": 545.0,
+      "change_from_baseline": -9.1,
       "trend": "stable",
+      "risk_level": "low"
+    },
+    {
+      "code": "NLD",
+      "country": "Netherlands",
+      "region": "Europe",
+      "claims": 8958,
+      "claims_per_million": 527.0,
+      "change_from_baseline": 12.0,
+      "trend": "rising",
+      "risk_level": "medium"
+    },
+    {
+      "code": "GBR",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "claims": 30609,
+      "claims_per_million": 457.0,
+      "change_from_baseline": 9.3,
+      "trend": "increasing",
       "risk_level": "low"
     },
     {
       "code": "ITA",
       "country": "Italy",
       "region": "Europe",
-      "claims": 31031,
-      "claims_per_million": 517.0,
-      "change_from_baseline": 29.3,
-      "trend": "rising sharply",
-      "risk_level": "high"
-    },
-    {
-      "code": "ESP",
-      "country": "Spain",
-      "region": "Europe",
-      "claims": 23358,
-      "claims_per_million": 497.0,
-      "change_from_baseline": 11.2,
-      "trend": "rising",
-      "risk_level": "medium"
+      "claims": 25459,
+      "claims_per_million": 424.0,
+      "change_from_baseline": 6.1,
+      "trend": "increasing",
+      "risk_level": "low"
     },
     {
       "code": "CAN",
       "country": "Canada",
       "region": "Americas",
-      "claims": 16425,
-      "claims_per_million": 432.0,
-      "change_from_baseline": 9.5,
-      "trend": "increasing",
-      "risk_level": "low"
-    },
-    {
-      "code": "GBR",
-      "country": "United Kingdom",
-      "region": "Europe",
-      "claims": 27851,
-      "claims_per_million": 416.0,
-      "change_from_baseline": -0.5,
+      "claims": 14462,
+      "claims_per_million": 381.0,
+      "change_from_baseline": -3.6,
       "trend": "stable",
       "risk_level": "low"
     },
@@ -116,59 +116,59 @@
       "code": "KOR",
       "country": "South Korea",
       "region": "Asia",
-      "claims": 18969,
-      "claims_per_million": 365.0,
-      "change_from_baseline": 26.5,
-      "trend": "rising sharply",
-      "risk_level": "high"
-    },
-    {
-      "code": "POL",
-      "country": "Poland",
-      "region": "Europe",
-      "claims": 13096,
-      "claims_per_million": 345.0,
-      "change_from_baseline": 9.1,
-      "trend": "increasing",
-      "risk_level": "low"
+      "claims": 17063,
+      "claims_per_million": 328.0,
+      "change_from_baseline": 13.8,
+      "trend": "rising",
+      "risk_level": "medium"
     },
     {
       "code": "FRA",
       "country": "France",
       "region": "Europe",
-      "claims": 22069,
-      "claims_per_million": 329.0,
-      "change_from_baseline": 0.3,
-      "trend": "increasing",
+      "claims": 21715,
+      "claims_per_million": 324.0,
+      "change_from_baseline": -1.3,
+      "trend": "stable",
+      "risk_level": "low"
+    },
+    {
+      "code": "MEX",
+      "country": "Mexico",
+      "region": "Latam",
+      "claims": 41136,
+      "claims_per_million": 321.0,
+      "change_from_baseline": 17.5,
+      "trend": "rising",
+      "risk_level": "medium"
+    },
+    {
+      "code": "POL",
+      "country": "Poland",
+      "region": "Europe",
+      "claims": 11992,
+      "claims_per_million": 316.0,
+      "change_from_baseline": -0.1,
+      "trend": "stable",
       "risk_level": "low"
     },
     {
       "code": "BRA",
       "country": "Brazil",
       "region": "Latam",
-      "claims": 64878,
-      "claims_per_million": 303.0,
-      "change_from_baseline": 18.0,
-      "trend": "rising",
-      "risk_level": "medium"
-    },
-    {
-      "code": "MEX",
-      "country": "Mexico",
-      "region": "Latam",
-      "claims": 36730,
-      "claims_per_million": 287.0,
-      "change_from_baseline": 4.9,
-      "trend": "increasing",
+      "claims": 52895,
+      "claims_per_million": 247.0,
+      "change_from_baseline": -3.8,
+      "trend": "stable",
       "risk_level": "low"
     },
     {
       "code": "DEU",
       "country": "Germany",
       "region": "Europe",
-      "claims": 20939,
-      "claims_per_million": 252.0,
-      "change_from_baseline": 16.3,
+      "claims": 20173,
+      "claims_per_million": 243.0,
+      "change_from_baseline": 12.1,
       "trend": "rising",
       "risk_level": "medium"
     },
@@ -176,39 +176,39 @@
       "code": "JPN",
       "country": "Japan",
       "region": "Asia",
-      "claims": 25157,
-      "claims_per_million": 201.0,
-      "change_from_baseline": 0.6,
-      "trend": "increasing",
+      "claims": 24479,
+      "claims_per_million": 196.0,
+      "change_from_baseline": -2.1,
+      "trend": "stable",
       "risk_level": "low"
-    },
-    {
-      "code": "CHN",
-      "country": "China",
-      "region": "Asia",
-      "claims": 206891,
-      "claims_per_million": 147.0,
-      "change_from_baseline": 14.9,
-      "trend": "rising",
-      "risk_level": "medium"
     },
     {
       "code": "IDN",
       "country": "Indonesia",
       "region": "Asia",
-      "claims": 39941,
-      "claims_per_million": 146.0,
-      "change_from_baseline": -4.9,
-      "trend": "stable",
+      "claims": 47487,
+      "claims_per_million": 174.0,
+      "change_from_baseline": 13.1,
+      "trend": "rising",
+      "risk_level": "medium"
+    },
+    {
+      "code": "CHN",
+      "country": "China",
+      "region": "Asia",
+      "claims": 189936,
+      "claims_per_million": 135.0,
+      "change_from_baseline": 5.5,
+      "trend": "increasing",
       "risk_level": "low"
     },
     {
       "code": "IND",
       "country": "India",
       "region": "Asia",
-      "claims": 94018,
-      "claims_per_million": 67.0,
-      "change_from_baseline": -1.0,
+      "claims": 89512,
+      "claims_per_million": 64.0,
+      "change_from_baseline": -5.8,
       "trend": "stable",
       "risk_level": "low"
     }
@@ -219,10 +219,10 @@
       "region": "Americas",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 235284,
-          "claims_per_million": 711.0,
-          "trend": "increasing"
+          "date": "2026-02-22",
+          "claims": 260324,
+          "claims_per_million": 786.0,
+          "trend": "rising"
         }
       ]
     },
@@ -231,10 +231,10 @@
       "region": "Americas",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 16425,
-          "claims_per_million": 432.0,
-          "trend": "increasing"
+          "date": "2026-02-22",
+          "claims": 14462,
+          "claims_per_million": 381.0,
+          "trend": "stable"
         }
       ]
     },
@@ -243,10 +243,10 @@
       "region": "Latam",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 36730,
-          "claims_per_million": 287.0,
-          "trend": "increasing"
+          "date": "2026-02-22",
+          "claims": 41136,
+          "claims_per_million": 321.0,
+          "trend": "rising"
         }
       ]
     },
@@ -255,10 +255,10 @@
       "region": "Latam",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 64878,
-          "claims_per_million": 303.0,
-          "trend": "rising"
+          "date": "2026-02-22",
+          "claims": 52895,
+          "claims_per_million": 247.0,
+          "trend": "stable"
         }
       ]
     },
@@ -267,10 +267,10 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 27851,
-          "claims_per_million": 416.0,
-          "trend": "stable"
+          "date": "2026-02-22",
+          "claims": 30609,
+          "claims_per_million": 457.0,
+          "trend": "increasing"
         }
       ]
     },
@@ -279,9 +279,9 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 20939,
-          "claims_per_million": 252.0,
+          "date": "2026-02-22",
+          "claims": 20173,
+          "claims_per_million": 243.0,
           "trend": "rising"
         }
       ]
@@ -291,10 +291,10 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 22069,
-          "claims_per_million": 329.0,
-          "trend": "increasing"
+          "date": "2026-02-22",
+          "claims": 21715,
+          "claims_per_million": 324.0,
+          "trend": "stable"
         }
       ]
     },
@@ -303,10 +303,10 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 31031,
-          "claims_per_million": 517.0,
-          "trend": "rising sharply"
+          "date": "2026-02-22",
+          "claims": 25459,
+          "claims_per_million": 424.0,
+          "trend": "increasing"
         }
       ]
     },
@@ -315,10 +315,10 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 23358,
-          "claims_per_million": 497.0,
-          "trend": "rising"
+          "date": "2026-02-22",
+          "claims": 27240,
+          "claims_per_million": 580.0,
+          "trend": "rising sharply"
         }
       ]
     },
@@ -327,10 +327,10 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 10263,
-          "claims_per_million": 604.0,
-          "trend": "rising sharply"
+          "date": "2026-02-22",
+          "claims": 8958,
+          "claims_per_million": 527.0,
+          "trend": "rising"
         }
       ]
     },
@@ -339,10 +339,10 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 13096,
-          "claims_per_million": 345.0,
-          "trend": "increasing"
+          "date": "2026-02-22",
+          "claims": 11992,
+          "claims_per_million": 316.0,
+          "trend": "stable"
         }
       ]
     },
@@ -351,9 +351,9 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 5721,
-          "claims_per_million": 572.0,
+          "date": "2026-02-22",
+          "claims": 5454,
+          "claims_per_million": 545.0,
           "trend": "stable"
         }
       ]
@@ -363,10 +363,10 @@
       "region": "Europe",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 53564,
-          "claims_per_million": 630.0,
-          "trend": "rising"
+          "date": "2026-02-22",
+          "claims": 48091,
+          "claims_per_million": 566.0,
+          "trend": "increasing"
         }
       ]
     },
@@ -375,10 +375,10 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 206891,
-          "claims_per_million": 147.0,
-          "trend": "rising"
+          "date": "2026-02-22",
+          "claims": 189936,
+          "claims_per_million": 135.0,
+          "trend": "increasing"
         }
       ]
     },
@@ -387,10 +387,10 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 25157,
-          "claims_per_million": 201.0,
-          "trend": "increasing"
+          "date": "2026-02-22",
+          "claims": 24479,
+          "claims_per_million": 196.0,
+          "trend": "stable"
         }
       ]
     },
@@ -399,10 +399,10 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 18969,
-          "claims_per_million": 365.0,
-          "trend": "rising sharply"
+          "date": "2026-02-22",
+          "claims": 17063,
+          "claims_per_million": 328.0,
+          "trend": "rising"
         }
       ]
     },
@@ -411,9 +411,9 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 94018,
-          "claims_per_million": 67.0,
+          "date": "2026-02-22",
+          "claims": 89512,
+          "claims_per_million": 64.0,
           "trend": "stable"
         }
       ]
@@ -423,10 +423,10 @@
       "region": "Asia",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 39941,
-          "claims_per_million": 146.0,
-          "trend": "stable"
+          "date": "2026-02-22",
+          "claims": 47487,
+          "claims_per_million": 174.0,
+          "trend": "rising"
         }
       ]
     },
@@ -435,9 +435,9 @@
       "region": "Oceania",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 14979,
-          "claims_per_million": 576.0,
+          "date": "2026-02-22",
+          "claims": 14892,
+          "claims_per_million": 573.0,
           "trend": "rising sharply"
         }
       ]
@@ -447,10 +447,10 @@
       "region": "Oceania",
       "data": [
         {
-          "date": "2026-02-15",
-          "claims": 2922,
-          "claims_per_million": 584.0,
-          "trend": "stable"
+          "date": "2026-02-22",
+          "claims": 3587,
+          "claims_per_million": 717.0,
+          "trend": "rising"
         }
       ]
     }

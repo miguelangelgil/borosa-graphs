@@ -3,7 +3,7 @@
     "source": "World Bank",
     "indicator": "FM.LBL.BMNY.GD.ZS * NY.GDP.MKTP.CD",
     "description": "Broad money M2 (USD)",
-    "fetched_at": "2026-02-15T02:47:37.385264",
+    "fetched_at": "2026-02-22T02:42:44.003103",
     "available_years": [
       "2024",
       "2023",

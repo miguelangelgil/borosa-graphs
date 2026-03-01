@@ -3,7 +3,7 @@
     "source": "Investing.com via investpy",
     "indicator": "Government Bond Yields",
     "description": "Government bond yields by maturity",
-    "fetched_at": "2026-02-22T02:42:48.291541",
+    "fetched_at": "2026-03-01T02:50:03.774985",
     "available_durations": [
       "1Y",
       "2Y",
@@ -21,7 +21,7 @@
       {
         "code": "EGY",
         "country": "Egypt",
-        "value": 25.396,
+        "value": 25.318,
         "region": "MENA",
         "isProjection": false
       },
@@ -35,7 +35,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 12.76,
+        "value": 12.805,
         "region": "Latam",
         "isProjection": false
       },
@@ -49,21 +49,21 @@
       {
         "code": "MEX",
         "country": "Mexico",
-        "value": 7.17,
+        "value": 7.14,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
-        "value": 6.84,
+        "value": 6.782,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "HUN",
         "country": "Hungary",
-        "value": 6.06,
+        "value": 6.04,
         "region": "Europe",
         "isProjection": false
       },
@@ -77,28 +77,28 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 5.64,
+        "value": 5.533,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "IDN",
         "country": "Indonesia",
-        "value": 5.119,
+        "value": 5.189,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "PHL",
         "country": "Philippines",
-        "value": 4.6,
+        "value": 4.605,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHL",
         "country": "Chile",
-        "value": 4.48,
+        "value": 4.491,
         "region": "Latam",
         "isProjection": false
       },
@@ -112,21 +112,14 @@
       {
         "code": "AUS",
         "country": "Australia",
-        "value": 4.179,
+        "value": 4.163,
         "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "NOR",
         "country": "Norway",
-        "value": 4.051,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "GBR",
-        "country": "United Kingdom",
-        "value": 3.556,
+        "value": 4.06,
         "region": "Europe",
         "isProjection": false
       },
@@ -138,24 +131,31 @@
         "isProjection": false
       },
       {
-        "code": "USA",
-        "country": "USA",
-        "value": 3.519,
-        "region": "Americas",
+        "code": "GBR",
+        "country": "United Kingdom",
+        "value": 3.526,
+        "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "POL",
-        "country": "Poland",
-        "value": 3.27,
-        "region": "Europe",
+        "code": "USA",
+        "country": "USA",
+        "value": 3.485,
+        "region": "Americas",
         "isProjection": false
       },
       {
         "code": "VNM",
         "country": "Vietnam",
-        "value": 3.264,
+        "value": 3.292,
         "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "POL",
+        "country": "Poland",
+        "value": 3.222,
+        "region": "Europe",
         "isProjection": false
       },
       {
@@ -166,121 +166,121 @@
         "isProjection": false
       },
       {
-        "code": "MLT",
-        "country": "Malta",
-        "value": 2.308,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
         "code": "CAN",
         "country": "Canada",
-        "value": 2.3,
+        "value": 2.32,
         "region": "Americas",
         "isProjection": false
       },
       {
-        "code": "IRL",
-        "country": "Ireland",
-        "value": 2.294,
+        "code": "MLT",
+        "country": "Malta",
+        "value": 2.291,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "SVN",
         "country": "Slovenia",
-        "value": 2.175,
+        "value": 2.166,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "AUT",
         "country": "Austria",
-        "value": 2.129,
+        "value": 2.114,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "HRV",
         "country": "Croatia",
-        "value": 2.104,
+        "value": 2.088,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ITA",
         "country": "Italy",
-        "value": 2.074,
+        "value": 2.056,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "FRA",
         "country": "France",
-        "value": 2.063,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ESP",
-        "country": "Spain",
-        "value": 2.053,
+        "value": 2.048,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "PRT",
         "country": "Portugal",
-        "value": 2.032,
+        "value": 2.038,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "DEU",
-        "country": "Germany",
-        "value": 2.007,
+        "code": "IRL",
+        "country": "Ireland",
+        "value": 2.037,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ESP",
+        "country": "Spain",
+        "value": 2.034,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "GRC",
         "country": "Greece",
-        "value": 1.962,
+        "value": 2.007,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "DEU",
+        "country": "Germany",
+        "value": 1.979,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "SGP",
         "country": "Singapore",
-        "value": 1.38,
+        "value": 1.37,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
-        "value": 1.35,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "THA",
-        "country": "Thailand",
-        "value": 1.187,
+        "value": 1.31,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 1.042,
+        "value": 1.024,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "THA",
+        "country": "Thailand",
+        "value": 1.01,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
-        "value": 0.08,
+        "value": 0.05,
         "region": "Europe",
         "isProjection": false
       }
@@ -289,21 +289,21 @@
       {
         "code": "TUR",
         "country": "Turkey",
-        "value": 33.53,
+        "value": 36.605,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "EGY",
         "country": "Egypt",
-        "value": 21.77,
+        "value": 21.9,
         "region": "MENA",
         "isProjection": false
       },
       {
         "code": "NGA",
         "country": "Nigeria",
-        "value": 16.051,
+        "value": 16.057,
         "region": "Africa",
         "isProjection": false
       },
@@ -317,84 +317,84 @@
       {
         "code": "COL",
         "country": "Colombia",
-        "value": 12.56,
+        "value": 13.998,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 12.555,
+        "value": 12.615,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "KEN",
         "country": "Kenya",
-        "value": 9.525,
+        "value": 9.26,
         "region": "Africa",
         "isProjection": false
       },
       {
         "code": "ISL",
         "country": "Iceland",
-        "value": 7.133,
+        "value": 7.165,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
-        "value": 6.855,
+        "value": 6.807,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "ROU",
         "country": "Romania",
-        "value": 5.96,
+        "value": 5.91,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
-        "value": 5.735,
+        "value": 5.659,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "PHL",
         "country": "Philippines",
-        "value": 4.976,
+        "value": 4.997,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "AUS",
         "country": "Australia",
-        "value": 4.811,
+        "value": 4.727,
         "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "CHL",
         "country": "Chile",
-        "value": 4.7,
+        "value": 4.71,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "GBR",
         "country": "United Kingdom",
-        "value": 4.643,
+        "value": 4.519,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "AUS",
         "country": "Australia",
-        "value": 4.221,
+        "value": 4.194,
         "region": "Oceania",
         "isProjection": false
       },
@@ -406,191 +406,184 @@
         "isProjection": false
       },
       {
-        "code": "GBR",
-        "country": "United Kingdom",
-        "value": 3.577,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
         "code": "POL",
         "country": "Poland",
-        "value": 3.485,
+        "value": 3.597,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "USA",
-        "country": "USA",
-        "value": 3.48,
-        "region": "Americas",
+        "code": "GBR",
+        "country": "United Kingdom",
+        "value": 3.52,
+        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ISR",
         "country": "Israel",
-        "value": 3.375,
+        "value": 3.483,
         "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "USA",
+        "country": "USA",
+        "value": 3.379,
+        "region": "Americas",
         "isProjection": false
       },
       {
         "code": "VNM",
         "country": "Vietnam",
-        "value": 3.18,
+        "value": 3.198,
         "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "SVK",
-        "country": "Slovakia",
-        "value": 2.987,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "HRV",
-        "country": "Croatia",
-        "value": 2.53,
-        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "MAR",
         "country": "Morocco",
-        "value": 2.521,
+        "value": 2.547,
         "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "HRV",
+        "country": "Croatia",
+        "value": 2.432,
+        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CAN",
         "country": "Canada",
-        "value": 2.443,
+        "value": 2.393,
         "region": "Americas",
+        "isProjection": false
+      },
+      {
+        "code": "SVK",
+        "country": "Slovakia",
+        "value": 2.222,
+        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "GRC",
         "country": "Greece",
-        "value": 2.253,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "IRL",
-        "country": "Ireland",
-        "value": 2.238,
+        "value": 2.216,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ITA",
         "country": "Italy",
-        "value": 2.169,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "FRA",
-        "country": "France",
-        "value": 2.151,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "AUT",
-        "country": "Austria",
         "value": 2.137,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "FIN",
-        "country": "Finland",
-        "value": 2.109,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "PRT",
-        "country": "Portugal",
-        "value": 2.097,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ESP",
         "country": "Spain",
-        "value": 2.082,
+        "value": 2.123,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "FRA",
+        "country": "France",
+        "value": 2.11,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "FIN",
+        "country": "Finland",
+        "value": 2.078,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "AUT",
+        "country": "Austria",
+        "value": 2.077,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "BEL",
         "country": "Belgium",
-        "value": 2.079,
+        "value": 2.065,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "THA",
-        "country": "Thailand",
-        "value": 2.072,
-        "region": "Asia",
+        "code": "IRL",
+        "country": "Ireland",
+        "value": 2.046,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "PRT",
+        "country": "Portugal",
+        "value": 2.045,
+        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DEU",
         "country": "Germany",
-        "value": 2.069,
+        "value": 2.009,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "NLD",
         "country": "Netherlands",
-        "value": 2.057,
+        "value": 2.003,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "THA",
+        "country": "Thailand",
+        "value": 1.919,
+        "region": "Asia",
         "isProjection": false
       },
       {
         "code": "SWE",
         "country": "Sweden",
-        "value": 1.924,
+        "value": 1.866,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DNK",
         "country": "Denmark",
-        "value": 1.798,
+        "value": 1.858,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
-        "value": 1.405,
+        "value": 1.413,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "SGP",
         "country": "Singapore",
-        "value": 1.338,
+        "value": 1.388,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 1.25,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "THA",
-        "country": "Thailand",
-        "value": 1.212,
+        "value": 1.231,
         "region": "Asia",
         "isProjection": false
       },
@@ -602,9 +595,16 @@
         "isProjection": false
       },
       {
+        "code": "THA",
+        "country": "Thailand",
+        "value": 1.026,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
         "code": "CHE",
         "country": "Switzerland",
-        "value": -0.132,
+        "value": -0.15,
         "region": "Europe",
         "isProjection": false
       }
@@ -613,21 +613,21 @@
       {
         "code": "TUR",
         "country": "Turkey",
-        "value": 31.59,
+        "value": 34.41,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "EGY",
         "country": "Egypt",
-        "value": 25.025,
+        "value": 25.087,
         "region": "MENA",
         "isProjection": false
       },
       {
         "code": "NGA",
         "country": "Nigeria",
-        "value": 16.008,
+        "value": 15.999,
         "region": "Africa",
         "isProjection": false
       },
@@ -641,70 +641,70 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 12.592,
+        "value": 12.63,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "KEN",
         "country": "Kenya",
-        "value": 11.15,
+        "value": 11.01,
         "region": "Africa",
         "isProjection": false
       },
       {
         "code": "PAK",
         "country": "Pakistan",
-        "value": 10.453,
+        "value": 10.606,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "MEX",
         "country": "Mexico",
-        "value": 7.604,
+        "value": 7.494,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
-        "value": 6.995,
+        "value": 6.974,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "HUN",
         "country": "Hungary",
-        "value": 6.12,
+        "value": 6.07,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ROU",
+        "country": "Romania",
+        "value": 6.02,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
-        "value": 6.05,
+        "value": 5.973,
         "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "ROU",
-        "country": "Romania",
-        "value": 6.04,
-        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "PHL",
         "country": "Philippines",
-        "value": 5.239,
+        "value": 5.225,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "IDN",
         "country": "Indonesia",
-        "value": 5.176,
+        "value": 5.096,
         "region": "Asia",
         "isProjection": false
       },
@@ -718,203 +718,203 @@
       {
         "code": "AUS",
         "country": "Australia",
-        "value": 4.284,
+        "value": 4.223,
         "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "NOR",
         "country": "Norway",
-        "value": 3.97,
+        "value": 3.961,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "POL",
         "country": "Poland",
-        "value": 3.832,
+        "value": 3.812,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "GBR",
         "country": "United Kingdom",
-        "value": 3.618,
+        "value": 3.528,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ISR",
+        "country": "Israel",
+        "value": 3.469,
+        "region": "MENA",
         "isProjection": false
       },
       {
         "code": "SVK",
         "country": "Slovakia",
-        "value": 3.503,
+        "value": 3.411,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "USA",
         "country": "USA",
-        "value": 3.501,
+        "value": 3.381,
         "region": "Americas",
-        "isProjection": false
-      },
-      {
-        "code": "ISR",
-        "country": "Israel",
-        "value": 3.388,
-        "region": "MENA",
         "isProjection": false
       },
       {
         "code": "VNM",
         "country": "Vietnam",
-        "value": 3.382,
+        "value": 3.375,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "MYS",
         "country": "Malaysia",
-        "value": 3.051,
+        "value": 3.039,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "MLT",
         "country": "Malta",
-        "value": 2.961,
+        "value": 2.938,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "HRV",
         "country": "Croatia",
-        "value": 2.569,
+        "value": 2.492,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "LTU",
         "country": "Lithuania",
-        "value": 2.517,
+        "value": 2.425,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CAN",
         "country": "Canada",
-        "value": 2.462,
+        "value": 2.415,
         "region": "Americas",
+        "isProjection": false
+      },
+      {
+        "code": "FRA",
+        "country": "France",
+        "value": 2.33,
+        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ITA",
         "country": "Italy",
-        "value": 2.38,
+        "value": 2.303,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "BEL",
         "country": "Belgium",
-        "value": 2.296,
+        "value": 2.229,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ESP",
         "country": "Spain",
-        "value": 2.289,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "FRA",
-        "country": "France",
-        "value": 2.288,
+        "value": 2.229,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "AUT",
         "country": "Austria",
-        "value": 2.265,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "FIN",
-        "country": "Finland",
-        "value": 2.193,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "PRT",
-        "country": "Portugal",
-        "value": 2.187,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "NLD",
-        "country": "Netherlands",
-        "value": 2.18,
+        "value": 2.174,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "SVN",
         "country": "Slovenia",
-        "value": 2.113,
+        "value": 2.172,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IRL",
         "country": "Ireland",
-        "value": 2.089,
+        "value": 2.167,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "DEU",
-        "country": "Germany",
-        "value": 2.065,
+        "code": "PRT",
+        "country": "Portugal",
+        "value": 2.124,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "FIN",
+        "country": "Finland",
+        "value": 2.112,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "NLD",
+        "country": "Netherlands",
+        "value": 2.102,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DNK",
         "country": "Denmark",
-        "value": 2.06,
+        "value": 2.029,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "DEU",
+        "country": "Germany",
+        "value": 1.997,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
-        "value": 1.42,
+        "value": 1.428,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 1.381,
+        "value": 1.364,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "THA",
         "country": "Thailand",
-        "value": 1.263,
+        "value": 1.066,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
-        "value": -0.05,
+        "value": -0.076,
         "region": "Europe",
         "isProjection": false
       }
@@ -923,21 +923,21 @@
       {
         "code": "TUR",
         "country": "Turkey",
-        "value": 30.86,
+        "value": 33.435,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "EGY",
         "country": "Egypt",
-        "value": 20.3,
+        "value": 20.33,
         "region": "MENA",
         "isProjection": false
       },
       {
         "code": "NGA",
         "country": "Nigeria",
-        "value": 16.425,
+        "value": 15.798,
         "region": "Africa",
         "isProjection": false
       },
@@ -958,98 +958,98 @@
       {
         "code": "COL",
         "country": "Colombia",
-        "value": 13.39,
+        "value": 14.1,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "COL",
         "country": "Colombia",
-        "value": 13.361,
+        "value": 13.834,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "KEN",
         "country": "Kenya",
-        "value": 13.1,
+        "value": 13.2,
         "region": "Africa",
         "isProjection": false
       },
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 12.983,
+        "value": 12.955,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "KEN",
         "country": "Kenya",
-        "value": 12.237,
+        "value": 12.62,
         "region": "Africa",
         "isProjection": false
       },
       {
         "code": "PAK",
         "country": "Pakistan",
-        "value": 10.669,
+        "value": 10.775,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "KEN",
         "country": "Kenya",
-        "value": 9.72,
+        "value": 9.33,
         "region": "Africa",
         "isProjection": false
       },
       {
         "code": "MEX",
         "country": "Mexico",
-        "value": 9.104,
+        "value": 8.954,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "MEX",
         "country": "Mexico",
-        "value": 8.174,
+        "value": 8.044,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
-        "value": 7.096,
+        "value": 7.046,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "ISL",
         "country": "Iceland",
-        "value": 6.878,
+        "value": 6.821,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "IDN",
+        "country": "Indonesia",
+        "value": 6.736,
+        "region": "Asia",
         "isProjection": false
       },
       {
         "code": "HUN",
         "country": "Hungary",
-        "value": 6.77,
+        "value": 6.65,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IDN",
         "country": "Indonesia",
-        "value": 6.73,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "IDN",
-        "country": "Indonesia",
-        "value": 6.647,
+        "value": 6.606,
         "region": "Asia",
         "isProjection": false
       },
@@ -1063,14 +1063,14 @@
       {
         "code": "IND",
         "country": "India",
-        "value": 6.456,
+        "value": 6.374,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "HUN",
         "country": "Hungary",
-        "value": 6.22,
+        "value": 6.13,
         "region": "Europe",
         "isProjection": false
       },
@@ -1084,42 +1084,42 @@
       {
         "code": "IDN",
         "country": "Indonesia",
-        "value": 5.805,
+        "value": 5.774,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "PHL",
         "country": "Philippines",
-        "value": 5.556,
+        "value": 5.509,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "GBR",
         "country": "United Kingdom",
-        "value": 5.104,
+        "value": 4.985,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "AUS",
-        "country": "Australia",
-        "value": 4.979,
-        "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "CHL",
         "country": "Chile",
-        "value": 4.95,
+        "value": 4.935,
         "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "AUS",
+        "country": "Australia",
+        "value": 4.895,
+        "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "GBR",
         "country": "United Kingdom",
-        "value": 4.774,
+        "value": 4.648,
         "region": "Europe",
         "isProjection": false
       },
@@ -1131,450 +1131,450 @@
         "isProjection": false
       },
       {
-        "code": "AUS",
-        "country": "Australia",
-        "value": 4.36,
-        "region": "Oceania",
+        "code": "VNM",
+        "country": "Vietnam",
+        "value": 4.357,
+        "region": "Asia",
         "isProjection": false
       },
       {
-        "code": "VNM",
-        "country": "Vietnam",
-        "value": 4.351,
-        "region": "Asia",
+        "code": "AUS",
+        "country": "Australia",
+        "value": 4.285,
+        "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "POL",
         "country": "Poland",
-        "value": 4.325,
+        "value": 4.251,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "MLT",
         "country": "Malta",
-        "value": 4.211,
+        "value": 4.165,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ITA",
         "country": "Italy",
-        "value": 4.193,
+        "value": 4.133,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "FRA",
         "country": "France",
-        "value": 4.152,
+        "value": 4.069,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "NOR",
         "country": "Norway",
-        "value": 4.042,
+        "value": 4.01,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "QAT",
-        "country": "Qatar",
-        "value": 3.907,
-        "region": "MENA",
         "isProjection": false
       },
       {
         "code": "VNM",
         "country": "Vietnam",
-        "value": 3.903,
+        "value": 3.89,
         "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "QAT",
+        "country": "Qatar",
+        "value": 3.888,
+        "region": "MENA",
         "isProjection": false
       },
       {
         "code": "ESP",
         "country": "Spain",
-        "value": 3.87,
+        "value": 3.784,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "MYS",
         "country": "Malaysia",
-        "value": 3.809,
+        "value": 3.771,
         "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "GBR",
-        "country": "United Kingdom",
-        "value": 3.785,
-        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ITA",
         "country": "Italy",
-        "value": 3.766,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "FRA",
-        "country": "France",
-        "value": 3.752,
+        "value": 3.696,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "SVN",
         "country": "Slovenia",
-        "value": 3.693,
+        "value": 3.689,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "GBR",
+        "country": "United Kingdom",
+        "value": 3.68,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "FRA",
+        "country": "France",
+        "value": 3.667,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "AUT",
         "country": "Austria",
-        "value": 3.69,
+        "value": 3.61,
         "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "USA",
-        "country": "USA",
-        "value": 3.648,
-        "region": "Americas",
         "isProjection": false
       },
       {
         "code": "BEL",
         "country": "Belgium",
-        "value": 3.641,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ESP",
-        "country": "Spain",
-        "value": 3.555,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "GRC",
-        "country": "Greece",
-        "value": 3.539,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "IRL",
-        "country": "Ireland",
-        "value": 3.528,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "NLD",
-        "country": "Netherlands",
-        "value": 3.43,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "FIN",
-        "country": "Finland",
-        "value": 3.429,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "PRT",
-        "country": "Portugal",
-        "value": 3.426,
+        "value": 3.556,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ISR",
         "country": "Israel",
-        "value": 3.42,
+        "value": 3.516,
         "region": "MENA",
         "isProjection": false
       },
       {
-        "code": "AUT",
-        "country": "Austria",
-        "value": 3.402,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "DEU",
-        "country": "Germany",
-        "value": 3.402,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "SVN",
-        "country": "Slovenia",
-        "value": 3.366,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "MAR",
-        "country": "Morocco",
-        "value": 3.347,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "IRL",
-        "country": "Ireland",
-        "value": 3.288,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "MYS",
-        "country": "Malaysia",
-        "value": 3.279,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "NLD",
-        "country": "Netherlands",
-        "value": 3.155,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "DEU",
-        "country": "Germany",
-        "value": 3.118,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "JPN",
-        "country": "Japan",
-        "value": 3.111,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "HRV",
-        "country": "Croatia",
-        "value": 3.002,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "MLT",
-        "country": "Malta",
-        "value": 2.901,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "MAR",
-        "country": "Morocco",
-        "value": 2.84,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "CAN",
-        "country": "Canada",
-        "value": 2.746,
+        "code": "USA",
+        "country": "USA",
+        "value": 3.514,
         "region": "Americas",
-        "isProjection": false
-      },
-      {
-        "code": "LTU",
-        "country": "Lithuania",
-        "value": 2.687,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ITA",
-        "country": "Italy",
-        "value": 2.682,
-        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "GRC",
         "country": "Greece",
-        "value": 2.661,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "FRA",
-        "country": "France",
-        "value": 2.63,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "PRT",
-        "country": "Portugal",
-        "value": 2.509,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "SVK",
-        "country": "Slovakia",
-        "value": 2.508,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "AUT",
-        "country": "Austria",
-        "value": 2.502,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "BEL",
-        "country": "Belgium",
-        "value": 2.497,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "FIN",
-        "country": "Finland",
-        "value": 2.456,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "SVN",
-        "country": "Slovenia",
-        "value": 2.438,
+        "value": 3.503,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ESP",
         "country": "Spain",
-        "value": 2.398,
+        "value": 3.472,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IRL",
         "country": "Ireland",
-        "value": 2.397,
+        "value": 3.464,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "NLD",
         "country": "Netherlands",
-        "value": 2.341,
+        "value": 3.365,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "SVN",
+        "country": "Slovenia",
+        "value": 3.358,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "PRT",
+        "country": "Portugal",
+        "value": 3.347,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "FIN",
+        "country": "Finland",
+        "value": 3.345,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "MAR",
+        "country": "Morocco",
+        "value": 3.343,
+        "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "DEU",
+        "country": "Germany",
+        "value": 3.332,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "AUT",
+        "country": "Austria",
+        "value": 3.32,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "MYS",
+        "country": "Malaysia",
+        "value": 3.28,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "IRL",
+        "country": "Ireland",
+        "value": 3.241,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "NLD",
+        "country": "Netherlands",
+        "value": 3.081,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "JPN",
+        "country": "Japan",
+        "value": 3.073,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "DEU",
+        "country": "Germany",
+        "value": 3.033,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "MLT",
+        "country": "Malta",
+        "value": 2.871,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "MAR",
+        "country": "Morocco",
+        "value": 2.87,
+        "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "HRV",
+        "country": "Croatia",
+        "value": 2.776,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "CAN",
+        "country": "Canada",
+        "value": 2.667,
+        "region": "Americas",
+        "isProjection": false
+      },
+      {
+        "code": "LTU",
+        "country": "Lithuania",
+        "value": 2.651,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "GRC",
+        "country": "Greece",
+        "value": 2.606,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ITA",
+        "country": "Italy",
+        "value": 2.59,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "FRA",
+        "country": "France",
+        "value": 2.536,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ESP",
+        "country": "Spain",
+        "value": 2.494,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "PRT",
+        "country": "Portugal",
+        "value": 2.429,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "BEL",
+        "country": "Belgium",
+        "value": 2.422,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "SVK",
+        "country": "Slovakia",
+        "value": 2.393,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "AUT",
+        "country": "Austria",
+        "value": 2.391,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "SVN",
+        "country": "Slovenia",
+        "value": 2.379,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "FIN",
+        "country": "Finland",
+        "value": 2.374,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "IRL",
+        "country": "Ireland",
+        "value": 2.313,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DEU",
         "country": "Germany",
-        "value": 2.34,
+        "value": 2.25,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "SWE",
-        "country": "Sweden",
-        "value": 2.258,
+        "code": "NLD",
+        "country": "Netherlands",
+        "value": 2.247,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DNK",
         "country": "Denmark",
-        "value": 2.242,
+        "value": 2.205,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "SWE",
+        "country": "Sweden",
+        "value": 2.177,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "THA",
         "country": "Thailand",
-        "value": 2.236,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "SGP",
-        "country": "Singapore",
-        "value": 2.06,
+        "value": 2.12,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
-        "value": 2.045,
+        "value": 2.065,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "SGP",
+        "country": "Singapore",
+        "value": 2.044,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 1.607,
+        "value": 1.579,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
-        "value": 1.587,
+        "value": 1.575,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "SGP",
         "country": "Singapore",
-        "value": 1.572,
+        "value": 1.529,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "TWN",
         "country": "Taiwan",
-        "value": 1.35,
+        "value": 1.34,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "THA",
         "country": "Thailand",
-        "value": 1.332,
+        "value": 1.16,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
-        "value": 0.404,
+        "value": 0.352,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
-        "value": 0.088,
+        "value": 0.045,
         "region": "Europe",
         "isProjection": false
       }
@@ -1583,14 +1583,14 @@
       {
         "code": "EGY",
         "country": "Egypt",
-        "value": 20.19,
+        "value": 20.21,
         "region": "MENA",
         "isProjection": false
       },
       {
         "code": "NGA",
         "country": "Nigeria",
-        "value": 16.168,
+        "value": 15.601,
         "region": "Africa",
         "isProjection": false
       },
@@ -1604,203 +1604,203 @@
       {
         "code": "KEN",
         "country": "Kenya",
-        "value": 11.64,
+        "value": 11.54,
         "region": "Africa",
         "isProjection": false
       },
       {
         "code": "MEX",
         "country": "Mexico",
-        "value": 8.494,
+        "value": 8.334,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
-        "value": 6.674,
+        "value": 6.572,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "ROU",
         "country": "Romania",
-        "value": 6.34,
+        "value": 6.28,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "PHL",
         "country": "Philippines",
-        "value": 5.706,
+        "value": 5.627,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "SRB",
         "country": "Serbia",
-        "value": 5.001,
+        "value": 4.68,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "AUS",
         "country": "Australia",
-        "value": 4.54,
+        "value": 4.459,
         "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "VNM",
         "country": "Vietnam",
-        "value": 3.969,
+        "value": 3.973,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "GBR",
         "country": "United Kingdom",
-        "value": 3.95,
+        "value": 3.844,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "USA",
         "country": "USA",
-        "value": 3.848,
+        "value": 3.718,
         "region": "Americas",
         "isProjection": false
       },
       {
         "code": "MYS",
         "country": "Malaysia",
-        "value": 3.443,
+        "value": 3.406,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "GRC",
         "country": "Greece",
-        "value": 2.992,
+        "value": 2.943,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ITA",
         "country": "Italy",
-        "value": 2.992,
+        "value": 2.914,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CAN",
         "country": "Canada",
-        "value": 2.939,
+        "value": 2.847,
         "region": "Americas",
         "isProjection": false
       },
       {
         "code": "FRA",
         "country": "France",
-        "value": 2.895,
+        "value": 2.803,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CYP",
         "country": "Cyprus",
-        "value": 2.865,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "BEL",
-        "country": "Belgium",
-        "value": 2.798,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ESP",
-        "country": "Spain",
-        "value": 2.792,
+        "value": 2.801,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "PRT",
         "country": "Portugal",
-        "value": 2.789,
+        "value": 2.716,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "AUT",
-        "country": "Austria",
-        "value": 2.722,
+        "code": "BEL",
+        "country": "Belgium",
+        "value": 2.712,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ESP",
+        "country": "Spain",
+        "value": 2.703,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "SVN",
         "country": "Slovenia",
-        "value": 2.697,
+        "value": 2.69,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "NLD",
-        "country": "Netherlands",
-        "value": 2.58,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "DEU",
-        "country": "Germany",
-        "value": 2.485,
+        "code": "AUT",
+        "country": "Austria",
+        "value": 2.634,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IRL",
         "country": "Ireland",
-        "value": 2.485,
+        "value": 2.631,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "NLD",
+        "country": "Netherlands",
+        "value": 2.487,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "DEU",
+        "country": "Germany",
+        "value": 2.398,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "SWE",
         "country": "Sweden",
-        "value": 2.363,
+        "value": 2.283,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 1.874,
+        "value": 1.86,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
-        "value": 1.675,
+        "value": 1.72,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "THA",
         "country": "Thailand",
-        "value": 1.657,
+        "value": 1.454,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
-        "value": 0.183,
+        "value": 0.119,
         "region": "Europe",
         "isProjection": false
       }
@@ -1809,21 +1809,21 @@
       {
         "code": "TUR",
         "country": "Turkey",
-        "value": 28.16,
+        "value": 30.23,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "EGY",
         "country": "Egypt",
-        "value": 19.99,
+        "value": 20.0,
         "region": "MENA",
         "isProjection": false
       },
       {
         "code": "NGA",
         "country": "Nigeria",
-        "value": 16.546,
+        "value": 15.445,
         "region": "Africa",
         "isProjection": false
       },
@@ -1835,86 +1835,86 @@
         "isProjection": false
       },
       {
-        "code": "BRA",
-        "country": "Brazil",
-        "value": 13.533,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
         "code": "COL",
         "country": "Colombia",
-        "value": 13.159,
+        "value": 13.47,
         "region": "Latam",
         "isProjection": false
       },
       {
-        "code": "PAK",
-        "country": "Pakistan",
-        "value": 11.333,
-        "region": "Asia",
+        "code": "BRA",
+        "country": "Brazil",
+        "value": 13.427,
+        "region": "Latam",
         "isProjection": false
       },
       {
         "code": "KEN",
         "country": "Kenya",
-        "value": 11.285,
+        "value": 11.62,
         "region": "Africa",
+        "isProjection": false
+      },
+      {
+        "code": "PAK",
+        "country": "Pakistan",
+        "value": 11.559,
+        "region": "Asia",
         "isProjection": false
       },
       {
         "code": "MEX",
         "country": "Mexico",
-        "value": 8.76,
+        "value": 8.73,
         "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "IND",
-        "country": "India",
-        "value": 6.725,
-        "region": "Asia",
         "isProjection": false
       },
       {
         "code": "ISL",
         "country": "Iceland",
-        "value": 6.688,
+        "value": 6.687,
         "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "IND",
+        "country": "India",
+        "value": 6.661,
+        "region": "Asia",
         "isProjection": false
       },
       {
         "code": "HUN",
         "country": "Hungary",
-        "value": 6.55,
+        "value": 6.47,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IDN",
         "country": "Indonesia",
-        "value": 6.458,
+        "value": 6.411,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "ROU",
         "country": "Romania",
-        "value": 6.41,
+        "value": 6.3,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "PHL",
         "country": "Philippines",
-        "value": 5.891,
+        "value": 5.925,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHL",
         "country": "Chile",
-        "value": 5.28,
+        "value": 5.275,
         "region": "Latam",
         "isProjection": false
       },
@@ -1928,245 +1928,245 @@
       {
         "code": "POL",
         "country": "Poland",
-        "value": 4.989,
+        "value": 4.931,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "AUS",
         "country": "Australia",
-        "value": 4.734,
+        "value": 4.654,
         "region": "Oceania",
-        "isProjection": false
-      },
-      {
-        "code": "GBR",
-        "country": "United Kingdom",
-        "value": 4.356,
-        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "VNM",
         "country": "Vietnam",
-        "value": 4.249,
+        "value": 4.252,
         "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "GBR",
+        "country": "United Kingdom",
+        "value": 4.236,
+        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "NOR",
         "country": "Norway",
-        "value": 4.211,
+        "value": 4.145,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "USA",
         "country": "USA",
-        "value": 4.085,
+        "value": 3.962,
         "region": "Americas",
         "isProjection": false
       },
       {
         "code": "ISR",
         "country": "Israel",
-        "value": 3.73,
+        "value": 3.842,
         "region": "MENA",
         "isProjection": false
       },
       {
         "code": "MLT",
         "country": "Malta",
-        "value": 3.571,
+        "value": 3.531,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "MYS",
         "country": "Malaysia",
-        "value": 3.524,
+        "value": 3.496,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "LTU",
         "country": "Lithuania",
-        "value": 3.441,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ITA",
-        "country": "Italy",
-        "value": 3.351,
+        "value": 3.389,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "GRC",
         "country": "Greece",
-        "value": 3.348,
+        "value": 3.301,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ITA",
+        "country": "Italy",
+        "value": 3.279,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "FRA",
         "country": "France",
-        "value": 3.302,
+        "value": 3.218,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "HRV",
         "country": "Croatia",
-        "value": 3.273,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "SVK",
-        "country": "Slovakia",
-        "value": 3.22,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "CAN",
-        "country": "Canada",
-        "value": 3.218,
-        "region": "Americas",
-        "isProjection": false
-      },
-      {
-        "code": "ESP",
-        "country": "Spain",
-        "value": 3.151,
+        "value": 3.159,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CYP",
         "country": "Cyprus",
-        "value": 3.133,
+        "value": 3.134,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "BEL",
-        "country": "Belgium",
-        "value": 3.127,
+        "code": "CAN",
+        "country": "Canada",
+        "value": 3.128,
+        "region": "Americas",
+        "isProjection": false
+      },
+      {
+        "code": "SVK",
+        "country": "Slovakia",
+        "value": 3.12,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "SVN",
         "country": "Slovenia",
-        "value": 3.091,
+        "value": 3.078,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "PRT",
-        "country": "Portugal",
-        "value": 3.087,
+        "code": "ESP",
+        "country": "Spain",
+        "value": 3.064,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "MAR",
         "country": "Morocco",
-        "value": 3.077,
+        "value": 3.043,
         "region": "MENA",
         "isProjection": false
       },
       {
-        "code": "AUT",
-        "country": "Austria",
-        "value": 3.031,
+        "code": "BEL",
+        "country": "Belgium",
+        "value": 3.037,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "FIN",
-        "country": "Finland",
-        "value": 3.003,
+        "code": "PRT",
+        "country": "Portugal",
+        "value": 3.011,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IRL",
         "country": "Ireland",
-        "value": 2.996,
+        "value": 2.93,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "AUT",
+        "country": "Austria",
+        "value": 2.926,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "FIN",
+        "country": "Finland",
+        "value": 2.902,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "NLD",
         "country": "Netherlands",
-        "value": 2.811,
+        "value": 2.716,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DEU",
         "country": "Germany",
-        "value": 2.739,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "SWE",
-        "country": "Sweden",
-        "value": 2.641,
+        "value": 2.653,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DNK",
         "country": "Denmark",
-        "value": 2.604,
+        "value": 2.549,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "SWE",
+        "country": "Sweden",
+        "value": 2.535,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 2.105,
+        "value": 2.116,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "SGP",
         "country": "Singapore",
-        "value": 1.955,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "THA",
-        "country": "Thailand",
-        "value": 1.896,
+        "value": 1.941,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
-        "value": 1.812,
+        "value": 1.829,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "THA",
+        "country": "Thailand",
+        "value": 1.723,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "TWN",
         "country": "Taiwan",
-        "value": 1.43,
+        "value": 1.42,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
-        "value": 0.262,
+        "value": 0.2,
         "region": "Europe",
         "isProjection": false
       }
@@ -2175,7 +2175,7 @@
       {
         "code": "NGA",
         "country": "Nigeria",
-        "value": 15.282,
+        "value": 14.717,
         "region": "Africa",
         "isProjection": false
       },
@@ -2189,42 +2189,42 @@
       {
         "code": "KEN",
         "country": "Kenya",
-        "value": 12.861,
+        "value": 13.1,
         "region": "Africa",
         "isProjection": false
       },
       {
         "code": "PAK",
         "country": "Pakistan",
-        "value": 11.56,
+        "value": 11.694,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "MEX",
         "country": "Mexico",
-        "value": 9.294,
+        "value": 9.124,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "HUN",
         "country": "Hungary",
-        "value": 6.95,
+        "value": 6.8,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IDN",
         "country": "Indonesia",
-        "value": 6.685,
+        "value": 6.615,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "PHL",
         "country": "Philippines",
-        "value": 6.582,
+        "value": 6.525,
         "region": "Asia",
         "isProjection": false
       },
@@ -2245,28 +2245,28 @@
       {
         "code": "AUS",
         "country": "Australia",
-        "value": 5.17,
+        "value": 5.085,
         "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "GBR",
         "country": "United Kingdom",
-        "value": 5.036,
+        "value": 4.917,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "QAT",
         "country": "Qatar",
-        "value": 4.908,
+        "value": 4.888,
         "region": "MENA",
         "isProjection": false
       },
       {
         "code": "USA",
         "country": "USA",
-        "value": 4.673,
+        "value": 4.57,
         "region": "Americas",
         "isProjection": false
       },
@@ -2280,175 +2280,175 @@
       {
         "code": "NOR",
         "country": "Norway",
-        "value": 4.251,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "MLT",
-        "country": "Malta",
-        "value": 4.055,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ITA",
-        "country": "Italy",
-        "value": 4.049,
+        "value": 4.167,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ISR",
         "country": "Israel",
-        "value": 3.981,
+        "value": 4.09,
         "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "MLT",
+        "country": "Malta",
+        "value": 4.016,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ITA",
+        "country": "Italy",
+        "value": 3.983,
+        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "MYS",
         "country": "Malaysia",
-        "value": 3.958,
+        "value": 3.961,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "FRA",
         "country": "France",
-        "value": 3.944,
+        "value": 3.868,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "BEL",
         "country": "Belgium",
-        "value": 3.855,
+        "value": 3.777,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "GRC",
         "country": "Greece",
-        "value": 3.742,
+        "value": 3.713,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "ESP",
         "country": "Spain",
-        "value": 3.664,
+        "value": 3.575,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "SVN",
+        "country": "Slovenia",
+        "value": 3.568,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "PRT",
         "country": "Portugal",
-        "value": 3.63,
+        "value": 3.543,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "AUT",
         "country": "Austria",
-        "value": 3.615,
+        "value": 3.528,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CAN",
         "country": "Canada",
-        "value": 3.582,
+        "value": 3.499,
         "region": "Americas",
-        "isProjection": false
-      },
-      {
-        "code": "SVN",
-        "country": "Slovenia",
-        "value": 3.567,
-        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CYP",
         "country": "Cyprus",
-        "value": 3.459,
+        "value": 3.401,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "IRL",
         "country": "Ireland",
-        "value": 3.414,
+        "value": 3.379,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DEU",
         "country": "Germany",
-        "value": 3.285,
+        "value": 3.208,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "NLD",
         "country": "Netherlands",
-        "value": 3.27,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "SWE",
-        "country": "Sweden",
-        "value": 2.991,
+        "value": 3.198,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 2.921,
+        "value": 2.926,
         "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "SWE",
+        "country": "Sweden",
+        "value": 2.9,
+        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DNK",
         "country": "Denmark",
-        "value": 2.8,
+        "value": 2.75,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "THA",
         "country": "Thailand",
-        "value": 2.67,
+        "value": 2.521,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
-        "value": 2.358,
+        "value": 2.395,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "SGP",
         "country": "Singapore",
-        "value": 2.096,
+        "value": 2.107,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "TWN",
         "country": "Taiwan",
-        "value": 1.55,
+        "value": 1.56,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
-        "value": 0.519,
+        "value": 0.466,
         "region": "Europe",
         "isProjection": false
       }
@@ -2457,28 +2457,28 @@
       {
         "code": "NGA",
         "country": "Nigeria",
-        "value": 14.826,
+        "value": 14.452,
         "region": "Africa",
         "isProjection": false
       },
       {
         "code": "MEX",
         "country": "Mexico",
-        "value": 9.25,
+        "value": 9.15,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "IND",
         "country": "India",
-        "value": 7.436,
+        "value": 7.338,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "IDN",
         "country": "Indonesia",
-        "value": 6.731,
+        "value": 6.742,
         "region": "Asia",
         "isProjection": false
       },
@@ -2492,35 +2492,35 @@
       {
         "code": "CHL",
         "country": "Chile",
-        "value": 5.49,
+        "value": 5.505,
         "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "AUS",
-        "country": "Australia",
-        "value": 5.223,
-        "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "QAT",
         "country": "Qatar",
-        "value": 5.209,
+        "value": 5.164,
         "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "AUS",
+        "country": "Australia",
+        "value": 5.147,
+        "region": "Oceania",
         "isProjection": false
       },
       {
         "code": "GBR",
         "country": "United Kingdom",
-        "value": 5.159,
+        "value": 5.042,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "USA",
         "country": "USA",
-        "value": 4.725,
+        "value": 4.633,
         "region": "Americas",
         "isProjection": false
       },
@@ -2534,154 +2534,154 @@
       {
         "code": "ISR",
         "country": "Israel",
-        "value": 4.332,
+        "value": 4.391,
         "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "ITA",
-        "country": "Italy",
-        "value": 4.258,
-        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "FRA",
         "country": "France",
-        "value": 4.256,
+        "value": 4.217,
         "region": "Europe",
         "isProjection": false
       },
       {
-        "code": "BEL",
-        "country": "Belgium",
-        "value": 4.161,
+        "code": "ITA",
+        "country": "Italy",
+        "value": 4.191,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "GRC",
         "country": "Greece",
-        "value": 4.143,
+        "value": 4.103,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "BEL",
+        "country": "Belgium",
+        "value": 4.086,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "SVK",
         "country": "Slovakia",
-        "value": 4.124,
+        "value": 4.068,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "MYS",
         "country": "Malaysia",
-        "value": 4.043,
+        "value": 4.025,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "ESP",
         "country": "Spain",
-        "value": 3.958,
+        "value": 3.868,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "PRT",
         "country": "Portugal",
-        "value": 3.835,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "FIN",
-        "country": "Finland",
-        "value": 3.779,
+        "value": 3.77,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CYP",
         "country": "Cyprus",
-        "value": 3.755,
+        "value": 3.708,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "FIN",
+        "country": "Finland",
+        "value": 3.69,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "AUT",
         "country": "Austria",
-        "value": 3.711,
+        "value": 3.629,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CAN",
         "country": "Canada",
-        "value": 3.706,
+        "value": 3.628,
         "region": "Americas",
         "isProjection": false
       },
       {
         "code": "IRL",
         "country": "Ireland",
-        "value": 3.638,
+        "value": 3.577,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "NLD",
         "country": "Netherlands",
-        "value": 3.441,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "DEU",
-        "country": "Germany",
-        "value": 3.402,
+        "value": 3.366,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 3.32,
+        "value": 3.336,
         "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "DEU",
+        "country": "Germany",
+        "value": 3.324,
+        "region": "Europe",
         "isProjection": false
       },
       {
         "code": "DNK",
         "country": "Denmark",
-        "value": 3.128,
+        "value": 3.069,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "CHN",
         "country": "China",
-        "value": 2.296,
+        "value": 2.34,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "SGP",
         "country": "Singapore",
-        "value": 2.175,
+        "value": 2.174,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "TWN",
         "country": "Taiwan",
-        "value": 1.63,
+        "value": 1.64,
         "region": "Asia",
         "isProjection": false
       },
       {
         "code": "CHE",
         "country": "Switzerland",
-        "value": 0.496,
+        "value": 0.442,
         "region": "Europe",
         "isProjection": false
       }
@@ -2692,257 +2692,257 @@
       "country": "Australia",
       "region": "Oceania",
       "yields": {
-        "1Y": 4.179,
-        "2Y": 4.811,
-        "3Y": 4.284,
-        "5Y": 4.979,
-        "7Y": 4.54,
-        "10Y": 4.734,
-        "20Y": 5.17,
-        "30Y": 5.223
+        "1Y": 4.163,
+        "2Y": 4.727,
+        "3Y": 4.223,
+        "5Y": 4.895,
+        "7Y": 4.459,
+        "10Y": 4.654,
+        "20Y": 5.085,
+        "30Y": 5.147
       }
     },
     "AUT": {
       "country": "Austria",
       "region": "Europe",
       "yields": {
-        "1Y": 2.129,
-        "2Y": 2.137,
-        "3Y": 2.265,
-        "5Y": 3.69,
-        "7Y": 2.722,
-        "10Y": 3.031,
-        "20Y": 3.615,
-        "30Y": 3.711
+        "1Y": 2.114,
+        "2Y": 2.077,
+        "3Y": 2.174,
+        "5Y": 3.61,
+        "7Y": 2.634,
+        "10Y": 2.926,
+        "20Y": 3.528,
+        "30Y": 3.629
       }
     },
     "BEL": {
       "country": "Belgium",
       "region": "Europe",
       "yields": {
-        "2Y": 2.079,
-        "3Y": 2.296,
-        "5Y": 3.641,
-        "7Y": 2.798,
-        "10Y": 3.127,
-        "20Y": 3.855,
-        "30Y": 4.161
+        "2Y": 2.065,
+        "3Y": 2.229,
+        "5Y": 3.556,
+        "7Y": 2.712,
+        "10Y": 3.037,
+        "20Y": 3.777,
+        "30Y": 4.086
       }
     },
     "BRA": {
       "country": "Brazil",
       "region": "Latam",
       "yields": {
-        "1Y": 12.76,
-        "2Y": 12.555,
-        "3Y": 12.592,
-        "5Y": 12.983,
-        "10Y": 13.533
+        "1Y": 12.805,
+        "2Y": 12.615,
+        "3Y": 12.63,
+        "5Y": 12.955,
+        "10Y": 13.427
       }
     },
     "CAN": {
       "country": "Canada",
       "region": "Americas",
       "yields": {
-        "1Y": 2.3,
-        "2Y": 2.443,
-        "3Y": 2.462,
-        "5Y": 2.746,
-        "7Y": 2.939,
-        "10Y": 3.218,
-        "20Y": 3.582,
-        "30Y": 3.706
+        "1Y": 2.32,
+        "2Y": 2.393,
+        "3Y": 2.415,
+        "5Y": 2.667,
+        "7Y": 2.847,
+        "10Y": 3.128,
+        "20Y": 3.499,
+        "30Y": 3.628
       }
     },
     "CHL": {
       "country": "Chile",
       "region": "Latam",
       "yields": {
-        "1Y": 4.48,
-        "2Y": 4.7,
-        "5Y": 4.95,
-        "10Y": 5.28,
+        "1Y": 4.491,
+        "2Y": 4.71,
+        "5Y": 4.935,
+        "10Y": 5.275,
         "20Y": 5.43,
-        "30Y": 5.49
+        "30Y": 5.505
       }
     },
     "CHN": {
       "country": "China",
       "region": "Asia",
       "yields": {
-        "1Y": 1.35,
-        "2Y": 1.405,
-        "3Y": 1.42,
-        "5Y": 2.045,
-        "7Y": 1.675,
-        "10Y": 1.812,
-        "20Y": 2.358,
-        "30Y": 2.296
+        "1Y": 1.31,
+        "2Y": 1.413,
+        "3Y": 1.428,
+        "5Y": 2.065,
+        "7Y": 1.72,
+        "10Y": 1.829,
+        "20Y": 2.395,
+        "30Y": 2.34
       }
     },
     "COL": {
       "country": "Colombia",
       "region": "Latam",
       "yields": {
-        "2Y": 12.56,
-        "5Y": 13.39,
-        "10Y": 13.159
+        "2Y": 13.998,
+        "5Y": 13.834,
+        "10Y": 13.47
       }
     },
     "HRV": {
       "country": "Croatia",
       "region": "Europe",
       "yields": {
-        "1Y": 2.104,
-        "2Y": 2.53,
-        "3Y": 2.569,
-        "5Y": 3.002,
-        "10Y": 3.273
+        "1Y": 2.088,
+        "2Y": 2.432,
+        "3Y": 2.492,
+        "5Y": 2.776,
+        "10Y": 3.159
       }
     },
     "CYP": {
       "country": "Cyprus",
       "region": "Europe",
       "yields": {
-        "7Y": 2.865,
-        "10Y": 3.133,
-        "20Y": 3.459,
-        "30Y": 3.755
+        "7Y": 2.801,
+        "10Y": 3.134,
+        "20Y": 3.401,
+        "30Y": 3.708
       }
     },
     "DNK": {
       "country": "Denmark",
       "region": "Europe",
       "yields": {
-        "2Y": 1.798,
-        "3Y": 2.06,
-        "5Y": 2.242,
-        "10Y": 2.604,
-        "20Y": 2.8,
-        "30Y": 3.128
+        "2Y": 1.858,
+        "3Y": 2.029,
+        "5Y": 2.205,
+        "10Y": 2.549,
+        "20Y": 2.75,
+        "30Y": 3.069
       }
     },
     "EGY": {
       "country": "Egypt",
       "region": "MENA",
       "yields": {
-        "1Y": 25.396,
-        "2Y": 21.77,
-        "3Y": 25.025,
-        "5Y": 20.3,
-        "7Y": 20.19,
-        "10Y": 19.99
+        "1Y": 25.318,
+        "2Y": 21.9,
+        "3Y": 25.087,
+        "5Y": 20.33,
+        "7Y": 20.21,
+        "10Y": 20.0
       }
     },
     "FIN": {
       "country": "Finland",
       "region": "Europe",
       "yields": {
-        "2Y": 2.109,
-        "3Y": 2.193,
-        "5Y": 3.429,
-        "10Y": 3.003,
-        "30Y": 3.779
+        "2Y": 2.078,
+        "3Y": 2.112,
+        "5Y": 3.345,
+        "10Y": 2.902,
+        "30Y": 3.69
       }
     },
     "FRA": {
       "country": "France",
       "region": "Europe",
       "yields": {
-        "1Y": 2.063,
-        "2Y": 2.151,
-        "3Y": 2.288,
-        "5Y": 4.152,
-        "7Y": 2.895,
-        "10Y": 3.302,
-        "20Y": 3.944,
-        "30Y": 4.256
+        "1Y": 2.048,
+        "2Y": 2.11,
+        "3Y": 2.33,
+        "5Y": 4.069,
+        "7Y": 2.803,
+        "10Y": 3.218,
+        "20Y": 3.868,
+        "30Y": 4.217
       }
     },
     "DEU": {
       "country": "Germany",
       "region": "Europe",
       "yields": {
-        "1Y": 2.007,
-        "2Y": 2.069,
-        "3Y": 2.065,
-        "5Y": 3.402,
-        "7Y": 2.485,
-        "10Y": 2.739,
-        "20Y": 3.285,
-        "30Y": 3.402
+        "1Y": 1.979,
+        "2Y": 2.009,
+        "3Y": 1.997,
+        "5Y": 3.332,
+        "7Y": 2.398,
+        "10Y": 2.653,
+        "20Y": 3.208,
+        "30Y": 3.324
       }
     },
     "GRC": {
       "country": "Greece",
       "region": "Europe",
       "yields": {
-        "1Y": 1.962,
-        "2Y": 2.253,
-        "5Y": 3.539,
-        "7Y": 2.992,
-        "10Y": 3.348,
-        "20Y": 3.742,
-        "30Y": 4.143
+        "1Y": 2.007,
+        "2Y": 2.216,
+        "5Y": 3.503,
+        "7Y": 2.943,
+        "10Y": 3.301,
+        "20Y": 3.713,
+        "30Y": 4.103
       }
     },
     "HUN": {
       "country": "Hungary",
       "region": "Europe",
       "yields": {
-        "1Y": 6.06,
-        "3Y": 6.12,
-        "5Y": 6.77,
-        "10Y": 6.55,
-        "20Y": 6.95
+        "1Y": 6.04,
+        "3Y": 6.07,
+        "5Y": 6.65,
+        "10Y": 6.47,
+        "20Y": 6.8
       }
     },
     "ISL": {
       "country": "Iceland",
       "region": "Europe",
       "yields": {
-        "2Y": 7.133,
-        "5Y": 6.878,
-        "10Y": 6.688
+        "2Y": 7.165,
+        "5Y": 6.821,
+        "10Y": 6.687
       }
     },
     "IND": {
       "country": "India",
       "region": "Asia",
       "yields": {
-        "1Y": 6.84,
-        "2Y": 6.855,
-        "3Y": 6.995,
-        "5Y": 7.096,
-        "7Y": 6.674,
-        "10Y": 6.725,
-        "30Y": 7.436
+        "1Y": 6.782,
+        "2Y": 6.807,
+        "3Y": 6.974,
+        "5Y": 7.046,
+        "7Y": 6.572,
+        "10Y": 6.661,
+        "30Y": 7.338
       }
     },
     "IDN": {
       "country": "Indonesia",
       "region": "Asia",
       "yields": {
-        "1Y": 5.119,
-        "3Y": 5.176,
-        "5Y": 6.73,
-        "10Y": 6.458,
-        "20Y": 6.685,
-        "30Y": 6.731
+        "1Y": 5.189,
+        "3Y": 5.096,
+        "5Y": 6.736,
+        "10Y": 6.411,
+        "20Y": 6.615,
+        "30Y": 6.742
       }
     },
     "IRL": {
       "country": "Ireland",
       "region": "Europe",
       "yields": {
-        "1Y": 2.294,
-        "2Y": 2.238,
-        "3Y": 2.089,
-        "5Y": 3.528,
-        "7Y": 2.485,
-        "10Y": 2.996,
-        "20Y": 3.414,
-        "30Y": 3.638
+        "1Y": 2.037,
+        "2Y": 2.046,
+        "3Y": 2.167,
+        "5Y": 3.464,
+        "7Y": 2.631,
+        "10Y": 2.93,
+        "20Y": 3.379,
+        "30Y": 3.577
       }
     },
     "ISR": {
@@ -2950,40 +2950,40 @@
       "region": "MENA",
       "yields": {
         "1Y": 3.55,
-        "2Y": 3.375,
-        "3Y": 3.388,
-        "5Y": 3.42,
-        "10Y": 3.73,
-        "20Y": 3.981,
-        "30Y": 4.332
+        "2Y": 3.483,
+        "3Y": 3.469,
+        "5Y": 3.516,
+        "10Y": 3.842,
+        "20Y": 4.09,
+        "30Y": 4.391
       }
     },
     "ITA": {
       "country": "Italy",
       "region": "Europe",
       "yields": {
-        "1Y": 2.074,
-        "2Y": 2.169,
-        "3Y": 2.38,
-        "5Y": 4.193,
-        "7Y": 2.992,
-        "10Y": 3.351,
-        "20Y": 4.049,
-        "30Y": 4.258
+        "1Y": 2.056,
+        "2Y": 2.137,
+        "3Y": 2.303,
+        "5Y": 4.133,
+        "7Y": 2.914,
+        "10Y": 3.279,
+        "20Y": 3.983,
+        "30Y": 4.191
       }
     },
     "JPN": {
       "country": "Japan",
       "region": "Asia",
       "yields": {
-        "1Y": 1.042,
-        "2Y": 1.25,
-        "3Y": 1.381,
-        "5Y": 3.111,
-        "7Y": 1.874,
-        "10Y": 2.105,
-        "20Y": 2.921,
-        "30Y": 3.32
+        "1Y": 1.024,
+        "2Y": 1.231,
+        "3Y": 1.364,
+        "5Y": 3.073,
+        "7Y": 1.86,
+        "10Y": 2.116,
+        "20Y": 2.926,
+        "30Y": 3.336
       }
     },
     "JOR": {
@@ -2996,21 +2996,21 @@
       "region": "Africa",
       "yields": {
         "1Y": 9.205,
-        "2Y": 9.525,
-        "3Y": 11.15,
-        "5Y": 13.1,
-        "7Y": 11.64,
-        "10Y": 11.285,
-        "20Y": 12.861
+        "2Y": 9.26,
+        "3Y": 11.01,
+        "5Y": 13.2,
+        "7Y": 11.54,
+        "10Y": 11.62,
+        "20Y": 13.1
       }
     },
     "LTU": {
       "country": "Lithuania",
       "region": "Europe",
       "yields": {
-        "3Y": 2.517,
-        "5Y": 2.687,
-        "10Y": 3.441
+        "3Y": 2.425,
+        "5Y": 2.651,
+        "10Y": 3.389
       }
     },
     "MYS": {
@@ -3018,92 +3018,92 @@
       "region": "Asia",
       "yields": {
         "1Y": 2.88,
-        "3Y": 3.051,
-        "5Y": 3.809,
-        "7Y": 3.443,
-        "10Y": 3.524,
-        "20Y": 3.958,
-        "30Y": 4.043
+        "3Y": 3.039,
+        "5Y": 3.771,
+        "7Y": 3.406,
+        "10Y": 3.496,
+        "20Y": 3.961,
+        "30Y": 4.025
       }
     },
     "MLT": {
       "country": "Malta",
       "region": "Europe",
       "yields": {
-        "1Y": 2.308,
-        "3Y": 2.961,
-        "5Y": 4.211,
-        "10Y": 3.571,
-        "20Y": 4.055
+        "1Y": 2.291,
+        "3Y": 2.938,
+        "5Y": 4.165,
+        "10Y": 3.531,
+        "20Y": 4.016
       }
     },
     "MEX": {
       "country": "Mexico",
       "region": "Latam",
       "yields": {
-        "1Y": 7.17,
-        "3Y": 7.604,
-        "5Y": 9.104,
-        "7Y": 8.494,
-        "10Y": 8.76,
-        "20Y": 9.294,
-        "30Y": 9.25
+        "1Y": 7.14,
+        "3Y": 7.494,
+        "5Y": 8.954,
+        "7Y": 8.334,
+        "10Y": 8.73,
+        "20Y": 9.124,
+        "30Y": 9.15
       }
     },
     "MAR": {
       "country": "Morocco",
       "region": "MENA",
       "yields": {
-        "2Y": 2.521,
-        "5Y": 3.347,
-        "10Y": 3.077
+        "2Y": 2.547,
+        "5Y": 3.343,
+        "10Y": 3.043
       }
     },
     "NLD": {
       "country": "Netherlands",
       "region": "Europe",
       "yields": {
-        "2Y": 2.057,
-        "3Y": 2.18,
-        "5Y": 3.43,
-        "7Y": 2.58,
-        "10Y": 2.811,
-        "20Y": 3.27,
-        "30Y": 3.441
+        "2Y": 2.003,
+        "3Y": 2.102,
+        "5Y": 3.365,
+        "7Y": 2.487,
+        "10Y": 2.716,
+        "20Y": 3.198,
+        "30Y": 3.366
       }
     },
     "NGA": {
       "country": "Nigeria",
       "region": "Africa",
       "yields": {
-        "2Y": 16.051,
-        "3Y": 16.008,
-        "5Y": 16.425,
-        "7Y": 16.168,
-        "10Y": 16.546,
-        "20Y": 15.282,
-        "30Y": 14.826
+        "2Y": 16.057,
+        "3Y": 15.999,
+        "5Y": 15.798,
+        "7Y": 15.601,
+        "10Y": 15.445,
+        "20Y": 14.717,
+        "30Y": 14.452
       }
     },
     "NOR": {
       "country": "Norway",
       "region": "Europe",
       "yields": {
-        "1Y": 4.051,
-        "3Y": 3.97,
-        "5Y": 4.042,
-        "10Y": 4.211,
-        "20Y": 4.251
+        "1Y": 4.06,
+        "3Y": 3.961,
+        "5Y": 4.01,
+        "10Y": 4.145,
+        "20Y": 4.167
       }
     },
     "PAK": {
       "country": "Pakistan",
       "region": "Asia",
       "yields": {
-        "3Y": 10.453,
-        "5Y": 10.669,
-        "10Y": 11.333,
-        "20Y": 11.56
+        "3Y": 10.606,
+        "5Y": 10.775,
+        "10Y": 11.559,
+        "20Y": 11.694
       }
     },
     "PER": {
@@ -3120,47 +3120,47 @@
       "country": "Philippines",
       "region": "Asia",
       "yields": {
-        "1Y": 4.6,
-        "2Y": 4.976,
-        "3Y": 5.239,
-        "5Y": 5.556,
-        "7Y": 5.706,
-        "10Y": 5.891,
-        "20Y": 6.582
+        "1Y": 4.605,
+        "2Y": 4.997,
+        "3Y": 5.225,
+        "5Y": 5.509,
+        "7Y": 5.627,
+        "10Y": 5.925,
+        "20Y": 6.525
       }
     },
     "POL": {
       "country": "Poland",
       "region": "Europe",
       "yields": {
-        "1Y": 3.27,
-        "2Y": 3.485,
-        "3Y": 3.832,
-        "5Y": 4.325,
-        "10Y": 4.989
+        "1Y": 3.222,
+        "2Y": 3.597,
+        "3Y": 3.812,
+        "5Y": 4.251,
+        "10Y": 4.931
       }
     },
     "PRT": {
       "country": "Portugal",
       "region": "Europe",
       "yields": {
-        "1Y": 2.032,
-        "2Y": 2.097,
-        "3Y": 2.187,
-        "5Y": 3.426,
-        "7Y": 2.789,
-        "10Y": 3.087,
-        "20Y": 3.63,
-        "30Y": 3.835
+        "1Y": 2.038,
+        "2Y": 2.045,
+        "3Y": 2.124,
+        "5Y": 3.347,
+        "7Y": 2.716,
+        "10Y": 3.011,
+        "20Y": 3.543,
+        "30Y": 3.77
       }
     },
     "QAT": {
       "country": "Qatar",
       "region": "MENA",
       "yields": {
-        "5Y": 3.907,
-        "20Y": 4.908,
-        "30Y": 5.209
+        "5Y": 3.888,
+        "20Y": 4.888,
+        "30Y": 5.164
       }
     },
     "ROU": {
@@ -3168,11 +3168,11 @@
       "region": "Europe",
       "yields": {
         "1Y": 6.0,
-        "2Y": 5.96,
-        "3Y": 6.04,
+        "2Y": 5.91,
+        "3Y": 6.02,
         "5Y": 6.12,
-        "7Y": 6.34,
-        "10Y": 6.41
+        "7Y": 6.28,
+        "10Y": 6.3
       }
     },
     "RUS": {
@@ -3194,7 +3194,7 @@
       "yields": {
         "1Y": 4.42,
         "3Y": 4.49,
-        "7Y": 5.001,
+        "7Y": 4.68,
         "10Y": 5.215
       }
     },
@@ -3202,74 +3202,74 @@
       "country": "Singapore",
       "region": "Asia",
       "yields": {
-        "1Y": 1.38,
-        "2Y": 1.338,
-        "5Y": 2.06,
-        "10Y": 1.955,
-        "20Y": 2.096,
-        "30Y": 2.175
+        "1Y": 1.37,
+        "2Y": 1.388,
+        "5Y": 2.044,
+        "10Y": 1.941,
+        "20Y": 2.107,
+        "30Y": 2.174
       }
     },
     "SVK": {
       "country": "Slovakia",
       "region": "Europe",
       "yields": {
-        "2Y": 2.987,
-        "5Y": 2.508,
-        "10Y": 3.22,
-        "3Y": 3.503,
-        "30Y": 4.124
+        "2Y": 2.222,
+        "5Y": 2.393,
+        "10Y": 3.12,
+        "3Y": 3.411,
+        "30Y": 4.068
       }
     },
     "SVN": {
       "country": "Slovenia",
       "region": "Europe",
       "yields": {
-        "1Y": 2.175,
-        "3Y": 2.113,
-        "5Y": 3.693,
-        "7Y": 2.697,
-        "10Y": 3.091,
-        "20Y": 3.567
+        "1Y": 2.166,
+        "3Y": 2.172,
+        "5Y": 3.689,
+        "7Y": 2.69,
+        "10Y": 3.078,
+        "20Y": 3.568
       }
     },
     "ESP": {
       "country": "Spain",
       "region": "Europe",
       "yields": {
-        "1Y": 2.053,
-        "2Y": 2.082,
-        "3Y": 2.289,
-        "5Y": 3.87,
-        "7Y": 2.792,
-        "10Y": 3.151,
-        "20Y": 3.664,
-        "30Y": 3.958
+        "1Y": 2.034,
+        "2Y": 2.123,
+        "3Y": 2.229,
+        "5Y": 3.784,
+        "7Y": 2.703,
+        "10Y": 3.064,
+        "20Y": 3.575,
+        "30Y": 3.868
       }
     },
     "SWE": {
       "country": "Sweden",
       "region": "Europe",
       "yields": {
-        "2Y": 1.924,
-        "5Y": 2.258,
-        "7Y": 2.363,
-        "10Y": 2.641,
-        "20Y": 2.991
+        "2Y": 1.866,
+        "5Y": 2.177,
+        "7Y": 2.283,
+        "10Y": 2.535,
+        "20Y": 2.9
       }
     },
     "CHE": {
       "country": "Switzerland",
       "region": "Europe",
       "yields": {
-        "1Y": 0.08,
-        "2Y": -0.132,
-        "3Y": -0.05,
-        "5Y": 0.404,
-        "7Y": 0.183,
-        "10Y": 0.262,
-        "20Y": 0.519,
-        "30Y": 0.496
+        "1Y": 0.05,
+        "2Y": -0.15,
+        "3Y": -0.076,
+        "5Y": 0.352,
+        "7Y": 0.119,
+        "10Y": 0.2,
+        "20Y": 0.466,
+        "30Y": 0.442
       }
     },
     "TWN": {
@@ -3277,73 +3277,73 @@
       "region": "Asia",
       "yields": {
         "2Y": 1.21,
-        "5Y": 1.35,
-        "10Y": 1.43,
-        "20Y": 1.55,
-        "30Y": 1.63
+        "5Y": 1.34,
+        "10Y": 1.42,
+        "20Y": 1.56,
+        "30Y": 1.64
       }
     },
     "THA": {
       "country": "Thailand",
       "region": "Asia",
       "yields": {
-        "1Y": 1.187,
-        "2Y": 2.072,
-        "3Y": 1.263,
-        "5Y": 2.236,
-        "7Y": 1.657,
-        "10Y": 1.896,
-        "20Y": 2.67
+        "1Y": 1.01,
+        "2Y": 1.919,
+        "3Y": 1.066,
+        "5Y": 2.12,
+        "7Y": 1.454,
+        "10Y": 1.723,
+        "20Y": 2.521
       }
     },
     "TUR": {
       "country": "Turkey",
       "region": "Europe",
       "yields": {
-        "2Y": 33.53,
-        "3Y": 31.59,
-        "5Y": 30.86,
-        "10Y": 28.16
+        "2Y": 36.605,
+        "3Y": 34.41,
+        "5Y": 33.435,
+        "10Y": 30.23
       }
     },
     "GBR": {
       "country": "United Kingdom",
       "region": "Europe",
       "yields": {
-        "1Y": 3.556,
-        "2Y": 4.643,
-        "3Y": 3.618,
-        "5Y": 5.104,
-        "7Y": 3.95,
-        "10Y": 4.356,
-        "20Y": 5.036,
-        "30Y": 5.159
+        "1Y": 3.526,
+        "2Y": 4.519,
+        "3Y": 3.528,
+        "5Y": 4.985,
+        "7Y": 3.844,
+        "10Y": 4.236,
+        "20Y": 4.917,
+        "30Y": 5.042
       }
     },
     "USA": {
       "country": "USA",
       "region": "Americas",
       "yields": {
-        "1Y": 3.519,
-        "2Y": 3.48,
-        "3Y": 3.501,
-        "5Y": 3.648,
-        "7Y": 3.848,
-        "10Y": 4.085,
-        "20Y": 4.673,
-        "30Y": 4.725
+        "1Y": 3.485,
+        "2Y": 3.379,
+        "3Y": 3.381,
+        "5Y": 3.514,
+        "7Y": 3.718,
+        "10Y": 3.962,
+        "20Y": 4.57,
+        "30Y": 4.633
       }
     },
     "VNM": {
       "country": "Vietnam",
       "region": "Asia",
       "yields": {
-        "1Y": 3.264,
-        "2Y": 3.18,
-        "3Y": 3.382,
-        "5Y": 4.351,
-        "7Y": 3.969,
-        "10Y": 4.249,
+        "1Y": 3.292,
+        "2Y": 3.198,
+        "3Y": 3.375,
+        "5Y": 4.357,
+        "7Y": 3.973,
+        "10Y": 4.252,
         "20Y": 4.441,
         "30Y": 4.482
       }

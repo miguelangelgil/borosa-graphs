@@ -3,7 +3,7 @@
     "source": "World Bank",
     "indicator": "NE.EXP.GNFS.CD - NE.IMP.GNFS.CD",
     "description": "Trade balance (Exports - Imports, USD)",
-    "fetched_at": "2026-04-05T03:16:37.516549",
+    "fetched_at": "2026-04-12T03:25:32.860086",
     "available_years": [
       "2024",
       "2023",

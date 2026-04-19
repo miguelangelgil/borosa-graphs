@@ -4,7 +4,7 @@
     "indicator": "Yield Curve Spread (10Y-2Y)",
     "description": "Difference between 10-year and 2-year government bond yields. Negative values (inverted curve) historically precede recessions.",
     "unit": "basis points (bps)",
-    "fetched_at": "2026-04-12T03:26:04.749926",
+    "fetched_at": "2026-04-19T03:29:27.700126",
     "warning_threshold": 0,
     "total_countries": 0,
     "inverted_count": 0

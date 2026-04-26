@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "GGXWDG_NGDP",
     "description": "General Government Gross Debt (% of GDP)",
-    "fetched_at": "2026-04-19T03:28:59.069762",
+    "fetched_at": "2026-04-26T03:34:01.447480",
     "available_years": [
       "2031",
       "2030",

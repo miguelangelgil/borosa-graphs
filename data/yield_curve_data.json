@@ -4,11 +4,915 @@
     "indicator": "Yield Curve Spread (10Y-2Y)",
     "description": "Difference between 10-year and 2-year government bond yields. Negative values (inverted curve) historically precede recessions.",
     "unit": "basis points (bps)",
-    "fetched_at": "2026-05-03T03:48:24.475455",
+    "fetched_at": "2026-05-10T03:51:40.413207",
     "warning_threshold": 0,
-    "total_countries": 0,
-    "inverted_count": 0
+    "total_countries": 41,
+    "inverted_count": 5
   },
-  "data": [],
-  "timeseries": {}
+  "data": [
+    {
+      "code": "TUR",
+      "country": "Turkey",
+      "region": "Europe",
+      "spread": -6.67,
+      "yield_10y": 31.19,
+      "yield_2y": 37.86,
+      "inverted": true
+    },
+    {
+      "code": "EGY",
+      "country": "Egypt",
+      "region": "MENA",
+      "spread": -2.86,
+      "yield_10y": 21.2,
+      "yield_2y": 24.06,
+      "inverted": true
+    },
+    {
+      "code": "NGA",
+      "country": "Nigeria",
+      "region": "Africa",
+      "spread": -1.82,
+      "yield_10y": 14.956,
+      "yield_2y": 16.774,
+      "inverted": true
+    },
+    {
+      "code": "ISL",
+      "country": "Iceland",
+      "region": "Europe",
+      "spread": -1.09,
+      "yield_10y": 6.898,
+      "yield_2y": 7.988,
+      "inverted": true
+    },
+    {
+      "code": "COL",
+      "country": "Colombia",
+      "region": "Latam",
+      "spread": -0.14,
+      "yield_10y": 13.58,
+      "yield_2y": 13.72,
+      "inverted": true
+    },
+    {
+      "code": "TWN",
+      "country": "Taiwan",
+      "region": "Asia",
+      "spread": 0.22,
+      "yield_10y": 1.54,
+      "yield_2y": 1.32,
+      "inverted": false
+    },
+    {
+      "code": "ISR",
+      "country": "Israel",
+      "region": "MENA",
+      "spread": 0.23,
+      "yield_10y": 3.849,
+      "yield_2y": 3.62,
+      "inverted": false
+    },
+    {
+      "code": "CHE",
+      "country": "Switzerland",
+      "region": "Europe",
+      "spread": 0.28,
+      "yield_10y": 0.361,
+      "yield_2y": 0.086,
+      "inverted": false
+    },
+    {
+      "code": "AUS",
+      "country": "Australia",
+      "region": "Oceania",
+      "spread": 0.3,
+      "yield_10y": 4.992,
+      "yield_2y": 4.694,
+      "inverted": false
+    },
+    {
+      "code": "BRA",
+      "country": "Brazil",
+      "region": "Latam",
+      "spread": 0.36,
+      "yield_10y": 13.89,
+      "yield_2y": 13.533,
+      "inverted": false
+    },
+    {
+      "code": "DEU",
+      "country": "Germany",
+      "region": "Europe",
+      "spread": 0.41,
+      "yield_10y": 3.005,
+      "yield_2y": 2.592,
+      "inverted": false
+    },
+    {
+      "code": "CHN",
+      "country": "China",
+      "region": "Asia",
+      "spread": 0.45,
+      "yield_10y": 1.767,
+      "yield_2y": 1.318,
+      "inverted": false
+    },
+    {
+      "code": "NLD",
+      "country": "Netherlands",
+      "region": "Europe",
+      "spread": 0.46,
+      "yield_10y": 3.059,
+      "yield_2y": 2.597,
+      "inverted": false
+    },
+    {
+      "code": "SWE",
+      "country": "Sweden",
+      "region": "Europe",
+      "spread": 0.46,
+      "yield_10y": 2.67,
+      "yield_2y": 2.21,
+      "inverted": false
+    },
+    {
+      "code": "USA",
+      "country": "USA",
+      "region": "Americas",
+      "spread": 0.47,
+      "yield_10y": 4.364,
+      "yield_2y": 3.893,
+      "inverted": false
+    },
+    {
+      "code": "DNK",
+      "country": "Denmark",
+      "region": "Europe",
+      "spread": 0.49,
+      "yield_10y": 2.888,
+      "yield_2y": 2.395,
+      "inverted": false
+    },
+    {
+      "code": "SGP",
+      "country": "Singapore",
+      "region": "Asia",
+      "spread": 0.52,
+      "yield_10y": 2.084,
+      "yield_2y": 1.564,
+      "inverted": false
+    },
+    {
+      "code": "GBR",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "spread": 0.53,
+      "yield_10y": 4.917,
+      "yield_2y": 4.385,
+      "inverted": false
+    },
+    {
+      "code": "HRV",
+      "country": "Croatia",
+      "region": "Europe",
+      "spread": 0.54,
+      "yield_10y": 3.453,
+      "yield_2y": 2.917,
+      "inverted": false
+    },
+    {
+      "code": "CHL",
+      "country": "Chile",
+      "region": "Latam",
+      "spread": 0.58,
+      "yield_10y": 5.6,
+      "yield_2y": 5.02,
+      "inverted": false
+    },
+    {
+      "code": "ROU",
+      "country": "Romania",
+      "region": "Europe",
+      "spread": 0.6,
+      "yield_10y": 7.02,
+      "yield_2y": 6.42,
+      "inverted": false
+    },
+    {
+      "code": "CAN",
+      "country": "Canada",
+      "region": "Americas",
+      "spread": 0.61,
+      "yield_10y": 3.474,
+      "yield_2y": 2.864,
+      "inverted": false
+    },
+    {
+      "code": "IRL",
+      "country": "Ireland",
+      "region": "Europe",
+      "spread": 0.62,
+      "yield_10y": 3.221,
+      "yield_2y": 2.605,
+      "inverted": false
+    },
+    {
+      "code": "FIN",
+      "country": "Finland",
+      "region": "Europe",
+      "spread": 0.65,
+      "yield_10y": 3.356,
+      "yield_2y": 2.71,
+      "inverted": false
+    },
+    {
+      "code": "AUT",
+      "country": "Austria",
+      "region": "Europe",
+      "spread": 0.65,
+      "yield_10y": 3.254,
+      "yield_2y": 2.609,
+      "inverted": false
+    },
+    {
+      "code": "MAR",
+      "country": "Morocco",
+      "region": "MENA",
+      "spread": 0.71,
+      "yield_10y": 3.224,
+      "yield_2y": 2.51,
+      "inverted": false
+    },
+    {
+      "code": "ESP",
+      "country": "Spain",
+      "region": "Europe",
+      "spread": 0.74,
+      "yield_10y": 3.425,
+      "yield_2y": 2.682,
+      "inverted": false
+    },
+    {
+      "code": "PRT",
+      "country": "Portugal",
+      "region": "Europe",
+      "spread": 0.74,
+      "yield_10y": 3.364,
+      "yield_2y": 2.628,
+      "inverted": false
+    },
+    {
+      "code": "IND",
+      "country": "India",
+      "region": "Asia",
+      "spread": 0.75,
+      "yield_10y": 6.984,
+      "yield_2y": 6.232,
+      "inverted": false
+    },
+    {
+      "code": "SVK",
+      "country": "Slovakia",
+      "region": "Europe",
+      "spread": 0.79,
+      "yield_10y": 3.64,
+      "yield_2y": 2.852,
+      "inverted": false
+    },
+    {
+      "code": "BEL",
+      "country": "Belgium",
+      "region": "Europe",
+      "spread": 0.79,
+      "yield_10y": 3.452,
+      "yield_2y": 2.658,
+      "inverted": false
+    },
+    {
+      "code": "FRA",
+      "country": "France",
+      "region": "Europe",
+      "spread": 0.89,
+      "yield_10y": 3.626,
+      "yield_2y": 2.732,
+      "inverted": false
+    },
+    {
+      "code": "VNM",
+      "country": "Vietnam",
+      "region": "Asia",
+      "spread": 0.91,
+      "yield_10y": 4.372,
+      "yield_2y": 3.46,
+      "inverted": false
+    },
+    {
+      "code": "GRC",
+      "country": "Greece",
+      "region": "Europe",
+      "spread": 0.92,
+      "yield_10y": 3.666,
+      "yield_2y": 2.744,
+      "inverted": false
+    },
+    {
+      "code": "ITA",
+      "country": "Italy",
+      "region": "Europe",
+      "spread": 0.96,
+      "yield_10y": 3.731,
+      "yield_2y": 2.767,
+      "inverted": false
+    },
+    {
+      "code": "THA",
+      "country": "Thailand",
+      "region": "Asia",
+      "spread": 0.96,
+      "yield_10y": 2.154,
+      "yield_2y": 1.189,
+      "inverted": false
+    },
+    {
+      "code": "JPN",
+      "country": "Japan",
+      "region": "Asia",
+      "spread": 1.1,
+      "yield_10y": 2.478,
+      "yield_2y": 1.376,
+      "inverted": false
+    },
+    {
+      "code": "POL",
+      "country": "Poland",
+      "region": "Europe",
+      "spread": 1.17,
+      "yield_10y": 5.601,
+      "yield_2y": 4.434,
+      "inverted": false
+    },
+    {
+      "code": "RUS",
+      "country": "Russia",
+      "region": "Europe",
+      "spread": 1.3,
+      "yield_10y": 14.674,
+      "yield_2y": 13.372,
+      "inverted": false
+    },
+    {
+      "code": "PHL",
+      "country": "Philippines",
+      "region": "Asia",
+      "spread": 1.91,
+      "yield_10y": 7.225,
+      "yield_2y": 5.316,
+      "inverted": false
+    },
+    {
+      "code": "KEN",
+      "country": "Kenya",
+      "region": "Africa",
+      "spread": 2.24,
+      "yield_10y": 11.52,
+      "yield_2y": 9.28,
+      "inverted": false
+    }
+  ],
+  "timeseries": {
+    "TUR": {
+      "country": "Turkey",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": -6.67,
+          "yield_10y": 31.19,
+          "yield_2y": 37.86,
+          "inverted": true
+        }
+      ]
+    },
+    "EGY": {
+      "country": "Egypt",
+      "region": "MENA",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": -2.86,
+          "yield_10y": 21.2,
+          "yield_2y": 24.06,
+          "inverted": true
+        }
+      ]
+    },
+    "NGA": {
+      "country": "Nigeria",
+      "region": "Africa",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": -1.82,
+          "yield_10y": 14.956,
+          "yield_2y": 16.774,
+          "inverted": true
+        }
+      ]
+    },
+    "RUS": {
+      "country": "Russia",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 1.3,
+          "yield_10y": 14.674,
+          "yield_2y": 13.372,
+          "inverted": false
+        }
+      ]
+    },
+    "BRA": {
+      "country": "Brazil",
+      "region": "Latam",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.36,
+          "yield_10y": 13.89,
+          "yield_2y": 13.533,
+          "inverted": false
+        }
+      ]
+    },
+    "COL": {
+      "country": "Colombia",
+      "region": "Latam",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": -0.14,
+          "yield_10y": 13.58,
+          "yield_2y": 13.72,
+          "inverted": true
+        }
+      ]
+    },
+    "KEN": {
+      "country": "Kenya",
+      "region": "Africa",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 2.24,
+          "yield_10y": 11.52,
+          "yield_2y": 9.28,
+          "inverted": false
+        }
+      ]
+    },
+    "PHL": {
+      "country": "Philippines",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 1.91,
+          "yield_10y": 7.225,
+          "yield_2y": 5.316,
+          "inverted": false
+        }
+      ]
+    },
+    "ROU": {
+      "country": "Romania",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.6,
+          "yield_10y": 7.02,
+          "yield_2y": 6.42,
+          "inverted": false
+        }
+      ]
+    },
+    "IND": {
+      "country": "India",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.75,
+          "yield_10y": 6.984,
+          "yield_2y": 6.232,
+          "inverted": false
+        }
+      ]
+    },
+    "ISL": {
+      "country": "Iceland",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": -1.09,
+          "yield_10y": 6.898,
+          "yield_2y": 7.988,
+          "inverted": true
+        }
+      ]
+    },
+    "POL": {
+      "country": "Poland",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 1.17,
+          "yield_10y": 5.601,
+          "yield_2y": 4.434,
+          "inverted": false
+        }
+      ]
+    },
+    "CHL": {
+      "country": "Chile",
+      "region": "Latam",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.58,
+          "yield_10y": 5.6,
+          "yield_2y": 5.02,
+          "inverted": false
+        }
+      ]
+    },
+    "AUS": {
+      "country": "Australia",
+      "region": "Oceania",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.3,
+          "yield_10y": 4.992,
+          "yield_2y": 4.694,
+          "inverted": false
+        }
+      ]
+    },
+    "GBR": {
+      "country": "United Kingdom",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.53,
+          "yield_10y": 4.917,
+          "yield_2y": 4.385,
+          "inverted": false
+        }
+      ]
+    },
+    "VNM": {
+      "country": "Vietnam",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.91,
+          "yield_10y": 4.372,
+          "yield_2y": 3.46,
+          "inverted": false
+        }
+      ]
+    },
+    "USA": {
+      "country": "USA",
+      "region": "Americas",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.47,
+          "yield_10y": 4.364,
+          "yield_2y": 3.893,
+          "inverted": false
+        }
+      ]
+    },
+    "ISR": {
+      "country": "Israel",
+      "region": "MENA",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.23,
+          "yield_10y": 3.849,
+          "yield_2y": 3.62,
+          "inverted": false
+        }
+      ]
+    },
+    "ITA": {
+      "country": "Italy",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.96,
+          "yield_10y": 3.731,
+          "yield_2y": 2.767,
+          "inverted": false
+        }
+      ]
+    },
+    "GRC": {
+      "country": "Greece",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.92,
+          "yield_10y": 3.666,
+          "yield_2y": 2.744,
+          "inverted": false
+        }
+      ]
+    },
+    "SVK": {
+      "country": "Slovakia",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.79,
+          "yield_10y": 3.64,
+          "yield_2y": 2.852,
+          "inverted": false
+        }
+      ]
+    },
+    "FRA": {
+      "country": "France",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.89,
+          "yield_10y": 3.626,
+          "yield_2y": 2.732,
+          "inverted": false
+        }
+      ]
+    },
+    "CAN": {
+      "country": "Canada",
+      "region": "Americas",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.61,
+          "yield_10y": 3.474,
+          "yield_2y": 2.864,
+          "inverted": false
+        }
+      ]
+    },
+    "HRV": {
+      "country": "Croatia",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.54,
+          "yield_10y": 3.453,
+          "yield_2y": 2.917,
+          "inverted": false
+        }
+      ]
+    },
+    "BEL": {
+      "country": "Belgium",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.79,
+          "yield_10y": 3.452,
+          "yield_2y": 2.658,
+          "inverted": false
+        }
+      ]
+    },
+    "ESP": {
+      "country": "Spain",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.74,
+          "yield_10y": 3.425,
+          "yield_2y": 2.682,
+          "inverted": false
+        }
+      ]
+    },
+    "PRT": {
+      "country": "Portugal",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.74,
+          "yield_10y": 3.364,
+          "yield_2y": 2.628,
+          "inverted": false
+        }
+      ]
+    },
+    "FIN": {
+      "country": "Finland",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.65,
+          "yield_10y": 3.356,
+          "yield_2y": 2.71,
+          "inverted": false
+        }
+      ]
+    },
+    "AUT": {
+      "country": "Austria",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.65,
+          "yield_10y": 3.254,
+          "yield_2y": 2.609,
+          "inverted": false
+        }
+      ]
+    },
+    "MAR": {
+      "country": "Morocco",
+      "region": "MENA",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.71,
+          "yield_10y": 3.224,
+          "yield_2y": 2.51,
+          "inverted": false
+        }
+      ]
+    },
+    "IRL": {
+      "country": "Ireland",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.62,
+          "yield_10y": 3.221,
+          "yield_2y": 2.605,
+          "inverted": false
+        }
+      ]
+    },
+    "NLD": {
+      "country": "Netherlands",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.46,
+          "yield_10y": 3.059,
+          "yield_2y": 2.597,
+          "inverted": false
+        }
+      ]
+    },
+    "DEU": {
+      "country": "Germany",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.41,
+          "yield_10y": 3.005,
+          "yield_2y": 2.592,
+          "inverted": false
+        }
+      ]
+    },
+    "DNK": {
+      "country": "Denmark",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.49,
+          "yield_10y": 2.888,
+          "yield_2y": 2.395,
+          "inverted": false
+        }
+      ]
+    },
+    "SWE": {
+      "country": "Sweden",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.46,
+          "yield_10y": 2.67,
+          "yield_2y": 2.21,
+          "inverted": false
+        }
+      ]
+    },
+    "JPN": {
+      "country": "Japan",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 1.1,
+          "yield_10y": 2.478,
+          "yield_2y": 1.376,
+          "inverted": false
+        }
+      ]
+    },
+    "THA": {
+      "country": "Thailand",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.96,
+          "yield_10y": 2.154,
+          "yield_2y": 1.189,
+          "inverted": false
+        }
+      ]
+    },
+    "SGP": {
+      "country": "Singapore",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.52,
+          "yield_10y": 2.084,
+          "yield_2y": 1.564,
+          "inverted": false
+        }
+      ]
+    },
+    "CHN": {
+      "country": "China",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.45,
+          "yield_10y": 1.767,
+          "yield_2y": 1.318,
+          "inverted": false
+        }
+      ]
+    },
+    "TWN": {
+      "country": "Taiwan",
+      "region": "Asia",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.22,
+          "yield_10y": 1.54,
+          "yield_2y": 1.32,
+          "inverted": false
+        }
+      ]
+    },
+    "CHE": {
+      "country": "Switzerland",
+      "region": "Europe",
+      "data": [
+        {
+          "date": "2026-05-10",
+          "spread": 0.28,
+          "yield_10y": 0.361,
+          "yield_2y": 0.086,
+          "inverted": false
+        }
+      ]
+    }
+  }
 }

@@ -3,7 +3,7 @@
     "source": "FRED (Federal Reserve Economic Data)",
     "indicator": "ICE BofA Corporate Bond Indices",
     "description": "Corporate Bond Yields by Region - Investment Grade and High Yield",
-    "fetched_at": "2026-05-23T09:48:27.161085",
+    "fetched_at": "2026-05-24T04:08:27.009884",
     "categories": [
       "Investment Grade",
       "High Yield",

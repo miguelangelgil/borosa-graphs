@@ -3,7 +3,7 @@
     "source": "Investing.com via investpy",
     "indicator": "Government Bond Yields",
     "description": "Government bond yields by maturity",
-    "fetched_at": "2026-05-23T09:48:21.419753",
+    "fetched_at": "2026-05-24T04:08:24.405185",
     "available_durations": [
       "1Y",
       "2Y",

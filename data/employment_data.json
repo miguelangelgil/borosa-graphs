@@ -3,7 +3,7 @@
     "source": "IMF DataMapper",
     "indicator": "LUR",
     "description": "Unemployment rate (% of labor force)",
-    "fetched_at": "2026-06-07T04:25:31.734178",
+    "fetched_at": "2026-06-14T04:45:16.685731",
     "available_years": [
       "2031",
       "2030",

@@ -3,7 +3,7 @@
     "source": "FRED (Federal Reserve Economic Data)",
     "indicator": "ICE BofA Corporate Bond Indices",
     "description": "Corporate Bond Yields by Region - Investment Grade and High Yield",
-    "fetched_at": "2026-06-28T04:19:39.645182",
+    "fetched_at": "2026-07-05T03:58:52.732037",
     "categories": [
       "Investment Grade",
       "High Yield",
@@ -23,64 +23,64 @@
       {
         "code": "LATAM_EM",
         "name": "Latin America EM Corporate",
-        "value": 6.63,
-        "date": "2026-06-25",
+        "value": 6.71,
+        "date": "2026-07-02",
         "region": "Latin America",
         "description": "ICE BofA Latin America Emerging Markets Corporate Plus Index Effective Yield"
       },
       {
         "code": "US_IG_BAA",
         "name": "US BAA Rated",
-        "value": 6.1,
-        "date": "2026-05-01",
+        "value": 6.0,
+        "date": "2026-06-01",
         "region": "North America",
         "description": "Moody's Seasoned Baa Corporate Bond Yield"
       },
       {
         "code": "EM_TOTAL",
         "name": "Emerging Markets Total",
-        "value": 5.61,
-        "date": "2026-06-25",
+        "value": 5.67,
+        "date": "2026-07-02",
         "region": "Emerging Markets",
         "description": "ICE BofA Emerging Markets Corporate Plus Index Effective Yield"
       },
       {
         "code": "US_IG_AAA",
         "name": "US AAA Rated",
-        "value": 5.56,
-        "date": "2026-05-01",
+        "value": 5.52,
+        "date": "2026-06-01",
         "region": "North America",
         "description": "Moody's Seasoned Aaa Corporate Bond Yield"
       },
       {
         "code": "EMEA_EM",
         "name": "EMEA EM Corporate",
-        "value": 5.44,
-        "date": "2026-06-25",
+        "value": 5.49,
+        "date": "2026-07-02",
         "region": "EMEA",
         "description": "ICE BofA EMEA Emerging Markets Corporate Plus Index Effective Yield"
       },
       {
         "code": "EU_IG",
         "name": "Euro Investment Grade",
-        "value": 5.31,
-        "date": "2026-06-25",
+        "value": 5.38,
+        "date": "2026-07-02",
         "region": "Europe",
         "description": "ICE BofA BBB US Corporate Index Effective Yield (proxy)"
       },
       {
         "code": "US_IG",
         "name": "US Investment Grade",
-        "value": 5.13,
-        "date": "2026-06-25",
+        "value": 5.2,
+        "date": "2026-07-02",
         "region": "North America",
         "description": "ICE BofA US Corporate Index Effective Yield"
       },
       {
         "code": "ASIA_EM",
         "name": "Asia EM Corporate",
-        "value": 5.0,
-        "date": "2026-06-25",
+        "value": 5.06,
+        "date": "2026-07-02",
         "region": "Asia",
         "description": "ICE BofA Asia Emerging Markets Corporate Plus Index Effective Yield"
       }
@@ -89,48 +89,48 @@
       {
         "code": "US_HY_CCC",
         "name": "US CCC & Below",
-        "value": 13.83,
-        "date": "2026-06-25",
+        "value": 13.88,
+        "date": "2026-07-02",
         "region": "North America",
         "description": "ICE BofA CCC & Lower US High Yield Index Effective Yield"
       },
       {
         "code": "EM_HY",
         "name": "Emerging Markets HY",
-        "value": 7.23,
-        "date": "2026-06-25",
+        "value": 7.33,
+        "date": "2026-07-02",
         "region": "Emerging Markets",
         "description": "ICE BofA High Yield Emerging Markets Corporate Plus Index Effective Yield"
       },
       {
         "code": "US_HY_B",
         "name": "US B Rated",
-        "value": 7.12,
-        "date": "2026-06-25",
+        "value": 7.19,
+        "date": "2026-07-02",
         "region": "North America",
         "description": "ICE BofA Single-B US High Yield Index Effective Yield"
       },
       {
         "code": "US_HY",
         "name": "US High Yield",
-        "value": 6.94,
-        "date": "2026-06-25",
+        "value": 6.98,
+        "date": "2026-07-02",
         "region": "North America",
         "description": "ICE BofA US High Yield Index Effective Yield"
       },
       {
         "code": "US_HY_BB",
         "name": "US BB Rated",
-        "value": 5.84,
-        "date": "2026-06-25",
+        "value": 5.88,
+        "date": "2026-07-02",
         "region": "North America",
         "description": "ICE BofA BB US High Yield Index Effective Yield"
       },
       {
         "code": "EU_HY",
         "name": "Euro High Yield",
-        "value": 5.26,
-        "date": "2026-06-25",
+        "value": 5.34,
+        "date": "2026-07-02",
         "region": "Europe",
         "description": "ICE BofA Euro High Yield Index Effective Yield"
       }
@@ -139,16 +139,16 @@
       {
         "code": "US_SPREAD_HY",
         "name": "US HY Spread",
-        "value": 2.78,
-        "date": "2026-06-25",
+        "value": 2.75,
+        "date": "2026-07-02",
         "region": "North America",
         "description": "ICE BofA US High Yield Index Option-Adjusted Spread"
       },
       {
         "code": "EU_SPREAD_HY",
         "name": "Euro HY Spread",
-        "value": 2.64,
-        "date": "2026-06-25",
+        "value": 2.71,
+        "date": "2026-07-02",
         "region": "Europe",
         "description": "ICE BofA Euro High Yield Index Option-Adjusted Spread"
       },
@@ -156,15 +156,15 @@
         "code": "EM_SPREAD",
         "name": "EM Corporate Spread",
         "value": 1.47,
-        "date": "2026-06-25",
+        "date": "2026-07-02",
         "region": "Emerging Markets",
         "description": "ICE BofA Emerging Markets Corporate Plus Index Option-Adjusted Spread"
       },
       {
         "code": "US_SPREAD_IG",
         "name": "US IG Spread",
-        "value": 0.76,
-        "date": "2026-06-25",
+        "value": 0.75,
+        "date": "2026-07-02",
         "region": "North America",
         "description": "ICE BofA US Corporate Index Option-Adjusted Spread"
       }
@@ -177,10 +177,6 @@
       "region": "North America",
       "description": "ICE BofA US Corporate Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 5.55
-        },
         {
           "date": "2023-07-31",
           "value": 5.52
@@ -322,8 +318,12 @@
           "value": 5.12
         },
         {
-          "date": "2026-06-25",
-          "value": 5.13
+          "date": "2026-06-30",
+          "value": 5.19
+        },
+        {
+          "date": "2026-07-02",
+          "value": 5.2
         }
       ]
     },
@@ -333,10 +333,6 @@
       "region": "North America",
       "description": "Moody's Seasoned Aaa Corporate Bond Yield",
       "data": [
-        {
-          "date": "2001-06-01",
-          "value": 7.18
-        },
         {
           "date": "2001-07-01",
           "value": 7.13
@@ -1532,6 +1528,10 @@
         {
           "date": "2026-05-01",
           "value": 5.56
+        },
+        {
+          "date": "2026-06-01",
+          "value": 5.52
         }
       ]
     },
@@ -1541,10 +1541,6 @@
       "region": "North America",
       "description": "Moody's Seasoned Baa Corporate Bond Yield",
       "data": [
-        {
-          "date": "2001-06-01",
-          "value": 7.97
-        },
         {
           "date": "2001-07-01",
           "value": 7.97
@@ -2740,6 +2736,10 @@
         {
           "date": "2026-05-01",
           "value": 6.1
+        },
+        {
+          "date": "2026-06-01",
+          "value": 6.0
         }
       ]
     },
@@ -2749,10 +2749,6 @@
       "region": "North America",
       "description": "ICE BofA US High Yield Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 8.35
-        },
         {
           "date": "2023-07-31",
           "value": 8.14
@@ -2894,8 +2890,12 @@
           "value": 6.88
         },
         {
-          "date": "2026-06-25",
-          "value": 6.94
+          "date": "2026-06-30",
+          "value": 6.99
+        },
+        {
+          "date": "2026-07-02",
+          "value": 6.98
         }
       ]
     },
@@ -2905,10 +2905,6 @@
       "region": "North America",
       "description": "ICE BofA BB US High Yield Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 6.9
-        },
         {
           "date": "2023-07-31",
           "value": 6.77
@@ -3050,8 +3046,12 @@
           "value": 5.8
         },
         {
-          "date": "2026-06-25",
-          "value": 5.84
+          "date": "2026-06-30",
+          "value": 5.88
+        },
+        {
+          "date": "2026-07-02",
+          "value": 5.88
         }
       ]
     },
@@ -3061,10 +3061,6 @@
       "region": "North America",
       "description": "ICE BofA Single-B US High Yield Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 8.6
-        },
         {
           "date": "2023-07-31",
           "value": 8.32
@@ -3206,8 +3202,12 @@
           "value": 7.12
         },
         {
-          "date": "2026-06-25",
-          "value": 7.12
+          "date": "2026-06-30",
+          "value": 7.21
+        },
+        {
+          "date": "2026-07-02",
+          "value": 7.19
         }
       ]
     },
@@ -3217,10 +3217,6 @@
       "region": "North America",
       "description": "ICE BofA CCC & Lower US High Yield Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 13.8
-        },
         {
           "date": "2023-07-31",
           "value": 13.47
@@ -3362,8 +3358,12 @@
           "value": 13.42
         },
         {
-          "date": "2026-06-25",
-          "value": 13.83
+          "date": "2026-06-30",
+          "value": 13.9
+        },
+        {
+          "date": "2026-07-02",
+          "value": 13.88
         }
       ]
     },
@@ -3373,10 +3373,6 @@
       "region": "Europe",
       "description": "ICE BofA Euro High Yield Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 7.27
-        },
         {
           "date": "2023-07-31",
           "value": 7.12
@@ -3518,8 +3514,12 @@
           "value": 5.38
         },
         {
-          "date": "2026-06-25",
-          "value": 5.26
+          "date": "2026-06-30",
+          "value": 5.34
+        },
+        {
+          "date": "2026-07-02",
+          "value": 5.34
         }
       ]
     },
@@ -3529,10 +3529,6 @@
       "region": "Europe",
       "description": "ICE BofA BBB US Corporate Index Effective Yield (proxy)",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 5.83
-        },
         {
           "date": "2023-07-31",
           "value": 5.77
@@ -3674,8 +3670,12 @@
           "value": 5.3
         },
         {
-          "date": "2026-06-25",
-          "value": 5.31
+          "date": "2026-06-30",
+          "value": 5.37
+        },
+        {
+          "date": "2026-07-02",
+          "value": 5.38
         }
       ]
     },
@@ -3685,10 +3685,6 @@
       "region": "Emerging Markets",
       "description": "ICE BofA Emerging Markets Corporate Plus Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 6.95
-        },
         {
           "date": "2023-07-31",
           "value": 6.81
@@ -3830,8 +3826,12 @@
           "value": 5.6
         },
         {
-          "date": "2026-06-25",
-          "value": 5.61
+          "date": "2026-06-30",
+          "value": 5.66
+        },
+        {
+          "date": "2026-07-02",
+          "value": 5.67
         }
       ]
     },
@@ -3841,10 +3841,6 @@
       "region": "Emerging Markets",
       "description": "ICE BofA High Yield Emerging Markets Corporate Plus Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 10.32
-        },
         {
           "date": "2023-07-31",
           "value": 9.9
@@ -3986,8 +3982,12 @@
           "value": 7.28
         },
         {
-          "date": "2026-06-25",
-          "value": 7.23
+          "date": "2026-06-30",
+          "value": 7.32
+        },
+        {
+          "date": "2026-07-02",
+          "value": 7.33
         }
       ]
     },
@@ -3997,10 +3997,6 @@
       "region": "Asia",
       "description": "ICE BofA Asia Emerging Markets Corporate Plus Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 6.45
-        },
         {
           "date": "2023-07-31",
           "value": 6.37
@@ -4142,8 +4138,12 @@
           "value": 4.94
         },
         {
-          "date": "2026-06-25",
-          "value": 5.0
+          "date": "2026-06-30",
+          "value": 5.05
+        },
+        {
+          "date": "2026-07-02",
+          "value": 5.06
         }
       ]
     },
@@ -4153,10 +4153,6 @@
       "region": "EMEA",
       "description": "ICE BofA EMEA Emerging Markets Corporate Plus Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 6.78
-        },
         {
           "date": "2023-07-31",
           "value": 6.62
@@ -4298,8 +4294,12 @@
           "value": 5.44
         },
         {
-          "date": "2026-06-25",
-          "value": 5.44
+          "date": "2026-06-30",
+          "value": 5.47
+        },
+        {
+          "date": "2026-07-02",
+          "value": 5.49
         }
       ]
     },
@@ -4309,10 +4309,6 @@
       "region": "Latin America",
       "description": "ICE BofA Latin America Emerging Markets Corporate Plus Index Effective Yield",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 8.2
-        },
         {
           "date": "2023-07-31",
           "value": 7.95
@@ -4454,8 +4450,12 @@
           "value": 6.68
         },
         {
-          "date": "2026-06-25",
-          "value": 6.63
+          "date": "2026-06-30",
+          "value": 6.69
+        },
+        {
+          "date": "2026-07-02",
+          "value": 6.71
         }
       ]
     },
@@ -4465,10 +4465,6 @@
       "region": "North America",
       "description": "ICE BofA US Corporate Index Option-Adjusted Spread",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 1.3
-        },
         {
           "date": "2023-07-31",
           "value": 1.19
@@ -4610,8 +4606,12 @@
           "value": 0.74
         },
         {
-          "date": "2026-06-25",
+          "date": "2026-06-30",
           "value": 0.76
+        },
+        {
+          "date": "2026-07-02",
+          "value": 0.75
         }
       ]
     },
@@ -4621,10 +4621,6 @@
       "region": "North America",
       "description": "ICE BofA US High Yield Index Option-Adjusted Spread",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 4.05
-        },
         {
           "date": "2023-07-31",
           "value": 3.79
@@ -4766,8 +4762,12 @@
           "value": 2.74
         },
         {
-          "date": "2026-06-25",
-          "value": 2.78
+          "date": "2026-06-30",
+          "value": 2.75
+        },
+        {
+          "date": "2026-07-02",
+          "value": 2.75
         }
       ]
     },
@@ -4777,10 +4777,6 @@
       "region": "Europe",
       "description": "ICE BofA Euro High Yield Index Option-Adjusted Spread",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 4.46
-        },
         {
           "date": "2023-07-31",
           "value": 4.38
@@ -4922,8 +4918,12 @@
           "value": 2.73
         },
         {
-          "date": "2026-06-25",
-          "value": 2.64
+          "date": "2026-06-30",
+          "value": 2.7
+        },
+        {
+          "date": "2026-07-02",
+          "value": 2.71
         }
       ]
     },
@@ -4933,10 +4933,6 @@
       "region": "Emerging Markets",
       "description": "ICE BofA Emerging Markets Corporate Plus Index Option-Adjusted Spread",
       "data": [
-        {
-          "date": "2023-06-30",
-          "value": 2.73
-        },
         {
           "date": "2023-07-31",
           "value": 2.56
@@ -5078,7 +5074,11 @@
           "value": 1.47
         },
         {
-          "date": "2026-06-25",
+          "date": "2026-06-30",
+          "value": 1.46
+        },
+        {
+          "date": "2026-07-02",
           "value": 1.47
         }
       ]

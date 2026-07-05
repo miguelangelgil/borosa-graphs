@@ -3,8 +3,9 @@
     "source": "World Bank",
     "indicator": "FM.LBL.BMNY.GD.ZS * NY.GDP.MKTP.CD",
     "description": "Broad money M2 (USD)",
-    "fetched_at": "2026-06-28T04:19:32.296080",
+    "fetched_at": "2026-07-05T03:58:42.916934",
     "available_years": [
+      "2025",
       "2024",
       "2023",
       "2022",
@@ -28,13 +29,343 @@
       "2004",
       "2003",
       "2002",
-      "2001",
-      "2000"
+      "2001"
     ],
-    "last_real_year": "2024",
+    "last_real_year": "2025",
     "projection_years": []
   },
   "data": {
+    "2025": [
+      {
+        "code": "USA",
+        "country": "USA",
+        "value": 30682266669837.0,
+        "region": "Americas",
+        "isProjection": false
+      },
+      {
+        "code": "JPN",
+        "country": "Japan",
+        "value": 10945012629993.0,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "BRA",
+        "country": "Brazil",
+        "value": 2695547275548.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "AUS",
+        "country": "Australia",
+        "value": 2394257964181.0,
+        "region": "Oceania",
+        "isProjection": false
+      },
+      {
+        "code": "MEX",
+        "country": "Mexico",
+        "value": 879725549370.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "TUR",
+        "country": "Turkey",
+        "value": 677339548756.0,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ISR",
+        "country": "Israel",
+        "value": 633578238167.0,
+        "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "IDN",
+        "country": "Indonesia",
+        "value": 615046553655.0,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "MYS",
+        "country": "Malaysia",
+        "value": 569652017020.0,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "ZAF",
+        "country": "South Africa",
+        "value": 328383405615.0,
+        "region": "Africa",
+        "isProjection": false
+      },
+      {
+        "code": "EGY",
+        "country": "Egypt",
+        "value": 282512596897.0,
+        "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "NZL",
+        "country": "New Zealand",
+        "value": 262929207332.0,
+        "region": "Oceania",
+        "isProjection": false
+      },
+      {
+        "code": "MAR",
+        "country": "Morocco",
+        "value": 221203552905.0,
+        "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "BGD",
+        "country": "Bangladesh",
+        "value": 218369276224.0,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "QAT",
+        "country": "Qatar",
+        "value": 204230412088.0,
+        "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "COL",
+        "country": "Colombia",
+        "value": 196948735071.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "ARG",
+        "country": "Argentina",
+        "value": 179501664002.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "ROU",
+        "country": "Romania",
+        "value": 177925240329.0,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "PAK",
+        "country": "Pakistan",
+        "value": 166515076427.0,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "KWT",
+        "country": "Kuwait",
+        "value": 137446464571.0,
+        "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "KAZ",
+        "country": "Kazakhstan",
+        "value": 101244139232.0,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "UKR",
+        "country": "Ukraine",
+        "value": 96459542573.0,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ECU",
+        "country": "Ecuador",
+        "value": 80935974951.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "GTM",
+        "country": "Guatemala",
+        "value": 74480997876.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "KHM",
+        "country": "Cambodia",
+        "value": 63980288303.0,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "NPL",
+        "country": "Nepal",
+        "value": 59685179900.0,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "DOM",
+        "country": "Dominican Rep.",
+        "value": 52626522389.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "CRI",
+        "country": "Costa Rica",
+        "value": 52056652327.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "TUN",
+        "country": "Tunisia",
+        "value": 49039468398.0,
+        "region": "MENA",
+        "isProjection": false
+      },
+      {
+        "code": "URY",
+        "country": "Uruguay",
+        "value": 43929559601.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "CIV",
+        "country": "Ivory Coast",
+        "value": 42151858038.0,
+        "region": "Africa",
+        "isProjection": false
+      },
+      {
+        "code": "BOL",
+        "country": "Bolivia",
+        "value": 37299296654.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "UZB",
+        "country": "Uzbekistan",
+        "value": 30095227055.0,
+        "region": "Asia",
+        "isProjection": false
+      },
+      {
+        "code": "HND",
+        "country": "Honduras",
+        "value": 29376034291.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "AZE",
+        "country": "Azerbaijan",
+        "value": 29329592472.0,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "SLV",
+        "country": "El Salvador",
+        "value": 23574197501.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "MUS",
+        "country": "Mauritius",
+        "value": 22996047862.0,
+        "region": "Africa",
+        "isProjection": false
+      },
+      {
+        "code": "GEO",
+        "country": "Georgia",
+        "value": 21026669642.0,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "SEN",
+        "country": "Senegal",
+        "value": 19879367492.0,
+        "region": "Africa",
+        "isProjection": false
+      },
+      {
+        "code": "ARM",
+        "country": "Armenia",
+        "value": 17925699950.0,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "AGO",
+        "country": "Angola",
+        "value": 16843798335.0,
+        "region": "Africa",
+        "isProjection": false
+      },
+      {
+        "code": "JAM",
+        "country": "Jamaica",
+        "value": 14932294222.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "UGA",
+        "country": "Uganda",
+        "value": 13820875974.0,
+        "region": "Africa",
+        "isProjection": false
+      },
+      {
+        "code": "MOZ",
+        "country": "Mozambique",
+        "value": 13273138410.0,
+        "region": "Africa",
+        "isProjection": false
+      },
+      {
+        "code": "MDA",
+        "country": "Moldova",
+        "value": 10965580259.0,
+        "region": "Europe",
+        "isProjection": false
+      },
+      {
+        "code": "ZMB",
+        "country": "Zambia",
+        "value": 8880827971.0,
+        "region": "Africa",
+        "isProjection": false
+      },
+      {
+        "code": "MNE",
+        "country": "Montenegro",
+        "value": 5393369810.0,
+        "region": "Europe",
+        "isProjection": false
+      }
+    ],
     "2024": [
       {
         "code": "CHN",
@@ -46,7 +377,7 @@
       {
         "code": "USA",
         "country": "USA",
-        "value": 28959213351104.0,
+        "value": 28933621460272.0,
         "region": "Americas",
         "isProjection": false
       },
@@ -74,7 +405,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 2544221094827.0,
+        "value": 2544221050306.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -130,7 +461,7 @@
       {
         "code": "ISR",
         "country": "Israel",
-        "value": 555737024504.0,
+        "value": 555764356305.0,
         "region": "MENA",
         "isProjection": false
       },
@@ -151,7 +482,7 @@
       {
         "code": "EGY",
         "country": "Egypt",
-        "value": 325640693029.0,
+        "value": 325640692686.0,
         "region": "MENA",
         "isProjection": false
       },
@@ -319,7 +650,7 @@
       {
         "code": "NPL",
         "country": "Nepal",
-        "value": 54143670055.0,
+        "value": 54143982565.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -340,7 +671,7 @@
       {
         "code": "SRB",
         "country": "Serbia",
-        "value": 47720943375.0,
+        "value": 47715964787.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -361,7 +692,7 @@
       {
         "code": "TUN",
         "country": "Tunisia",
-        "value": 42714392618.0,
+        "value": 42780826079.0,
         "region": "MENA",
         "isProjection": false
       },
@@ -403,7 +734,7 @@
       {
         "code": "PRY",
         "country": "Paraguay",
-        "value": 23381875808.0,
+        "value": 23381875809.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -438,14 +769,14 @@
       {
         "code": "ALB",
         "country": "Albania",
-        "value": 19177162500.0,
+        "value": 19170812969.0,
         "region": "Europe",
         "isProjection": false
       },
       {
         "code": "GEO",
         "country": "Georgia",
-        "value": 18181331568.0,
+        "value": 18181331458.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -487,14 +818,14 @@
       {
         "code": "UGA",
         "country": "Uganda",
-        "value": 11202145900.0,
+        "value": 11202145898.0,
         "region": "Africa",
         "isProjection": false
       },
       {
         "code": "MKD",
         "country": "North Macedonia",
-        "value": 10255697179.0,
+        "value": 10255697164.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -522,7 +853,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 4701208990.0,
+        "value": 4703638512.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -538,7 +869,7 @@
       {
         "code": "USA",
         "country": "USA",
-        "value": 27478961441083.0,
+        "value": 27482023571610.0,
         "region": "Americas",
         "isProjection": false
       },
@@ -566,7 +897,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 2414288555274.0,
+        "value": 2414288440660.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -622,7 +953,7 @@
       {
         "code": "ISR",
         "country": "Israel",
-        "value": 518580665979.0,
+        "value": 518610003041.0,
         "region": "MENA",
         "isProjection": false
       },
@@ -643,7 +974,7 @@
       {
         "code": "EGY",
         "country": "Egypt",
-        "value": 346108554344.0,
+        "value": 346108551096.0,
         "region": "MENA",
         "isProjection": false
       },
@@ -811,7 +1142,7 @@
       {
         "code": "NPL",
         "country": "Nepal",
-        "value": 49530390177.0,
+        "value": 49532269562.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -937,7 +1268,7 @@
       {
         "code": "TZA",
         "country": "Tanzania",
-        "value": 18464868046.0,
+        "value": 18464868048.0,
         "region": "Africa",
         "isProjection": false
       },
@@ -1028,7 +1359,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 4276016468.0,
+        "value": 4275417452.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -1044,7 +1375,7 @@
       {
         "code": "USA",
         "country": "USA",
-        "value": 26999346403778.0,
+        "value": 26990850883895.0,
         "region": "Americas",
         "isProjection": false
       },
@@ -1079,14 +1410,14 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 2035899778676.0,
+        "value": 2035899893403.0,
         "region": "Latam",
         "isProjection": false
       },
       {
         "code": "THA",
         "country": "Thailand",
-        "value": 712869156370.0,
+        "value": 712870172973.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -1268,7 +1599,7 @@
       {
         "code": "ROU",
         "country": "Romania",
-        "value": 128622209440.0,
+        "value": 128621523602.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -1338,7 +1669,7 @@
       {
         "code": "NPL",
         "country": "Nepal",
-        "value": 46780958167.0,
+        "value": 46780958075.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -1359,7 +1690,7 @@
       {
         "code": "DOM",
         "country": "Dominican Rep.",
-        "value": 41478461699.0,
+        "value": 41478467717.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -1471,7 +1802,7 @@
       {
         "code": "TZA",
         "country": "Tanzania",
-        "value": 16751822884.0,
+        "value": 16751822885.0,
         "region": "Africa",
         "isProjection": false
       },
@@ -1562,7 +1893,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 3713680523.0,
+        "value": 3718734095.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -1578,7 +1909,7 @@
       {
         "code": "USA",
         "country": "USA",
-        "value": 27228831699811.0,
+        "value": 27226400122735.0,
         "region": "Americas",
         "isProjection": false
       },
@@ -1620,7 +1951,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1728545998685.0,
+        "value": 1728545931266.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -1809,7 +2140,7 @@
       {
         "code": "ROU",
         "country": "Romania",
-        "value": 135665006657.0,
+        "value": 135665561004.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -2110,7 +2441,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 3397606481.0,
+        "value": 3397135760.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -2126,7 +2457,7 @@
       {
         "code": "USA",
         "country": "USA",
-        "value": 23301047844003.0,
+        "value": 23770313723022.0,
         "region": "Americas",
         "isProjection": false
       },
@@ -2168,7 +2499,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1611233358360.0,
+        "value": 1611233291944.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -2371,7 +2702,7 @@
       {
         "code": "ROU",
         "country": "Romania",
-        "value": 114832905168.0,
+        "value": 114832688707.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -2453,13 +2784,6 @@
         "isProjection": false
       },
       {
-        "code": "BOL",
-        "country": "Bolivia",
-        "value": 38877748174.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
         "code": "CRI",
         "country": "Costa Rica",
         "value": 34233846452.0,
@@ -2498,6 +2822,13 @@
         "code": "URY",
         "country": "Uruguay",
         "value": 31667986766.0,
+        "region": "Latam",
+        "isProjection": false
+      },
+      {
+        "code": "BOL",
+        "country": "Bolivia",
+        "value": 24921747092.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -2679,7 +3010,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2831322391.0,
+        "value": 2837688706.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -2730,7 +3061,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1799440337688.0,
+        "value": 1799440382075.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -2989,7 +3320,7 @@
       {
         "code": "LKA",
         "country": "Sri Lanka",
-        "value": 52920469664.0,
+        "value": 52920469593.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -3255,7 +3586,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2889471842.0,
+        "value": 2889548643.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -3306,7 +3637,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1796416738452.0,
+        "value": 1796416916184.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -3376,7 +3707,7 @@
       {
         "code": "POL",
         "country": "Poland",
-        "value": 400292750904.0,
+        "value": 400292713964.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -3838,7 +4169,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 3099967404.0,
+        "value": 3099968623.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -3889,7 +4220,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1920298498813.0,
+        "value": 1920298767357.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -3966,7 +4297,7 @@
       {
         "code": "POL",
         "country": "Poland",
-        "value": 350423972485.0,
+        "value": 350424003389.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -4155,7 +4486,7 @@
       {
         "code": "LKA",
         "country": "Sri Lanka",
-        "value": 51420833526.0,
+        "value": 51420833610.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -4442,7 +4773,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2874939756.0,
+        "value": 2874941353.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -4493,7 +4824,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1684739855965.0,
+        "value": 1684740059409.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -4598,7 +4929,7 @@
       {
         "code": "POL",
         "country": "Poland",
-        "value": 320959812656.0,
+        "value": 320959839788.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -4780,7 +5111,7 @@
       {
         "code": "LKA",
         "country": "Sri Lanka",
-        "value": 45860311788.0,
+        "value": 45860311635.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -5060,7 +5391,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2493794460.0,
+        "value": 2493793256.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -5111,7 +5442,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1587201397357.0,
+        "value": 1587201579983.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -5405,7 +5736,7 @@
       {
         "code": "LKA",
         "country": "Sri Lanka",
-        "value": 42277447964.0,
+        "value": 42277447887.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -5685,7 +6016,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2289861347.0,
+        "value": 2289860271.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -5722,7 +6053,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 2011661059437.0,
+        "value": 2011661027633.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -6044,7 +6375,7 @@
       {
         "code": "LKA",
         "country": "Sri Lanka",
-        "value": 37611573621.0,
+        "value": 37611573745.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -6310,7 +6641,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2467536648.0,
+        "value": 2467536003.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -6347,7 +6678,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1944292003322.0,
+        "value": 1944292139759.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -6564,7 +6895,7 @@
       {
         "code": "VEN",
         "country": "Venezuela",
-        "value": 125865359739.0,
+        "value": 125662045291.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -6676,7 +7007,7 @@
       {
         "code": "LKA",
         "country": "Sri Lanka",
-        "value": 33215681327.0,
+        "value": 33215681433.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -6942,7 +7273,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2258778638.0,
+        "value": 2258778270.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -6979,7 +7310,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1948833521698.0,
+        "value": 1948833133641.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -7147,7 +7478,7 @@
       {
         "code": "VEN",
         "country": "Venezuela",
-        "value": 160754864591.0,
+        "value": 160433239035.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -7308,7 +7639,7 @@
       {
         "code": "LKA",
         "country": "Sri Lanka",
-        "value": 28915310728.0,
+        "value": 28915310616.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -7560,7 +7891,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2123980881.0,
+        "value": 2123980552.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -7597,7 +7928,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 2009869511088.0,
+        "value": 2009869217086.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -7919,7 +8250,7 @@
       {
         "code": "LKA",
         "country": "Sri Lanka",
-        "value": 28370156901.0,
+        "value": 28370156895.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -8178,7 +8509,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2132443606.0,
+        "value": 2132443907.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -8215,7 +8546,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1639385952523.0,
+        "value": 1639385682837.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -8579,7 +8910,7 @@
       {
         "code": "LKA",
         "country": "Sri Lanka",
-        "value": 18497393156.0,
+        "value": 18497393202.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -8803,7 +9134,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 1993895112.0,
+        "value": 1993895138.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -8840,7 +9171,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1268424472386.0,
+        "value": 1268424582199.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -9428,7 +9759,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2024051134.0,
+        "value": 2032075257.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -9479,7 +9810,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 1195399188822.0,
+        "value": 1195398971550.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -10067,7 +10398,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2344737051.0,
+        "value": 2354314735.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -10125,7 +10456,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 955056103287.0,
+        "value": 955056266775.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -10699,7 +11030,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 2437482870.0,
+        "value": 2440581534.0,
         "region": "Europe",
         "isProjection": false
       },
@@ -10771,7 +11102,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 700571452269.0,
+        "value": 700571344928.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -11366,7 +11697,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 1123555765.0,
+        "value": 1124497105.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -11382,7 +11713,7 @@
       {
         "code": "JPN",
         "country": "Japan",
-        "value": 9423216855293.0,
+        "value": 9423216855292.0,
         "region": "Asia",
         "isProjection": false
       },
@@ -11438,7 +11769,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 536166565370.0,
+        "value": 536166573342.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -12012,7 +12343,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 508209551.0,
+        "value": 508399107.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -12084,7 +12415,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 377024496607.0,
+        "value": 377024554544.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -12658,7 +12989,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 276686864.0,
+        "value": 277195670.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -12730,7 +13061,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 315549225764.0,
+        "value": 315549237915.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -13297,7 +13628,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 205735497.0,
+        "value": 205794159.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -13362,7 +13693,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 280412797757.0,
+        "value": 280412799466.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -13936,7 +14267,7 @@
       {
         "code": "MNE",
         "country": "Montenegro",
-        "value": 144791482.0,
+        "value": 144975080.0,
         "region": "Europe",
         "isProjection": false
       }
@@ -13987,7 +14318,7 @@
       {
         "code": "BRA",
         "country": "Brazil",
-        "value": 328353006318.0,
+        "value": 328352965693.0,
         "region": "Latam",
         "isProjection": false
       },
@@ -14572,631 +14903,6 @@
         "region": "Europe",
         "isProjection": false
       }
-    ],
-    "2000": [
-      {
-        "code": "JPN",
-        "country": "Japan",
-        "value": 11381398499520.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "USA",
-        "country": "USA",
-        "value": 7023352000000.0,
-        "region": "Americas",
-        "isProjection": false
-      },
-      {
-        "code": "CHN",
-        "country": "China",
-        "value": 1642328493167.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "GBR",
-        "country": "United Kingdom",
-        "value": 1567753064004.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "CAN",
-        "country": "Canada",
-        "value": 529612147330.0,
-        "region": "Americas",
-        "isProjection": false
-      },
-      {
-        "code": "KOR",
-        "country": "South Korea",
-        "value": 365220532160.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "CHE",
-        "country": "Switzerland",
-        "value": 313788427984.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "BRA",
-        "country": "Brazil",
-        "value": 304695497564.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "AUS",
-        "country": "Australia",
-        "value": 280999171651.0,
-        "region": "Oceania",
-        "isProjection": false
-      },
-      {
-        "code": "IND",
-        "country": "India",
-        "value": 255955337896.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "MEX",
-        "country": "Mexico",
-        "value": 158483904527.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "THA",
-        "country": "Thailand",
-        "value": 140559929455.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "MYS",
-        "country": "Malaysia",
-        "value": 115078835000.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "ISR",
-        "country": "Israel",
-        "value": 107635368749.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "SWE",
-        "country": "Sweden",
-        "value": 99303114972.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "SGP",
-        "country": "Singapore",
-        "value": 99130897821.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "TUR",
-        "country": "Turkey",
-        "value": 91975044183.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ARG",
-        "country": "Argentina",
-        "value": 90514975372.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "IDN",
-        "country": "Indonesia",
-        "value": 88917745871.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "SAU",
-        "country": "Saudi Arabia",
-        "value": 84025200000.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "NOR",
-        "country": "Norway",
-        "value": 82278738440.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "DNK",
-        "country": "Denmark",
-        "value": 79785602059.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "EGY",
-        "country": "Egypt",
-        "value": 76617995010.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "ZAF",
-        "country": "South Africa",
-        "value": 71876719423.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "POL",
-        "country": "Poland",
-        "value": 69543752954.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "PHL",
-        "country": "Philippines",
-        "value": 46732289033.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "NZL",
-        "country": "New Zealand",
-        "value": 41509936328.0,
-        "region": "Oceania",
-        "isProjection": false
-      },
-      {
-        "code": "IRN",
-        "country": "Iran",
-        "value": 40718902984.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "CHL",
-        "country": "Chile",
-        "value": 40409087843.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "CZE",
-        "country": "Czechia",
-        "value": 37455086733.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ARE",
-        "country": "UAE",
-        "value": 34572906739.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "LBN",
-        "country": "Lebanon",
-        "value": 32659900498.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "PAK",
-        "country": "Pakistan",
-        "value": 28541696062.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "MAR",
-        "country": "Morocco",
-        "value": 27553547901.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "KWT",
-        "country": "Kuwait",
-        "value": 26611725433.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "COL",
-        "country": "Colombia",
-        "value": 25787744922.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "VEN",
-        "country": "Venezuela",
-        "value": 23244118851.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "HUN",
-        "country": "Hungary",
-        "value": 21204197226.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "DZA",
-        "country": "Algeria",
-        "value": 20727057019.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "PER",
-        "country": "Peru",
-        "value": 17160155305.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "BGD",
-        "country": "Bangladesh",
-        "value": 16306599086.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "VNM",
-        "country": "Vietnam",
-        "value": 13904374905.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "ROU",
-        "country": "Romania",
-        "value": 11972903055.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "TUN",
-        "country": "Tunisia",
-        "value": 10755057150.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "NGA",
-        "country": "Nigeria",
-        "value": 10147196970.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "URY",
-        "country": "Uruguay",
-        "value": 9868893286.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "JOR",
-        "country": "Jordan",
-        "value": 9522661495.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "PAN",
-        "country": "Panama",
-        "value": 9365085566.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "QAT",
-        "country": "Qatar",
-        "value": 7900027473.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "DOM",
-        "country": "Dominican Rep.",
-        "value": 7055006415.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "LKA",
-        "country": "Sri Lanka",
-        "value": 6379274215.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "OMN",
-        "country": "Oman",
-        "value": 6252410923.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "SLV",
-        "country": "El Salvador",
-        "value": 6047975343.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "UKR",
-        "country": "Ukraine",
-        "value": 5810464732.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "BHR",
-        "country": "Bahrain",
-        "value": 5735904255.0,
-        "region": "MENA",
-        "isProjection": false
-      },
-      {
-        "code": "GTM",
-        "country": "Guatemala",
-        "value": 4485558005.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "KEN",
-        "country": "Kenya",
-        "value": 4467801721.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "BOL",
-        "country": "Bolivia",
-        "value": 4381741818.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "ECU",
-        "country": "Ecuador",
-        "value": 3796358179.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "ISL",
-        "country": "Iceland",
-        "value": 3792449791.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "MUS",
-        "country": "Mauritius",
-        "value": 3639642237.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "JAM",
-        "country": "Jamaica",
-        "value": 3627653382.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "HND",
-        "country": "Honduras",
-        "value": 2893773771.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "ETH",
-        "country": "Ethiopia",
-        "value": 2850656007.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "NPL",
-        "country": "Nepal",
-        "value": 2820555369.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "KAZ",
-        "country": "Kazakhstan",
-        "value": 2793258088.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "CRI",
-        "country": "Costa Rica",
-        "value": 2770729837.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "CIV",
-        "country": "Ivory Coast",
-        "value": 2318001844.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "ALB",
-        "country": "Albania",
-        "value": 2278350890.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "BLR",
-        "country": "Belarus",
-        "value": 2250284455.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "PRY",
-        "country": "Paraguay",
-        "value": 1980775918.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "TZA",
-        "country": "Tanzania",
-        "value": 1746270130.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "AGO",
-        "country": "Angola",
-        "value": 1577644761.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "NIC",
-        "country": "Nicaragua",
-        "value": 1538301290.0,
-        "region": "Latam",
-        "isProjection": false
-      },
-      {
-        "code": "BWA",
-        "country": "Botswana",
-        "value": 1436444000.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "CMR",
-        "country": "Cameroon",
-        "value": 1416042952.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "GHA",
-        "country": "Ghana",
-        "value": 1403478353.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "SDN",
-        "country": "Sudan",
-        "value": 1348271466.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "MOZ",
-        "country": "Mozambique",
-        "value": 1176675123.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "SEN",
-        "country": "Senegal",
-        "value": 1112540165.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "SRB",
-        "country": "Serbia",
-        "value": 1029796140.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "UGA",
-        "country": "Uganda",
-        "value": 998074935.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "AZE",
-        "country": "Azerbaijan",
-        "value": 858952522.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ZMB",
-        "country": "Zambia",
-        "value": 780833989.0,
-        "region": "Africa",
-        "isProjection": false
-      },
-      {
-        "code": "MKD",
-        "country": "North Macedonia",
-        "value": 678442738.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "KHM",
-        "country": "Cambodia",
-        "value": 474962948.0,
-        "region": "Asia",
-        "isProjection": false
-      },
-      {
-        "code": "GEO",
-        "country": "Georgia",
-        "value": 317439677.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "MDA",
-        "country": "Moldova",
-        "value": 287247850.0,
-        "region": "Europe",
-        "isProjection": false
-      },
-      {
-        "code": "ARM",
-        "country": "Armenia",
-        "value": 281086087.0,
-        "region": "Europe",
-        "isProjection": false
-      }
     ]
   },
   "timeseries": {
@@ -15204,11 +14910,6 @@
       "country": "Albania",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 2278350890.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 2738507497.0,
@@ -15326,7 +15027,7 @@
         },
         {
           "year": "2024",
-          "value": 19177162500.0,
+          "value": 19170812969.0,
           "isProjection": false
         }
       ]
@@ -15335,11 +15036,6 @@
       "country": "Algeria",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 20727057019.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 31121787707.0,
@@ -15467,11 +15163,6 @@
       "region": "Africa",
       "data": [
         {
-          "year": "2000",
-          "value": 1577644761.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 1888704095.0,
           "isProjection": false
@@ -15590,6 +15281,11 @@
           "year": "2024",
           "value": 16273513521.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 16843798335.0,
+          "isProjection": false
         }
       ]
     },
@@ -15597,11 +15293,6 @@
       "country": "Argentina",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 90514975372.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 72922287000.0,
@@ -15721,6 +15412,11 @@
           "year": "2024",
           "value": 168106718785.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 179501664002.0,
+          "isProjection": false
         }
       ]
     },
@@ -15728,11 +15424,6 @@
       "country": "Armenia",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 281086087.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 284926486.0,
@@ -15852,6 +15543,11 @@
           "year": "2024",
           "value": 14999964745.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 17925699950.0,
+          "isProjection": false
         }
       ]
     },
@@ -15859,11 +15555,6 @@
       "country": "Australia",
       "region": "Oceania",
       "data": [
-        {
-          "year": "2000",
-          "value": 280999171651.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 266367474329.0,
@@ -15983,6 +15674,11 @@
           "year": "2024",
           "value": 2273849623032.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 2394257964181.0,
+          "isProjection": false
         }
       ]
     },
@@ -15990,11 +15686,6 @@
       "country": "Azerbaijan",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 858952522.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 738087531.0,
@@ -16114,6 +15805,11 @@
           "year": "2024",
           "value": 27349910779.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 29329592472.0,
+          "isProjection": false
         }
       ]
     },
@@ -16121,11 +15817,6 @@
       "country": "Bahrain",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 5735904255.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 6265957447.0,
@@ -16207,11 +15898,6 @@
       "country": "Bangladesh",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 16306599086.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 21740752409.0,
@@ -16331,6 +16017,11 @@
           "year": "2024",
           "value": 219646720413.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 218369276224.0,
+          "isProjection": false
         }
       ]
     },
@@ -16338,11 +16029,6 @@
       "country": "Belarus",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 2250284455.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 1843372688.0,
@@ -16455,11 +16141,6 @@
       "region": "Latam",
       "data": [
         {
-          "year": "2000",
-          "value": 4381741818.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 5168107045.0,
           "isProjection": false
@@ -16556,7 +16237,7 @@
         },
         {
           "year": "2020",
-          "value": 38877748174.0,
+          "value": 24921747092.0,
           "isProjection": false
         },
         {
@@ -16578,6 +16259,11 @@
           "year": "2024",
           "value": 32804664837.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 37299296654.0,
+          "isProjection": false
         }
       ]
     },
@@ -16585,11 +16271,6 @@
       "country": "Botswana",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 1436444000.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 2162863278.0,
@@ -16717,128 +16398,128 @@
       "region": "Latam",
       "data": [
         {
-          "year": "2000",
-          "value": 304695497564.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
-          "value": 328353006318.0,
+          "value": 328352965693.0,
           "isProjection": false
         },
         {
           "year": "2002",
-          "value": 280412797757.0,
+          "value": 280412799466.0,
           "isProjection": false
         },
         {
           "year": "2003",
-          "value": 315549225764.0,
+          "value": 315549237915.0,
           "isProjection": false
         },
         {
           "year": "2004",
-          "value": 377024496607.0,
+          "value": 377024554544.0,
           "isProjection": false
         },
         {
           "year": "2005",
-          "value": 536166565370.0,
+          "value": 536166573342.0,
           "isProjection": false
         },
         {
           "year": "2006",
-          "value": 700571452269.0,
+          "value": 700571344928.0,
           "isProjection": false
         },
         {
           "year": "2007",
-          "value": 955056103287.0,
+          "value": 955056266775.0,
           "isProjection": false
         },
         {
           "year": "2008",
-          "value": 1195399188822.0,
+          "value": 1195398971550.0,
           "isProjection": false
         },
         {
           "year": "2009",
-          "value": 1268424472386.0,
+          "value": 1268424582199.0,
           "isProjection": false
         },
         {
           "year": "2010",
-          "value": 1639385952523.0,
+          "value": 1639385682837.0,
           "isProjection": false
         },
         {
           "year": "2011",
-          "value": 2009869511088.0,
+          "value": 2009869217086.0,
           "isProjection": false
         },
         {
           "year": "2012",
-          "value": 1948833521698.0,
+          "value": 1948833133641.0,
           "isProjection": false
         },
         {
           "year": "2013",
-          "value": 1944292003322.0,
+          "value": 1944292139759.0,
           "isProjection": false
         },
         {
           "year": "2014",
-          "value": 2011661059437.0,
+          "value": 2011661027633.0,
           "isProjection": false
         },
         {
           "year": "2015",
-          "value": 1587201397357.0,
+          "value": 1587201579983.0,
           "isProjection": false
         },
         {
           "year": "2016",
-          "value": 1684739855965.0,
+          "value": 1684740059409.0,
           "isProjection": false
         },
         {
           "year": "2017",
-          "value": 1920298498813.0,
+          "value": 1920298767357.0,
           "isProjection": false
         },
         {
           "year": "2018",
-          "value": 1796416738452.0,
+          "value": 1796416916184.0,
           "isProjection": false
         },
         {
           "year": "2019",
-          "value": 1799440337688.0,
+          "value": 1799440382075.0,
           "isProjection": false
         },
         {
           "year": "2020",
-          "value": 1611233358360.0,
+          "value": 1611233291944.0,
           "isProjection": false
         },
         {
           "year": "2021",
-          "value": 1728545998685.0,
+          "value": 1728545931266.0,
           "isProjection": false
         },
         {
           "year": "2022",
-          "value": 2035899778676.0,
+          "value": 2035899893403.0,
           "isProjection": false
         },
         {
           "year": "2023",
-          "value": 2414288555274.0,
+          "value": 2414288440660.0,
           "isProjection": false
         },
         {
           "year": "2024",
-          "value": 2544221094827.0,
+          "value": 2544221050306.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 2695547275548.0,
           "isProjection": false
         }
       ]
@@ -16847,11 +16528,6 @@
       "country": "Cambodia",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 474962948.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 562234039.0,
@@ -16971,6 +16647,11 @@
           "year": "2024",
           "value": 55850500726.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 63980288303.0,
+          "isProjection": false
         }
       ]
     },
@@ -16978,11 +16659,6 @@
       "country": "Cameroon",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 1416042952.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 1392018312.0,
@@ -17080,11 +16756,6 @@
       "region": "Americas",
       "data": [
         {
-          "year": "2000",
-          "value": 529612147330.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 1142774795325.0,
           "isProjection": false
@@ -17130,11 +16801,6 @@
       "country": "Chile",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 40409087843.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 62669213261.0,
@@ -17262,11 +16928,6 @@
       "region": "Asia",
       "data": [
         {
-          "year": "2000",
-          "value": 1642328493167.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 1889702126405.0,
           "isProjection": false
@@ -17393,11 +17054,6 @@
       "region": "Latam",
       "data": [
         {
-          "year": "2000",
-          "value": 25787744922.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 27996165267.0,
           "isProjection": false
@@ -17516,6 +17172,11 @@
           "year": "2024",
           "value": 175066870447.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 196948735071.0,
+          "isProjection": false
         }
       ]
     },
@@ -17523,11 +17184,6 @@
       "country": "Costa Rica",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 2770729837.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 6605258793.0,
@@ -17647,6 +17303,11 @@
           "year": "2024",
           "value": 48164621030.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 52056652327.0,
+          "isProjection": false
         }
       ]
     },
@@ -17654,11 +17315,6 @@
       "country": "Ivory Coast",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 2318001844.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 2350208659.0,
@@ -17778,6 +17434,11 @@
           "year": "2024",
           "value": 32687313548.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 42151858038.0,
+          "isProjection": false
         }
       ]
     },
@@ -17785,11 +17446,6 @@
       "country": "Czechia",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 37455086733.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 42256837655.0,
@@ -17917,11 +17573,6 @@
       "region": "Europe",
       "data": [
         {
-          "year": "2000",
-          "value": 79785602059.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 80250276349.0,
           "isProjection": false
@@ -18048,11 +17699,6 @@
       "region": "Latam",
       "data": [
         {
-          "year": "2000",
-          "value": 7055006415.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 9409059378.0,
           "isProjection": false
@@ -18159,7 +17805,7 @@
         },
         {
           "year": "2022",
-          "value": 41478461699.0,
+          "value": 41478467717.0,
           "isProjection": false
         },
         {
@@ -18171,6 +17817,11 @@
           "year": "2024",
           "value": 48918016715.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 52626522389.0,
+          "isProjection": false
         }
       ]
     },
@@ -18178,11 +17829,6 @@
       "country": "Ecuador",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 3796358179.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 4999540526.0,
@@ -18302,6 +17948,11 @@
           "year": "2024",
           "value": 71217200693.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 80935974951.0,
+          "isProjection": false
         }
       ]
     },
@@ -18309,11 +17960,6 @@
       "country": "Egypt",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 76617995010.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 79647142857.0,
@@ -18426,12 +18072,17 @@
         },
         {
           "year": "2023",
-          "value": 346108554344.0,
+          "value": 346108551096.0,
           "isProjection": false
         },
         {
           "year": "2024",
-          "value": 325640693029.0,
+          "value": 325640692686.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 282512596897.0,
           "isProjection": false
         }
       ]
@@ -18440,11 +18091,6 @@
       "country": "El Salvador",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 6047975343.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 7649475243.0,
@@ -18564,6 +18210,11 @@
           "year": "2024",
           "value": 20809915902.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 23574197501.0,
+          "isProjection": false
         }
       ]
     },
@@ -18571,11 +18222,6 @@
       "country": "Ethiopia",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 2850656007.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 3059029966.0,
@@ -18622,11 +18268,6 @@
       "country": "Georgia",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 317439677.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 361468731.0,
@@ -18744,7 +18385,12 @@
         },
         {
           "year": "2024",
-          "value": 18181331568.0,
+          "value": 18181331458.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 21026669642.0,
           "isProjection": false
         }
       ]
@@ -18753,11 +18399,6 @@
       "country": "Ghana",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 1403478353.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 1671279073.0,
@@ -18885,11 +18526,6 @@
       "region": "Latam",
       "data": [
         {
-          "year": "2000",
-          "value": 4485558005.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 6065508402.0,
           "isProjection": false
@@ -19008,6 +18644,11 @@
           "year": "2024",
           "value": 64395561314.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 74480997876.0,
+          "isProjection": false
         }
       ]
     },
@@ -19015,11 +18656,6 @@
       "country": "Honduras",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 2893773771.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 3449747469.0,
@@ -19139,6 +18775,11 @@
           "year": "2024",
           "value": 27774053360.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 29376034291.0,
+          "isProjection": false
         }
       ]
     },
@@ -19146,11 +18787,6 @@
       "country": "Hungary",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 21204197226.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 24300332850.0,
@@ -19278,11 +18914,6 @@
       "region": "Europe",
       "data": [
         {
-          "year": "2000",
-          "value": 3792449791.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 3524236025.0,
           "isProjection": false
@@ -19409,11 +19040,6 @@
       "region": "Asia",
       "data": [
         {
-          "year": "2000",
-          "value": 255955337896.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 280288610949.0,
           "isProjection": false
@@ -19524,11 +19150,6 @@
       "country": "Indonesia",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 88917745871.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 81644262518.0,
@@ -19648,6 +19269,11 @@
           "year": "2024",
           "value": 583183139577.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 615046553655.0,
+          "isProjection": false
         }
       ]
     },
@@ -19655,11 +19281,6 @@
       "country": "Iran",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 40718902984.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 51858068397.0,
@@ -19858,11 +19479,6 @@
       "region": "MENA",
       "data": [
         {
-          "year": "2000",
-          "value": 107635368749.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 113334039519.0,
           "isProjection": false
@@ -19974,12 +19590,17 @@
         },
         {
           "year": "2023",
-          "value": 518580665979.0,
+          "value": 518610003041.0,
           "isProjection": false
         },
         {
           "year": "2024",
-          "value": 555737024504.0,
+          "value": 555764356305.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 633578238167.0,
           "isProjection": false
         }
       ]
@@ -19988,11 +19609,6 @@
       "country": "Jamaica",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 3627653382.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 4279177346.0,
@@ -20112,6 +19728,11 @@
           "year": "2024",
           "value": 13459052252.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 14932294222.0,
+          "isProjection": false
         }
       ]
     },
@@ -20119,11 +19740,6 @@
       "country": "Japan",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 11381398499520.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 8352558115806.0,
@@ -20146,7 +19762,7 @@
         },
         {
           "year": "2005",
-          "value": 9423216855293.0,
+          "value": 9423216855292.0,
           "isProjection": false
         },
         {
@@ -20243,6 +19859,11 @@
           "year": "2024",
           "value": 10756791264333.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 10945012629993.0,
+          "isProjection": false
         }
       ]
     },
@@ -20250,11 +19871,6 @@
       "country": "Jordan",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 9522661495.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 10294507767.0,
@@ -20382,11 +19998,6 @@
       "region": "Asia",
       "data": [
         {
-          "year": "2000",
-          "value": 2793258088.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 3793390187.0,
           "isProjection": false
@@ -20505,6 +20116,11 @@
           "year": "2024",
           "value": 97363868300.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 101244139232.0,
+          "isProjection": false
         }
       ]
     },
@@ -20512,11 +20128,6 @@
       "country": "Kenya",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 4467801721.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 4576365650.0,
@@ -20644,11 +20255,6 @@
       "region": "Asia",
       "data": [
         {
-          "year": "2000",
-          "value": 365220532160.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 592550339095.0,
           "isProjection": false
@@ -20775,11 +20381,6 @@
       "region": "MENA",
       "data": [
         {
-          "year": "2000",
-          "value": 26611725433.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 30026287490.0,
           "isProjection": false
@@ -20898,6 +20499,11 @@
           "year": "2024",
           "value": 132561123737.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 137446464571.0,
+          "isProjection": false
         }
       ]
     },
@@ -20905,11 +20511,6 @@
       "country": "Lebanon",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 32659900498.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 35098109453.0,
@@ -21001,11 +20602,6 @@
       "country": "Malaysia",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 115078835000.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 128469305332.0,
@@ -21125,6 +20721,11 @@
           "year": "2024",
           "value": 509856344097.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 569652017020.0,
+          "isProjection": false
         }
       ]
     },
@@ -21132,11 +20733,6 @@
       "country": "Mauritius",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 3639642237.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 3645249048.0,
@@ -21256,6 +20852,11 @@
           "year": "2024",
           "value": 20988378375.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 22996047862.0,
+          "isProjection": false
         }
       ]
     },
@@ -21263,11 +20864,6 @@
       "country": "Mexico",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 158483904527.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 190631348527.0,
@@ -21387,6 +20983,11 @@
           "year": "2024",
           "value": 850076943478.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 879725549370.0,
+          "isProjection": false
         }
       ]
     },
@@ -21394,11 +20995,6 @@
       "country": "Moldova",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 287247850.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 372261862.0,
@@ -21518,6 +21114,11 @@
           "year": "2024",
           "value": 9536355478.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 10965580259.0,
+          "isProjection": false
         }
       ]
     },
@@ -21527,117 +21128,122 @@
       "data": [
         {
           "year": "2002",
-          "value": 144791482.0,
+          "value": 144975080.0,
           "isProjection": false
         },
         {
           "year": "2003",
-          "value": 205735497.0,
+          "value": 205794159.0,
           "isProjection": false
         },
         {
           "year": "2004",
-          "value": 276686864.0,
+          "value": 277195670.0,
           "isProjection": false
         },
         {
           "year": "2005",
-          "value": 508209551.0,
+          "value": 508399107.0,
           "isProjection": false
         },
         {
           "year": "2006",
-          "value": 1123555765.0,
+          "value": 1124497105.0,
           "isProjection": false
         },
         {
           "year": "2007",
-          "value": 2437482870.0,
+          "value": 2440581534.0,
           "isProjection": false
         },
         {
           "year": "2008",
-          "value": 2344737051.0,
+          "value": 2354314735.0,
           "isProjection": false
         },
         {
           "year": "2009",
-          "value": 2024051134.0,
+          "value": 2032075257.0,
           "isProjection": false
         },
         {
           "year": "2010",
-          "value": 1993895112.0,
+          "value": 1993895138.0,
           "isProjection": false
         },
         {
           "year": "2011",
-          "value": 2132443606.0,
+          "value": 2132443907.0,
           "isProjection": false
         },
         {
           "year": "2012",
-          "value": 2123980881.0,
+          "value": 2123980552.0,
           "isProjection": false
         },
         {
           "year": "2013",
-          "value": 2258778638.0,
+          "value": 2258778270.0,
           "isProjection": false
         },
         {
           "year": "2014",
-          "value": 2467536648.0,
+          "value": 2467536003.0,
           "isProjection": false
         },
         {
           "year": "2015",
-          "value": 2289861347.0,
+          "value": 2289860271.0,
           "isProjection": false
         },
         {
           "year": "2016",
-          "value": 2493794460.0,
+          "value": 2493793256.0,
           "isProjection": false
         },
         {
           "year": "2017",
-          "value": 2874939756.0,
+          "value": 2874941353.0,
           "isProjection": false
         },
         {
           "year": "2018",
-          "value": 3099967404.0,
+          "value": 3099968623.0,
           "isProjection": false
         },
         {
           "year": "2019",
-          "value": 2889471842.0,
+          "value": 2889548643.0,
           "isProjection": false
         },
         {
           "year": "2020",
-          "value": 2831322391.0,
+          "value": 2837688706.0,
           "isProjection": false
         },
         {
           "year": "2021",
-          "value": 3397606481.0,
+          "value": 3397135760.0,
           "isProjection": false
         },
         {
           "year": "2022",
-          "value": 3713680523.0,
+          "value": 3718734095.0,
           "isProjection": false
         },
         {
           "year": "2023",
-          "value": 4276016468.0,
+          "value": 4275417452.0,
           "isProjection": false
         },
         {
           "year": "2024",
-          "value": 4701208990.0,
+          "value": 4703638512.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 5393369810.0,
           "isProjection": false
         }
       ]
@@ -21646,11 +21252,6 @@
       "country": "Morocco",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 27553547901.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 30595479628.0,
@@ -21770,6 +21371,11 @@
           "year": "2024",
           "value": 190307171168.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 221203552905.0,
+          "isProjection": false
         }
       ]
     },
@@ -21777,11 +21383,6 @@
       "country": "Mozambique",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 1176675123.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 994352253.0,
@@ -21901,6 +21502,11 @@
           "year": "2024",
           "value": 12175901085.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 13273138410.0,
+          "isProjection": false
         }
       ]
     },
@@ -21908,11 +21514,6 @@
       "country": "Nepal",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 2820555369.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 3095192109.0,
@@ -22020,17 +21621,22 @@
         },
         {
           "year": "2022",
-          "value": 46780958167.0,
+          "value": 46780958075.0,
           "isProjection": false
         },
         {
           "year": "2023",
-          "value": 49530390177.0,
+          "value": 49532269562.0,
           "isProjection": false
         },
         {
           "year": "2024",
-          "value": 54143670055.0,
+          "value": 54143982565.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 59685179900.0,
           "isProjection": false
         }
       ]
@@ -22039,11 +21645,6 @@
       "country": "New Zealand",
       "region": "Oceania",
       "data": [
-        {
-          "year": "2000",
-          "value": 41509936328.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 43157780356.0,
@@ -22153,6 +21754,11 @@
           "year": "2024",
           "value": 260281093016.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 262929207332.0,
+          "isProjection": false
         }
       ]
     },
@@ -22160,11 +21766,6 @@
       "country": "Nicaragua",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 1538301290.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 1519109091.0,
@@ -22281,11 +21882,6 @@
       "country": "Nigeria",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 10147196970.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 11696408394.0,
@@ -22408,11 +22004,6 @@
       "region": "Europe",
       "data": [
         {
-          "year": "2000",
-          "value": 678442738.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 1095019686.0,
           "isProjection": false
@@ -22529,7 +22120,7 @@
         },
         {
           "year": "2024",
-          "value": 10255697179.0,
+          "value": 10255697164.0,
           "isProjection": false
         }
       ]
@@ -22538,11 +22129,6 @@
       "country": "Norway",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 82278738440.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 93803730107.0,
@@ -22670,11 +22256,6 @@
       "region": "MENA",
       "data": [
         {
-          "year": "2000",
-          "value": 6252410923.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 6927924577.0,
           "isProjection": false
@@ -22765,11 +22346,6 @@
       "country": "Pakistan",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 28541696062.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 29023771900.0,
@@ -22889,6 +22465,11 @@
           "year": "2024",
           "value": 142050182097.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 166515076427.0,
+          "isProjection": false
         }
       ]
     },
@@ -22896,11 +22477,6 @@
       "country": "Panama",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 9365085566.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 10103972858.0,
@@ -22947,11 +22523,6 @@
       "country": "Paraguay",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 1980775918.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 2347394163.0,
@@ -23069,7 +22640,7 @@
         },
         {
           "year": "2024",
-          "value": 23381875808.0,
+          "value": 23381875809.0,
           "isProjection": false
         }
       ]
@@ -23078,11 +22649,6 @@
       "country": "Peru",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 17160155305.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 17167391144.0,
@@ -23200,11 +22766,6 @@
       "region": "Asia",
       "data": [
         {
-          "year": "2000",
-          "value": 46732289033.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 44544306807.0,
           "isProjection": false
@@ -23321,11 +22882,6 @@
       "region": "Europe",
       "data": [
         {
-          "year": "2000",
-          "value": 69543752954.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 84615869513.0,
           "isProjection": false
@@ -23402,17 +22958,17 @@
         },
         {
           "year": "2016",
-          "value": 320959812656.0,
+          "value": 320959839788.0,
           "isProjection": false
         },
         {
           "year": "2017",
-          "value": 350423972485.0,
+          "value": 350424003389.0,
           "isProjection": false
         },
         {
           "year": "2018",
-          "value": 400292750904.0,
+          "value": 400292713964.0,
           "isProjection": false
         },
         {
@@ -23451,11 +23007,6 @@
       "country": "Qatar",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 7900027473.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 10937955220.0,
@@ -23575,6 +23126,11 @@
           "year": "2024",
           "value": 197309807692.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 204230412088.0,
+          "isProjection": false
         }
       ]
     },
@@ -23582,11 +23138,6 @@
       "country": "Romania",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 11972903055.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 10555776013.0,
@@ -23684,17 +23235,17 @@
         },
         {
           "year": "2020",
-          "value": 114832905168.0,
+          "value": 114832688707.0,
           "isProjection": false
         },
         {
           "year": "2021",
-          "value": 135665006657.0,
+          "value": 135665561004.0,
           "isProjection": false
         },
         {
           "year": "2022",
-          "value": 128622209440.0,
+          "value": 128621523602.0,
           "isProjection": false
         },
         {
@@ -23705,6 +23256,11 @@
         {
           "year": "2024",
           "value": 161310102847.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 177925240329.0,
           "isProjection": false
         }
       ]
@@ -23820,11 +23376,6 @@
       "region": "MENA",
       "data": [
         {
-          "year": "2000",
-          "value": 84025200000.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 88299813333.0,
           "isProjection": false
@@ -23915,11 +23466,6 @@
       "country": "Senegal",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 1112540165.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 985807584.0,
@@ -24039,6 +23585,11 @@
           "year": "2024",
           "value": 16832753781.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 19879367492.0,
+          "isProjection": false
         }
       ]
     },
@@ -24046,11 +23597,6 @@
       "country": "Serbia",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 1029796140.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 1872383008.0,
@@ -24168,7 +23714,7 @@
         },
         {
           "year": "2024",
-          "value": 47720943375.0,
+          "value": 47715964787.0,
           "isProjection": false
         }
       ]
@@ -24177,11 +23723,6 @@
       "country": "Singapore",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 99130897821.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 100969290454.0,
@@ -24288,11 +23829,6 @@
       "country": "South Africa",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 71876719423.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 69637473065.0,
@@ -24412,6 +23948,11 @@
           "year": "2024",
           "value": 296281509600.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 328383405615.0,
+          "isProjection": false
         }
       ]
     },
@@ -24419,11 +23960,6 @@
       "country": "Sri Lanka",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 6379274215.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 6145128693.0,
@@ -24471,42 +24007,42 @@
         },
         {
           "year": "2010",
-          "value": 18497393156.0,
+          "value": 18497393202.0,
           "isProjection": false
         },
         {
           "year": "2011",
-          "value": 28370156901.0,
+          "value": 28370156895.0,
           "isProjection": false
         },
         {
           "year": "2012",
-          "value": 28915310728.0,
+          "value": 28915310616.0,
           "isProjection": false
         },
         {
           "year": "2013",
-          "value": 33215681327.0,
+          "value": 33215681433.0,
           "isProjection": false
         },
         {
           "year": "2014",
-          "value": 37611573621.0,
+          "value": 37611573745.0,
           "isProjection": false
         },
         {
           "year": "2015",
-          "value": 42277447964.0,
+          "value": 42277447887.0,
           "isProjection": false
         },
         {
           "year": "2016",
-          "value": 45860311788.0,
+          "value": 45860311635.0,
           "isProjection": false
         },
         {
           "year": "2017",
-          "value": 51420833526.0,
+          "value": 51420833610.0,
           "isProjection": false
         },
         {
@@ -24516,7 +24052,7 @@
         },
         {
           "year": "2019",
-          "value": 52920469664.0,
+          "value": 52920469593.0,
           "isProjection": false
         }
       ]
@@ -24525,11 +24061,6 @@
       "country": "Sudan",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 1348271466.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 1668544631.0,
@@ -24636,11 +24167,6 @@
       "country": "Sweden",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 99303114972.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 107840857384.0,
@@ -24768,11 +24294,6 @@
       "region": "Europe",
       "data": [
         {
-          "year": "2000",
-          "value": 313788427984.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 326299638538.0,
           "isProjection": false
@@ -24858,11 +24379,6 @@
       "country": "Tanzania",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 1746270130.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 2138621717.0,
@@ -24970,12 +24486,12 @@
         },
         {
           "year": "2022",
-          "value": 16751822884.0,
+          "value": 16751822885.0,
           "isProjection": false
         },
         {
           "year": "2023",
-          "value": 18464868046.0,
+          "value": 18464868048.0,
           "isProjection": false
         }
       ]
@@ -24984,11 +24500,6 @@
       "country": "Thailand",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 140559929455.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 147674913744.0,
@@ -25096,7 +24607,7 @@
         },
         {
           "year": "2022",
-          "value": 712869156370.0,
+          "value": 712870172973.0,
           "isProjection": false
         },
         {
@@ -25115,11 +24626,6 @@
       "country": "Tunisia",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 10755057150.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 12128500394.0,
@@ -25237,7 +24743,12 @@
         },
         {
           "year": "2024",
-          "value": 42714392618.0,
+          "value": 42780826079.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 49039468398.0,
           "isProjection": false
         }
       ]
@@ -25246,11 +24757,6 @@
       "country": "Turkey",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 91975044183.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 89320660695.0,
@@ -25370,6 +24876,11 @@
           "year": "2024",
           "value": 590745350669.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 677339548756.0,
+          "isProjection": false
         }
       ]
     },
@@ -25377,11 +24888,6 @@
       "country": "Uganda",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 998074935.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 939821326.0,
@@ -25499,7 +25005,12 @@
         },
         {
           "year": "2024",
-          "value": 11202145900.0,
+          "value": 11202145898.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 13820875974.0,
           "isProjection": false
         }
       ]
@@ -25508,11 +25019,6 @@
       "country": "Ukraine",
       "region": "Europe",
       "data": [
-        {
-          "year": "2000",
-          "value": 5810464732.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 8517191777.0,
@@ -25632,6 +25138,11 @@
           "year": "2024",
           "value": 86879099227.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 96459542573.0,
+          "isProjection": false
         }
       ]
     },
@@ -25639,11 +25150,6 @@
       "country": "UAE",
       "region": "MENA",
       "data": [
-        {
-          "year": "2000",
-          "value": 34572906739.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 42160653506.0,
@@ -25771,11 +25277,6 @@
       "region": "Europe",
       "data": [
         {
-          "year": "2000",
-          "value": 1567753064004.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 1623093421621.0,
           "isProjection": false
@@ -25902,11 +25403,6 @@
       "region": "Americas",
       "data": [
         {
-          "year": "2000",
-          "value": 7023352000000.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
           "value": 7580500198181.0,
           "isProjection": false
@@ -26003,27 +25499,32 @@
         },
         {
           "year": "2020",
-          "value": 23301047844003.0,
+          "value": 23770313723022.0,
           "isProjection": false
         },
         {
           "year": "2021",
-          "value": 27228831699811.0,
+          "value": 27226400122735.0,
           "isProjection": false
         },
         {
           "year": "2022",
-          "value": 26999346403778.0,
+          "value": 26990850883895.0,
           "isProjection": false
         },
         {
           "year": "2023",
-          "value": 27478961441083.0,
+          "value": 27482023571610.0,
           "isProjection": false
         },
         {
           "year": "2024",
-          "value": 28959213351104.0,
+          "value": 28933621460272.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 30682266669837.0,
           "isProjection": false
         }
       ]
@@ -26032,11 +25533,6 @@
       "country": "Uruguay",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 9868893286.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 10271993530.0,
@@ -26156,6 +25652,11 @@
           "year": "2024",
           "value": 44634749836.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 43929559601.0,
+          "isProjection": false
         }
       ]
     },
@@ -26222,6 +25723,11 @@
           "year": "2024",
           "value": 21898378213.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 30095227055.0,
+          "isProjection": false
         }
       ]
     },
@@ -26229,11 +25735,6 @@
       "country": "Venezuela",
       "region": "Latam",
       "data": [
-        {
-          "year": "2000",
-          "value": 23244118851.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 24185303653.0,
@@ -26291,12 +25792,12 @@
         },
         {
           "year": "2012",
-          "value": 160754864591.0,
+          "value": 160433239035.0,
           "isProjection": false
         },
         {
           "year": "2013",
-          "value": 125865359739.0,
+          "value": 125662045291.0,
           "isProjection": false
         }
       ]
@@ -26305,11 +25806,6 @@
       "country": "Vietnam",
       "region": "Asia",
       "data": [
-        {
-          "year": "2000",
-          "value": 13904374905.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 17035168815.0,
@@ -26426,11 +25922,6 @@
       "country": "Zambia",
       "region": "Africa",
       "data": [
-        {
-          "year": "2000",
-          "value": 780833989.0,
-          "isProjection": false
-        },
         {
           "year": "2001",
           "value": 731307259.0,
@@ -26550,6 +26041,11 @@
           "year": "2024",
           "value": 7844622581.0,
           "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 8880827971.0,
+          "isProjection": false
         }
       ]
     },
@@ -26558,128 +26054,128 @@
       "region": "Global",
       "data": [
         {
-          "year": "2000",
-          "value": 25792353279296.0,
-          "isProjection": false
-        },
-        {
           "year": "2001",
-          "value": 24763611068178.0,
+          "value": 24763611027553.0,
           "isProjection": false
         },
         {
           "year": "2002",
-          "value": 25593929896439.0,
+          "value": 25593930081746.0,
           "isProjection": false
         },
         {
           "year": "2003",
-          "value": 28252299761261.0,
+          "value": 28252299832074.0,
           "isProjection": false
         },
         {
           "year": "2004",
-          "value": 31333223335762.0,
+          "value": 31333223902505.0,
           "isProjection": false
         },
         {
           "year": "2005",
-          "value": 34133953060220.0,
+          "value": 34133953257747.0,
           "isProjection": false
         },
         {
           "year": "2006",
-          "value": 37482326579719.0,
+          "value": 37482327413718.0,
           "isProjection": false
         },
         {
           "year": "2007",
-          "value": 42111456425962.0,
+          "value": 42111459688114.0,
           "isProjection": false
         },
         {
           "year": "2008",
-          "value": 48039943221665.0,
+          "value": 48039952582077.0,
           "isProjection": false
         },
         {
           "year": "2009",
-          "value": 49414366657963.0,
+          "value": 49414374791899.0,
           "isProjection": false
         },
         {
           "year": "2010",
-          "value": 54183460859666.0,
+          "value": 54183460590052.0,
           "isProjection": false
         },
         {
           "year": "2011",
-          "value": 61209400411643.0,
+          "value": 61209400117936.0,
           "isProjection": false
         },
         {
           "year": "2012",
-          "value": 65182761110771.0,
+          "value": 65182439096717.0,
           "isProjection": false
         },
         {
           "year": "2013",
-          "value": 67296323417248.0,
+          "value": 67296120238975.0,
           "isProjection": false
         },
         {
           "year": "2014",
-          "value": 70253724844016.0,
+          "value": 70253724811691.0,
           "isProjection": false
         },
         {
           "year": "2015",
-          "value": 70639582373734.0,
+          "value": 70639582555207.0,
           "isProjection": false
         },
         {
           "year": "2016",
-          "value": 74101494623880.0,
+          "value": 74101494853099.0,
           "isProjection": false
         },
         {
           "year": "2017",
-          "value": 76320806160792.0,
+          "value": 76320806461921.0,
           "isProjection": false
         },
         {
           "year": "2018",
-          "value": 80143022942894.0,
+          "value": 80143023084905.0,
           "isProjection": false
         },
         {
           "year": "2019",
-          "value": 83657181891398.0,
+          "value": 83657182012515.0,
           "isProjection": false
         },
         {
           "year": "2020",
-          "value": 92807154725176.0,
+          "value": 93262470686551.0,
           "isProjection": false
         },
         {
           "year": "2021",
-          "value": 103499671983786.0,
+          "value": 103497240422917.0,
           "isProjection": false
         },
         {
           "year": "2022",
-          "value": 101147341952341.0,
+          "value": 101138851937449.0,
           "isProjection": false
         },
         {
           "year": "2023",
-          "value": 102509295255611.0,
+          "value": 102512387885709.0,
           "isProjection": false
         },
         {
           "year": "2024",
-          "value": 106063652685446.0,
+          "value": 106038145928799.0,
+          "isProjection": false
+        },
+        {
+          "year": "2025",
+          "value": 53500594279476.0,
           "isProjection": false
         }
       ]

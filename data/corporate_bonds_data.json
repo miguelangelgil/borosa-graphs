@@ -3,7 +3,7 @@
     "source": "FRED (Federal Reserve Economic Data)",
     "indicator": "ICE BofA Corporate Bond Indices",
     "description": "Corporate Bond Yields by Region - Investment Grade and High Yield",
-    "fetched_at": "2026-07-12T03:28:04.196822",
+    "fetched_at": "2026-07-19T03:24:21.696515",
     "categories": [
       "Investment Grade",
       "High Yield",
@@ -24,7 +24,7 @@
         "code": "LATAM_EM",
         "name": "Latin America EM Corporate",
         "value": 6.75,
-        "date": "2026-07-09",
+        "date": "2026-07-16",
         "region": "Latin America",
         "description": "ICE BofA Latin America Emerging Markets Corporate Plus Index Effective Yield"
       },
@@ -39,16 +39,16 @@
       {
         "code": "EM_TOTAL",
         "name": "Emerging Markets Total",
-        "value": 5.72,
-        "date": "2026-07-09",
+        "value": 5.73,
+        "date": "2026-07-16",
         "region": "Emerging Markets",
         "description": "ICE BofA Emerging Markets Corporate Plus Index Effective Yield"
       },
       {
         "code": "EMEA_EM",
         "name": "EMEA EM Corporate",
-        "value": 5.54,
-        "date": "2026-07-09",
+        "value": 5.58,
+        "date": "2026-07-16",
         "region": "EMEA",
         "description": "ICE BofA EMEA Emerging Markets Corporate Plus Index Effective Yield"
       },
@@ -64,23 +64,23 @@
         "code": "EU_IG",
         "name": "Euro Investment Grade",
         "value": 5.45,
-        "date": "2026-07-09",
+        "date": "2026-07-16",
         "region": "Europe",
         "description": "ICE BofA BBB US Corporate Index Effective Yield (proxy)"
       },
       {
         "code": "US_IG",
         "name": "US Investment Grade",
-        "value": 5.27,
-        "date": "2026-07-09",
+        "value": 5.28,
+        "date": "2026-07-16",
         "region": "North America",
         "description": "ICE BofA US Corporate Index Effective Yield"
       },
       {
         "code": "ASIA_EM",
         "name": "Asia EM Corporate",
-        "value": 5.1,
-        "date": "2026-07-09",
+        "value": 5.11,
+        "date": "2026-07-16",
         "region": "Asia",
         "description": "ICE BofA Asia Emerging Markets Corporate Plus Index Effective Yield"
       }
@@ -89,40 +89,40 @@
       {
         "code": "US_HY_CCC",
         "name": "US CCC & Below",
-        "value": 13.93,
-        "date": "2026-07-09",
+        "value": 13.86,
+        "date": "2026-07-16",
         "region": "North America",
         "description": "ICE BofA CCC & Lower US High Yield Index Effective Yield"
       },
       {
         "code": "EM_HY",
         "name": "Emerging Markets HY",
-        "value": 7.36,
-        "date": "2026-07-09",
+        "value": 7.39,
+        "date": "2026-07-16",
         "region": "Emerging Markets",
         "description": "ICE BofA High Yield Emerging Markets Corporate Plus Index Effective Yield"
       },
       {
         "code": "US_HY_B",
         "name": "US B Rated",
-        "value": 7.16,
-        "date": "2026-07-09",
+        "value": 7.14,
+        "date": "2026-07-16",
         "region": "North America",
         "description": "ICE BofA Single-B US High Yield Index Effective Yield"
       },
       {
         "code": "US_HY",
         "name": "US High Yield",
-        "value": 6.98,
-        "date": "2026-07-09",
+        "value": 6.96,
+        "date": "2026-07-16",
         "region": "North America",
         "description": "ICE BofA US High Yield Index Effective Yield"
       },
       {
         "code": "US_HY_BB",
         "name": "US BB Rated",
-        "value": 5.89,
-        "date": "2026-07-09",
+        "value": 5.88,
+        "date": "2026-07-16",
         "region": "North America",
         "description": "ICE BofA BB US High Yield Index Effective Yield"
       },
@@ -130,7 +130,7 @@
         "code": "EU_HY",
         "name": "Euro High Yield",
         "value": 5.34,
-        "date": "2026-07-09",
+        "date": "2026-07-16",
         "region": "Europe",
         "description": "ICE BofA Euro High Yield Index Effective Yield"
       }
@@ -139,32 +139,32 @@
       {
         "code": "US_SPREAD_HY",
         "name": "US HY Spread",
-        "value": 2.7,
-        "date": "2026-07-09",
+        "value": 2.71,
+        "date": "2026-07-16",
         "region": "North America",
         "description": "ICE BofA US High Yield Index Option-Adjusted Spread"
       },
       {
         "code": "EU_SPREAD_HY",
         "name": "Euro HY Spread",
-        "value": 2.56,
-        "date": "2026-07-09",
+        "value": 2.49,
+        "date": "2026-07-16",
         "region": "Europe",
         "description": "ICE BofA Euro High Yield Index Option-Adjusted Spread"
       },
       {
         "code": "EM_SPREAD",
         "name": "EM Corporate Spread",
-        "value": 1.45,
-        "date": "2026-07-09",
+        "value": 1.47,
+        "date": "2026-07-16",
         "region": "Emerging Markets",
         "description": "ICE BofA Emerging Markets Corporate Plus Index Option-Adjusted Spread"
       },
       {
         "code": "US_SPREAD_IG",
         "name": "US IG Spread",
-        "value": 0.76,
-        "date": "2026-07-09",
+        "value": 0.78,
+        "date": "2026-07-16",
         "region": "North America",
         "description": "ICE BofA US Corporate Index Option-Adjusted Spread"
       }
@@ -322,8 +322,8 @@
           "value": 5.19
         },
         {
-          "date": "2026-07-09",
-          "value": 5.27
+          "date": "2026-07-16",
+          "value": 5.28
         }
       ]
     },
@@ -2894,8 +2894,8 @@
           "value": 6.99
         },
         {
-          "date": "2026-07-09",
-          "value": 6.98
+          "date": "2026-07-16",
+          "value": 6.96
         }
       ]
     },
@@ -3050,8 +3050,8 @@
           "value": 5.88
         },
         {
-          "date": "2026-07-09",
-          "value": 5.89
+          "date": "2026-07-16",
+          "value": 5.88
         }
       ]
     },
@@ -3206,8 +3206,8 @@
           "value": 7.21
         },
         {
-          "date": "2026-07-09",
-          "value": 7.16
+          "date": "2026-07-16",
+          "value": 7.14
         }
       ]
     },
@@ -3362,8 +3362,8 @@
           "value": 13.9
         },
         {
-          "date": "2026-07-09",
-          "value": 13.93
+          "date": "2026-07-16",
+          "value": 13.86
         }
       ]
     },
@@ -3518,7 +3518,7 @@
           "value": 5.34
         },
         {
-          "date": "2026-07-09",
+          "date": "2026-07-16",
           "value": 5.34
         }
       ]
@@ -3674,7 +3674,7 @@
           "value": 5.37
         },
         {
-          "date": "2026-07-09",
+          "date": "2026-07-16",
           "value": 5.45
         }
       ]
@@ -3830,8 +3830,8 @@
           "value": 5.66
         },
         {
-          "date": "2026-07-09",
-          "value": 5.72
+          "date": "2026-07-16",
+          "value": 5.73
         }
       ]
     },
@@ -3986,8 +3986,8 @@
           "value": 7.32
         },
         {
-          "date": "2026-07-09",
-          "value": 7.36
+          "date": "2026-07-16",
+          "value": 7.39
         }
       ]
     },
@@ -4142,8 +4142,8 @@
           "value": 5.05
         },
         {
-          "date": "2026-07-09",
-          "value": 5.1
+          "date": "2026-07-16",
+          "value": 5.11
         }
       ]
     },
@@ -4298,8 +4298,8 @@
           "value": 5.47
         },
         {
-          "date": "2026-07-09",
-          "value": 5.54
+          "date": "2026-07-16",
+          "value": 5.58
         }
       ]
     },
@@ -4454,7 +4454,7 @@
           "value": 6.69
         },
         {
-          "date": "2026-07-09",
+          "date": "2026-07-16",
           "value": 6.75
         }
       ]
@@ -4610,8 +4610,8 @@
           "value": 0.76
         },
         {
-          "date": "2026-07-09",
-          "value": 0.76
+          "date": "2026-07-16",
+          "value": 0.78
         }
       ]
     },
@@ -4766,8 +4766,8 @@
           "value": 2.75
         },
         {
-          "date": "2026-07-09",
-          "value": 2.7
+          "date": "2026-07-16",
+          "value": 2.71
         }
       ]
     },
@@ -4922,8 +4922,8 @@
           "value": 2.7
         },
         {
-          "date": "2026-07-09",
-          "value": 2.56
+          "date": "2026-07-16",
+          "value": 2.49
         }
       ]
     },
@@ -5078,8 +5078,8 @@
           "value": 1.46
         },
         {
-          "date": "2026-07-09",
-          "value": 1.45
+          "date": "2026-07-16",
+          "value": 1.47
         }
       ]
     }

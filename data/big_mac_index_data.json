@@ -4,7 +4,7 @@
     "indicator": "Big Mac Affordability Index",
     "description": "Measures purchasing power parity using Big Mac prices. High stress indicates reduced affordability and purchasing power erosion during economic downturns.",
     "unit": "USD price & valuation %",
-    "fetched_at": "2026-08-30T04:50:00.003120",
+    "fetched_at": "2026-09-06T03:57:41.387036",
     "warning_threshold": "Affordability stress >50%",
     "total_countries": 46,
     "high_risk_count": 8,

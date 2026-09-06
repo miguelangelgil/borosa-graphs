@@ -4,7 +4,7 @@
     "indicator": "Consumer Confidence Index",
     "description": "Consumer confidence below 100 indicates pessimism about the economy. Declining confidence typically precedes reduced consumer spending.",
     "unit": "index (baseline 100)",
-    "fetched_at": "2026-08-30T04:49:59.513880",
+    "fetched_at": "2026-09-06T03:57:41.104675",
     "baseline": 100,
     "total_countries": 15,
     "negative_sentiment_count": 15,

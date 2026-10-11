@@ -3,7 +3,7 @@
     "source": "World Bank",
     "indicator": "NE.EXP.GNFS.CD - NE.IMP.GNFS.CD",
     "description": "Trade balance (Exports - Imports, USD)",
-    "fetched_at": "2026-10-04T05:18:06.051743",
+    "fetched_at": "2026-10-11T05:07:01.457181",
     "available_years": [
       "2025",
       "2024",
@@ -915,7 +915,7 @@
         "code": "EUQ",
         "country": "European Union",
         "value": 830354887893.0,
-        "exports": 9822201178201.0,
+        "exports": 9822201178200.0,
         "imports": 8991846290307.0,
         "region": "Europe",
         "isProjection": false
@@ -25393,7 +25393,7 @@
         {
           "year": "2024",
           "value": 830354887893.0,
-          "exports": 9822201178201.0,
+          "exports": 9822201178200.0,
           "imports": 8991846290307.0,
           "isProjection": false
         },
